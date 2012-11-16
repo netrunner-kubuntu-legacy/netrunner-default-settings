@@ -1,0 +1,15 @@
+[/usr/lib/firefox/plugins/flashplugin-alternative.so]
+application/x-shockwave-flash:swf:Shockwave Flash
+application/futuresplash:spl:FutureSplash Player
+
+[/usr/lib/mozilla/plugins/libjavaplugin.so]
+application/x-java-vm::Java&#153 Plug-in
+application/x-java-applet::Java&#153 Plug-in Applet
+application/x-java-applet::Java&#153 Plug-in
+application/x-java-applet
+jpi-version=1.6.0_20::Java&#153 Plug-in
+application/x-java-bean::Java&#153 Plug-in JavaBeans
+application/x-java-bean::Java&#153 Plug-in
+application/x-java-bean
+application/x-java-vm-npruntime::Java&#153 Plug-in
+

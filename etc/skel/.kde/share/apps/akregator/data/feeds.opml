@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+ <head>
+  <text/>
+ </head>
+ <body>
+  <outline isOpen="true" id="553843876" text="KDE">
+   <outline title="KDE Dot News" useCustomFetchInterval="false" version="RSS" maxArticleAge="0" description="" htmlUrl="http://dot.kde.org" xmlUrl="http://www.kde.org/dotkdeorg.rdf" fetchInterval="0" type="rss" id="1678804548" archiveMode="globalDefault" maxArticleNumber="0" text="KDE Dot News"/>
+   <outline title="Planet KDE" useCustomFetchInterval="false" version="RSS" maxArticleAge="0" description="Planet KDE - http://planetKDE.org/" htmlUrl="http://planetKDE.org/" xmlUrl="http://planetkde.org/rss20.xml" fetchInterval="0" type="rss" id="1464966136" archiveMode="globalDefault" maxArticleNumber="0" text="Planet KDE"/>
+   <outline title="Planet KDE PIM" useCustomFetchInterval="false" version="RSS" maxArticleAge="0" description="Planet KDE - http://planetKDE.org/" htmlUrl="http://planetKDE.org/" xmlUrl="http://pim.planetkde.org/rss20.xml" fetchInterval="0" type="rss" id="340557803" archiveMode="globalDefault" maxArticleNumber="0" text="Planet KDE PIM"/>
+   <outline title="KDE Apps" useCustomFetchInterval="false" version="RSS" maxArticleAge="0" description="KDE-Look.org: Applications for your KDE-Desktop" htmlUrl="http://kde-apps.org" xmlUrl="http://www.kde.org/dot/kde-apps-content.rdf" fetchInterval="0" type="rss" id="1189944534" archiveMode="globalDefault" maxArticleNumber="0" text="KDE Apps"/>
+   <outline title="KDE Look" useCustomFetchInterval="false" version="RSS" maxArticleAge="0" description="KDE-Look.org: Eyecandy for your KDE-Desktop" htmlUrl="http://kde-look.org" xmlUrl="http://www.kde.org/kde-look-content.rdf" fetchInterval="0" type="rss" id="630346676" archiveMode="globalDefault" maxArticleNumber="0" text="KDE Look"/>
+  </outline>
+ </body>
+</opml>
+

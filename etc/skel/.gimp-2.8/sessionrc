@@ -1,0 +1,59 @@
+# GIMP sessionrc
+# 
+# This file takes session-specific info (that is info, you want to keep
+# between two GIMP sessions).  You are not supposed to edit it manually, but
+# of course you can do.  The sessionrc will be entirely rewritten every time
+# you quit GIMP.  If this file isn't found, defaults are used.
+
+(session-info "toplevel"
+    (factory-entry "gimp-empty-image-window")
+    (position 388 370)
+    (size 620 200)
+    (open-on-exit))
+(session-info "toplevel"
+    (factory-entry "gimp-single-image-window")
+    (position 0 0)
+    (size 1024 712)
+    (open-on-exit)
+    (aux-info
+        (left-docks-width "128")
+        (right-docks-position "684"))
+    (gimp-toolbox
+        (side left)
+        (book
+            (current-page 0)
+            (dockable "gimp-tool-options"
+                (tab-style automatic))))
+    (gimp-dock
+        (side right)
+        (book
+            (current-page 0)
+            (dockable "gimp-layer-list"
+                (tab-style automatic)
+                (preview-size 32))
+            (dockable "gimp-channel-list"
+                (tab-style automatic)
+                (preview-size 32))
+            (dockable "gimp-vectors-list"
+                (tab-style automatic)
+                (preview-size 32))
+            (dockable "gimp-undo-history"
+                (tab-style automatic)))
+        (book
+            (position 412)
+            (current-page 0)
+            (dockable "gimp-brush-grid"
+                (tab-style automatic))
+            (dockable "gimp-pattern-grid"
+                (tab-style automatic))
+            (dockable "gimp-gradient-list"
+                (tab-style automatic)))))
+(session-info "toplevel"
+    (factory-entry "gimp-preferences-dialog")
+    (position 301 33))
+
+(hide-docks no)
+(single-window-mode yes)
+(last-tip-shown 0)
+
+# end of sessionrc

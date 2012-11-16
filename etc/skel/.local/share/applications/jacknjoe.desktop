@@ -1,0 +1,14 @@
+[Desktop Entry]
+Comment=
+Exec=firefox -no-remote -P "prism" http://jacknjoe.com
+Generic Name=Software Store
+Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-jacknjoe.png
+Name=JacknJoe
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

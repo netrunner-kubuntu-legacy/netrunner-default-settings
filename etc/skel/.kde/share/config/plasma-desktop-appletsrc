@@ -1,0 +1,78 @@
+[$Version]
+update_info=plasma_popupapplet_fix_groups.upd:PlasmaPopupAppletFixGroups1
+
+[ActionPlugins]
+MidButton;NoModifier=paste
+RightButton;NoModifier=contextmenu
+wheel:Vertical;NoModifier=switchdesktop
+
+[ActionPlugins][RightButton;NoModifier]
+_add panel=true
+_context=true
+_lock_screen=false
+_logout=false
+_run_command=false
+_sep1=false
+_sep2=true
+_sep3=false
+_wallpaper=true
+add sibling containment=false
+add widgets=true
+configure=true
+configure shortcuts=false
+lock widgets=true
+manage activities=false
+remove=true
+
+
+[Containments][1]
+activity=
+alignToGrid=true
+blankLabel=false
+clickForFolderPreviews=false
+customIconSize=64
+desktop=-1
+flow=0
+formfactor=0
+iconsLocked=true
+immutability=1
+location=0
+numTextLines=2
+plugin=folderview
+previewPlugins=imagethumbnail,jpegthumbnail,windowsexethumbnail,kffmpegthumbnailer,windowsimagethumbnail,directorythumbnail
+savedPositions=1,6,mycomputer.desktop,10,10,runners-id.desktop,141,10,webaccounts.desktop,272,10,sambamount.desktop,403,10,welcome.desktop,534,10,ubiquity-kdeui.desktop,665,10
+screen=0
+sortColumn=-1
+sortDirsFirst=false
+wallpaperplugin=image
+wallpaperpluginmode=SingleImage
+zvalue=0
+
+
+[Containments][1][Wallpaper][color]
+backgroundMode=0
+color1=54,88,157
+color2=0,0,0
+
+[Containments][1][Wallpaper][image]
+slideTimer=10
+slidepaths=/usr/share/wallpapers/
+userswallpapers=/usr/share/wallpapers/Dryland - Third Edition - The Tower/contents/images/1920x1200.jpg
+wallpaper=/usr/share/wallpapers/Dryland - Third Edition - The Tower
+wallpapercolor=56,111,150
+wallpaperposition=2
+
+[Containments][1][ToolBox]
+corner=1
+offset=0
+
+[Containments][2]
+activity=
+desktop=-1
+formfactor=2
+immutability=1
+location=4
+plugin=panel
+screen=0
+zvalue=150
+

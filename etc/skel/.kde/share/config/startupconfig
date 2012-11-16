@@ -1,0 +1,16 @@
+#! /bin/sh
+# kcminputrc Mouse cursorTheme 'Oxygen_Black'
+kcminputrc_mouse_cursortheme="oxy-white"
+# kcminputrc Mouse cursorSize ''
+kcminputrc_mouse_cursorsize=""
+# ksplashrc KSplash Theme Default
+ksplashrc_ksplash_theme="None"
+# ksplashrc KSplash Engine KSplashX
+ksplashrc_ksplash_engine="None"
+# kcmfonts General forceFontDPI 0
+kcmfonts_general_forcefontdpi="0"
+# kdeglobals Locale Language '' # trigger requesting languages from KLocale
+kdeglobals_locale_language=""
+# kdeglobals Locale Country ''
+kdeglobals_locale_country="us"
+klocale_languages=en_US

@@ -1,0 +1,53 @@
+[dolphin]
+InfoOutput=4
+
+[jockey]
+InfoOutput=2
+
+[kbuildsycoca4]
+InfoOutput=2
+
+[kcminit]
+InfoOutput=4
+
+[kcmshell]
+InfoOutput=4
+
+[kdecore (KConfigSkeleton)]
+InfoOutput=2
+
+[kdecore (KLibrary)]
+InfoOutput=2
+
+[kdecore (KPluginInfo)]
+InfoOutput=2
+
+[kdecore (services)]
+InfoOutput=2
+
+[kdostartupconfig4]
+InfoOutput=4
+
+[keditfiletype]
+InfoOutput=4
+
+[kio (delegateanimationhandler)]
+InfoOutput=4
+
+[kio_desktop]
+InfoOutput=4
+
+[kio_trash]
+InfoOutput=4
+
+[kmenuedit]
+InfoOutput=4
+
+[kmixctrl]
+InfoOutput=4
+
+[nspluginscan]
+InfoOutput=4
+
+[systemsettings]
+InfoOutput=4

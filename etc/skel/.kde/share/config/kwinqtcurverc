@@ -1,0 +1,16 @@
+[ActiveShadows]
+Color=26,133,162
+ColorType=5
+Size=15
+VOffset=0
+
+[General]
+BorderSize=1
+CustomShadows=true
+InnerBorder=0
+OuterBorder=0
+RoundBottom=false
+TitleBarPad=2
+
+[InactiveShadows]
+Size=10

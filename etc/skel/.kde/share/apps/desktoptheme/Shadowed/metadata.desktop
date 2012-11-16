@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Shadowed
+Comment=Plasma revealed
+
+X-KDE-PluginInfo-Author=Patrick Spear
+X-KDE-PluginInfo-Email=patrick@pfspear.net
+X-KDE-PluginInfo-Name=Glaze
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=http://www.pfspear.net/
+X-KDE-PluginInfo-Category=Plasma Theme
+X-KDE-PluginInfo-Depends=KDE4
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true

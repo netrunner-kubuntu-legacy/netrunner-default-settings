@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment=
+Exec=firefox -no-remote -P "prism"  http://www.twitter.com
+Icon=/usr/share/icons/Netrunner/scalable/apps/twitter.png
+Name=Twitter
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

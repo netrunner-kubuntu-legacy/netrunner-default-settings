@@ -1,0 +1,155 @@
+Height 600=500
+Height 894=895
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAChAAADBfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAB8BAAAF+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAABBAAADBQAAAHABAAAFAAAAAQAAAMQAAAMF/AIAAAAC+wAAABAAaQBuAGYAbwBEAG8AYwBrAQAAAEEAAAMFAAABGgEAAAX7AAAAFABzAGUAYQByAGMAaABEAG8AYwBrAAAAAAD/////AAAAHwEAAAUAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAFABAAAFAAAE0gAAAwUAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+Width 1597=1598
+Width 800=750
+
+[ColumnMode]
+FontWeight=50
+IconSize=22
+PreviewSize=22
+
+[CompactMode]
+FontWeight=50
+IconSize=32
+PreviewSize=32
+
+[DetailsMode]
+FontWeight=50
+IconSize=22
+PreviewSize=22
+
+[General]
+FirstRun=false
+GlobalViewProps=true
+LockPanels=false
+RenameInLine=true
+ShowCopyMoveMenu=true
+ShowFullPath=true
+ShowSelectionToggle=false
+ShowSpaceInfo=true
+Version=200
+ViewPropsTimestamp=2012,2,27,15,30,29
+
+[IconsMode]
+FontWeight=50
+GridSpacing=0
+IconSize=48
+ItemHeight=131
+ItemWidth=160
+MaximumTextLines=3
+NumberOfTextlines=3
+PreviewSize=48
+
+[KFileDialog Settings]
+Autoplay sounds=true
+
+[KPropertiesDialog]
+Height 1080=452
+Height 811=452
+Height 894=452
+Height 938=428
+Height 985=452
+Height 988=428
+Width 1470=277
+Width 1510=457
+Width 1597=457
+Width 1918=363
+Width 1920=711
+
+[MainWindow]
+Height 1080=887
+Height 480=481
+Height 490=491
+Height 584=585
+Height 600=530
+Height 643=644
+Height 660=661
+Height 672=673
+Height 679=680
+Height 737=738
+Height 739=740
+Height 756=757
+Height 760=761
+Height 768=769
+Height 772=773
+Height 774=775
+Height 780=781
+Height 806=807
+Height 811=743
+Height 832=833
+Height 865=866
+Height 894=895
+Height 901=716
+Height 938=939
+Height 960=961
+Height 961=647
+Height 970=971
+Height 985=689
+Height 988=989
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAChAAADBfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAB8BAAAF+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAABBAAADBQAAAHABAAAFAAAAAQAAAMQAAAMF/AIAAAAC+wAAABAAaQBuAGYAbwBEAG8AYwBrAQAAAEEAAAMFAAABGgEAAAX7AAAAFABzAGUAYQByAGMAaABEAG8AYwBrAAAAAAD/////AAAAHwEAAAUAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAFABAAAFAAAE0gAAAwUAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 1024=1025
+Width 1047=1048
+Width 1074=1075
+Width 1112=1113
+Width 1196=1197
+Width 1206=1207
+Width 1208=1209
+Width 1260=1261
+Width 1280=1281
+Width 1339=1226
+Width 1350=1351
+Width 1375=1376
+Width 1387=1388
+Width 1452=1453
+Width 1466=1467
+Width 1470=1471
+Width 1493=1494
+Width 1510=1475
+Width 1511=1503
+Width 1528=1529
+Width 1539=1540
+Width 1541=1211
+Width 1597=1598
+Width 1634=1635
+Width 1697=1698
+Width 1704=1705
+Width 1900=1901
+Width 1918=1557
+Width 1920=1629
+Width 640=641
+Width 800=800
+
+[MainWindow][Toolbar mainToolBar]
+IconSize=32
+
+[MainWindow][Toolbar searchToolBar]
+IconSize=32
+ToolButtonStyle=TextBesideIcon
+
+[Open-with settings]
+CompletionMode=5
+History=kate
+
+[PreviewSettings]
+Plugins=directorythumbnail,imagethumbnail,jpegthumbnail,windowsexethumbnail,kffmpegthumbnailer
+
+[SettingsDialog]
+Height 600=488
+Height 772=417
+Height 894=421
+Width 1387=549
+Width 1597=551
+Width 800=523
+
+[Toolbar mainToolBar]
+IconSize=32
+
+[Toolbar searchToolBar]
+IconSize=32
+ToolButtonStyle=TextBesideIcon
+
+[ViewPropertiesDialog]
+Height 894=442
+Width 1597=410

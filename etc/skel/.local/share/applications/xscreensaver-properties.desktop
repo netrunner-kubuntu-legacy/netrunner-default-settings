@@ -1,0 +1,15 @@
+[Desktop Entry]
+Categories=Settings;DesktopSettings;Security;X-XFCE;
+Comment=Change screensaver properties
+Exec=xscreensaver-demo
+Icon=xscreensaver
+Name=Screensaver
+NoDisplay=true
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-Ubuntu-Gettext-Domain=xscreensaver

@@ -1,0 +1,14 @@
+#!/bin/bash
+if [ -e "/usr/share/templates/SpreadSheet.desktop" ]; then
+    rm -rf /usr/share/templates/SpreadSheet.desktop
+fi
+if [ -e "/usr/share/templates/Presentation.desktop" ]; then
+    rm -rf /usr/share/templates/Presentation.desktop
+fi
+if [ -e "/usr/share/templates/TextDocument.desktop" ]; then
+    rm -rf /usr/share/templates/TextDocument.desktop
+fi
+if [ -e "/usr/share/templates/soffice.odg.desktop" ]; then
+    rm -rf /usr/share/templates/soffice.odg.desktop
+fi
+

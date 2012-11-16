@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Qt;KDE;Office;Calendar;
+Comment=Calendar and Scheduling Program
+Exec=korganizer %U
+GenericName=Personal Organizer
+Icon=korganizer
+MimeType=text/calendar;
+Name=KOrganizer
+NoDisplay=true
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=org.kde.korganizer
+X-DBUS-StartupType=Unique
+X-DocPath=korganizer/index.html
+X-KDE-ServiceTypes=DBUS/Organizer
+X-KDE-StartupNotify=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -1,0 +1,11 @@
+[Event/FeedAdded]
+Execute=
+KTTS=
+Logfile=
+Sound=
+
+[Event/NewArticles]
+Execute=
+KTTS=
+Logfile=
+Sound=

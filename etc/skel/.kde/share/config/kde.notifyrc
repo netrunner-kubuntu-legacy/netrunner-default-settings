@@ -1,0 +1,12 @@
+[Event/exitkde]
+Action=
+Execute=
+KTTS=
+Logfile=
+
+[Event/startkde]
+Action=Sound
+Execute=
+KTTS=
+Logfile=
+Sound=KDE-Sys-Log-In-Long.ogg

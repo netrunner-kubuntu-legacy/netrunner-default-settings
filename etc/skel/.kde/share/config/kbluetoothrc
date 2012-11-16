@@ -1,0 +1,8 @@
+[KBlueLock]
+Device=
+LockEnabled=false
+UnlockEnabled=true
+
+[ObexServer]
+Autostart=true
+savePath=/home/netrunner/Documents

@@ -1,0 +1,4 @@
+[EmbedSettings]
+embed-application/x-java-bean=true
+embed-application/x-java-vm=true
+embed-application/x-java-vm-npruntime=true

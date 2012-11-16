@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=image-png
+Name=launcher.png
+Type=Link
+URL[$e]=file:///usr/share/netrunner/launcher.png
+X-KDE-LastOpenedWith=plasma-desktop

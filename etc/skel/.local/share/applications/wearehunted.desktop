@@ -1,0 +1,14 @@
+[Desktop Entry]
+Comment=
+Exec=firefox -no-remote -P "prism" http://wearehunted.com/a/#/genre/pop
+Generic Name=Music Charts
+Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-wearehunted.png
+Name=We are hunted
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

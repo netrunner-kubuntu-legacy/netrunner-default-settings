@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ -d "/usr/share/wallpapers/Ariya" ]; then
+    rm -rf /usr/share/wallpapers/Ariya
+    rm -rf /usr/share/wallpapers/kde-default.png
+fi
+

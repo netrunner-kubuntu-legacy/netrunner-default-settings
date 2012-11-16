@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=Qt;KDE;Network;InstantMessaging;
+Comment=Displays your instant messenger contacts
+Exec=ktp-contactlist %u
+GenericName=Instant Messenger Contacts
+Icon=telepathy-kde
+Name=Telepathy
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-DBUS-StartupType=Unique
+X-KDE-ServiceTypes=DBUS/InstantMessenger
+X-KDE-SubstituteUID=false
+X-KDE-Username=

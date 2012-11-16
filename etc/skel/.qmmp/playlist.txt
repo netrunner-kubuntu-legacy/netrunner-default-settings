@@ -1,0 +1,3 @@
+current_playlist=0
+playlist=Playlist
+current=0

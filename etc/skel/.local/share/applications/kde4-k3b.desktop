@@ -1,0 +1,46 @@
+[Desktop Action AudioCD]
+Exec=k3b --audiocd
+Name=New Audio CD Project
+
+[Desktop Action DataCD]
+Exec=k3b --data
+Name=New Data CD Project
+
+[Desktop Action MixedCD]
+Exec=k3b --mixedcd
+Name=New Mixed Mode CD Project
+
+[Desktop Action VideoCD]
+Exec=k3b --videocd
+Name=New Video CD Project
+
+[Desktop Action VideoDVD]
+Exec=k3b --videodvd
+Name=New Video DVD Project
+
+[Desktop Action eMovix]
+Exec=k3b --emovix
+Name=New eMovix Project
+
+[Desktop Entry]
+Actions=VideoDVD;DataCD;AudioCD;VideoCD;MixedCD;eMovix;
+Categories=KDE;Qt;AudioVideo;DiscBurning;System;Filesystem;
+Comment=Disk writing program
+Exec=k3b %U
+GenericName=Disk Burning
+Icon=k3b
+InitialPreference=5
+MimeType=application/x-k3b;application/x-iso;application/x-cd-image;application/x-cue;
+Name=K3b
+NoDisplay=true
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceType=Unique
+X-DocPath=k3b/index.html
+X-KDE-NativeMimeType=application/x-k3b;
+X-KDE-StartupNotify=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=

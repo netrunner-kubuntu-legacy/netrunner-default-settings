@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <unix ffmpeg="/usr/bin/avconv" ffplay="/usr/bin/avplay" terminal="/usr/bin/x-terminal-emulator" termoptions="-e"/>
+  <general pause="true" playsound="true" destfolder="" rememberlast="false" multithreading="false" numberofthreads="" priority="" showoptions="false" pass2="false"/>
+  <window height="400" width="640" top="340" left="640"/>
+</CONFIG>

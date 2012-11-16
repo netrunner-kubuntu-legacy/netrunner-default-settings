@@ -1,0 +1,10 @@
+[$Version]
+update_info=amarok.upd:1
+
+[General Options]
+AutoGetCoverArt=true
+Lock Layout=false
+Show Splash Screen=false
+
+[OSD]
+Osd Enabled=false

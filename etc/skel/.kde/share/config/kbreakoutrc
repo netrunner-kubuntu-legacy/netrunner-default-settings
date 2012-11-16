@@ -1,0 +1,7 @@
+[General]
+FireOnClick=true
+Theme=themes/crystal.desktop
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAAAu4AAAHaAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled

@@ -1,0 +1,5 @@
+/usr/share/netrunner/adjustments/opera/operaprefs_default.ini /etc/operaprefs_default.ini
+/usr/share/netrunner/adjustments/opera/operaprefs_fixed.ini /etc/operaprefs_fixed.ini
+/usr/share/netrunner/adjustments/opera/pluginpath.ini /usr/share/opera/defaults/pluginpath.ini
+
+

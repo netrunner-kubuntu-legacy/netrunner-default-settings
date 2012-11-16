@@ -1,0 +1,8 @@
+[Event]
+hideApportNotifier=true
+hideHookNotifier=true
+hideInstallNotifier=true
+hideRestartNotifier=false
+
+[NotificationType]
+NotifyType=Combo

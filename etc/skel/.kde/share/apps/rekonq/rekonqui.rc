@@ -1,0 +1,156 @@
+<!DOCTYPE kpartgui SYSTEM 'kpartgui.dtd'>
+<kpartgui version="61" name="rekonq">
+ <MenuBar alreadyVisited="1">
+  <Menu noMerge="1" name="file" alreadyVisited="1">
+   <text>&amp;File</text>
+   <Action name="file_open"/>
+   <Action name="open_location"/>
+   <Separator/>
+   <Action name="new_tab"/>
+   <Action name="close_tab"/>
+   <Separator/>
+   <Action name="file_save_as"/>
+   <Separator/>
+   <Action name="file_print_preview"/>
+   <Action name="file_print"/>
+   <Separator/>
+   <Action name="file_quit"/>
+  </Menu>
+  <Menu noMerge="1" name="edit" alreadyVisited="1">
+   <text>&amp;Edit</text>
+   <Action name="edit_undo"/>
+   <Action name="edit_redo"/>
+   <Separator/>
+   <Action name="edit_cut"/>
+   <Action name="edit_copy"/>
+   <Action name="edit_paste"/>
+   <Separator/>
+   <Action name="edit_find"/>
+   <Action name="edit_find_next"/>
+   <Action name="edit_find_prev"/>
+  </Menu>
+  <Menu noMerge="1" name="view" alreadyVisited="1">
+   <text>&amp;View</text>
+   <Action name="view_redisplay"/>
+   <Action name="go_home"/>
+   <Separator/>
+   <Action name="bigger_font"/>
+   <Action name="normal_font"/>
+   <Action name="smaller_font"/>
+   <Separator/>
+   <Action name="page_source"/>
+  </Menu>
+  <Menu deleted="true" name="go" alreadyVisited="1">
+   <text>&amp;Go</text>
+   <Action name="go_back"/>
+   <Action name="go_forward"/>
+   <Action name="go_home"/>
+  </Menu>
+  <Action name="history">
+   <text>Hi&amp;story</text>
+  </Action>
+  <Action name="bookmarksActionMenu">
+   <text>&amp;Bookmarks</text>
+  </Action>
+  <Menu noMerge="1" name="tools" alreadyVisited="1">
+   <text>&amp;Tools</text>
+   <Action name="web_inspector"/>
+   <Action name="private_browsing"/>
+   <Action name="clear_private_data"/>
+   <Action name="page_source"/>
+   <Action name="net_analyzer"/>
+   <Action name="set_editable"/>
+   <Separator/>
+   <Action name="useragent"/>
+   <Action name="adblock"/>
+  </Menu>
+  <Menu noMerge="1" name="settings" alreadyVisited="1">
+   <text>&amp;Settings</text>
+   <Action name="options_show_menubar"/>
+   <Merge name="StandardToolBarMenuHandler"/>
+   <Merge/>
+   <Separator/>
+   <Action name="fullscreen"/>
+   <Separator/>
+   <Action name="options_configure_keybinding"/>
+   <Action name="options_configure_toolbars"/>
+   <Action name="options_configure"/>
+  </Menu>
+  <Separator weakSeparator="1"/>
+  <Menu name="help">
+   <text>&amp;Help</text>
+   <Action name="help_contents"/>
+   <Action name="help_whats_this"/>
+   <Separator weakSeparator="1"/>
+   <Action name="help_report_bug"/>
+   <Separator weakSeparator="1"/>
+   <Action name="switch_application_language"/>
+   <Separator weakSeparator="1"/>
+   <Action name="help_about_app"/>
+   <Action name="help_about_kde"/>
+  </Menu>
+ </MenuBar>
+ <ToolBar iconText="iconOnly" noMerge="1" position="top" name="mainToolBar" newline="true" alreadyVisited="1">
+  <text>Main Toolbar</text>
+  <Action name="go_back"/>
+  <Action name="view_redisplay"/>
+  <Action name="new_window"/>
+  <Separator name="separator_0"/>
+  <Action name="go_home"/>
+  <Action name="bookmarksActionMenu"/>
+  <Action name="url_bar"/>
+  <Action name="webapp_shortcut"/>
+  <Action name="rekonq_tools"/>
+ </ToolBar>
+ <Menu noMerge="1" name="rekonqMenu">
+  <Action name="new_tab"/>
+  <Action name="new_window"/>
+  <Action name="private_browsing"/>
+  <Separator/>
+  <Action name="file_open"/>
+  <Action name="file_save_as"/>
+  <Action name="file_print"/>
+  <Action name="edit_find"/>
+  <Action name="view_zoom"/>
+  <Separator/>
+  <Menu noMerge="1" icon="preferences-other" name="toolsMenu">
+   <text>&amp;Tools</text>
+   <Action name="clear_private_data"/>
+   <Separator/>
+   <Action name="webapp_shortcut"/>
+   <Action name="web_inspector"/>
+   <Action name="page_source"/>
+   <Action name="net_analyzer"/>
+   <Action name="set_editable"/>
+   <Separator/>
+   <Action name="useragent"/>
+   <Action name="sync"/>
+   <Action name="adblock"/>
+  </Menu>
+  <Separator/>
+  <Action name="show_history_panel"/>
+  <Action name="show_bookmarks_toolbar"/>
+  <Action name="show_bookmarks_panel"/>
+  <Action name="fullscreen"/>
+  <Separator/>
+  <Menu icon="help-browser" name="help">
+   <text>&amp;Help</text>
+   <Action name="help_contents"/>
+   <Action name="help_whats_this"/>
+   <Separator weakSeparator="1"/>
+   <Action name="help_report_bug"/>
+   <Separator weakSeparator="1"/>
+   <Action name="switch_application_language"/>
+   <Separator weakSeparator="1"/>
+   <Action name="help_about_app"/>
+   <Action name="help_about_kde"/>
+  </Menu>
+  <Action name="options_configure"/>
+ </Menu>
+ <ToolBar iconSize="16" iconText="icontextright" fullWidth="true" noEdit="true" name="bookmarkToolBar" newline="true">
+  <text>Bookmark Toolbar</text>
+ </ToolBar>
+ <ActionProperties scheme="Default">
+  <Action icon="heart" name="go_home"/>
+ </ActionProperties>
+</kpartgui>

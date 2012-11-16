@@ -1,0 +1,10 @@
+[Misc]
+LastConfiguredApp=KDE System Notifications
+
+[Phonon::AudioOutput]
+KNotify_Volume=1
+
+[Sounds]
+No sound=false
+Use external player=false
+Volume=50

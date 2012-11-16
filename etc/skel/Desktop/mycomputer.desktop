@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=My Computer
+Exec=konqueror sysinfo://
+Icon=computer
+Terminal=false
+Categories=KDE;Qt;System;
+OnlyShowIn=KDE;

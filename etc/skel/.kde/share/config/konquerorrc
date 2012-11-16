@@ -1,0 +1,23 @@
+[$Version]
+update_info=kfmclient_3_2.upd:kfmclient_3_2
+
+[FMSettings]
+AlwaysTabbedMode=false
+KonquerorTabforExternalURL=false
+MMBOpensTab=true
+MouseMiddleClickClosesTab=false
+NewTabsInFront=false
+OpenAfterCurrentPage=false
+PermanentCloseButton=true
+PopupsWithinTabs=false
+TabCloseActivatePrevious=false
+
+[HTML Settings]
+AutomaticDetectionLanguage=1
+
+[KFileDialog Settings]
+Height 985=600
+Width 1920=960
+
+[Undo]
+Number of Closed Windows=1

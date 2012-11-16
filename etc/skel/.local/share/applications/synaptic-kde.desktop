@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=PackageManager;System;
+Comment=Install, remove and upgrade software packages
+Exec=synaptic
+GenericName=Package Manager
+Icon=synaptic
+Name=Synaptic Package Manager
+NoDisplay=true
+OnlyShowIn=KDE;
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=true
+X-KDE-Username=

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment=
+Exec=firefox -no-remote -P "prism"  http://www.facebook.com
+Icon=/usr/share/icons/Netrunner/scalable/apps/facebook_icon.png
+Name=Facebook
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

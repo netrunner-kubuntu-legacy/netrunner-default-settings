@@ -1,0 +1,14 @@
+[Desktop Entry]
+Comment=
+Exec=firefox -no-remote -P "prism" http://mattsurabian.com/duckhunt
+Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-duckhunt.png
+Name=Duck Hunt
+Name[fr]=duckhunt.desktop
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

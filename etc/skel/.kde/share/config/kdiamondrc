@@ -1,0 +1,13 @@
+[General]
+Theme=themes/diamonds.desktop
+
+[MainWindow]
+Height 1010=400
+Height 733=400
+State=AAAA/wAAAAD9AAAAAAAAAYgAAAE2AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1224=390
+Width 1920=392
+
+[Preferences]
+Skill=30

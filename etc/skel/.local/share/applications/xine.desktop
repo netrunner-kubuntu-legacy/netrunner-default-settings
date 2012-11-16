@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=Application;AudioVideo;Player;
+Comment=Video Player
+Encoding=UTF-8
+Exec=xine %U
+Icon=xine
+MimeType=application/annodex;application/x-annodex;audio/annodex;audio/x-annodex;video/annodex;video/x-annodex;video/x-flic;video/x-flv;video/flv;application/x-flash-video;audio/x-aiff;audio/aiff;audio/x-pn-aiff;audio/x-flac;audio/flac;audio/x-realaudio;audio/basic;audio/x-basic;audio/x-pn-au;audio/x-tta;audio/tta;audio/x-mod;audio/mod;audio/it;audio/x-it;audio/x-stm;audio/x-s3m;audio/s3m;application/playerpro;application/adrift;audio/med;audio/x-amf;audio/x-xm;audio/xm;video/mp2t;image/png;image/x-png;video/mng;video/x-mng;video/mp2p;video/mkv;video/x-matroska;video/webm;video/quicktime;video/x-quicktime;audio/x-m4a;application/x-quicktimeplayer;video/mp4;audio/mp4;audio/x-8svx;audio/8svx;audio/x-16sv;audio/168sv;image/x-ilbm;image/ilbm;video/x-anim;video/anim;video/x-ms-asf;video/x-ms-wmv;audio/x-ms-wma;application/vnd.ms-asf;application/x-mplayer2;video/x-ms-asf-plugin;video/x-ms-wvx;video/x-ms-wax;audio/x-pn-realaudio;audio/x-pn-realaudio-plugin;audio/x-real-audio;application/vnd.rn-realmedia;application/ogg;application/x-ogg;application/x-ogm;application/x-ogm-audio;application/x-ogm-video;audio/ogg;audio/x-ogg;video/ogg;video/x-ogg;video/msvideo;video/x-msvideo;video/mpeg;video/x-mpeg;audio/ac3;audio/x-wav;audio/wav;audio/x-pn-wav;audio/x-pn-windows-acm;audio/musepack;audio/x-musepack;audio/mpeg2;audio/x-mpeg2;audio/mpeg3;audio/x-mpeg3;audio/mpeg;audio/x-mpeg;audio/x-mpegurl;audio/mpegurl;audio/mp3;audio/x-mp3;audio/x-flac;audio/flac;
+Name=xine
+NoDisplay=true
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

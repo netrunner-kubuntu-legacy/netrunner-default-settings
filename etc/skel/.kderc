@@ -1,0 +1,9 @@
+[General]
+activeFont=Roboto,11,-1,5,75,0,0,0,0,0
+desktopFont=Roboto,11,-1,5,50,0,0,0,0,0
+fixed=Monospace,11,-1,5,50,0,0,0,0,0
+font=Roboto,11,-1,5,50,0,0,0,0,0
+menuFont=Roboto,11,-1,5,50,0,0,0,0,0
+smallestReadableFont=Roboto,11,-1,5,50,0,0,0,0,0
+taskbarFont=Roboto,11,-1,5,50,0,0,0,0,0
+toolBarFont=Roboto,11,-1,5,50,0,0,0,0,0

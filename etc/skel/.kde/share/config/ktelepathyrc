@@ -1,0 +1,15 @@
+[Appearance]
+displayHeader=false
+fontFamily=Nimbus Sans L
+fontSize=11
+styleName=simkete
+styleVariant=
+useCustomFont=true
+
+[LastPresence]
+PresenceMessage=
+PresenceStatus=
+PresenceType=0
+
+[PresencePlasmoid]
+onClick=contactlist

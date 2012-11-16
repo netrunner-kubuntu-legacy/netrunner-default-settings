@@ -1,0 +1,13 @@
+Source: netrunner-default-settings
+Section: admin
+Priority: optional
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+
+Package: netrunner-default-settings
+Architecture: all
+Provides: netrunner-default-settings
+Depends: 
+Description: Configuration of the Netrunner release.
+  This package provides configuration files and scripted changes for the Netrunner release.

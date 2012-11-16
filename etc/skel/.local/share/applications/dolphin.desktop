@@ -1,0 +1,20 @@
+[Desktop Entry]
+Comment[en_US]=
+Comment=
+Exec=dolphin
+GenericName[en_US]=File Manager
+GenericName=File Manager
+Icon=user-home
+MimeType=
+Name[en_US]=Dolphin
+Name=Dolphin
+NoDisplay=true
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
