@@ -24,6 +24,11 @@ for (var i = 0; i < panelIds.length; ++i) {
             (widget.readConfig("icon", "") != "/usr/share/netrunner/netrunner-kmenu.png")) {
                 widget.writeConfig("icon", "/usr/share/netrunner/netrunner-kmenu.png");
         } // if launcher
+        
+        if (widget && (widget.type == 'simplelauncher') &&
+            (widget.readConfig("icon", "") != "/usr/share/netrunner/netrunner-kmenu.png")) {
+                widget.writeConfig("icon", "/usr/share/netrunner/netrunner-kmenu.png");
+        } // if simplelauncher
     } // for widgets in panel
 } // for panel
 

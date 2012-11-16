@@ -8,6 +8,8 @@ Standards-Version: 3.7.2
 Package: netrunner-default-settings
 Architecture: all
 Provides: netrunner-default-settings
+Replace: netrunner-artwork (<< 1.0.84)
+Breaks: netrunner-artwork (<< 1.0.84)
 Depends: 
 Description: Configuration of the Netrunner release.
   This package provides configuration files and scripted changes for the Netrunner release.
