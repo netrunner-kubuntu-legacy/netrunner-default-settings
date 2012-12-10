@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=PackageManager;System;
 Comment=Install, remove and upgrade software packages
-Exec=synaptic
+Exec=kdesudo synaptic
 GenericName=Package Manager
 Icon=synaptic
 Name=Synaptic Package Manager

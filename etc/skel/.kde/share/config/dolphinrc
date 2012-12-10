@@ -11,13 +11,14 @@ PreviewSize=22
 
 [CompactMode]
 FontWeight=50
-IconSize=32
-PreviewSize=32
+IconSize=64
+PreviewSize=64
+MaximumTextWidthIndex=2
 
 [DetailsMode]
 FontWeight=50
-IconSize=22
-PreviewSize=22
+IconSize=16
+PreviewSize=16
 
 [General]
 FirstRun=false
