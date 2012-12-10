@@ -1,3 +1,9 @@
+netrunner-default-settings (1.0.1) dryland-te; urgency=low
+
+  * Update artwork
+
+ -- Frédéric Gaudet <fred@linuxmint.com>  Mon, 10 Dec 2012 21:50:51 +0100
+
 netrunner-default-settings (1.0.0) dryland-te; urgency=low
 
   * Initial release
