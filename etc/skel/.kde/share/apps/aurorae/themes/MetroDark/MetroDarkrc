@@ -2,8 +2,8 @@
 ActiveTextColor=255,255,255,255
 ActiveUnfocusedTabColor=51,51,51
 Animation=200
-BrowserApplication=google-chrome.desktop
-ColorScheme=Netrunner 4
+BrowserApplication=firefox.desktop
+ColorScheme=Netrunner 4.4
 HaloActive=false
 InactiveFocusedTabColor=68,68,68
 InactiveTextColor=212,212,212

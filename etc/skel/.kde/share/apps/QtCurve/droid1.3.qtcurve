@@ -1,14 +1,13 @@
 [ActiveShadows]
-Color=26,133,162
-ColorType=5
+ColorType=2
 Size=15
 VOffset=0
 
 [InactiveShadows]
-Size=10
+VOffset=0
 
 [KWin]
-BorderSize=1
+BorderSize=0
 CustomShadows=true
 InnerBorder=0
 OuterBorder=0
@@ -52,7 +51,7 @@ customgradient1=none,0,1.1,0.5,1.1,1,1.1
 customgradient10=none,0,0.9,1,0.9
 customgradient11=none,0,1.5,0.1,1.05,1,1
 customgradient12=none,0,1.75,0.08,0.95,1,0.9
-customgradient2=none,0,0,0.5,0,0.75,0,0.95,1,1,1
+customgradient2=none,0,0.05,0.85,0.05,0.95,1,1,1
 customgradient20=none,0,1.05,1,1
 customgradient22=none,0,2,0.2,1.05,1,1
 customgradient23=none,0,1.05,1,0.95
@@ -163,8 +162,8 @@ thinSbarGroove=false
 titlebarAlignment=left
 titlebarAppearance=customgradient2
 titlebarButtonAppearance=flat
-titlebarButtonColors=#22ABD0,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#CAC9C8,#CAC9C8,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#FFFFFF,#FFFFFF,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#FFFFFF,#FFFFFF
-titlebarButtons=14355
+titlebarButtonColors=#22ABD0,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#CAC9C8,#CAC9C8,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#22ABD0,#FFFFFF,#FFFFFF,#19819D,#19819D,#19819D,#22ABD0,#19819D,#22ABD0,#22ABD0,#FFFFFF,#FFFFFF
+titlebarButtons=10291
 titlebarEffect=none
 titlebarIcon=menu
 toolbarAppearance=flat
@@ -179,7 +178,7 @@ useHighlightForMenu=true
 useQtFileDialogApps=googleearth-bin
 vArrows=true
 version=1.8.14
-windowBorder=33
+windowBorder=0
 windowDrag=2
 xCheck=false
 xbar=false
