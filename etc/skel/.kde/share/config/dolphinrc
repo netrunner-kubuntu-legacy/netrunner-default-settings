@@ -23,7 +23,6 @@ PreviewSize=16
 [General]
 FirstRun=false
 GlobalViewProps=true
-LockPanels=false
 RenameInLine=true
 ShowCopyMoveMenu=true
 ShowFullPath=true
