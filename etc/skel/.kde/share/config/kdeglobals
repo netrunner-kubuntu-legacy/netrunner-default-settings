@@ -13,7 +13,7 @@ IntensityEffect=2
 [ColorEffects:Inactive]
 Color=112,111,110
 ColorAmount=0.025
-ColorEffect=-2
+ColorEffect=2
 ContrastAmount=0.1
 ContrastEffect=2
 Enable=false
@@ -36,7 +36,7 @@ ForegroundVisited=69,40,134
 
 [Colors:Selection]
 BackgroundAlternate=62,138,204
-BackgroundNormal=76,135,201
+BackgroundNormal=70,125,186
 DecorationFocus=83,148,232
 DecorationHover=119,183,255
 ForegroundActive=255,128,224
@@ -130,7 +130,7 @@ Size=32
 
 [General]
 BrowserApplication[$e]=firefox.desktop
-ColorScheme=Netrunner 4.4
+ColorScheme=Netrunner44.colors
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
@@ -152,8 +152,8 @@ AutoSelectDelay=-1
 ChangeCursor=true
 DoubleClickInterval=400
 ShowDeleteCommand=true
-ShowIconsOnPushButtons=false
 ShowIconsInMenuItems=true
+ShowIconsOnPushButtons=false
 SingleClick=true
 StartDragDist=4
 StartDragTime=500
@@ -170,7 +170,7 @@ Decoration position=0
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
 Previews=false
-Recent URLs[$e]=/usr/share/backgrounds/,/usr/share/pixmaps/,/usr/share/backgrounds/cosmos/,/usr/share/netrunner/,/usr/share/
+Recent URLs[$e]=/usr/share/pixmaps/,/usr/share/netrunner/,/usr/share/
 Show Bookmarks=false
 Show Full Path=false
 Show Preview=false
@@ -179,7 +179,7 @@ Show hidden files=false
 Sort by=Name
 Sort directories first=true
 Sort reversed=false
-Speedbar Width=93
+Speedbar Width=95
 View Style=Simple
 
 [Locale]
@@ -276,4 +276,4 @@ activeFont=Roboto,11,-1,5,75,0,0,0,0,0
 activeForeground=255,255,255
 inactiveBackground=224,223,222
 inactiveBlend=75,71,67
-inactiveForeground=20,19,18
+inactiveForeground=116,110,104
