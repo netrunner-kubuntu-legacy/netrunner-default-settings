@@ -130,7 +130,7 @@ Size=32
 
 [General]
 BrowserApplication[$e]=firefox.desktop
-ColorScheme=Netrunner44.colors
+ColorScheme=Netrunner 4.4
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
