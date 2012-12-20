@@ -1,0 +1,32 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+case "$1" in
+    remove|purge)
+        #These files may have been created during installation
+        rm -f /etc/gnome/defaults.list
+        rm -f /root/.gtkrc-2.0
+        rm -f /root/.gtkrc-2.0-kde4
+        rm -f /root/.config/gtk-3.0/settings.ini
+        rm -f /etc/skel/.gtkrc-2.0
+        rm -f /etc/skel/.gtkrc-2.0-kde4
+        rm -f /etc/skel/.config/gtk-3.0/settings.ini
+    fi
+    ;;
+
+    upgrade|abort-upgrade|abort-remove|abort-deconfigure)
+
+    ;;
+
+    *)
+        echo "postrm called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0
