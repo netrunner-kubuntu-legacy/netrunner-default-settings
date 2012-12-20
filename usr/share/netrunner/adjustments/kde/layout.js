@@ -4,7 +4,7 @@ if (panelIds.length == 1) {
     panel.location = 'bottom'
 }
 
-panel.height = 38;
+panel.height = 35;
 
 launcher = panel.addWidget("simplelauncher");
 launcher.writeConfig("format", "NameDescription");
