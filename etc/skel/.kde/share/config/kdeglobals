@@ -129,7 +129,7 @@ DisabledValue=1
 Size=32
 
 [General]
-BrowserApplication[$e]=firefox.desktop
+BrowserApplication[$e]=firefox-tab.desktop
 ColorScheme=Netrunner 4.4
 XftAntialias=true
 XftHintStyle=hintslight
