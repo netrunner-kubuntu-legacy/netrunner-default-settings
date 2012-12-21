@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=firefox -no-remote -P "prism"  http://www.gmail.com
+Exec=firefox -no-remote -new-tab -P "prism"  http://www.gmail.com
 Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-Gmail-300x300.png
 Name=Google Mail
 NoDisplay=false

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=firefox -no-remote -P "prism"  http://google.com/contacts
+Exec=firefox -no-remote -new-tab -P "prism"  http://google.com/contacts
 Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-google-contacts.png
 Name=Google Contacts
 NoDisplay=false

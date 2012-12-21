@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=firefox -no-remote -P "prism"  http://www.youtube.com
+Exec=firefox -no-remote -new-tab -P "prism"  http://www.youtube.com
 Icon=/usr/share/icons/Netrunner/scalable/apps/youtube_icon.png
 Name=Youtube
 NoDisplay=false

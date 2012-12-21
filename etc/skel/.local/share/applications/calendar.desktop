@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=firefox -no-remote -P "prism"  http://www.google.com/calendar
+Exec=firefox -no-remote -new-tab -P "prism"  http://www.google.com/calendar
 Icon=/usr/share/icons/Netrunner/scalable/apps/calendar.png
 Name=Google Calendar
 NoDisplay=false
