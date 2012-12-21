@@ -10,13 +10,13 @@ IconSize=22
 PreviewSize=22
 
 [CompactMode]
-FontWeight=25
+FontWeight=50
 IconSize=64
 PreviewSize=64
 MaximumTextWidthIndex=2
 
 [DetailsMode]
-FontWeight=25
+FontWeight=50
 IconSize=16
 PreviewSize=16
 
@@ -32,7 +32,7 @@ Version=200
 ViewPropsTimestamp=2012,2,27,15,30,29
 
 [IconsMode]
-FontWeight=25
+FontWeight=50
 GridSpacing=0
 IconSize=64
 ItemHeight=131
