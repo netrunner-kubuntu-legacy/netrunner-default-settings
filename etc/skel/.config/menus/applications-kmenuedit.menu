@@ -686,17 +686,20 @@
  <Menu>
   <Name>System-4</Name>
   <NotDeleted/>
+  <Exclude>
+   <Filename>virtualbox.desktop</Filename>
+   <Filename>kde4-k3b.desktop</Filename>
+  </Exclude>
   <Layout>
    <Merge type="menus"/>
    <Menuname>ScreenSavers</Menuname>
    <Menuname>Terminal</Menuname>
    <Merge type="files"/>
+   <Filename>kde4-my-computer.desktop</Filename>
    <Filename>jockey-kde.desktop</Filename>
    <Filename>apturl.desktop</Filename>
    <Filename>kde4-dolphin.desktop</Filename>
    <Filename>gdebi.desktop</Filename>
-   <Filename>kde4-ubiquity-kdeui.desktop</Filename>
-   <Filename>kde4-k3b.desktop</Filename>
    <Filename>kde4-partitionmanager.desktop</Filename>
    <Filename>kde4-kinfocenter.desktop</Filename>
    <Filename>kde4-kfmclient_war.desktop</Filename>
@@ -728,9 +731,6 @@
    <Separator/>
    <Menuname>More</Menuname>
   </Layout>
-  <Exclude>
-   <Filename>virtualbox.desktop</Filename>
-  </Exclude>
  </Menu>
  <Move>
   <Old>Utilities/System</Old>
@@ -958,7 +958,9 @@
   <NotDeleted/>
   <Include>
    <Filename>kde4-krdc.desktop</Filename>
+   <Filename>kde4-k3b.desktop</Filename>
   </Include>
+  <Exclude/>
   <Layout>
    <Merge type="files"/>
    <Filename>kde4-kwrite.desktop</Filename>
@@ -987,12 +989,12 @@
    <Filename>kde4-ktesnippets_editor.desktop</Filename>
    <Filename>kde4-synaptiks.desktop</Filename>
    <Filename>kde4-kvkbd.desktop</Filename>
+   <Filename>kde4-k3b.desktop</Filename>
    <Filename>kde4-bluedevil-monolithic.desktop</Filename>
    <Filename>kde4-krdc.desktop</Filename>
    <Separator/>
    <Menuname>More</Menuname>
   </Layout>
-  <Exclude/>
  </Menu>
  <Move>
   <Old>Utilities</Old>

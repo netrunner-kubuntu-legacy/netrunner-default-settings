@@ -94,6 +94,12 @@ then
   cp /usr/share/netrunner/adjustments/kde/gnome-mplayer.desktop /usr/share/applications/gnome-mplayer.desktop
 fi
 
+# transmission
+if [ -e /usr/share/applications/transmission-qt.desktop ]
+then
+  sed -i "s@Exec=transmission-qt %F@Exec=transmission-qt %U@" /usr/share/applications/transmission-qt.desktop
+fi
+
 case "$1" in
     configure)
     ;;

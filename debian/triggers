@@ -3,7 +3,7 @@ interest /usr/bin/startkde
 interest /usr/share/kde4/apps/quassel/networks.ini
 interest /usr/share/kde4/apps/quassel/scripts/inxi
 interest /etc/kde4rc
-interest /etc/kde4/kdm/kdmrc
 interest /usr/share/kde4/apps/plasma-desktop/updates/addShowActivitiesManagerPlasmoid.js
 interest /usr/bin/inxi
 interest /usr/share/applications/software-properties-kde.desktop
+interest /usr/share/applications/transmission-qt.desktop
