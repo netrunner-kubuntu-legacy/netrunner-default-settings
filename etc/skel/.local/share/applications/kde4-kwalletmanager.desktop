@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Qt;KDE;System;Security;
+Comment=
+Exec=kwalletmanager %u
+GenericName=Wallet Management Tool
+Icon=kwalletmanager
+InitialPreference=6
+MimeType=application/x-kwallet;
+Name=KWalletManager
+NoDisplay=true
+Path[$e]=
+StartupNotify=false
+Terminal=0
+TerminalOptions=
+Type=Application
+X-DocPath=kwallet/index.html
+X-KDE-StartupNotify=false
+X-KDE-SubstituteUID=false
+X-KDE-Username=
