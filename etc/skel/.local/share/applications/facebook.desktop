@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=firefox -no-remote -new-tab -P "prism"  http://www.facebook.com
+Exec=QtWeb  http://www.facebook.com
 Icon=/usr/share/icons/Netrunner/scalable/apps/facebook_icon.png
 Name=Facebook
 NoDisplay=false
