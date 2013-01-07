@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=QtWeb http://wearehunted.com/a/#/genre/pop
+Exec=firefox -P prism -new-tab http://wearehunted.com/a/#/genre/pop
 Generic Name=Music Charts
 Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-wearehunted.png
 Name=We are hunted

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=QtWeb http://jacknjoe.com
+Exec=firefox -P prism -new-tab http://jacknjoe.com
 Generic Name=Software Store
 Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-jacknjoe.png
 Name=JacknJoe

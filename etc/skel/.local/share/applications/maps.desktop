@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=QtWeb  http://maps.google.com
+Exec=firefox -P prism -new-tab  http://maps.google.com
 Icon=/usr/share/icons/Netrunner/scalable/apps/gmaps.png
 Name=Google Maps
 NoDisplay=false

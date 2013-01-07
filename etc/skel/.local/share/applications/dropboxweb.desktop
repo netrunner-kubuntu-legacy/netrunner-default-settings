@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=QtWeb  http://www.dropbox.com
+Exec=firefox -P prism -new-tab  http://www.dropbox.com
 Icon=/usr/share/icons/Netrunner/scalable/apps/dropbox.png
 Name=Dropbox
 NoDisplay=false

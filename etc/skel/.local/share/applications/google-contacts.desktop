@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=QtWeb  http://google.com/contacts
+Exec=firefox -P prism -new-tab  http://google.com/contacts
 Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-google-contacts.png
 Name=Google Contacts
 NoDisplay=false

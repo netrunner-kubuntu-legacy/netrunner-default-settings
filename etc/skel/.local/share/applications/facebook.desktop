@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=QtWeb  http://www.facebook.com
+Exec=firefox -P prism -new-tab  http://www.facebook.com
 Icon=/usr/share/icons/Netrunner/scalable/apps/facebook_icon.png
 Name=Facebook
 NoDisplay=false

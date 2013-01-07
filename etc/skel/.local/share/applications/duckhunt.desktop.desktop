@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=QtWeb http://mattsurabian.com/duckhunt
+Exec=firefox -P prism -new-tab http://mattsurabian.com/duckhunt
 Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-duckhunt.png
 Name=Duck Hunt
 Name[fr]=duckhunt.desktop

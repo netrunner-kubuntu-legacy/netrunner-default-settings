@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=QtWeb s  http://www.netrunner-os.com/readme/
+Exec=firefox -P prism -new-tab s  http://www.netrunner-os.com/readme/
 Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-welcome.png
 Name=Welcome Introduction
 NoDisplay=true
