@@ -94,6 +94,19 @@ then
   cp /usr/share/netrunner/adjustments/kde/gnome-mplayer.desktop /usr/share/applications/gnome-mplayer.desktop
 fi
 
+# Remove illustration shortcut
+if [ -e /usr/share/templates/Illustration.desktop ]
+then
+  rm /usr/share/templates/Illustration.desktop
+
+fi
+
+# Remove illustration template
+if [ -e /usr/share/templates/.source/Illustration.odg ]
+then
+  rm /usr/share/templates/.source/Illustration.odg
+fi
+
 # transmission
 if [ -e /usr/share/applications/transmission-qt.desktop ]
 then

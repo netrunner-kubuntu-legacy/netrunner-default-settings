@@ -7,3 +7,5 @@ interest /usr/share/kde4/apps/plasma-desktop/updates/addShowActivitiesManagerPla
 interest /usr/bin/inxi
 interest /usr/share/applications/software-properties-kde.desktop
 interest /usr/share/applications/transmission-qt.desktop
+interest /usr/share/templates/Illustration.desktop
+interest /usr/share/templates/.source/Illustration.odg
