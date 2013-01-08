@@ -109,7 +109,7 @@ fi
 # Replace Presentation template
 if [ -e /usr/share/templates/.source/Presentation.odp ]
 then
-  rm /usr/share/templates/.source/Presentation.odp
+  cp /usr/share/netrunner/adjustments/Presentation.odp /usr/share/templates/.source/Presentation.odp
 fi
 
 # transmission
