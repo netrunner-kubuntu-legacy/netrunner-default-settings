@@ -1,3 +1,8 @@
+interest /usr/lib/openoffice/program
+interest /usr/share/sounds/startup.wav
+interest /usr/share/system-config-printer
+interest /usr/share/opera
+interest /etc/netrunner/adjustments
 interest /etc/firefox/profile
 interest /usr/bin/startkde
 interest /usr/share/kde4/apps/quassel/networks.ini

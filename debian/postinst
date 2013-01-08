@@ -98,7 +98,6 @@ fi
 if [ -e /usr/share/templates/Illustration.desktop ]
 then
   rm /usr/share/templates/Illustration.desktop
-
 fi
 
 # Remove illustration template
