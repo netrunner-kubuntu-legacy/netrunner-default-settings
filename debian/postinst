@@ -106,6 +106,12 @@ then
   rm /usr/share/templates/.source/Illustration.odg
 fi
 
+# Replace Presentation template
+if [ -e /usr/share/templates/.source/Presentation.odp ]
+then
+  rm /usr/share/templates/.source/Presentation.odp
+fi
+
 # transmission
 if [ -e /usr/share/applications/transmission-qt.desktop ]
 then
