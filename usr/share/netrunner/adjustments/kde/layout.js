@@ -44,7 +44,12 @@ var systemtray = panel.addWidget("systemtray");
 systemtray.currentConfigGroup = Array("Applets","999")
 systemtray.writeConfig("plugin","notifications")
 systemtray.currentConfigGroup = Array()
- 
+
+systemtray.currentConfigGroup = Array("Applets","996")
+systemtray.writeConfig("plugin","veromix-plasmoid")
+systemtray.writeConfig("unitvalues_visible","true")
+systemtray.currentConfigGroup = Array()
+
 systemtray.currentConfigGroup = Array("Applets","998")
 systemtray.writeConfig("plugin","ktp_presence")
 systemtray.currentConfigGroup = Array()
