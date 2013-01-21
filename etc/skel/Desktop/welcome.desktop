@@ -2,7 +2,7 @@
 Comment=
 Exec=firefox -no-remote -P "prism"  http://www.netrunner-os.com/readme/
 Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-welcome.png
-Name=Welcome Introduction
+Name=Introduction
 NoDisplay=false
 StartupNotify=true
 Terminal=0
