@@ -134,14 +134,14 @@ ColorScheme=Netrunner 4.4
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
-desktopFont=Roboto,11,-1,5,50,0,0,0,0,0
+desktopFont=Open Sans,12,-1,5,50,0,0,0,0,0
 fixed=Monospace,10,-1,5,50,0,0,0,0,0
-font=Roboto,11,-1,5,50,0,0,0,0,0
-menuFont=Roboto,11,-1,5,50,0,0,0,0,0
+font=Open Sans,11,-1,5,50,0,0,0,0,0
+menuFont=Open Sans,11,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
-smallestReadableFont=Roboto,10,-1,5,50,0,0,0,0,0
-taskbarFont=Roboto,11,-1,5,50,0,0,0,0,0
-toolBarFont=Roboto,11,-1,5,50,0,0,0,0,0
+smallestReadableFont=Open Sans,11,-1,5,50,0,0,0,0,0
+taskbarFont=Open Sans,12,-1,5,50,0,0,0,0,0
+toolBarFont=Open Sans,11,-1,5,50,0,0,0,0,0
 widgetStyle=oxygen
 
 [Icons]

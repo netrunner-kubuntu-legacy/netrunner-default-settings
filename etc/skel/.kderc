@@ -1,9 +1,9 @@
 [General]
-activeFont=Droid Sans,12,-1,5,75,0,0,0,0,0
-desktopFont=Roboto,11,-1,5,50,0,0,0,0,0
+activeFont=Open Sans,12,-1,5,75,0,0,0,0,0
+desktopFont=Open Sans,11,-1,5,50,0,0,0,0,0
 fixed=Monospace,10,-1,5,50,0,0,0,0,0
-font=Roboto,11,-1,5,50,0,0,0,0,0
-menuFont=Roboto,11,-1,5,50,0,0,0,0,0
-smallestReadableFont=Roboto,10,-1,5,50,0,0,0,0,0
-taskbarFont=Roboto,11,-1,5,50,0,0,0,0,0
-toolBarFont=Roboto,11,-1,5,50,0,0,0,0,0
+font=Open Sans,11,-1,5,50,0,0,0,0,0
+menuFont=Open Sans,11,-1,5,50,0,0,0,0,0
+smallestReadableFont=Open Sans,10,-1,5,50,0,0,0,0,0
+taskbarFont=Open Sans,12,-1,5,50,0,0,0,0,0
+toolBarFont=Open Sans,11,-1,5,50,0,0,0,0,0
