@@ -11,8 +11,8 @@ PreviewSize=22
 
 [CompactMode]
 FontWeight=50
-IconSize=64
-PreviewSize=64
+IconSize=22
+PreviewSize=22
 MaximumTextWidthIndex=2
 
 [DetailsMode]
@@ -126,7 +126,7 @@ IconSize=32
 
 [MainWindow][Toolbar searchToolBar]
 IconSize=32
-ToolButtonStyle=TextBesideIcon
+ToolButtonStyle=IconOnly
 
 [Open-with settings]
 CompletionMode=5
@@ -148,7 +148,7 @@ IconSize=32
 
 [Toolbar searchToolBar]
 IconSize=32
-ToolButtonStyle=TextBesideIcon
+ToolButtonStyle=IconOnly
 
 [ViewPropertiesDialog]
 Height 894=442
