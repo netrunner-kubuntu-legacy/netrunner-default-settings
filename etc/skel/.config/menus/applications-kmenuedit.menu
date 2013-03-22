@@ -183,12 +183,12 @@
    <Merge type="files"/>
    <Filename>twitter.desktop</Filename>
    <Filename>jacknjoe.desktop</Filename>
-   <Filename>wearehunted.desktop</Filename>
+   <Filename>firefox-marketplace.desktop</Filename>
    <Filename>maps.desktop</Filename>
   </Layout>
   <Include>
    <Filename>maps.desktop</Filename>
-   <Filename>wearehunted.desktop</Filename>
+   <Filename>firefox-marketplace.desktop</Filename>
    <Filename>jacknjoe.desktop</Filename>
    <Filename>twitter.desktop</Filename>
   </Include>
@@ -515,7 +515,7 @@
    <Filename>runners-id.desktop</Filename>
    <Filename>dolphin.desktop</Filename>
    <Filename>google-contacts.desktop</Filename>
-   <Filename>wearehunted.desktop</Filename>
+   <Filename>firefox-marketplace.desktop</Filename>
    <Filename>jacknjoe.desktop</Filename>
    <Filename>docs.desktop</Filename>
    <Filename>gmail.desktop</Filename>
@@ -765,7 +765,7 @@
    <Filename>facebook.desktop</Filename>
    <Filename>jacknjoe.desktop</Filename>
    <Filename>twitter.desktop</Filename>
-   <Filename>wearehunted.desktop</Filename>
+   <Filename>firefox-marketplace.desktop</Filename>
    <Filename>youtube.desktop</Filename>
   </Exclude>
   <Include/>
@@ -934,7 +934,7 @@
    <Filename>jacknjoe.desktop</Filename>
    <Filename>runners-id.desktop</Filename>
    <Filename>twitter.desktop</Filename>
-   <Filename>wearehunted.desktop</Filename>
+   <Filename>firefox-marketplace.desktop</Filename>
    <Filename>youtube.desktop</Filename>
   </Layout>
   <Include>
@@ -944,7 +944,7 @@
    <Filename>facebook.desktop</Filename>
    <Filename>jacknjoe.desktop</Filename>
    <Filename>twitter.desktop</Filename>
-   <Filename>wearehunted.desktop</Filename>
+   <Filename>firefox-marketplace.desktop</Filename>
    <Filename>youtube.desktop</Filename>
   </Include>
   <Exclude/>

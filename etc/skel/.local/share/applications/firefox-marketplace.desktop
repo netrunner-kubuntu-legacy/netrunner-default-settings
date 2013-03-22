@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment=
+Exec=firefox -P prism -new-tab https://marketplace.firefox.com/
+Icon=/usr/share/icons/Netrunner/scalable/apps/mozilla-marketplace-logo-final.png
+Name=Firefox Marketplace
+NoDisplay=false
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
