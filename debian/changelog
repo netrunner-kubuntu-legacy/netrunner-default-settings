@@ -1,3 +1,9 @@
+netrunner-default-settings (1.0.4) enigma-1306; urgency=low
+
+  * Initial Enigma release
+
+ -- Frédéric Gaudet <fred@linuxmint.com>  Fri, 22 Mar 2013 12:06:38 +0100
+
 netrunner-default-settings (1.0.3) dryland-te; urgency=low
 
   * 12.12.1 bug fixing
