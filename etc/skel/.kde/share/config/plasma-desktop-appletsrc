@@ -248,7 +248,7 @@ ShowHardware=true
 ShowSystemServices=true
 ShowUnknown=true
 alwaysShown=Konversation,ktp_presence,notifications
-hidden=KDE Wallet Manager
+hidden=KDE Wallet Manager,battery
 
 [Containments][2][Applets][8][Configuration][Applets][1]
 geometry=4,116,24,24
