@@ -22,7 +22,7 @@ IntensityEffect=0
 
 [Colors:Button]
 BackgroundAlternate=224,223,222
-BackgroundNormal=232,231,230
+BackgroundNormal=211,210,209
 DecorationFocus=83,148,232
 DecorationHover=119,183,255
 ForegroundActive=255,128,224
@@ -78,7 +78,7 @@ ForegroundVisited=69,40,134
 
 [Colors:Window]
 BackgroundAlternate=218,217,216
-BackgroundNormal=224,223,222
+BackgroundNormal=204,202,197
 DecorationFocus=83,148,232
 DecorationHover=119,183,255
 ForegroundActive=255,128,224
@@ -130,7 +130,7 @@ Size=32
 
 [General]
 BrowserApplication[$e]=firefox-tab.desktop
-ColorScheme=Netrunner 4.4
+ColorScheme=Enigma.colors
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
@@ -272,7 +272,6 @@ Size=22
 [WM]
 activeBackground=76,135,201
 activeBlend=255,255,255
-activeFont=Open Sans,12,-1,5,75,0,0,0,0,0
 activeForeground=255,255,255
 inactiveBackground=224,223,222
 inactiveBlend=75,71,67

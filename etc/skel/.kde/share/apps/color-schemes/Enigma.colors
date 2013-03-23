@@ -13,13 +13,13 @@ ColorAmount=0.025
 ColorEffect=2
 ContrastAmount=0.1
 ContrastEffect=2
-Enable=true
+Enable=false
 IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
 BackgroundAlternate=224,223,222
-BackgroundNormal=232,231,230
+BackgroundNormal=211,210,209
 DecorationFocus=83,148,232
 DecorationHover=119,183,255
 ForegroundActive=255,128,224
@@ -75,7 +75,7 @@ ForegroundVisited=69,40,134
 
 [Colors:Window]
 BackgroundAlternate=218,217,216
-BackgroundNormal=224,223,222
+BackgroundNormal=204,202,197
 DecorationFocus=83,148,232
 DecorationHover=119,183,255
 ForegroundActive=255,128,224
@@ -88,8 +88,8 @@ ForegroundPositive=0,110,40
 ForegroundVisited=69,40,134
 
 [General]
-ColorScheme=Netrunner 4.4
-Name=Netrunner 4.4
+ColorScheme=Enigma
+Name=Enigma
 shadeSortColumn=true
 
 [KDE]
