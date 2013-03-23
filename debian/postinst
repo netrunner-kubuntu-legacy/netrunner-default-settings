@@ -121,7 +121,7 @@ fi
 FILE="/etc/pulse/default.pa"
 if [ -e $FILE ]; then
   if grep -q "^load-module module-udev-detect" $FILE; then  
-    sed -i -e '$a load-module module-udev-detect tsched=0' $FILE
+    sed -i -e 's/load-module module-udev-detect/load-module module-udev-detect tsched=0/' $FILE
     fi
 fi
 
