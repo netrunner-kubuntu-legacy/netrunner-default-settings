@@ -3,10 +3,10 @@
 include "/usr/share/themes/oxygen-gtk/gtk-2.0/gtkrc"
 style "user-font" 
 {
-  font_name="Open Sans Regular"
+  font_name="Open Sans"
 }
 widget_class "*" style "user-font"
-gtk-font-name="Open Sans Regular 11"
+gtk-font-name="Open Sans 11"
 gtk-theme-name="oxygen-gtk"
 gtk-icon-theme-name="oxygen"
 gtk-fallback-icon-theme="gnome"
