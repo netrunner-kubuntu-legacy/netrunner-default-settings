@@ -177,7 +177,7 @@ holidaysRegions=
 holidaysRegionsDaysOff=
 plainClockColor=228,228,228
 plainClockDrawShadow=false
-plainClockFont=Open Sans,12,-1,5,50,0,0,0,0,0
+plainClockFont=Roboto,12,-1,5,50,0,0,0,0,0
 showDay=false
 showSeconds=false
 showTimezone=false
@@ -247,8 +247,8 @@ ShowCommunications=true
 ShowHardware=true
 ShowSystemServices=true
 ShowUnknown=true
-alwaysShown=Konversation,ktp_presence,notifications
-hidden=KDE Wallet Manager,battery
+alwaysShown=Konversation,ktp_presence
+hidden=KDE Wallet Manager,battery,notifications
 
 [Containments][2][Applets][8][Configuration][Applets][1]
 geometry=4,116,24,24
