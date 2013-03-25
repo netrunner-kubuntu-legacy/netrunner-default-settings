@@ -308,35 +308,6 @@ zvalue=0
 global=
 
 
-[Containments][2][Applets][8][Configuration][Applets][109]
-geometry=29,5.5,24,24
-immutability=1
-plugin=veromix-plasmoid
-zvalue=0
-
-[Containments][2][Applets][8][Configuration][Applets][109][Configuration]
-Share=false
-always_show_sources=false
-auto_mute=False
-background=2
-expander_enabled=true
-ladspa_enabled=True
-max_volume=100
-meter_visible=false
-nowplayingBlacklist=org.mpris.bangarang
-popupMode=0
-show_albumart=True
-show_tooltip=true
-size=476,90
-unitvalues_visible=true
-useTabs=false
-use_mpris2=True
-use_nowplaying=False
-
-[Containments][2][Applets][8][Configuration][Applets][109][PopupApplet]
-DialogHeight=96
-DialogWidth=482
-
 
 [Containments][2][Applets][8][Configuration][Applets][2]
 geometry=169,4.5,24,24
