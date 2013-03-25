@@ -130,7 +130,7 @@ Size=32
 
 [General]
 BrowserApplication[$e]=firefox-tab.desktop
-ColorScheme=Enigma.colors
+ColorScheme=Enigma
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
