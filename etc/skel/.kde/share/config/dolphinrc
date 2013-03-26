@@ -123,6 +123,7 @@ Width 800=800
 
 [MainWindow][Toolbar mainToolBar]
 IconSize=32
+ToolButtonStyle=IconOnly
 
 [MainWindow][Toolbar searchToolBar]
 IconSize=32

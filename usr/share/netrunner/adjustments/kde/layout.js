@@ -13,15 +13,19 @@ launcher.writeConfig("icon", "/usr/share/netrunner/netrunner-kmenu.png");
 launcher.writeConfig("maxRecentApps", "5")
 launcher.writeConfig("views", "RecentlyUsedApplications,Applications,RunCommand,Leave");
  
-var krunner = panel.addWidget("quicklaunch");
-krunner.writeConfig("iconUrls","file:///usr/share/applications/kde4/krunner.desktop")
- 
-var dolphin = panel.addWidget("quicklaunch");
-dolphin.writeConfig("iconUrls","file:///usr/share/applications/kde4/dolphin.desktop")
- 
-var firefox = panel.addWidget("quicklaunch");
-firefox.writeConfig("iconUrls","file:///usr/share/applications/firefox.desktop")
- 
+var krunner = panel.addWidget("icon");
+krunner.writeConfig("Url", "file:///usr/share/applications/kde4/krunner.desktop"); 
+krunner.writeConfig("Order", "1"); 
+
+
+var dolphin = panel.addWidget("icon");
+dolphin.writeConfig("Url", "file:///usr/share/applications/kde4/dolphin.desktop"); 
+dolphin.writeConfig("Order", "2"); 
+
+var firefox = panel.addWidget("icon");
+firefox.writeConfig("Url", "file:///usr/share/applications/kde4/firefox.desktop"); 
+firefox.writeConfig("Order", "3"); 
+
 
 tasks = panel.addWidget("tasks")
 tasks.writeConfig("Share","false")
@@ -36,9 +40,11 @@ tasks.writeConfig("showOnlyMinimized","false")
 tasks.writeConfig("showTooltip","true")
 tasks.writeConfig("sortingStrategy","1")
 
-var yakuake = panel.addWidget("quicklaunch");
-yakuake.writeConfig("iconUrls","file:///usr/share/applications/kde4/yakuake.desktop")
- 
+
+var yakuake = panel.addWidget("icon");
+yakuake.writeConfig("Url", "file:///usr/share/applications/kde4/yakuake.desktop"); 
+yakuake.writeConfig("Order", "5"); 
+
 
 var systemtray = panel.addWidget("systemtray");
 systemtray.currentConfigGroup = Array("Applets","999")
@@ -60,7 +66,7 @@ systemtray.writeConfig("ShowHardware","true")
 systemtray.writeConfig("ShowSystemService","true")
 systemtray.writeConfig("ShowUnknown","true")
 systemtray.writeConfig("alwaysShown","Konversation,ktp_presence")
-systemtray.writeConfig("hidden","KDE Wallet Manager,notifications")
+systemtray.writeConfig("hidden","KDE Wallet Manager,notifications,battery")
  
 var clock = panel.addWidget("digital-clock");
 clock.writeConfig("Share","false")
