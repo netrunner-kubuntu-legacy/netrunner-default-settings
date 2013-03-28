@@ -1,3 +1,9 @@
+netrunner-default-settings (1.0.5) enigma-1306; urgency=low
+
+  * BETA1
+
+ -- Frédéric Gaudet <fred@linuxmint.com>  Thu, 28 Mar 2013 11:35:50 +0100
+
 netrunner-default-settings (1.0.4) enigma-1306; urgency=low
 
   * Initial Enigma release
