@@ -47,10 +47,6 @@ yakuake.writeConfig("Order", "5");
 
 
 var systemtray = panel.addWidget("systemtray");
-systemtray.currentConfigGroup = Array("Applets","999")
-systemtray.writeConfig("plugin","notifications")
-systemtray.currentConfigGroup = Array()
-
 
 systemtray.currentConfigGroup = Array("Applets","998")
 systemtray.writeConfig("plugin","ktp_presence")
@@ -63,10 +59,10 @@ systemtray.currentConfigGroup = Array()
 systemtray.writeConfig("ShowApplicationStatus","true")
 systemtray.writeConfig("ShowCommunications","true")
 systemtray.writeConfig("ShowHardware","true")
-systemtray.writeConfig("ShowSystemService","true")
+systemtray.writeConfig("ShowSystemServices","true")
 systemtray.writeConfig("ShowUnknown","true")
 systemtray.writeConfig("alwaysShown","Konversation,ktp_presence")
-systemtray.writeConfig("hidden","KDE Wallet Manager,notifications,battery")
+systemtray.writeConfig("hidden","KDE Wallet Manager,org.kde.notifications,battery")
  
 var clock = panel.addWidget("digital-clock");
 clock.writeConfig("Share","false")
@@ -90,3 +86,4 @@ clock.writeConfig("timeZones","")
 clock.writeConfig("useCustomColor","false")
 clock.writeConfig("useCustomShadowColor","false")
 
+var notifications = panel.addWidget("org.kde.notifications");
