@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#  DEFAULT KDE STARTUP SCRIPT (4.8.2)
+#  DEFAULT KDE STARTUP SCRIPT ( 4.10.1 )
 #
 
 if test "x$1" = x--failsafe; then
@@ -12,26 +12,6 @@ fi
 # When the X server dies we get a HUP signal from xinit. We must ignore it
 # because we still need to do some cleanup.
 trap 'echo GOT SIGHUP' HUP
-
-# Check if a KDE session already is running and whether it's possible to connect to X
-kcheckrunning
-kcheckrunning_result=$?
-if test $kcheckrunning_result -eq 0 ; then
-	echo "KDE seems to be already running on this display."
-	xmessage -geometry 500x100 "KDE seems to be already running on this display." > /dev/null 2>/dev/null
-	exit 1
-elif test $kcheckrunning_result -eq 2 ; then
-	echo "\$DISPLAY is not set or cannot connect to the X server."
-        exit 1
-fi
-
-# Set the background to plain grey.
-# The standard X background is nasty, causing moire effects and exploding
-# people's heads. We use colours from the standard KDE palette for those with
-# palettised displays.
-if test -z "$XDM_MANAGED" || echo "$XDM_MANAGED" | grep ",auto" > /dev/null; then
-  xsetroot -solid "#000000"
-fi
 
 # we have to unset this for Darwin since it will screw up KDE's dynamic-loading
 unset DYLD_FORCE_FLAT_NAMESPACE
@@ -50,6 +30,18 @@ if [ -n "$bindir" ]; then
     $bindir|$bindir:*|*:$bindir|*:$bindir:*) ;;
     *) PATH=$bindir:$PATH; export PATH;;
   esac
+fi
+
+# Check if a KDE session already is running and whether it's possible to connect to X
+kcheckrunning
+kcheckrunning_result=$?
+if test $kcheckrunning_result -eq 0 ; then
+	echo "KDE seems to be already running on this display."
+	xmessage -geometry 500x100 "KDE seems to be already running on this display." > /dev/null 2>/dev/null
+	exit 1
+elif test $kcheckrunning_result -eq 2 ; then
+	echo "\$DISPLAY is not set or cannot connect to the X server."
+        exit 1
 fi
 
 # Boot sequence:
@@ -106,23 +98,14 @@ EOF
 fi
 
 # see kstartupconfig source for usage
-mkdir -m 700 -p $kdehome
-mkdir -m 700 -p $kdehome/share
-mkdir -m 700 -p $kdehome/share/config
 cat >$kdehome/share/config/startupconfigkeys <<EOF
-kcminputrc Mouse cursorTheme 'Oxygen_Black'
+kcminputrc Mouse cursorTheme 'Oxygen_White'
 kcminputrc Mouse cursorSize ''
 ksplashrc KSplash Theme Default
 ksplashrc KSplash Engine KSplashX
 kcmfonts General forceFontDPI 0
 kdeglobals Locale Language '' # trigger requesting languages from KLocale
 kdeglobals Locale Country ''
-krandrrc Display ApplyOnStartup false
-krandrrc Display StartupCommands ''
-krandrrc [Screen0]
-krandrrc [Screen1]
-krandrrc [Screen2]
-krandrrc [Screen3]
 EOF
 kstartupconfig4
 returncode=$?
@@ -150,7 +133,8 @@ if test -n "$kcminputrc_mouse_cursortheme" -o -n "$kcminputrc_mouse_cursorsize" 
     fi
 fi
 
-. krandrstartup 2>/dev/null
+# disabled due to move to kscreen - jriddell 2013-03
+# . krandrstartup
 
 if test "$kcmfonts_general_forcefontdpi" -ne 0; then
     xrdb -quiet -merge -nocpp <<EOF
@@ -188,7 +172,7 @@ if test -z "$dl"; then
   unset KLOCALE_LANGUAGES
 fi
 
-# configuration of the gtk2-engines-oxygen if not already set
+# configuration of the gtk2-engines-oxygen and gtk3-engines-oxygen if not already set
 
 is_package_installed() {
   if ls /var/lib/dpkg/info/$1.list >/dev/null 2>&1 || ls /var/lib/dpkg/info/$1:*.list >/dev/null 2>&1; then
@@ -198,34 +182,21 @@ is_package_installed() {
   fi
 }
 
-# First we need to remove previous gtk2-engines-qtcurve config if any
-if [ -e $kdehome/env/gtk2-engines-qtcurve.rc.sh ] && [ ! -e /var/lib/dpkg/info/gtk2-engines-qtcurve.list ] ; then
-  rm -f $kdehome/env/gtk2-engines-qtcurve.rc.sh
-  # We also have to remove .gtkrc-2.0-kde4 since it'll have gtk2-engines-qtcurve config in it
-  if [ -e $HOME/.gtkrc-2.0-kde4 ] ; then
-    rm -f $HOME/.gtkrc-2.0-kde4
-  fi
-fi
-
 if is_package_installed netrunner-default-settings && (is_package_installed gtk2-engines-oxygen || is_package_installed gtk3-engines-oxygen); then
   # The theme and k-d-s are installed, configuring...
-  if [ ! -e $kdehome/env/gtk2-default-theme.rc.sh ] && [ -e /usr/share/netrunner-default-settings/gtk2-default-theme.rc.sh ] ; then
-    mkdir -p $kdehome/env
-    cp -f /usr/share/netrunner-default-settings/gtk2-default-theme.rc.sh $kdehome/env
-    chmod 755 $kdehome/env/gtk2-default-theme.rc.sh
-  fi
-  if [ ! -e $HOME/.gtkrc-2.0-kde4 ]; then
+  if [ ! -e $HOME/.gtkrc-2.0 ]; then
     if [ -e /usr/share/netrunner-default-settings/dot-gtkrc-2.0-kde4 ] ; then
-      cp -f /usr/share/netrunner-default-settings/dot-gtkrc-2.0-kde4 $HOME/.gtkrc-2.0-kde4
-    fi
-  else
-    # xsettings-kde requires gtk-theme-name= to be set in gtkrc-2.0-kde4
-    if ! grep -q gtk-theme-name $HOME/.gtkrc-2.0-kde4; then
-    /bin/echo -e "\ngtk-theme-name=\"`egrep \"include \\\"/usr/share/themes/[^/]+/gtk-2.0/gtkrc\\\"\" $HOME/.gtkrc-2.0-kde4 | cut -d/ -f5`\"" >> $HOME/.gtkrc-2.0-kde4
+      cp -f /usr/share/netrunner-default-settings/dot-gtkrc-2.0-kde4 $HOME/.gtkrc-2.0
     fi
   fi
-else
-  # Either the theme or k-d-s are missing, not forcing the configuration then... 
+  if [ ! -e $HOME/.config/gtk-3.0/settings.ini ]; then
+    if [ -e /usr/share/netrunner-default-settings/settings.ini ] ; then
+      mkdir -p $HOME/.config/gtk-3.0/
+      cp -f /usr/share/netrunner-default-settings/settings.ini $HOME/.config/gtk-3.0/settings.ini
+    fi
+  fi
+  # Remove the old script which set GTK2_RC_FILES=$HOME/.gtkrc-2.0-kde4 just use GTK's default .gtkrc-2.0 now
+  # (any GTK based desktop environment uses its own settings with an xsettings daemon)
   if [ -e $kdehome/env/gtk2-default-theme.rc.sh ] ; then
     rm -f $kdehome/env/gtk2-default-theme.rc.sh
   fi
@@ -236,8 +207,8 @@ fi
 if [ -e /usr/share/kubuntu-netbook-default-settings/share/autostart/plasma-netbook.desktop ] ; then
   HEIGHT=`xdpyinfo | grep dimensions | awk '{print $2}' | sed s,.*x,,`
   CDROM=`udisks --dump | grep optical_cd`
-  if `laptop-detect` && [ $HEIGHT -lt 700 ] && [ $HEIGHT -gt 0 ] && [ -z $CDROM ] || [ $1 = "netbook" ]; then
-    if [ ! -e ~/.config/autostart/plasma-netbook.desktop ] || `grep -q Hidden=false ~/.config/autostart/plasma-netbook.desktop`; then
+  if `laptop-detect` && [ $HEIGHT -lt 700 ] && [ $HEIGHT -gt 0 ] && [ -z "$CDROM" ] || [ "$1" = "netbook" ]; then
+    if [ ! -e ~/.config/autostart/plasma-netbook.desktop ] || grep -q Hidden=false ~/.config/autostart/plasma-netbook.desktop; then
       echo Small screen resolution detected, using plasma-netbook;
       export KDEDIRS=/usr/share/kubuntu-netbook-default-settings/:/usr/share/kubuntu-default-settings/kde4-profile/default/
     fi
@@ -275,7 +246,6 @@ done
 # Set the path for Qt plugins provided by KDE
 QT_PLUGIN_PATH=${QT_PLUGIN_PATH+$QT_PLUGIN_PATH:}`kde4-config --path qtplugins`
 export QT_PLUGIN_PATH
-
 
 # Activate the kde font directories.
 #
@@ -365,6 +335,11 @@ done
 # In case of dcop sockets left by a previous session, cleanup
 #dcopserver_shutdown
 
+# Every localized QT and KDE app check for .config/ibus/bus dir and complains if it does not exist
+[ -d "${XDG_CONFIG_HOME:-$HOME/.config}" ] || mkdir -m 700 ${XDG_CONFIG_HOME:-$HOME/.config}
+mkdir        -p "${XDG_CONFIG_HOME:-$HOME/.config}"/ibus
+mkdir -m 700 -p "${XDG_CONFIG_HOME:-$HOME/.config}"/ibus/bus
+
 echo 'startkde: Starting up...'  1>&2
 
 # Make sure that D-Bus is running
@@ -448,15 +423,6 @@ if test $? -ne 0; then
   exit 1
 fi
 
-# If the session should be locked from the start (locked autologin),
-# lock now and do the rest of the KDE startup underneath the locker.
-if test -n "$dl"; then
-  if ! kwrapper4 kscreenlocker --forcelock --showunlock --daemon; then
-    echo 'startkde: Initial session lock failed. Terminating for security reasons.' 1>&2
-    exit 1
-  fi
-fi
-
 # finally, give the session control to the session manager
 # see kdebase/ksmserver for the description of the rest of the startup sequence
 # if the KDEWM environment variable has been set, then it will be used as KDE's
@@ -464,11 +430,15 @@ fi
 # if KDEWM is not set, ksmserver will ensure kwin is started.
 # kwrapper4 is used to reduce startup time and memory usage
 # kwrapper4 does not return useful error codes such as the exit code of ksmserver.
-# We only check for 255 which means that the ksmserver process could not be 
-# started, any problems thereafter, e.g. ksmserver failing to initialize, 
+# We only check for 255 which means that the ksmserver process could not be
+# started, any problems thereafter, e.g. ksmserver failing to initialize,
 # will remain undetected.
 test -n "$KDEWM" && KDEWM="--windowmanager $KDEWM"
-kwrapper4 ksmserver $KDEWM 
+# If the session should be locked from the start (locked autologin),
+# lock now and do the rest of the KDE startup underneath the locker.
+KSMSERVEROPTIONS=""
+test -n "$dl" && KSMSERVEROPTIONS=" --lockscreen"
+kwrapper4 ksmserver $KDEWM $KSMSERVEROPTIONS
 if test $? -eq 255; then
   # Startup error
   echo 'startkde: Could not start ksmserver. Check your installation.'  1>&2
@@ -476,10 +446,24 @@ if test $? -eq 255; then
   xmessage -geometry 500x100 "Could not start ksmserver. Check your installation."
 fi
 
-# wait if there's any crashhandler shown
-while qdbus | grep "^[^w]*org.kde.drkonqi" > /dev/null ; do
-    sleep 5
-done
+wait_drkonqi=`kreadconfig --file startkderc --group WaitForDrKonqi --key Enabled --default true`
+
+if test x"$wait_drkonqi"x = x"true"x ; then
+    # wait for remaining drkonqi instances with timeout (in seconds)
+    wait_drkonqi_timeout=`kreadconfig --file startkderc --group WaitForDrKonqi --key Timeout --default 900`
+    wait_drkonqi_counter=0
+    while qdbus | grep "^[^w]*org.kde.drkonqi" > /dev/null ; do
+        sleep 5
+        wait_drkonqi_counter=$((wait_drkonqi_counter+5))
+        if test "$wait_drkonqi_counter" -ge "$wait_drkonqi_timeout" ; then
+            # ask remaining drkonqis to die in a graceful way
+            qdbus | grep 'org.kde.drkonqi-' | while read address ; do
+                qdbus "$address" "/MainApplication" "quit"
+            done
+            break
+        fi
+    done
+fi
 
 echo 'startkde: Shutting down...'  1>&2
 # just in case
