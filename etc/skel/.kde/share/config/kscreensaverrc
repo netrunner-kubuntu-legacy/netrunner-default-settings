@@ -1,5 +1,6 @@
 [ScreenSaver]
 Enabled=true
+LegacySaverEnabled=true
 Lock=false
 LockGrace=60000
 PlasmaEnabled=false
