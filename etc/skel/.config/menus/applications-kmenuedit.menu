@@ -920,12 +920,24 @@
  <Menu>
   <Name>Web-Apps-5</Name>
   <NotDeleted/>
+  <Include>
+   <Filename>cuttherope.desktop</Filename>
+   <Filename>duckhunt.desktop.desktop</Filename>
+   <Filename>dropboxweb.desktop</Filename>
+   <Filename>facebook.desktop</Filename>
+   <Filename>jacknjoe.desktop</Filename>
+   <Filename>twitter.desktop</Filename>
+   <Filename>youtube.desktop</Filename>
+   <Filename>firefox-marketplace.desktop</Filename>
+  </Include>
+  <Exclude/>
   <Layout>
    <Merge type="files"/>
    <Filename>cuttherope.desktop</Filename>
    <Filename>duckhunt.desktop.desktop</Filename>
    <Filename>dropboxweb.desktop</Filename>
    <Filename>facebook.desktop</Filename>
+   <Filename>firefox-marketplace.desktop</Filename>
    <Filename>calendar.desktop</Filename>
    <Filename>google-contacts.desktop</Filename>
    <Filename>docs.desktop</Filename>
@@ -934,20 +946,8 @@
    <Filename>jacknjoe.desktop</Filename>
    <Filename>runners-id.desktop</Filename>
    <Filename>twitter.desktop</Filename>
-   <Filename>firefox-marketplace.desktop</Filename>
    <Filename>youtube.desktop</Filename>
   </Layout>
-  <Include>
-   <Filename>cuttherope.desktop</Filename>
-   <Filename>duckhunt.desktop.desktop</Filename>
-   <Filename>dropboxweb.desktop</Filename>
-   <Filename>facebook.desktop</Filename>
-   <Filename>jacknjoe.desktop</Filename>
-   <Filename>twitter.desktop</Filename>
-   <Filename>firefox-marketplace.desktop</Filename>
-   <Filename>youtube.desktop</Filename>
-  </Include>
-  <Exclude/>
  </Menu>
  <Move>
   <Old>Web-Apps-4</Old>
