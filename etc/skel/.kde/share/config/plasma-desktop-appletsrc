@@ -90,6 +90,11 @@ FixedSize=true
 [Containments][2][Applets][103][LayoutInformation]
 Order=10
 
+[Containments][2][Applets][110]
+geometry=1624,3,32,32
+immutability=1
+plugin=org.kde.notifications
+zvalue=0
 
 [Containments][2][Applets][12]
 geometry=124,2,33,33
@@ -248,7 +253,7 @@ ShowHardware=true
 ShowSystemServices=true
 ShowUnknown=true
 alwaysShown=Konversation,ktp_presence
-hidden=KDE Wallet Manager,battery,notifications
+hidden=KDE Wallet Manager,battery,org.kde.notifications
 
 [Containments][2][Applets][8][Configuration][Applets][1]
 geometry=4,116,24,24
@@ -269,6 +274,9 @@ zvalue=0
 [Containments][2][Applets][8][Configuration][Applets][100][PopupApplet]
 DialogHeight=340
 DialogWidth=780
+
+[Containments][2][Applets][8][Configuration][Applets][104]
+plugin=notifications
 
 [Containments][2][Applets][8][Configuration][Applets][107]
 geometry=85,4.5,24,24
