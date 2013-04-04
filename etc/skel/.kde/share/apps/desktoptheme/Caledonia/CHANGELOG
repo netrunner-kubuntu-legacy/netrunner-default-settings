@@ -1,6 +1,28 @@
 Caledonia Plasma Theme Changelog
 --------------------------------
 
+*_v1.3 Jan 04 2013
+
+-KDE 4.10.x compatible
+-Updated documentation (and added SourceForge site)
+-Added desktop notification icon
+-New widgets arrows
+-Fixed a bug in "viewitem" (thanks to Hyslion for the fix)
+-Added toolbar-icons
+-Added mini-calendar icon
+-Revised Quassel icon
+-New printer icon
+-New accessibility (text to speech) icon
+-New ethernet connection icon
+-Added presence applet for Telepathy KDE
+-Added new mail icons
+-New configuration icons
+-Added weather icons (ready for compabitily)
+-New Konversation icon
+-Revised buttons colors
+-Removed display widget
+-Added experimental wallpaper/pattern
+
 *_v1.2 Sep 28 2012
 
 -KDE 4.9.x Compatible
@@ -88,5 +110,6 @@ Caledonia Plasma Theme Changelog
 
 (...LEGACY VERSIONS...)
 
-Caledonia Plasma Theme changes the license (move to Creative Commons) in Oct 14 2011 (version 0.9.8) because of many new components.
+Caledonia Plasma Theme was the first release in Jun 05 2011 (based in many parts of "Ember" theme by Garth Johnson), and changes the license (move to Creative Commons) 
+in Oct 14 2011 (version 0.9.8) because of many new and remade components.
 Only versions prior to 0.9.8 keeps the GPL license. See the metadata to know the Caledonia version.
