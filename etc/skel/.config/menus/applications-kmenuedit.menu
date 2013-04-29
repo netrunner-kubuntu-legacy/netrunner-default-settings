@@ -605,6 +605,7 @@
  </Move>
  <Include>
   <Filename>virtualbox.desktop</Filename>
+  <Filename>firefox-marketplace.desktop</Filename>
  </Include>
  <Menu>
   <Name>System-3</Name>
@@ -928,16 +929,16 @@
    <Filename>jacknjoe.desktop</Filename>
    <Filename>twitter.desktop</Filename>
    <Filename>youtube.desktop</Filename>
-   <Filename>firefox-marketplace.desktop</Filename>
   </Include>
-  <Exclude/>
+  <Exclude>
+   <Filename>firefox-marketplace.desktop</Filename>
+  </Exclude>
   <Layout>
    <Merge type="files"/>
    <Filename>cuttherope.desktop</Filename>
    <Filename>duckhunt.desktop.desktop</Filename>
    <Filename>dropboxweb.desktop</Filename>
    <Filename>facebook.desktop</Filename>
-   <Filename>firefox-marketplace.desktop</Filename>
    <Filename>calendar.desktop</Filename>
    <Filename>google-contacts.desktop</Filename>
    <Filename>docs.desktop</Filename>
@@ -1002,22 +1003,15 @@
  </Move>
  <Layout>
   <Merge type="menus"/>
+  <Menuname>Applications-3</Menuname>
   <Menuname>Web-Games-2</Menuname>
   <Menuname>Web-Sites-3</Menuname>
   <Menuname>.hidden</Menuname>
   <Menuname>Debian</Menuname>
   <Menuname>Games</Menuname>
-  <Menuname>Development</Menuname>
-  <Menuname>Education</Menuname>
-  <Menuname>Graphics</Menuname>
-  <Menuname>Internet</Menuname>
-  <Menuname>Multimedia</Menuname>
-  <Menuname>Office</Menuname>
-  <Menuname>wine-wine</Menuname>
   <Menuname>Science-2</Menuname>
   <Menuname>Web-Apps-5</Menuname>
   <Separator/>
-  <Menuname>Utilities-2</Menuname>
   <Menuname>System-4</Menuname>
   <Menuname>Settingsmenu-4</Menuname>
   <Menuname>Applications-2</Menuname>
@@ -1025,8 +1019,88 @@
   <Merge type="files"/>
   <Filename>kde4-kfind.desktop</Filename>
   <Filename>virtualbox.desktop</Filename>
+  <Filename>firefox-marketplace.desktop</Filename>
   <Separator/>
   <Filename>kde4-Help.desktop</Filename>
   <Filename>kde4-Home.desktop</Filename>
  </Layout>
+ <Menu>
+  <Name>Applications-3</Name>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>Development</Menuname>
+   <Menuname>Education</Menuname>
+   <Menuname>Graphics</Menuname>
+   <Menuname>Internet</Menuname>
+   <Menuname>Multimedia</Menuname>
+   <Menuname>Office</Menuname>
+   <Menuname>Utilities</Menuname>
+   <Menuname>wine-wine</Menuname>
+  </Layout>
+  <Directory>Applications-2.directory</Directory>
+  <Menu>
+   <Name>Development</Name>
+   <NotDeleted/>
+  </Menu>
+  <Menu>
+   <Name>Education</Name>
+   <NotDeleted/>
+  </Menu>
+  <Menu>
+   <Name>Graphics</Name>
+   <NotDeleted/>
+  </Menu>
+  <Menu>
+   <Name>Internet</Name>
+   <NotDeleted/>
+  </Menu>
+  <Menu>
+   <Name>Multimedia</Name>
+   <NotDeleted/>
+  </Menu>
+  <Menu>
+   <Name>Office</Name>
+   <NotDeleted/>
+  </Menu>
+  <Menu>
+   <Name>Utilities</Name>
+   <NotDeleted/>
+  </Menu>
+  <Menu>
+   <Name>wine-wine</Name>
+   <NotDeleted/>
+  </Menu>
+ </Menu>
+ <Move>
+  <Old>Development</Old>
+  <New>Applications-3/Development</New>
+ </Move>
+ <Move>
+  <Old>Education</Old>
+  <New>Applications-3/Education</New>
+ </Move>
+ <Move>
+  <Old>Graphics</Old>
+  <New>Applications-3/Graphics</New>
+ </Move>
+ <Move>
+  <Old>Internet</Old>
+  <New>Applications-3/Internet</New>
+ </Move>
+ <Move>
+  <Old>Multimedia</Old>
+  <New>Applications-3/Multimedia</New>
+ </Move>
+ <Move>
+  <Old>Office</Old>
+  <New>Applications-3/Office</New>
+ </Move>
+ <Move>
+  <Old>Utilities-2</Old>
+  <New>Applications-3/Utilities</New>
+ </Move>
+ <Move>
+  <Old>wine-wine</Old>
+  <New>Applications-3/wine-wine</New>
+ </Move>
 </Menu>
