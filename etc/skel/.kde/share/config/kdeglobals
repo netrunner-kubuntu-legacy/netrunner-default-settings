@@ -1,6 +1,9 @@
 [$Version]
 update_info=kaccel.upd:kde3.3/r1,kded.upd:kde3.0,kwin.upd:kde3.2Xinerama,mouse_cursor_theme.upd:kde3.4.99
 
+[AppmenuStyle]
+Style=InApplication
+
 [ColorEffects:Disabled]
 Color=56,56,56
 ColorAmount=0
@@ -161,7 +164,7 @@ WheelScrollLines=3
 contrast=5
 
 [KDE-Global GUI Settings]
-GraphicEffectsLevel=6
+GraphicEffectsLevel=1
 
 [KFileDialog Settings]
 Automatically select filename extension=true
@@ -202,7 +205,7 @@ DisabledColor2=0,0,0
 DisabledEffect=togray
 DisabledSemiTransparent=true
 DisabledValue=1
-Size=22
+Size=32
 
 [PanelIcons]
 ActiveColor=169,156,255
@@ -267,7 +270,7 @@ DisabledColor2=0,0,0
 DisabledEffect=togray
 DisabledSemiTransparent=true
 DisabledValue=1
-Size=22
+Size=32
 
 [WM]
 activeBackground=76,135,201
