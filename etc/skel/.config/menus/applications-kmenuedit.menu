@@ -911,14 +911,6 @@
   </Layout>
  </Menu>
  <Menu>
-  <Name>Applications-2</Name>
-  <NotDeleted/>
- </Menu>
- <Move>
-  <Old>Applications</Old>
-  <New>Applications-2</New>
- </Move>
- <Menu>
   <Name>Web-Apps-5</Name>
   <NotDeleted/>
   <Include>
@@ -1014,7 +1006,6 @@
   <Separator/>
   <Menuname>System-4</Menuname>
   <Menuname>Settingsmenu-4</Menuname>
-  <Menuname>Applications-2</Menuname>
   <Separator/>
   <Merge type="files"/>
   <Filename>kde4-kfind.desktop</Filename>
@@ -1037,7 +1028,6 @@
    <Menuname>Utilities</Menuname>
    <Menuname>wine-wine</Menuname>
   </Layout>
-  <Directory>Applications-2.directory</Directory>
   <Menu>
    <Name>Development</Name>
    <NotDeleted/>
