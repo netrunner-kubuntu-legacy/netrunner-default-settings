@@ -256,7 +256,7 @@ ShowCommunications=true
 ShowHardware=true
 ShowSystemServices=true
 ShowUnknown=true
-alwaysShown=Konversation,ktp_presence
+alwaysShown=Konversation,org.kde.ktp_presence
 hidden=KDE Wallet Manager,battery,org.kde.notifications
 
 [Containments][2][Applets][8][Configuration][Applets][1]
@@ -282,7 +282,7 @@ DialogWidth=780
 [Containments][2][Applets][8][Configuration][Applets][107]
 geometry=85,4.5,24,24
 immutability=1
-plugin=ktp_presence
+plugin=org.kde.ktp_presence
 zvalue=0
 
 [Containments][2][Applets][8][Configuration][Applets][107][Shortcuts]
