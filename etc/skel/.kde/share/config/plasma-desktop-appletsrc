@@ -134,6 +134,7 @@ Share=false
 format=NameDescription
 icon=/usr/share/netrunner/netrunner-kmenu.png
 maxRecentApps=5
+showMenuTitles=true
 views=RecentlyUsedApplications,Applications,RunCommand,Leave
 
 [Containments][2][Applets][22][LayoutInformation]
