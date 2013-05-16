@@ -24,10 +24,6 @@ idleTime=600000
 lidAction=1
 powerButtonAction=8
 
-[Battery][SuspendSession]
-idleTime=1800000
-suspendType=1
-
 [LowBattery][BrightnessControl]
 value=38
 
