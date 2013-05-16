@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=System;
+Comment=Make a bootable USB stick
+Exec=mintstick
+Icon=system-run
+Name=USB Image Writer
+NoDisplay=true
+OnlyShowIn=KDE;
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=

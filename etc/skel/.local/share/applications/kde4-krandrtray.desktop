@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=Qt;KDE;System;
+Comment=A panel applet for resizing and reorientating X screens.
+Exec=krandrtray
+GenericName=Screen Resize & Rotate
+Icon=preferences-desktop-display-randr
+Name=KRandRTray
+NoDisplay=true
+OnlyShowIn=KDE;
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
