@@ -25,9 +25,7 @@ manage activities=false
 remove=true
 
 [Containments][1]
-ActionPluginsSource=Global
-activity=New Activity
-activityId=d8911271-2e64-4086-b8b7-02071bff37cf
+activity=
 alignToGrid=true
 blankLabel=false
 clickForFolderPreviews=false
@@ -35,10 +33,7 @@ customIconSize=64
 desktop=-1
 flow=0
 formfactor=0
-geometry=0,0,1680,1050
 immutability=1
-lastDesktop=-1
-lastScreen=0
 location=0
 numTextLines=3
 plugin=folderview
@@ -90,7 +85,6 @@ activity=
 activityId=
 desktop=-1
 formfactor=2
-geometry=0,-41,1680,35
 immutability=1
 lastDesktop=-1
 lastScreen=0
@@ -383,7 +377,3 @@ Order=8
 [Containments][2][Applets][8][PopupApplet]
 DialogHeight=224
 DialogWidth=254
-
-[Containments][2][Configuration]
-maximumSize=1680,35
-minimumSize=1680,35
