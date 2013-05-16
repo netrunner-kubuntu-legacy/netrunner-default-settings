@@ -1,20 +1,2 @@
-[Devices][/org/freedesktop/Hal/devices/volume_label_Netrunner_2_Blacklight]
-EverMounted=true
-Icon=media-optical
-LastNameSeen=Netrunner 2 Blacklight
-LastSeenMounted=true
-
-[Devices][/org/freedesktop/Hal/devices/volume_uuid_449e253d_1a67_454f_912f_d74adbbfc3ac]
-Icon=drive-harddisk
-LastNameSeen=7.6 GiB Hard Drive
-LastSeenMounted=false
-
-[Devices][/org/freedesktop/Hal/devices/volume_uuid_7cc9c9aa_e820_4073_abc7_b7be994c708c]
-Icon=drive-harddisk
-LastNameSeen=4.7 GiB Hard Drive
-LastSeenMounted=false
-
-[Devices][/org/freedesktop/Hal/devices/volume_uuid_960d5c25_c6dd_4836_990a_82d2504612a6]
-Icon=drive-harddisk
-LastNameSeen=7.6 GiB Hard Drive
-LastSeenMounted=false
+[General]
+AutomountEnabled=true
