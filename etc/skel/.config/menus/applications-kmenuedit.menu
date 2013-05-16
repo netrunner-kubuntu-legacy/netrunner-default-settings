@@ -625,6 +625,8 @@
    <Filename>Virtualbox.desktop</Filename>
    <Filename>virtualbox.desktop</Filename>
    <Filename>kde4-karbon.desktop</Filename>
+   <Filename>ndisgtk.desktop</Filename>
+   <Filename>ndisgtk-kde.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
@@ -690,12 +692,16 @@
   <Exclude>
    <Filename>virtualbox.desktop</Filename>
    <Filename>kde4-k3b.desktop</Filename>
+   <Filename>ndisgtk.desktop</Filename>
+   <Filename>ndisgtk-kde.desktop</Filename>
   </Exclude>
   <Layout>
    <Merge type="menus"/>
    <Menuname>ScreenSavers</Menuname>
    <Menuname>Terminal</Menuname>
    <Merge type="files"/>
+   <Filename>kde4-ubiquity-kdeui.desktop</Filename>
+   <Filename>kde4-nepomukcleaner.desktop</Filename>
    <Filename>kde4-my-computer.desktop</Filename>
    <Filename>jockey-kde.desktop</Filename>
    <Filename>apturl.desktop</Filename>
@@ -993,28 +999,6 @@
   <Old>Utilities</Old>
   <New>Utilities-2</New>
  </Move>
- <Layout>
-  <Merge type="menus"/>
-  <Menuname>Applications-3</Menuname>
-  <Menuname>Web-Games-2</Menuname>
-  <Menuname>Web-Sites-3</Menuname>
-  <Menuname>.hidden</Menuname>
-  <Menuname>Debian</Menuname>
-  <Menuname>Games</Menuname>
-  <Menuname>Science-2</Menuname>
-  <Menuname>Web-Apps-5</Menuname>
-  <Separator/>
-  <Menuname>System-4</Menuname>
-  <Menuname>Settingsmenu-4</Menuname>
-  <Separator/>
-  <Merge type="files"/>
-  <Filename>kde4-kfind.desktop</Filename>
-  <Filename>virtualbox.desktop</Filename>
-  <Filename>firefox-marketplace.desktop</Filename>
-  <Separator/>
-  <Filename>kde4-Help.desktop</Filename>
-  <Filename>kde4-Home.desktop</Filename>
- </Layout>
  <Menu>
   <Name>Applications-3</Name>
   <Layout>
@@ -1092,5 +1076,37 @@
  <Move>
   <Old>wine-wine</Old>
   <New>Applications-3/wine-wine</New>
+ </Move>
+ <Layout>
+  <Merge type="menus"/>
+  <Menuname>Applications</Menuname>
+  <Menuname>Applications-3</Menuname>
+  <Menuname>Web-Games-2</Menuname>
+  <Menuname>Web-Sites-3</Menuname>
+  <Menuname>.hidden</Menuname>
+  <Menuname>Debian</Menuname>
+  <Menuname>Games</Menuname>
+  <Menuname>Science-2</Menuname>
+  <Menuname>Web-Apps-5</Menuname>
+  <Separator/>
+  <Menuname>Utilities-3</Menuname>
+  <Menuname>System-4</Menuname>
+  <Menuname>Settingsmenu-4</Menuname>
+  <Separator/>
+  <Merge type="files"/>
+  <Filename>kde4-kfind.desktop</Filename>
+  <Filename>virtualbox.desktop</Filename>
+  <Filename>firefox-marketplace.desktop</Filename>
+  <Separator/>
+  <Filename>kde4-Help.desktop</Filename>
+  <Filename>kde4-Home.desktop</Filename>
+ </Layout>
+ <Menu>
+  <Name>Utilities-3</Name>
+  <NotDeleted/>
+ </Menu>
+ <Move>
+  <Old>Applications-3/Utilities</Old>
+  <New>Utilities-3</New>
  </Move>
 </Menu>

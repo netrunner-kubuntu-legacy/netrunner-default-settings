@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=System;Settings;
+Comment=Ndiswrapper driver installation tool
+Exec=kdesu /usr/sbin/ndisgtk -- --kde
+GenericName=
+Icon=ndisgtk.png
+Name=Windows Wireless Drivers
+NoDisplay=false
+OnlyShowIn=KDE;
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
+X-Ubuntu-Gettext-Domain=ndisgtk
