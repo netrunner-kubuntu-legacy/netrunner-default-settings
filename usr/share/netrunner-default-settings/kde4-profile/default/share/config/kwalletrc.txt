@@ -1,0 +1,20 @@
+[Auto Allow]
+kdewallet=kwalletmanager
+
+[Auto Deny]
+kdewallet=
+
+[Wallet]
+Silently Create Initial Wallet=true
+Close When Idle=false
+Close on Screensaver=false
+Default Wallet=kdewallet
+Enabled=true
+First Use=false
+Idle Timeout=10
+Launch Manager=false
+Leave Manager Open=false
+Leave Open=true
+Prompt on Open=false
+Use One Wallet=true
+
