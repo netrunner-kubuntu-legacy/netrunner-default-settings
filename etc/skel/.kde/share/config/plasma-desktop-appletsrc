@@ -24,9 +24,10 @@ lock widgets=true
 manage activities=false
 remove=true
 
-
 [Containments][1]
-activity=
+ActionPluginsSource=Global
+activity=New Activity
+activityId=d8911271-2e64-4086-b8b7-02071bff37cf
 alignToGrid=true
 blankLabel=false
 clickForFolderPreviews=false
@@ -34,7 +35,10 @@ customIconSize=64
 desktop=-1
 flow=0
 formfactor=0
+geometry=0,0,1680,1050
 immutability=1
+lastDesktop=-1
+lastScreen=0
 location=0
 numTextLines=3
 plugin=folderview
@@ -47,6 +51,9 @@ wallpaperplugin=image
 wallpaperpluginmode=SingleImage
 zvalue=0
 
+[Containments][1][ToolBox]
+corner=1
+offset=0
 
 [Containments][1][Wallpaper][color]
 backgroundMode=0
@@ -61,25 +68,42 @@ wallpaper=/usr/share/wallpapers/Enigma - 1306 - Default
 wallpapercolor=56,111,150
 wallpaperposition=2
 
-[Containments][1][ToolBox]
-corner=1
-offset=0
+[Containments][111]
+ActionPluginsSource=Global
+activity=New Activity
+activityId=37f37aa5-c1dd-4d74-a474-631c555153e5
+desktop=-1
+formfactor=0
+geometry=1686,0,800,600
+immutability=1
+lastDesktop=-1
+lastScreen=0
+location=0
+plugin=desktop
+screen=-1
+wallpaperplugin=image
+wallpaperpluginmode=SingleImage
+zvalue=0
 
 [Containments][2]
 activity=
+activityId=
 desktop=-1
 formfactor=2
+geometry=0,-41,1680,35
 immutability=1
+lastDesktop=-1
+lastScreen=0
 location=4
 plugin=panel
 screen=0
-zvalue=150
+zvalue=0
 
-
-
+[Containments][2][ActionPlugins]
+RightButton;NoModifier=contextmenu
 
 [Containments][2][Applets][103]
-geometry=1628,2,9,33
+geometry=1371,0,9,35
 immutability=1
 plugin=panelspacer_internal
 zvalue=50
@@ -88,19 +112,28 @@ zvalue=50
 FixedSize=true
 
 [Containments][2][Applets][103][LayoutInformation]
-Order=10
+Order=7
 
 [Containments][2][Applets][110]
-geometry=1624,3,32,32
+geometry=1624,0,32,35
 immutability=1
 plugin=org.kde.notifications
 zvalue=0
 
 [Containments][2][Applets][110][LayoutInformation]
-Order=13
+Order=10
+
+[Containments][2][Applets][112]
+geometry=169,0,9,35
+immutability=1
+plugin=panelspacer_internal
+zvalue=55
+
+[Containments][2][Applets][112][Configuration]
+FixedSize=true
 
 [Containments][2][Applets][12]
-geometry=124,2,33,33
+geometry=130,0,35,35
 immutability=1
 plugin=icon
 zvalue=24
@@ -112,7 +145,7 @@ Url=file:///usr/share/applications/firefox.desktop
 Order=4
 
 [Containments][2][Applets][17]
-geometry=1505,2,33,33
+geometry=1332,0,35,35
 immutability=1
 plugin=icon
 zvalue=47
@@ -124,7 +157,7 @@ Url=file:///usr/share/applications/kde4/yakuake.desktop
 Order=6
 
 [Containments][2][Applets][22]
-geometry=0,2,33,33
+geometry=0,0,35,35
 immutability=1
 plugin=simplelauncher
 zvalue=32
@@ -144,7 +177,7 @@ Order=0
 global=Alt+F1
 
 [Containments][2][Applets][29]
-geometry=87,2,33,33
+geometry=91,0,35,35
 immutability=1
 plugin=icon
 zvalue=37
@@ -156,7 +189,7 @@ Url=file:///usr/share/netrunner/panel/launchers/dolphin.desktop
 Order=3
 
 [Containments][2][Applets][30]
-geometry=74,2,9,33
+geometry=78,0,9,35
 immutability=1
 plugin=panelspacer_internal
 zvalue=51
@@ -168,7 +201,7 @@ FixedSize=true
 Order=2
 
 [Containments][2][Applets][31]
-geometry=1793,2,66,33
+geometry=1550,0,70,35
 immutability=1
 plugin=digital-clock
 zvalue=28
@@ -202,14 +235,14 @@ sourceAppletId=31
 sourceAppletPluginName=digital-clock
 
 [Containments][2][Applets][31][LayoutInformation]
-Order=12
+Order=9
 
 [Containments][2][Applets][31][PopupApplet]
 DialogHeight=232
 DialogWidth=254
 
 [Containments][2][Applets][34]
-geometry=37,2,33,33
+geometry=39,0,35,35
 immutability=1
 plugin=icon
 zvalue=40
@@ -221,7 +254,7 @@ Url=file:///usr/share/applications/kde4/krunner.desktop
 Order=1
 
 [Containments][2][Applets][6]
-geometry=161,2,1340,33
+geometry=182,0,1146,35
 immutability=1
 plugin=tasks
 zvalue=52
@@ -243,7 +276,7 @@ sortingStrategy=1
 Order=5
 
 [Containments][2][Applets][8]
-geometry=1641,2,148,33
+geometry=1384,0,162,35
 immutability=1
 plugin=systemtray
 zvalue=16
@@ -260,7 +293,7 @@ alwaysShown=Konversation,org.kde.ktp-presence
 hidden=KDE Wallet Manager,battery,org.kde.notifications
 
 [Containments][2][Applets][8][Configuration][Applets][1]
-geometry=4,116,24,24
+geometry=0,0,24,24
 immutability=1
 plugin=message-indicator
 zvalue=0
@@ -270,17 +303,17 @@ DialogHeight=219
 DialogWidth=384
 
 [Containments][2][Applets][8][Configuration][Applets][100]
-geometry=84,0,24,19
+geometry=0,0,24,24
 immutability=1
 plugin=org.kde.networkmanagement
 zvalue=0
 
 [Containments][2][Applets][8][Configuration][Applets][100][PopupApplet]
-DialogHeight=340
-DialogWidth=780
+DialogHeight=231
+DialogWidth=802
 
 [Containments][2][Applets][8][Configuration][Applets][107]
-geometry=85,4.5,24,24
+geometry=0,0,24,24
 immutability=1
 plugin=org.kde.ktp-presence
 zvalue=0
@@ -289,7 +322,7 @@ zvalue=0
 global=
 
 [Containments][2][Applets][8][Configuration][Applets][108]
-geometry=4,32,24,24
+geometry=0,0,24,24
 immutability=1
 plugin=battery
 zvalue=0
@@ -297,23 +330,23 @@ zvalue=0
 [Containments][2][Applets][8][Configuration][Applets][108][Shortcuts]
 global=
 
-
-
-[Containments][2][Applets][8][Configuration][Applets][2]
-geometry=169,4.5,24,24
+[Containments][2][Applets][8][Configuration][Applets][109]
+geometry=0,0,24,24
 immutability=1
-plugin=notifier
+plugin=printmanager
 zvalue=0
 
+[Containments][2][Applets][8][Configuration][Applets][111]
+plugin=notifications
 
 [Containments][2][Applets][8][Configuration][Applets][2]
-geometry=4,88,24,24
+geometry=0,0,24,24
 immutability=1
 plugin=notifier
 zvalue=0
 
 [Containments][2][Applets][8][Configuration][Applets][2][PopupApplet]
-DialogHeight=364
+DialogHeight=346
 DialogWidth=314
 
 [Containments][2][Applets][8][Configuration][Applets][91][Configuration]
@@ -341,11 +374,16 @@ sourceAppletId=8
 sourceAppletPluginName=systemtray
 
 [Containments][2][Applets][8][Configuration][Shortcuts]
+SystemTray-Klipper-8=Ctrl+Alt+V
 Systemtray-Klipper-8=Ctrl+Alt+V
 
 [Containments][2][Applets][8][LayoutInformation]
-Order=11
+Order=8
 
 [Containments][2][Applets][8][PopupApplet]
 DialogHeight=224
 DialogWidth=254
+
+[Containments][2][Configuration]
+maximumSize=1680,35
+minimumSize=1680,35
