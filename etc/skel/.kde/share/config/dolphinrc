@@ -20,6 +20,9 @@ FontWeight=50
 IconSize=16
 PreviewSize=16
 
+[PlacesPanel]
+IconSize=22
+
 [General]
 FirstRun=false
 GlobalViewProps=true
@@ -34,12 +37,12 @@ ViewPropsTimestamp=2012,2,27,15,30,29
 [IconsMode]
 FontWeight=50
 GridSpacing=0
-IconSize=64
+IconSize=80
 ItemHeight=131
 ItemWidth=160
-MaximumTextLines=3
+MaximumTextLines=4
 NumberOfTextlines=3
-PreviewSize=64
+PreviewSize=80
 
 [KFileDialog Settings]
 Autoplay sounds=true
@@ -121,9 +124,7 @@ Width 1920=1629
 Width 640=641
 Width 800=800
 
-[MainWindow][Toolbar mainToolBar]
-IconSize=32
-ToolButtonStyle=IconOnly
+
 
 [MainWindow][Toolbar searchToolBar]
 IconSize=32
@@ -134,7 +135,7 @@ CompletionMode=5
 History=kate
 
 [PreviewSettings]
-Plugins=directorythumbnail,imagethumbnail,jpegthumbnail,windowsexethumbnail,kffmpegthumbnailer
+Plugins=imagethumbnail,jpegthumbnail,windowsexethumbnail,kffmpegthumbnailer
 
 [SettingsDialog]
 Height 600=488
@@ -145,7 +146,7 @@ Width 1597=551
 Width 800=523
 
 [Toolbar mainToolBar]
-IconSize=32
+ToolButtonStyle=IconOnly
 
 [Toolbar searchToolBar]
 IconSize=32
