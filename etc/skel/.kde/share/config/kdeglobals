@@ -137,14 +137,14 @@ ColorScheme=Enigma
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
-desktopFont=Open Sans,12,-1,5,50,0,0,0,0,0
-fixed=Monospace,10,-1,5,50,0,0,0,0,0
-font=Open Sans,11,-1,5,50,0,0,0,0,0
-menuFont=Open Sans,11,-1,5,50,0,0,0,0,0
+desktopFont=Roboto,12,-1,5,50,0,0,0,0,0
+fixed=Ubuntu Mono,11,-1,5,50,0,0,0,0,0
+font=Roboto,11,-1,5,50,0,0,0,0,0
+menuFont=Roboto,11,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
-smallestReadableFont=Open Sans,11,-1,5,50,0,0,0,0,0
-taskbarFont=Open Sans,12,-1,5,50,0,0,0,0,0
-toolBarFont=Open Sans,11,-1,5,50,0,0,0,0,0
+smallestReadableFont=Roboto,11,-1,5,50,0,0,0,0,0
+taskbarFont=Roboto,12,-1,5,50,0,0,0,0,0
+toolBarFont=Roboto,11,-1,5,50,0,0,0,0,0
 widgetStyle=oxygen
 
 [Icons]
@@ -275,7 +275,7 @@ Size=32
 [WM]
 activeBackground=76,135,201
 activeBlend=255,255,255
-activeFont=Open Sans,12,-1,5,75,0,0,0,0,0
+activeFont=Droid Sans,13,-1,5,75,0,0,0,0,0
 activeForeground=255,255,255
 inactiveBackground=224,223,222
 inactiveBlend=75,71,67
