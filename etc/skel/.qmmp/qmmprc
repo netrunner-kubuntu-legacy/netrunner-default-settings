@@ -41,7 +41,7 @@ show_anchor=false
 show_plalists=false
 show_popup=false
 opacity=0.92
-Font="Open Sans,9,-1,5,50,0,0,0,0,0"
+Font="Roboto,9,-1,5,50,0,0,0,0,0"
 pos=@Point(510 303)
 repeatable=false
 shuffle=false
@@ -58,7 +58,7 @@ opacity=0.92
 bitmap_font=true
 start_hidden=false
 hide_on_close=false
-Font="Open Sans,8,-1,5,50,0,0,0,0,0"
+Font="Roboto,7,-1,5,50,0,0,0,0,0"
 pos=@Point(510 187)
 last_dir=/home
 
@@ -199,8 +199,8 @@ disp_elapsed=true
 pl_size=@Size(275 116)
 pl_shaded=false
 eq_shaded=false
-mw_font="Open Sans,8,-1,5,63,0,0,0,0,0"
-pl_font="Open Sans,9,-1,5,63,0,0,0,0,0"
+mw_font="Roboto,7,-1,5,50,0,0,0,0,0"
+pl_font="Roboto,9,-1,5,63,0,0,0,0,0"
 
 [Ui]
 current_plugin=skinned

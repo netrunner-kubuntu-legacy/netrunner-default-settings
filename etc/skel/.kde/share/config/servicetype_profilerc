@@ -1,0 +1,6 @@
+[PhononBackend]
+Entry0_Preference=2
+Entry0_Service=phononbackends/vlc.desktop
+Entry1_Preference=1
+Entry1_Service=phononbackends/gstreamer.desktop
+NumberOfEntries=2

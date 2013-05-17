@@ -106,7 +106,7 @@ zvalue=50
 FixedSize=true
 
 [Containments][2][Applets][103][LayoutInformation]
-Order=7
+Order=8
 
 [Containments][2][Applets][110]
 geometry=1624,0,32,35
@@ -115,7 +115,7 @@ plugin=org.kde.notifications
 zvalue=0
 
 [Containments][2][Applets][110][LayoutInformation]
-Order=10
+Order=11
 
 [Containments][2][Applets][112]
 geometry=169,0,9,35
@@ -125,6 +125,9 @@ zvalue=55
 
 [Containments][2][Applets][112][Configuration]
 FixedSize=true
+
+[Containments][2][Applets][112][LayoutInformation]
+Order=5
 
 [Containments][2][Applets][12]
 geometry=130,0,35,35
@@ -148,7 +151,7 @@ zvalue=47
 Url=file:///usr/share/applications/kde4/yakuake.desktop
 
 [Containments][2][Applets][17][LayoutInformation]
-Order=6
+Order=7
 
 [Containments][2][Applets][22]
 geometry=0,0,35,35
@@ -229,7 +232,7 @@ sourceAppletId=31
 sourceAppletPluginName=digital-clock
 
 [Containments][2][Applets][31][LayoutInformation]
-Order=9
+Order=10
 
 [Containments][2][Applets][31][PopupApplet]
 DialogHeight=232
@@ -267,7 +270,7 @@ showTooltip=true
 sortingStrategy=1
 
 [Containments][2][Applets][6][LayoutInformation]
-Order=5
+Order=6
 
 [Containments][2][Applets][8]
 geometry=1384,0,162,35
@@ -372,7 +375,7 @@ SystemTray-Klipper-8=Ctrl+Alt+V
 Systemtray-Klipper-8=Ctrl+Alt+V
 
 [Containments][2][Applets][8][LayoutInformation]
-Order=8
+Order=9
 
 [Containments][2][Applets][8][PopupApplet]
 DialogHeight=224

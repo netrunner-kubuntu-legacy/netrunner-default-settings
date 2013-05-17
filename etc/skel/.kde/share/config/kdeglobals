@@ -275,7 +275,7 @@ Size=32
 [WM]
 activeBackground=76,135,201
 activeBlend=255,255,255
-activeFont=Droid Sans,13,-1,5,75,0,0,0,0,0
+activeFont=Droid Sans,13,-1,5,50,0,0,0,0,0
 activeForeground=255,255,255
 inactiveBackground=224,223,222
 inactiveBlend=75,71,67
