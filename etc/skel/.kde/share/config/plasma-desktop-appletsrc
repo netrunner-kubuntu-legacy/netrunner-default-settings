@@ -333,9 +333,6 @@ immutability=1
 plugin=printmanager
 zvalue=0
 
-[Containments][2][Applets][8][Configuration][Applets][111]
-plugin=notifications
-
 [Containments][2][Applets][8][Configuration][Applets][2]
 geometry=0,0,24,24
 immutability=1
