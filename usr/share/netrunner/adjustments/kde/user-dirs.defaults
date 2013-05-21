@@ -9,7 +9,7 @@ DOWNLOAD=Downloads
 DOCUMENTS=Documents
 MUSIC=Music
 PICTURES=Pictures
-PROJECTS=Projects
+#PROJECTS=Projects
 VIDEOS=Videos
 # Another alternative is:
 #MUSIC=Documents/Music
