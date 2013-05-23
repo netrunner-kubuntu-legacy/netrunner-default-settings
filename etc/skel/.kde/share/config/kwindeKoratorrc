@@ -51,8 +51,3 @@ TitleAlignment=AlignHCenter
 UseMenuImage=true
 UseShdtext=false
 
-[PATHS]
-ButtonsPath=/home/fred/.kde/share/apps/deKorator/themes/Windows3.1-theme/buttons
-FramesPath=/home/fred/.kde/share/apps/deKorator/themes/Windows3.1-theme/deco
-MasksPath=/home/fred/.kde/share/apps/deKorator/themes/Windows3.1-theme/masks
-UseMasks=true
