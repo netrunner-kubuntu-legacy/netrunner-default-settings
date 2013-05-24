@@ -1,0 +1,21 @@
+[Desktop Entry]
+Name=Caledonia2
+Comment=Elegant and minimalist dark theme
+Comment[es]=Tema oscuro elegante y minimalista
+Comment[x-test]=xxElegant and minimalist dark themexx
+
+X-KDE-PluginInfo-Author=Malcer
+X-KDE-PluginInfo-Email=malcer@gmx.com
+X-KDE-PluginInfo-Name=Caledonia2
+X-KDE-PluginInfo-Version=1.3
+X-KDE-PluginInfo-Website=http://sourceforge.net/projects/caledonia/ || http://malcer.deviantart.com/ || http://ext4.wordpress.com/
+X-KDE-PluginInfo-Category=Plasma Theme
+X-KDE-PluginInfo-License=Creative Commons BY-SA 3.0
+X-KDE-PluginInfo-EnabledByDefault=true
+
+[Wallpaper]
+defaultWallpaperTheme=pattern
+defaultFileSuffix=.jpg
+defaultWidth=1920
+defaultHeight=1200
+
