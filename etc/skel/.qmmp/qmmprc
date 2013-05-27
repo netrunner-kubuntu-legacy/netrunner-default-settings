@@ -159,7 +159,7 @@ left=80
 right=80
 
 [Skinned]
-skin_path=/usr/share/qmmp/sklins/Refugee
+skin_path=/usr/share/qmmp/skins/Refugee
 vis_peaks_falloff=3
 vis_analyzer_falloff=3
 vis_show_peaks=true
