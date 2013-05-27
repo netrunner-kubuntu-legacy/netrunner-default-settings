@@ -112,6 +112,10 @@ then
   cp /usr/share/netrunner/adjustments/Presentation.odp /usr/share/templates/.source/Presentation.odp
 fi
 
+if [ -e /usr/share/kde4/services/plasma-containment-newspaper.desktop ]; then
+sed -i "s@^X-KDE-ServiceTypes=Plasma/Applet,Plasma/Containment@#X-KDE-ServiceTypes=Plasma/Applet,Plasma/Containment@" /usr/share/kde4/services/plasma-containment-newspaper.desktop
+fi
+
 # transmission
 if [ -e /usr/share/applications/transmission-qt.desktop ]
 then
