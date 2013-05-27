@@ -2,7 +2,7 @@
 FileDialog=qt_dialog
 
 [%General]
-skin_path=/usr/share/audacious/Skins/Refugee
+skin_path=/usr/share/qmmp/skins/Refugee
 resume_on_startup=false
 skin_cursors=false
 skin_name=Refugee
@@ -15,7 +15,7 @@ restrict_filters=@Invalid()
 exclude_filters=*.cue
 use_default_pl=false
 default_pl_name=Playlist
-last_dir=/home/netrunner
+last_dir=/home
 
 [Visualization]
 peaks_falloff=3
@@ -159,7 +159,7 @@ left=80
 right=80
 
 [Skinned]
-skin_path=:/default
+skin_path=/usr/share/qmmp/sklins/Refugee
 vis_peaks_falloff=3
 vis_analyzer_falloff=3
 vis_show_peaks=true
@@ -179,7 +179,7 @@ eq_opacity=0.92
 pl_opacity=0.92
 bitmap_font=true
 skin_cursors=false
-skin_name=default
+skin_name=Refugee
 start_hidden=false
 hide_on_close=false
 mw_pos=@Point(100 100)
