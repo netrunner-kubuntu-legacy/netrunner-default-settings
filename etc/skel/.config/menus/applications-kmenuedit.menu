@@ -624,10 +624,18 @@
   <Include>
    <Filename>Virtualbox.desktop</Filename>
    <Filename>virtualbox.desktop</Filename>
-   <Filename>kde4-karbon.desktop</Filename>
    <Filename>ndisgtk.desktop</Filename>
    <Filename>ndisgtk-kde.desktop</Filename>
   </Include>
+  <Layout>
+   <Merge type="files"/>
+   <Filename>virtualbox.desktop</Filename>
+   <Filename>ndisgtk.desktop</Filename>
+   <Filename>ndisgtk-kde.desktop</Filename>
+  </Layout>
+  <Exclude>
+   <Filename>kde4-karbon.desktop</Filename>
+  </Exclude>
  </Menu>
  <Menu>
   <Name>Web-Apps-4</Name>
@@ -1023,6 +1031,51 @@
   <Menu>
    <Name>Graphics</Name>
    <NotDeleted/>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>gimp.desktop</Filename>
+    <Filename>kde4-gwenview.desktop</Filename>
+    <Filename>kde4-kamoso.desktop</Filename>
+    <Filename>kde4-krita_psd.desktop</Filename>
+    <Filename>kde4-krita_raw.desktop</Filename>
+    <Filename>kde4-krita_ora.desktop</Filename>
+    <Filename>kde4-krita_tiff.desktop</Filename>
+    <Filename>kde4-krita_ppm.desktop</Filename>
+    <Filename>kde4-krita_bmp.desktop</Filename>
+    <Filename>kde4-krita_pdf.desktop</Filename>
+    <Filename>kde4-krita_png.desktop</Filename>
+    <Filename>kde4-krita_jpeg.desktop</Filename>
+    <Filename>kde4-krita_odg.desktop</Filename>
+    <Filename>kde4-krita_xcf.desktop</Filename>
+    <Filename>kde4-krita_exr.desktop</Filename>
+    <Filename>kde4-krita_jp2.desktop</Filename>
+    <Filename>kde4-krita.desktop</Filename>
+    <Filename>kde4-karbon.desktop</Filename>
+    <Filename>kde4-ksnapshot.desktop</Filename>
+    <Filename>libreoffice-draw.desktop</Filename>
+    <Filename>kde4-okularApplication_epub.desktop</Filename>
+    <Filename>kde4-okularApplication_chm.desktop</Filename>
+    <Filename>kde4-okularApplication_kimgio.desktop</Filename>
+    <Filename>kde4-okularApplication_dvi.desktop</Filename>
+    <Filename>kde4-okularApplication_comicbook.desktop</Filename>
+    <Filename>kde4-okularApplication_plucker.desktop</Filename>
+    <Filename>kde4-okularApplication_djvu.desktop</Filename>
+    <Filename>kde4-okularApplication_pdf.desktop</Filename>
+    <Filename>kde4-okularApplication_fax.desktop</Filename>
+    <Filename>kde4-okularApplication_tiff.desktop</Filename>
+    <Filename>kde4-okularApplication_ghostview.desktop</Filename>
+    <Filename>kde4-okularApplication_xps.desktop</Filename>
+    <Filename>kde4-okularApplication_fb.desktop</Filename>
+    <Filename>kde4-okularApplication_ooo.desktop</Filename>
+    <Filename>kde4-okular.desktop</Filename>
+    <Filename>kde4-skanlite.desktop</Filename>
+    <Separator/>
+    <Merge type="menus"/>
+    <Menuname>More</Menuname>
+   </Layout>
+   <Include>
+    <Filename>kde4-karbon.desktop</Filename>
+   </Include>
   </Menu>
   <Menu>
    <Name>Internet</Name>
@@ -1077,6 +1130,14 @@
   <Old>wine-wine</Old>
   <New>Applications-3/wine-wine</New>
  </Move>
+ <Menu>
+  <Name>Utilities-3</Name>
+  <NotDeleted/>
+ </Menu>
+ <Move>
+  <Old>Applications-3/Utilities</Old>
+  <New>Utilities-3</New>
+ </Move>
  <Layout>
   <Merge type="menus"/>
   <Menuname>Applications</Menuname>
@@ -1088,6 +1149,7 @@
   <Menuname>Games</Menuname>
   <Menuname>Science-2</Menuname>
   <Menuname>Web-Apps-5</Menuname>
+  <Menuname>wine-wine-2</Menuname>
   <Separator/>
   <Menuname>Utilities-3</Menuname>
   <Menuname>System-4</Menuname>
@@ -1102,11 +1164,11 @@
   <Filename>kde4-Home.desktop</Filename>
  </Layout>
  <Menu>
-  <Name>Utilities-3</Name>
+  <Name>wine-wine-2</Name>
   <NotDeleted/>
  </Menu>
  <Move>
-  <Old>Applications-3/Utilities</Old>
-  <New>Utilities-3</New>
+  <Old>Applications-3/wine-wine</Old>
+  <New>wine-wine-2</New>
  </Move>
 </Menu>
