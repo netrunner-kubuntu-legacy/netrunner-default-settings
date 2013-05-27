@@ -1,0 +1,12 @@
+[Desktop Entry]
+Comment=
+Exec=firefox -no-remote -P "prism"  http://www.netrunnerlinux.com/steam.html
+Icon=/usr/share/icons/Netrunner/scalable/apps/steam.png
+Name=Install Steam (delete if done)
+NoDisplay=false
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
