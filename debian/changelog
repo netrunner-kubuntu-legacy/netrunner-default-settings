@@ -1,3 +1,9 @@
+netrunner-default-settings (1.0.10) enigma-1306; urgency=low
+
+  * RC2
+
+ -- Frédéric Gaudet <fred@linuxmint.com>  Mon, 27 May 2013 11:22:11 +0200
+
 netrunner-default-settings (1.0.9) enigma-1306; urgency=low
 
   * RC1
