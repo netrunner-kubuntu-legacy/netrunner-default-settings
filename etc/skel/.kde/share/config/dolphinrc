@@ -37,12 +37,12 @@ ViewPropsTimestamp=2012,2,27,15,30,29
 [IconsMode]
 FontWeight=50
 GridSpacing=0
-IconSize=80
+IconSize=64
 ItemHeight=131
 ItemWidth=160
 MaximumTextLines=4
 NumberOfTextlines=3
-PreviewSize=80
+PreviewSize=64
 
 [KFileDialog Settings]
 Autoplay sounds=true
