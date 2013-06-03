@@ -200,7 +200,7 @@ pl_size=@Size(275 116)
 pl_shaded=false
 eq_shaded=false
 mw_font="Roboto,7,-1,5,50,0,0,0,0,0"
-pl_font="Roboto,9,-1,5,63,0,0,0,0,0"
+pl_font="Roboto,9,-1,5,50,0,0,0,0,0"
 
 [Ui]
 current_plugin=skinned
