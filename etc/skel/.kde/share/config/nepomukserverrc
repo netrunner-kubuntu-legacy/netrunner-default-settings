@@ -2,7 +2,7 @@
 update_info=nepomukstrigiservice-migrate.upd:nepomukstrigiservice-migrate
 
 [Basic Settings]
-Start Nepomuk=true
+Start Nepomuk=false
 
 [Service-nepomukfileindexer]
 autostart=false
