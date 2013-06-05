@@ -1,0 +1,7 @@
+[Event]
+hideDistUpgradeNotifier=true
+hideUpdateNotifier=false
+
+[NotificationType]
+NotifyType=Combo
+Verbose=true
