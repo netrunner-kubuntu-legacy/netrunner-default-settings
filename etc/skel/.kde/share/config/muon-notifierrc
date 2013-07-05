@@ -1,6 +1,6 @@
 [Event]
 hideDistUpgradeNotifier=true
-hideUpdateNotifier=false
+hideUpdateNotifier=true
 
 [NotificationType]
 NotifyType=Combo
