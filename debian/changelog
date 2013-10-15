@@ -1,3 +1,10 @@
+netrunner-default-settings (1.0.21) saucy; urgency=low
+
+  * bump version for new Netrunner release
+  * change distro name to saucy
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 15 Oct 2013 11:37:30 +0200
+
 netrunner-default-settings (1.0.20) enigma-1306; urgency=low
 
   * Latest wiki changes
