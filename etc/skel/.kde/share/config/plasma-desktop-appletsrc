@@ -251,7 +251,7 @@ DialogWidth=384
 [Containments][2][Applets][8][Configuration][Applets][100]
 geometry=0,0,24,24
 immutability=1
-plugin=org.kde.networkmanagement
+plugin=org.kde.nm
 zvalue=0
 
 [Containments][2][Applets][8][Configuration][Applets][100][PopupApplet]
