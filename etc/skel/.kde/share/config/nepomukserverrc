@@ -2,15 +2,16 @@
 update_info=nepomukstrigiservice-migrate.upd:nepomukstrigiservice-migrate
 
 [Basic Settings]
-Start Nepomuk=false
+Start Nepomuk=true
 
 [Service-nepomukfileindexer]
-autostart=false
+autostart=true
 
 [Service-nepomukstrigiservice]
 autostart[$d]
 
 [main Settings]
 Maximum memory=50
+Port=1113
 Storage Dir[$e]=$HOME/.kde/share/apps/nepomuk/repository/main/
 Used Soprano Backend=virtuosobackend

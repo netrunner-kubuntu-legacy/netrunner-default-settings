@@ -6,25 +6,28 @@ if (panelIds.length == 1) {
 
 panel.height = 38;
 
-launcher = panel.addWidget("simplelauncher");
-launcher.writeConfig("format", "NameDescription");
-launcher.globalShortcut = "Alt+F1"
-launcher.writeConfig("icon", "/usr/share/netrunner/netrunner-kmenu.png");
-launcher.writeConfig("maxRecentApps", "5")
-launcher.writeConfig("views", "RecentlyUsedApplications,Applications,RunCommand,Leave");
+//launcher = panel.addWidget("simplelauncher");
+//launcher.writeConfig("format", "NameDescription");
+//launcher.globalShortcut = "Alt+F1"
+//launcher.writeConfig("icon", "/usr/share/netrunner/netrunner-kmenu.png");
+//launcher.writeConfig("maxRecentApps", "5")
+//launcher.writeConfig("views", "RecentlyUsedApplications,Applications,RunCommand,Leave");
+launcher = panel.addWidget("org.kde.homerun-kicker);
+launcher.writeConfig("buttonImage", "file:///usr/share/netrunner/netrunner-kmenu.png");
+launcher.writeConfig("useCustomButtonImage", "true");
  
-var krunner = panel.addWidget("icon");
-krunner.writeConfig("Url", "file:///usr/share/applications/kde4/krunner.desktop"); 
-krunner.writeConfig("Order", "1"); 
+//var krunner = panel.addWidget("icon");
+//krunner.writeConfig("Url", "file:///usr/share/applications/kde4/krunner.desktop"); 
+//krunner.writeConfig("Order", "1"); 
 
 
-var dolphin = panel.addWidget("icon");
-dolphin.writeConfig("Url", "file:///usr/share/applications/kde4/dolphin.desktop"); 
-dolphin.writeConfig("Order", "2"); 
+//var dolphin = panel.addWidget("icon");
+//dolphin.writeConfig("Url", "file:///usr/share/applications/kde4/dolphin.desktop"); 
+//dolphin.writeConfig("Order", "2"); 
 
-var firefox = panel.addWidget("icon");
-firefox.writeConfig("Url", "file:///usr/share/applications/kde4/firefox.desktop"); 
-firefox.writeConfig("Order", "3"); 
+//var firefox = panel.addWidget("icon");
+//firefox.writeConfig("Url", "file:///usr/share/applications/kde4/firefox.desktop"); 
+//firefox.writeConfig("Order", "3"); 
 
 
 tasks = panel.addWidget("tasks")

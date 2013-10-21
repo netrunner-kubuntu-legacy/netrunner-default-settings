@@ -1,8 +1,8 @@
 [ScreenSaver]
-Enabled=false
+Enabled=true
 LegacySaverEnabled=false
 Lock=false
 LockGrace=60000
 PlasmaEnabled=false
-Saver=asciiquarium.desktop
+Saver=kblank.desktop
 Timeout=900

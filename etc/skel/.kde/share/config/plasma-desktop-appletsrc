@@ -129,17 +129,18 @@ FixedSize=true
 [Containments][2][Applets][112][LayoutInformation]
 Order=5
 
-[Containments][2][Applets][12]
-geometry=130,0,35,35
+[Containments][2][Applets][22]
+geometry=0,0,35,35
 immutability=1
-plugin=icon
-zvalue=24
+plugin=org.kde.homerun-kicker
+zvalue=32
 
-[Containments][2][Applets][12][Configuration]
-Url=file:///usr/share/applications/firefox.desktop
+[Containments][2][Applets][22][Configuration][General]
+buttonImage=file:///usr/share/netrunner/netrunner-kmenu.png
+useCustomButtonImage=true
 
-[Containments][2][Applets][12][LayoutInformation]
-Order=4
+[Containments][2][Applets][22][LayoutInformation]
+Order=0
 
 [Containments][2][Applets][17]
 geometry=1332,0,35,35
@@ -152,38 +153,8 @@ Url=file:///usr/share/applications/kde4/yakuake.desktop
 
 [Containments][2][Applets][17][LayoutInformation]
 Order=7
-
-[Containments][2][Applets][22]
-geometry=0,0,35,35
-immutability=1
-plugin=simplelauncher
-zvalue=32
-
-[Containments][2][Applets][22][Configuration]
-Share=false
-format=NameDescription
-icon=/usr/share/netrunner/netrunner-kmenu.png
-maxRecentApps=5
-showMenuTitles=true
-views=RecentlyUsedApplications,Applications,RunCommand,Leave
-
-[Containments][2][Applets][22][LayoutInformation]
-Order=0
-
 [Containments][2][Applets][22][Shortcuts]
 global=Alt+F1
-
-[Containments][2][Applets][29]
-geometry=91,0,35,35
-immutability=1
-plugin=icon
-zvalue=37
-
-[Containments][2][Applets][29][Configuration]
-Url=file:///usr/share/netrunner/panel/launchers/dolphin.desktop
-
-[Containments][2][Applets][29][LayoutInformation]
-Order=3
 
 [Containments][2][Applets][30]
 geometry=78,0,9,35
@@ -238,36 +209,14 @@ Order=10
 DialogHeight=232
 DialogWidth=254
 
-[Containments][2][Applets][34]
-geometry=39,0,35,35
-immutability=1
-plugin=icon
-zvalue=40
-
-[Containments][2][Applets][34][Configuration]
-Url=file:///usr/share/applications/kde4/krunner.desktop
-
-[Containments][2][Applets][34][LayoutInformation]
-Order=1
-
 [Containments][2][Applets][6]
 geometry=182,0,1146,35
 immutability=1
-plugin=tasks
+plugin=expanding-icons-taskmanager
 zvalue=52
 
-[Containments][2][Applets][6][Configuration]
-Share=false
-forceRows=true
-groupWhenFull=true
-groupingStrategy=0
-highlightWindows=false
-maxRows=1
-showOnlyCurrentDesktop=true
-showOnlyCurrentScreen=false
-showOnlyMinimized=false
-showTooltip=true
-sortingStrategy=1
+[Containments][2][Applets][6][Configuration][Launchers]
+Items=file:///usr/share/applications/kde4/dolphin.desktop?wmClass=Dolphin,file:///usr/share/applications/firefox.desktop?wmClass=Firefox
 
 [Containments][2][Applets][6][LayoutInformation]
 Order=6

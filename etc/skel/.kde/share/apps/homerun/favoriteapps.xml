@@ -1,0 +1,6 @@
+<apps version="1">
+    <app serviceId="mintdrivers.desktop"/>
+    <app serviceId="kde4-systemsettings.desktop"/>
+    <app serviceId="kde4-ksysguard.desktop"/>
+    <app serviceId="synaptic-kde.desktop"/>
+</apps>
