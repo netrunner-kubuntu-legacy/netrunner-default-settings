@@ -224,7 +224,7 @@ DisabledValue=1
 Size=32
 
 [PreviewSettings]
-MaximumRemoteSize=524288000
+MaximumRemoteSize=1048576000
 MaximumSize=524288000
 
 [SmallIcons]

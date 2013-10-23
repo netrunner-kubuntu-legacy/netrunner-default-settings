@@ -11,8 +11,8 @@ PreviewSize=22
 
 [CompactMode]
 FontWeight=50
-IconSize=22
-PreviewSize=22
+IconSize=16
+PreviewSize=16
 MaximumTextWidthIndex=2
 
 [DetailsMode]
@@ -40,7 +40,7 @@ GridSpacing=0
 IconSize=64
 ItemHeight=131
 ItemWidth=160
-MaximumTextLines=4
+MaximumTextLines=3
 NumberOfTextlines=3
 PreviewSize=64
 

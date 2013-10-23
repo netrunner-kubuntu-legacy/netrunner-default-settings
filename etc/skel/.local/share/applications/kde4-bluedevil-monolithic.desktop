@@ -1,0 +1,16 @@
+[Desktop Entry]
+Categories=Qt;KDE;X-Bluetooth;Network;
+Comment=KDE Bluetooth support
+Exec=bluedevil-monolithic
+GenericName=BlueDevil
+Icon=preferences-system-bluetooth
+Name=BlueDevil
+NoDisplay=true
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=
