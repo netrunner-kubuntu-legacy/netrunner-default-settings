@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=firefox -no-remote -P "prism"  http://www.netrunnerlinux.com/steam.html
+Exec=/usr/bin/steam %U
 Icon=/usr/share/icons/Netrunner/scalable/apps/steam.png
 Name=Steam
 NoDisplay=false
