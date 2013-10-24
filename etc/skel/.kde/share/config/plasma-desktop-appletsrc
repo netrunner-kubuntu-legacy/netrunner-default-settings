@@ -215,6 +215,17 @@ immutability=1
 plugin=expanding-icons-taskmanager
 zvalue=52
 
+[Containments][2][Applets][6][Configuration]
+forceRows=false
+highlightWindows=false
+maxRows=1
+reverseAlignment=false
+showOnlyCurrentActivity=true
+showOnlyCurrentDesktop=false
+showOnlyCurrentScreen=false
+showOnlyMinimized=false
+showToolTip=true
+
 [Containments][2][Applets][6][Configuration][Launchers]
 Items=file:///usr/share/applications/kde4/dolphin.desktop?wmClass=Dolphin,file:///usr/share/applications/firefox.desktop?wmClass=Firefox
 
