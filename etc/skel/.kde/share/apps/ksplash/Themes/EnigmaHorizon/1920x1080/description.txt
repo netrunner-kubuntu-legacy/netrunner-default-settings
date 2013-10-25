@@ -1,0 +1,50 @@
+SCALE OFF
+IMAGE 0 0 background_horizon.png
+SCALE OFF
+
+
+# animated text and progress bar, currently only 1 frame per file
+ANIM_REL 1 CC -160 -18 LT 1 icon1.png 100 0
+ANIM_REL 12 CC -150 40 LT 1 bar1.png 100 0
+
+WAIT_STATE kded
+
+ANIM_REL 2 CC -100 -18 LT 1 icon2.png 100 0
+ANIM_REL 22 CC -150 40 LT 1 bar2.png 100 0
+
+WAIT_STATE kcminit
+
+ANIM_REL 3 CC -49 -18 LT 1 icon3.png 100 0
+ANIM_REL 32 CC -150 40 LT 1 bar3.png 100 0
+
+WAIT_STATE ksmserver
+
+ANIM_REL 4 CC 2 -18 LT 1 icon4.png 100 0
+ANIM_REL 42 CC -150 40 LT 1 bar4.png 100 0
+
+WAIT_STATE wm
+
+ANIM_REL 5 CC 54 -18 LT 1 icon5.png 100 0
+ANIM_REL 52 CC -150 40 LT 1 bar5.png 100 0
+
+WAIT_STATE desktop
+
+ANIM_REL 6 CC 110 -18 LT 1 icon6.png 100 0
+ANIM_REL 62 CC -150 40 LT 1 bar6.png 100 0
+
+
+# show the icons fully right before the splash goes away
+STOP_ANIM 1
+IMAGE_REL CC -160 -18 LT icon1.png
+STOP_ANIM 2
+IMAGE_REL CC -100 -18 LT icon2.png
+STOP_ANIM 3
+IMAGE_REL CC -49 -18 LT icon3.png
+STOP_ANIM 4
+IMAGE_REL CC 2 -18 LT icon4.png
+STOP_ANIM 5
+IMAGE_REL CC 54 -18 LT icon5.png
+STOP_ANIM 6
+IMAGE_REL CC 110 -18 LT icon6.png
+
+WAIT_STATE ready
