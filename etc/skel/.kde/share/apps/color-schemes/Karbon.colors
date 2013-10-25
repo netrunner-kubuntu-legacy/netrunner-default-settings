@@ -88,12 +88,12 @@ ForegroundPositive=0,110,40
 ForegroundVisited=69,40,134
 
 [General]
-ColorScheme=Enigma
-Name=Enigma
+ColorScheme=Karbon
+Name=Karbon
 shadeSortColumn=true
 
 [KDE]
-contrast=5
+contrast=0
 
 [WM]
 activeBackground=76,135,201

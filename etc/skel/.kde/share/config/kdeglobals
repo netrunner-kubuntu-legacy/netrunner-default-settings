@@ -133,7 +133,7 @@ Size=32
 
 [General]
 BrowserApplication[$e]=firefox-tab.desktop
-ColorScheme=Enigma
+ColorScheme=Karbonate
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
@@ -161,7 +161,7 @@ SingleClick=false
 StartDragDist=4
 StartDragTime=500
 WheelScrollLines=3
-contrast=5
+contrast=7
 
 [KDE-Global GUI Settings]
 GraphicEffectsLevel=1
