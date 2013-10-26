@@ -38,7 +38,7 @@ location=0
 numTextLines=2
 plugin=netrunnerdesktop
 previewPlugins=imagethumbnail,jpegthumbnail,windowsexethumbnail,kffmpegthumbnailer,windowsimagethumbnail
-savedPositions=1,7,mycomputer.desktop,10,10,Network,162,10,webaccounts.desktop,314,10,steam.desktop,466,10,welcome.desktop,618,10,ubiquity-kdeui.desktop,10,140
+savedPositions=1,6,ubiquity-kdeui.desktop,10,136,welcome.desktop,618,10,webaccounts.desktop,314,10,steam.desktop,466,10,mycomputer.desktop,10,10,Network,162,10
 
 screen=0
 sortColumn=-1
