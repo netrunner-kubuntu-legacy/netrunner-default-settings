@@ -4,6 +4,17 @@ set -e
 
 . /usr/share/debconf/confmodule
 
+# unHide deprecated window decorations
+function show_deprecated {
+    dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/lib/kde4/kwin_b2_config.so /usr/share/netrunner/hidden/kwin_b2_config.so
+    dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/lib/kde4/kwin3_b2.so /usr/share/netrunner/hidden/kwin3_b2.so
+    dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/lib/kde4/kwin3_laptop.so /usr/share/netrunner/hidden/kwin3_laptop.so
+    dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/kde4/apps/kwin/decorations/kwin4_decoration_qml_plastik/metadata.desktop /usr/share/netrunner/hidden/plastik_metadata.desktop
+    dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/lib/kde4/imports/org/kde/kwin/decorations/plastik/libplastikplugin.so /usr/share/netrunner/hidden/libplastikplugin.so
+    dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/icons/oxy-yellow/index.theme /usr/share/netrunner/hidden/oxy-yellow_index.theme
+    dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/icons/oxy-zion/index.theme /usr/share/netrunner/hidden/oxy-zion_index.theme
+}
+
 case "$1" in
     remove|purge)
         #These files may have been created during installation
