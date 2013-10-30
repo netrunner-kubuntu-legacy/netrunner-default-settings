@@ -39,7 +39,7 @@ ForegroundVisited=69,40,134
 
 [Colors:Selection]
 BackgroundAlternate=62,138,204
-BackgroundNormal=70,125,186
+BackgroundNormal=13,53,105
 DecorationFocus=83,148,232
 DecorationHover=119,183,255
 ForegroundActive=255,128,224
@@ -133,7 +133,7 @@ Size=32
 
 [General]
 BrowserApplication[$e]=firefox-tab.desktop
-ColorScheme=Karbonate
+ColorScheme=Karbon
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
