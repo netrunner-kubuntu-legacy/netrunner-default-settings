@@ -4,7 +4,7 @@ if (panelIds.length == 1) {
     panel.location = 'bottom'
 }
 
-panel.height = 38;
+panel.height = 33;
 
 //launcher = panel.addWidget("simplelauncher");
 //launcher.writeConfig("format", "NameDescription");
@@ -12,10 +12,15 @@ panel.height = 38;
 //launcher.writeConfig("icon", "/usr/share/netrunner/netrunner-kmenu.png");
 //launcher.writeConfig("maxRecentApps", "5")
 //launcher.writeConfig("views", "RecentlyUsedApplications,Applications,RunCommand,Leave");
-launcher = panel.addWidget("org.kde.homerun-kicker);
+
+launcher = panel.addWidget("org.kde.homerun-kicker")
+launcher.currentConfigGroup = Array("General")
+
+// This does currently not work for QML Widgets
 launcher.writeConfig("buttonImage", "file:///usr/share/netrunner/netrunner-kmenu.png");
 launcher.writeConfig("useCustomButtonImage", "true");
- 
+
+
 //var krunner = panel.addWidget("icon");
 //krunner.writeConfig("Url", "file:///usr/share/applications/kde4/krunner.desktop"); 
 //krunner.writeConfig("Order", "1"); 
@@ -30,18 +35,21 @@ launcher.writeConfig("useCustomButtonImage", "true");
 //firefox.writeConfig("Order", "3"); 
 
 
-tasks = panel.addWidget("tasks")
+tasks = panel.addWidget("expanding-icons-taskmanager")
 tasks.writeConfig("Share","false")
-tasks.writeConfig("forceRows","true")
+tasks.writeConfig("forceRows","false")
 tasks.writeConfig("groupWhenFull","true")
 tasks.writeConfig("groupingStrategy","0")
 tasks.writeConfig("highlightWindows","false")
 tasks.writeConfig("maxRows","1")
+tasks.writeConfig("showOnlyCurrentActivity","true")
 tasks.writeConfig("showOnlyCurrentDesktop","true")
 tasks.writeConfig("showOnlyCurrentScreen","false") 
 tasks.writeConfig("showOnlyMinimized","false")
 tasks.writeConfig("showTooltip","true")
-tasks.writeConfig("sortingStrategy","1")
+
+tasks.currentConfigGroup = Array("Launchers")
+tasks.writeConfig("Items","file:///usr/share/applications/kde4/dolphin.desktop?wmClass=Dolphin,file:///usr/share/applications/firefox.desktop?wmClass=Firefox")
 
 
 var yakuake = panel.addWidget("icon");
@@ -57,6 +65,10 @@ systemtray.currentConfigGroup = Array()
  
 systemtray.currentConfigGroup = Array("Applets","997")
 systemtray.writeConfig("plugin","battery")
+systemtray.currentConfigGroup = Array()
+
+systemtray.currentConfigGroup = Array("Applets","996")
+systemtray.writeConfig("plugin","org.kde.plasma-nm")
 systemtray.currentConfigGroup = Array()
 
 systemtray.writeConfig("ShowApplicationStatus","true")
