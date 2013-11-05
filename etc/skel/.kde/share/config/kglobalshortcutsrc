@@ -234,7 +234,8 @@ activate widget 101=none,none,Activate Notifications Widget
 activate widget 107=none,none,Activate Instant Messaging Presence Widget
 activate widget 108=none,none,Activate Battery Monitor Widget
 activate widget 2=none,none,Activate Device Notifier Widget
-activate widget 22=Alt+F1,Alt+F1,Activate Application Launcher Menu Widget
+activate widget 22=none,none,Activate Application Launcher Menu Widget
+activate widget 23=none,none,Activate Homerun Kicker Widget
 
 [yakuake]
 _k_friendly_name=Yakuake
