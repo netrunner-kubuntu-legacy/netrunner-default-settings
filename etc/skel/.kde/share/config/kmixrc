@@ -1,3 +1,5 @@
 [Global]
 startkdeRestore=false
 AutoStart=true
+Orientation=Horizontal
+Orientation.TrayPopup=Horizontal
