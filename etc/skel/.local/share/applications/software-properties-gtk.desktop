@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=GNOME;GTK;Settings;X-GNOME-SystemSettings;X-GNOME-Settings-Panel;
+Comment=Configure the sources for installable software and updates
+Exec=software-properties-gtk
+GenericName=Software & Updates
+Icon=software-properties
+Keywords=Drivers;Repositories;Repository;PPA;
+MimeType=text/x-apt-sources-list;
+Name=Software & Updates
+NoDisplay=true
+NotShowIn=GNOME;
+Path[$e]=
+StartupNotify=true
+Terminal=0
+TerminalOptions=
+Type=Application
+X-GNOME-Settings-Panel=software-properties
+X-KDE-SubstituteUID=true
+X-KDE-Username=
+X-MultipleArgs=false
+X-Ubuntu-Gettext-Domain=software-properties
