@@ -3,3 +3,4 @@ startkdeRestore=false
 AutoStart=true
 Orientation=Horizontal
 Orientation.TrayPopup=Horizontal
+Soundmenu.Mixers=PulseAudio::Playback_Streams:1,PulseAudio::Playback_Devices:1
