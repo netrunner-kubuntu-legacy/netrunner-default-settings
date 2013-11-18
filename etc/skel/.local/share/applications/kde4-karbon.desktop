@@ -1,5 +1,5 @@
 [Desktop Entry]
-Categories=Qt;KDE;Graphics;Office;
+Categories=Qt;KDE;Graphics
 Comment=Create scalable vector drawings
 Exec=karbon %u
 GenericName=Scalable Graphics
