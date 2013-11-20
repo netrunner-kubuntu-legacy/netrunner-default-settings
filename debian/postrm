@@ -25,6 +25,7 @@ case "$1" in
         rm -f /etc/skel/.gtkrc-2.0
         rm -f /etc/skel/.gtkrc-2.0-kde4
         rm -f /etc/skel/.config/gtk-3.0/settings.ini
+        show_deprecated
     ;;
 
     upgrade|abort-upgrade|abort-remove|abort-deconfigure)
