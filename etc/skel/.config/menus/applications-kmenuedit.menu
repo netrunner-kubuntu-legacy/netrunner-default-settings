@@ -2,6 +2,11 @@
 <Menu>
  <Menu>
   <Name>Games</Name>
+  <Include>
+   <Filename>cuttherope.desktop</Filename>
+   <Filename>duckhunt.desktop.desktop</Filename>
+   <Filename>steam-2.desktop</Filename>
+  </Include>
   <Layout>
    <Merge type="menus"/>
    <Menuname>Arcade</Menuname>
@@ -12,14 +17,12 @@
    <Menuname>TacticStrategy</Menuname>
    <Menuname>Toys</Menuname>
    <Merge type="files"/>
-   <Filename>dosbox.desktop</Filename>
+   <Filename>steam.desktop</Filename>
    <Filename>cuttherope.desktop</Filename>
+   <Filename>steam-2.desktop</Filename>
    <Filename>duckhunt.desktop.desktop</Filename>
   </Layout>
-  <Include>
-   <Filename>cuttherope.desktop</Filename>
-   <Filename>duckhunt.desktop.desktop</Filename>
-  </Include>
+  <Exclude/>
  </Menu>
  <Menu>
   <Name>Settingsmenu</Name>
