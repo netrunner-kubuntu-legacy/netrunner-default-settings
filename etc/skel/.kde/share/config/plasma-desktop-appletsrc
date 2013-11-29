@@ -25,9 +25,7 @@ manage activities=false
 remove=true
 
 [Containments][1]
-ActionPluginsSource=Global
-activity=New Activity
-activityId=9acb3560-ebf1-41bb-a27d-41fcfcb85fe9
+activity=
 alignToGrid=true
 blankLabel=false
 clickForFolderPreviews=false
@@ -35,10 +33,7 @@ customIconSize=64
 desktop=-1
 flow=0
 formfactor=0
-geometry=0,0,1024,768
 immutability=1
-lastDesktop=-1
-lastScreen=0
 location=0
 numTextLines=2
 plugin=netrunnerdesktop
@@ -62,8 +57,7 @@ color2=0,0,0
 
 [Containments][1][Wallpaper][image]
 slideTimer=10
-slidepaths=
-userswallpapers=
+slidepaths=/usr/share/wallpapers/
 wallpaper=/usr/share/wallpapers/Enigma II
 wallpapercolor=56,111,150
 wallpaperposition=2
@@ -71,10 +65,10 @@ wallpaperposition=2
 [Containments][113]
 ActionPluginsSource=Global
 activity=New Activity
-activityId=e7af894c-5bf2-48e7-855c-eaffa18b6c25
+activityId=37f37aa5-c1dd-4d74-a474-631c555153e5
 desktop=-1
 formfactor=0
-geometry=1030,0,1024,768
+geometry=1686,0,800,600
 immutability=1
 lastDesktop=-1
 lastScreen=0
