@@ -218,7 +218,7 @@ DialogHeight=232
 DialogWidth=254
 
 [Containments][2][Applets][34]
-geometry=99.0512820512821,1,32,32
+geometry=104,1,32,32
 immutability=1
 plugin=icon
 zvalue=55
@@ -267,7 +267,7 @@ ShowHardware=true
 ShowSystemServices=true
 ShowUnknown=true
 alwaysShown=Konversation,org.kde.ktp-presence
-hidden=KDE Wallet Manager,battery,org.kde.notifications
+hidden=KDE Wallet Manager,battery,org.kde.notifications,easystroke
 
 [Containments][2][Applets][8][Configuration][Applets][1]
 geometry=0,0,24,24
