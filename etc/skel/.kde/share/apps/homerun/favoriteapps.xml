@@ -1,4 +1,5 @@
 <apps version="1">
+    <app serviceId="kazam.desktop"/>
     <app serviceId="mintdrivers.desktop"/>
     <app serviceId="kde4-systemsettings.desktop"/>
     <app serviceId="kde4-ksysguard.desktop"/>
