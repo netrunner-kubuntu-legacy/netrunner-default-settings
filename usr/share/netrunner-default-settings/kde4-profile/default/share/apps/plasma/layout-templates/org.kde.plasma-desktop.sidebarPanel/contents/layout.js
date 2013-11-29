@@ -1,6 +1,6 @@
 var panel = new Panel;
 panel.location = 'right';
-panel.alignment = 'left';
+panel.alignment = 'center';
 panel.hiding = 'windowsbelow';
 panel.height = 250;
 panel.length = screenGeometry(panel.screen).height;
@@ -15,13 +15,20 @@ var mixer = panel.addWidget("veromix-plasmoid");
 panel.addWidget("panelspacer_internal");
 
 
+
+var aclock = panel.addWidget("clock");
+
+
+
 var toggle = panel.addWidget("paneltoggleapplet")
 toggle.globalShortcut = "F11"
-toggle.writeConfig("Mode0", "4");
-toggle.writeConfig("Mode1", "2");
+toggle.writeConfig("Mode0", "2");
+toggle.writeConfig("Mode1", "4");
 toggle.writeConfig("FirstStart", "false");
 
 
+
+/**
 var clock = panel.addWidget("digital-clock");
 clock.writeConfig("Share","false")
 
@@ -43,4 +50,5 @@ clock.writeConfig("showTimezone","false")
 clock.writeConfig("timeZones","")
 clock.writeConfig("useCustomColor","true")
 clock.writeConfig("useCustomShadowColor","false")
+**/
 
