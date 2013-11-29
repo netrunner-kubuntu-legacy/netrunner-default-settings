@@ -6,7 +6,7 @@ Switch to Next Keyboard Layout=Ctrl+Alt+K,Ctrl+Alt+K,Switch to Next Keyboard Lay
 _k_friendly_name=KDE Keyboard Layout Switcher
 
 [kactivitymanagerd]
-_k_friendly_name=KDE Activity Manager
+_k_friendly_name=kactivitymanagerd
 switch-to-activity-3a2eb5ff-f82d-455d-9d4c-332bbc6284d6=none,none,Switch to activity "New Activity"
 switch-to-activity-6c1ce194-7a27-4947-b1d1-f6a5c963dfd5=none,none,Switch to activity "New Activity"
 
@@ -112,7 +112,7 @@ Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Log Out
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del,Ctrl+Alt+Shift+Del,Log Out Without Confirmation
 PowerDevil=none,none,Run Command (runner "PowerDevil" only)
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,Ctrl+Alt+Shift+PgUp,Reboot Without Confirmation
-Run Command=Alt+F1,Alt+F2,Run Command
+Run Command=Alt+F2,Alt+F2,Run Command
 Run Command on clipboard contents=Alt+Shift+F2,Alt+Shift+F2,Run Command on clipboard contents
 Show System Activity=Ctrl+Esc,Ctrl+Esc,Show System Activity
 Switch User=Ctrl+Alt+Ins,Ctrl+Alt+Ins,Switch User
@@ -301,7 +301,7 @@ activate widget 101=none,none,Activate Notifications Widget
 activate widget 107=none,none,Activate Instant Messaging Presence Widget
 activate widget 108=none,none,Activate Battery Monitor Widget
 activate widget 2=none,none,Activate Device Notifier Widget
-activate widget 22=,Alt+F1,Activate Homerun Kicker Widget
+activate widget 22=Alt+F1,Alt+F1,Activate Homerun Kicker Widget
 activate widget 23=none,none,Activate Homerun Kicker Widget
 manage activities=Meta+Q,Meta+Q,Activities...
 
