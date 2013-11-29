@@ -1,6 +1,10 @@
 [Engine]
-ThemeName=FormaN
+ThemeName=Gnome3
 
 [FormaN]
 BorderSize=1
 ButtonSize=2
+
+[Gnome3]
+BorderSize=1
+ButtonSize=0
