@@ -367,7 +367,3 @@ Order=6
 [Containments][2][Applets][8][PopupApplet]
 DialogHeight=224
 DialogWidth=254
-
-[Containments][2][Configuration]
-maximumSize=1024,33
-minimumSize=1024,33
