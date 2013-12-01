@@ -114,7 +114,7 @@ plugin=org.kde.notifications
 zvalue=0
 
 [Containments][2][Applets][110][LayoutInformation]
-Order=8
+Order=9
 
 [Containments][2][Applets][110][PopupApplet]
 DialogHeight=128
@@ -227,7 +227,7 @@ zvalue=55
 Url=file:///usr/share/applications/kde4/krunner.desktop
 
 [Containments][2][Applets][34][LayoutInformation]
-Order=1
+Order=8
 
 [Containments][2][Applets][6]
 geometry=148.051282051282,1,560.949538865107,32

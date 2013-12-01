@@ -21,11 +21,6 @@ launcher.writeConfig("buttonImage", "file:///usr/share/netrunner/netrunner-kmenu
 launcher.writeConfig("useCustomButtonImage", "true");
 
 
-var krunner = panel.addWidget("icon");
-krunner.writeConfig("Url", "file:///usr/share/applications/kde4/krunner.desktop"); 
-krunner.writeConfig("Order", "1"); 
-
-
 //var dolphin = panel.addWidget("icon");
 //dolphin.writeConfig("Url", "file:///usr/share/applications/kde4/dolphin.desktop"); 
 //dolphin.writeConfig("Order", "2"); 
@@ -103,4 +98,9 @@ clock.writeConfig("timeZones","")
 clock.writeConfig("useCustomColor","true")
 clock.writeConfig("useCustomShadowColor","false")
 
+var krunner = panel.addWidget("icon");
+krunner.writeConfig("Url", "file:///usr/share/applications/kde4/krunner.desktop"); 
+krunner.writeConfig("Order", "8"); 
+
 var notifications = panel.addWidget("org.kde.notifications");
+notifications.writeConfig("Order", "9");
