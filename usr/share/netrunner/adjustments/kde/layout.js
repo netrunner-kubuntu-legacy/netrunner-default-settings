@@ -21,9 +21,9 @@ launcher.writeConfig("buttonImage", "file:///usr/share/netrunner/netrunner-kmenu
 launcher.writeConfig("useCustomButtonImage", "true");
 
 
-//var krunner = panel.addWidget("icon");
-//krunner.writeConfig("Url", "file:///usr/share/applications/kde4/krunner.desktop"); 
-//krunner.writeConfig("Order", "1"); 
+var krunner = panel.addWidget("icon");
+krunner.writeConfig("Url", "file:///usr/share/applications/kde4/krunner.desktop"); 
+krunner.writeConfig("Order", "1"); 
 
 
 //var dolphin = panel.addWidget("icon");
@@ -69,6 +69,8 @@ systemtray.currentConfigGroup = Array()
 
 systemtray.currentConfigGroup = Array("Applets","996")
 systemtray.writeConfig("plugin","org.kde.plasma-nm")
+systemtray.currentConfigGroup = Array("Applets","995")
+systemtray.writeConfig("plugin","org.kde.networkmanagement")
 systemtray.currentConfigGroup = Array()
 
 systemtray.writeConfig("ShowApplicationStatus","true")
