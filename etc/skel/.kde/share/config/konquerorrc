@@ -15,9 +15,5 @@ TabCloseActivatePrevious=false
 [HTML Settings]
 AutomaticDetectionLanguage=1
 
-[KFileDialog Settings]
-Height 985=600
-Width 1920=960
-
 [Undo]
 Number of Closed Windows=1

@@ -71,10 +71,7 @@ ReturnMessage=
 ShowAwayMessage=false
 
 [MainWindow]
-Height 768=500
-State=AAAA/wAAAAD9AAAAAAAAAqoAAAHDAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Width 1024=682
 
 [Notification Messages]
 ChannelListNoServerSelected=1
