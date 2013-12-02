@@ -124,6 +124,7 @@ Word Completion=true
 Word Completion Minimal Word Length=3
 
 [MainWindow]
+State=AAAA/wAAAAD9AAAAAAAAArwAAAGgAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAAAAADGgAAAAAAAAAA
 ToolBarsMovable=Disabled
 
 [MainWindow0]
@@ -132,6 +133,7 @@ Cursor Position Visible=true
 Document Name Visible=true
 Encoding Visible=true
 Insertion Mode Visible=true
+State=AAAA/wAAAAD9AAAAAAAAArwAAAGgAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAAAAADGgAAAAAAAAAA
 Kate-MDI-H-Splitter=200,670,200
 Kate-MDI-Sidebar-0-Splitter=0,0
 Kate-MDI-Sidebar-3-Splitter=0,0
@@ -156,6 +158,7 @@ Kate-MDI-V-Splitter=150,388,200
 Selection Mode Visible=true
 
 [MainWindow0 Settings]
+State=AAAA/wAAAAD9AAAAAAAAArwAAAGgAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAAAAADGgAAAAAAAAAA
 WindowState=8
 
 [MainWindow0-Splitter 0]
