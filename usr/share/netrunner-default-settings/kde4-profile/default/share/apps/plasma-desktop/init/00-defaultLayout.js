@@ -1,4 +1,5 @@
 loadTemplate("org.kde.plasma-desktop.defaultPanel")
+loadTemplate("org.kde.plasma-desktop.sidebarPanel")
 
 for (var i = 0; i < screenCount; ++i) {
     var desktop = new Activity("netrunnerdesktop")
@@ -17,7 +18,7 @@ for (var i = 0; i < screenCount; ++i) {
     desktop.wallpaperMode = 'SingleImage'
     
     desktop.currentConfigGroup = new Array("Wallpaper", "image")
-    desktop.writeConfig("wallpaper", "/usr/share/wallpapers/Horizon")
+    desktop.writeConfig("wallpaper", "/usr/share/wallpapers/Enigma II")
     desktop.writeConfig("slidepaths", "/usr/share/wallpapers")
     desktop.writeConfig("wallpaperposition", "2")
     
