@@ -74,7 +74,7 @@ systemtray.writeConfig("ShowHardware","true")
 systemtray.writeConfig("ShowSystemServices","true")
 systemtray.writeConfig("ShowUnknown","true")
 systemtray.writeConfig("alwaysShown","Konversation,org.kde.ktp-presence")
-systemtray.writeConfig("hidden","KDE Wallet Manager,org.kde.notifications,battery")
+systemtray.writeConfig("hidden","KDE Wallet Manager,org.kde.notifications,battery,easystroke")
  
 var clock = panel.addWidget("digital-clock");
 clock.writeConfig("Share","false")
