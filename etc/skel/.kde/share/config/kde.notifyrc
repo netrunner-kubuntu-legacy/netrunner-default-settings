@@ -9,4 +9,4 @@ Action=Sound
 Execute=
 KTTS=
 Logfile=
-Sound=KDE-Sys-Log-In-Long.ogg
+Sound=/usr/share/sounds/desktop-login.ogg
