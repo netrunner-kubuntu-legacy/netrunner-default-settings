@@ -31,6 +31,9 @@ for (var i = 0; i < screenCount; ++i) {
     desktop.name = i18n("Desktop");
     desktop.screen = i;
 
+    desktop.wallpaperPlugin = 'image'
+    desktop.wallpaperMode = 'SingleImage'
+
     desktop.writeConfig("alignToGrid", "true");
     desktop.writeConfig("blankLabel", "false");
     desktop.writeConfig("clickForFolderPreviews", "false");
@@ -40,12 +43,4 @@ for (var i = 0; i < screenCount; ++i) {
     desktop.writeConfig("savedPositions", "1,6,ubiquity-kdeui.desktop,10,136,welcome.desktop,618,10,webaccounts.desktop,314,10,steam.desktop,466,10,mycomputer.desktop,10,10,Network,162,10");
     desktop.writeConfig("sortDirsFirst", "false");
 
-    desktop.wallpaperPlugin = 'image'
-    desktop.wallpaperMode = 'SingleImage'
-
-    desktop.currentConfigGroup = new Array("Wallpaper", "image");
-    desktop.writeConfig("wallpaper", "/usr/share/wallpapers/Enigma II");
-    desktop.writeConfig("slidepaths", "/usr/share/wallpapers");
-    desktop.writeConfig("slideTimer", "10");
-    desktop.writeConfig("wallpapercolor", "56,111,150");
 }

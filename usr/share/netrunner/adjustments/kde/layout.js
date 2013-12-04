@@ -9,9 +9,10 @@ panel.height = 38;
 
 launcher = panel.addWidget("org.kde.homerun-kicker");
 launcher.globalShortcut = "Alt+F1";
-launcher.currentConfigGroup = Array("General");
-launcher.writeConfig("buttonImage", "file:///usr/share/netrunner/netrunner-kmenu.png");
-launcher.writeConfig("useCustomButtonImage", "true");
+// Don't set this until kdelibs javascripting bug is fixed
+//launcher.currentConfigGroup = Array("General");
+//launcher.writeConfig("buttonImage", "file:///usr/share/netrunner/netrunner-kmenu.png");
+//launcher.writeConfig("useCustomButtonImage", "true");
 
 spacer = panel.addWidget("panelspacer_internal");
 spacer.geometry = new QRectF(0, 0, 9, panel.height);
