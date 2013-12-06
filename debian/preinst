@@ -5,7 +5,8 @@ function hide_deprecated {
     dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/kwin_b2_config.so /usr/lib/kde4/kwin_b2_config.so 
     dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/kwin3_b2.so /usr/lib/kde4/kwin3_b2.so 
     dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/kwin3_laptop.so /usr/lib/kde4/kwin3_laptop.so 
-    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/plastik_metadata.desktop /usr/share/kde4/apps/kwin/decorations/kwin4_decoration_qml_plastik/metadata.desktop 
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/plastik_metadata.desktop /usr/share/kde4/apps/kwin/decorations/kwin4_decoration_qml_plastik/metadata.desktop
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/plastik_main.qml /usr/share/kde4/apps/kwin/decorations/kwin4_decoration_qml_plastik/contents/ui/main.qml
     dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/libplastikplugin.so /usr/lib/kde4/imports/org/kde/kwin/decorations/plastik/libplastikplugin.so 
     dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/oxy-yellow_index.theme /usr/share/icons/oxy-yellow/index.theme 
     dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/oxy-zion_index.theme /usr/share/icons/oxy-zion/index.theme 
