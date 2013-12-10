@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=firefox -P prism -new-tab https://marketplace.firefox.com/
+Exec=firefox -new-tab https://marketplace.firefox.com/
 Icon=/usr/share/icons/Netrunner/scalable/apps/mozilla-marketplace-logo-final.png
 Name=Firefox Marketplace
 NoDisplay=true

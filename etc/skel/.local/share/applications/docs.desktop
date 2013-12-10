@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=firefox -P prism -new-tab http://docs.google.com
+Exec=firefox -new-tab http://docs.google.com
 Icon=/usr/share/icons/Netrunner/scalable/apps/docs_icon.png
 Name=Google Docs
 NoDisplay=false

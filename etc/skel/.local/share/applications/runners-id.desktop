@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=firefox -P prism -new-tab  http://runners-id.com
+Exec=firefox -new-tab  http://runners-id.com
 Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-runners-id.png
 Name=Runners-ID
 Generic Name=Cloud Service
