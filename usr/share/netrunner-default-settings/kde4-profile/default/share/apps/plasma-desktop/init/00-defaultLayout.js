@@ -41,7 +41,7 @@ for (var i = 0; i < screenCount; ++i) {
     desktop.writeConfig("numTextLines", "2");
     desktop.writeConfig("sortColumn", "-1");
     desktop.writeConfig("previewPlugins", "imagethumbnail,jpegthumbnail,windowsexethumbnail,kffmpegthumbnailer,windowsimagethubmnail");
-    desktop.writeConfig("savedPositions", "1,6,ubiquity-kdeui.desktop,770,10,welcome.desktop,314,10,webaccounts.desktop,618,10,steam.desktop,466,10,mycomputer.desktop,10,10,Network,162,10");
+    desktop.writeConfig("savedPositions", "1,6,mycomputer.desktop,770,10,Network,314,10,welcome.desktop,618,10,steam.desktop,466,10,webaccounts.desktop,10,10,ubiquity-kdeui,162,10");
     desktop.writeConfig("sortDirsFirst", "false");
 
 }
