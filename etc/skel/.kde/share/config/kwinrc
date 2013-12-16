@@ -2,7 +2,7 @@
 update_info=kwin.upd:kde3.0r1,kwin.upd:kde3.2Xinerama,kwin3_plugin.upd:kde3.2,kwin_focus1.upd:kwin_focus1,kwin_focus2.upd:kwin_focus2,kwin_on_off.upd:kwin_on_off,kwin_remove_effects.upd:kwin4.7_effects
 
 [Compositing]
-AnimationSpeed=0
+AnimationSpeed=2
 Backend=OpenGL
 CheckIsSafe=true
 DisableChecks=false
@@ -11,7 +11,7 @@ GLDirect=true
 GLLegacy=true
 GLTextureFilter=2
 GLVSync=true
-GraphicsSystem=native
+GraphicsSystem=raster
 HiddenPreviews=5
 OpenGLIsUnsafe=false
 UnredirectFullscreen=false
@@ -91,7 +91,7 @@ kwin4_effect_dialogparentEnabled=true
 kwin4_effect_diminactiveEnabled=false
 kwin4_effect_dimscreenEnabled=false
 kwin4_effect_explosionEnabled=false
-kwin4_effect_fadeEnabled=false
+kwin4_effect_fadeEnabled=true
 kwin4_effect_fadedesktopEnabled=false
 kwin4_effect_fallapartEnabled=false
 kwin4_effect_flipswitchEnabled=false
@@ -125,7 +125,7 @@ kwin4_effect_startupfeedbackEnabled=true
 kwin4_effect_taskbarthumbnailEnabled=true
 kwin4_effect_thumbnailasideEnabled=false
 kwin4_effect_trackmouseEnabled=false
-kwin4_effect_translucencyEnabled=false
+kwin4_effect_translucencyEnabled=true
 kwin4_effect_windowgeometryEnabled=false
 kwin4_effect_wobblywindowsEnabled=false
 kwin4_effect_zoomEnabled=true
