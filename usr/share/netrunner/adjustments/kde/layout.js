@@ -1,7 +1,15 @@
+var bottomEdgeFree = true;
+var existingPanels = panels();
+
+for (var i = 0; i < existingPanels.length; i++) {
+    if (existingPanels[i].location == "bottom") {
+        bottomEdgeFree = false;
+    }
+}
+
 var panel = new Panel;
 
-if (panelIds.length == 1) {
-    // we are the only panel, so set the location for the user
+if (bottomEdgeFree) {
     panel.location = "bottom";
 }
 
