@@ -3,15 +3,9 @@ update_info=kwin.upd:kde3.0r1,kwin.upd:kde3.2Xinerama,kwin3_plugin.upd:kde3.2,kw
 
 [Compositing]
 AnimationSpeed=2
-Backend=OpenGL
 CheckIsSafe=true
 DisableChecks=false
 Enabled=true
-GLDirect=true
-GLLegacy=true
-GLTextureFilter=2
-GLVSync=true
-GraphicsSystem=raster
 HiddenPreviews=5
 OpenGLIsUnsafe=false
 UnredirectFullscreen=false
