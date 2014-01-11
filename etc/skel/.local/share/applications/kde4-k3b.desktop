@@ -24,7 +24,7 @@ Name=New eMovix Project
 
 [Desktop Entry]
 Actions=VideoDVD;DataCD;AudioCD;VideoCD;MixedCD;eMovix;
-Categories=KDE;Qt;AudioVideo;DiscBurning;System;Filesystem;
+Categories=KDE;Qt;Utility;DiscBurning;System;Filesystem;
 Comment=Disk writing program
 Exec=k3b %U
 GenericName=Disk Burning
