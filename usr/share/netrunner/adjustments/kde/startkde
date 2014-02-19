@@ -148,17 +148,17 @@ is_package_installed() {
   fi
 }
 
-if is_package_installed kubuntu-default-settings && (is_package_installed gtk2-engines-oxygen || is_package_installed gtk3-engines-oxygen); then
+if is_package_installed netrunner-default-settings && (is_package_installed gtk2-engines-oxygen || is_package_installed gtk3-engines-oxygen); then
   # The theme and k-d-s are installed, configuring...
   if [ ! -e $HOME/.gtkrc-2.0 ]; then
-    if [ -e /usr/share/kubuntu-default-settings/dot-gtkrc-2.0-kde4 ] ; then
-      cp -f /usr/share/kubuntu-default-settings/dot-gtkrc-2.0-kde4 $HOME/.gtkrc-2.0
+    if [ -e /usr/share/netrunner-default-settings/dot-gtkrc-2.0-kde4 ] ; then
+      cp -f /usr/share/netrunner-default-settings/dot-gtkrc-2.0-kde4 $HOME/.gtkrc-2.0
     fi
   fi
   if [ ! -e $HOME/.config/gtk-3.0/settings.ini ]; then
-    if [ -e /usr/share/kubuntu-default-settings/settings.ini ] ; then
+    if [ -e /usr/share/netrunner-default-settings/settings.ini ] ; then
       mkdir -p $HOME/.config/gtk-3.0/
-      cp -f /usr/share/kubuntu-default-settings/settings.ini $HOME/.config/gtk-3.0/settings.ini
+      cp -f /usr/share/netrunner-default-settings/settings.ini $HOME/.config/gtk-3.0/settings.ini
     fi
   fi
   # Remove the old script which set GTK2_RC_FILES=$HOME/.gtkrc-2.0-kde4 just use GTK's default .gtkrc-2.0 now
