@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#  DEFAULT KDE STARTUP SCRIPT ( 4.10.1 )
+#  DEFAULT KDE STARTUP SCRIPT ( 4.11.2 )
 #
 
 if test "x$1" = x--failsafe; then
@@ -20,16 +20,13 @@ unset DYLD_FORCE_FLAT_NAMESPACE
 bindir=`echo "$0" | sed -n 's,^\(/.*\)/[^/][^/]*$,\1,p'`
 if [ -n "$bindir" ]; then
   qbindir=`$bindir/kde4-config --qt-binaries`
-  if [ -n "$qbindir" ]; then
-    case $PATH in
-      $qbindir|$qbindir:*|*:$qbindir|*:$qbindir:*) ;;
-      *) PATH=$qbindir:$PATH; export PATH;;
-    esac
-  fi
+  qdbus=$qbindir/qdbus
   case $PATH in
     $bindir|$bindir:*|*:$bindir|*:$bindir:*) ;;
     *) PATH=$bindir:$PATH; export PATH;;
   esac
+else
+  qdbus=qdbus
 fi
 
 # Check if a KDE session already is running and whether it's possible to connect to X
@@ -64,40 +61,10 @@ fi
 kdehome=$HOME/.kde
 test -n "$KDEHOME" && kdehome=`echo "$KDEHOME"|sed "s,^~/,$HOME/,"`
 
+# see kstartupconfig source for usage
 mkdir -m 700 -p $kdehome
 mkdir -m 700 -p $kdehome/share
 mkdir -m 700 -p $kdehome/share/config
-
-# Read LANG and write the country part to kdeglobals
-# de_AT.UTF-8 => Country=at
-# This is necessary because klocale.cpp (kdelibs) does only try to read the value
-# from kdeglobals and then falls back to default instead of triyng to detect it
-
-if [ ! -e $kdehome/share/config/kdeglobals ] || [ ! `grep "Country=" $kdehome/share/config/kdeglobals` ]; then
-  if [ ! $LANG ]; then
-    if [ -e /etc/default/locale ]; then
-      localefile='/etc/default/locale'
-    elif [ -e /etc/environment ]; then
-      localefile='/etc/environment'
-    fi
-    if [ $localefile ]; then
-      locale=`sed -ne 's/^LANG="\(.*\)"$/\1/p' $localefile`
-    fi
-  else
-    locale=$LANG
-  fi
-  if [ $locale ]; then
-    country=`echo $locale | sed -ne 's/^[A-Za-z]*_\([A-Za-z]*\).*$/\1/p'|tr 'A-Z' 'a-z'`
-    if [ ! $country = "" ]; then
-cat >>$kdehome/share/config/kdeglobals <<EOF
-[Locale]
-Country=$country
-EOF
-    fi
-  fi
-fi
-
-# see kstartupconfig source for usage
 cat >$kdehome/share/config/startupconfigkeys <<EOF
 kcminputrc Mouse cursorTheme 'Oxygen_White'
 kcminputrc Mouse cursorSize ''
@@ -105,7 +72,6 @@ ksplashrc KSplash Theme Default
 ksplashrc KSplash Engine KSplashX
 kcmfonts General forceFontDPI 0
 kdeglobals Locale Language '' # trigger requesting languages from KLocale
-kdeglobals Locale Country ''
 EOF
 kstartupconfig4
 returncode=$?
@@ -182,17 +148,17 @@ is_package_installed() {
   fi
 }
 
-if is_package_installed netrunner-default-settings && (is_package_installed gtk2-engines-oxygen || is_package_installed gtk3-engines-oxygen); then
+if is_package_installed kubuntu-default-settings && (is_package_installed gtk2-engines-oxygen || is_package_installed gtk3-engines-oxygen); then
   # The theme and k-d-s are installed, configuring...
   if [ ! -e $HOME/.gtkrc-2.0 ]; then
-    if [ -e /usr/share/netrunner-default-settings/dot-gtkrc-2.0-kde4 ] ; then
-      cp -f /usr/share/netrunner-default-settings/dot-gtkrc-2.0-kde4 $HOME/.gtkrc-2.0
+    if [ -e /usr/share/kubuntu-default-settings/dot-gtkrc-2.0-kde4 ] ; then
+      cp -f /usr/share/kubuntu-default-settings/dot-gtkrc-2.0-kde4 $HOME/.gtkrc-2.0
     fi
   fi
   if [ ! -e $HOME/.config/gtk-3.0/settings.ini ]; then
-    if [ -e /usr/share/netrunner-default-settings/settings.ini ] ; then
+    if [ -e /usr/share/kubuntu-default-settings/settings.ini ] ; then
       mkdir -p $HOME/.config/gtk-3.0/
-      cp -f /usr/share/netrunner-default-settings/settings.ini $HOME/.config/gtk-3.0/settings.ini
+      cp -f /usr/share/kubuntu-default-settings/settings.ini $HOME/.config/gtk-3.0/settings.ini
     fi
   fi
   # Remove the old script which set GTK2_RC_FILES=$HOME/.gtkrc-2.0-kde4 just use GTK's default .gtkrc-2.0 now
@@ -342,16 +308,23 @@ mkdir -m 700 -p "${XDG_CONFIG_HOME:-$HOME/.config}"/ibus/bus
 
 echo 'startkde: Starting up...'  1>&2
 
-# Make sure that D-Bus is running
+# Make sure that the KDE prefix is first in XDG_DATA_DIRS and that it's set at all.
+# The spec allows XDG_DATA_DIRS to be not set, but X session startup scripts tend
+# to set it to a list of paths *not* including the KDE prefix if it's not /usr or
+# /usr/local.
 if test -z "$XDG_DATA_DIRS"; then
-    XDG_DATA_DIRS="`kde4-config --prefix`/share:/usr/share:/usr/local/share"
-    export XDG_DATA_DIRS
+    XDG_DATA_DIRS="/usr/share:/usr/share:/usr/local/share"
+else
+    XDG_DATA_DIRS="/usr/share:$XDG_DATA_DIRS"
 fi
+export XDG_DATA_DIRS
+
+# Make sure that D-Bus is running
 # D-Bus autolaunch is broken
 if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
     eval `dbus-launch --sh-syntax --exit-with-session`
 fi
-if qdbus >/dev/null 2>/dev/null; then
+if $qdbus >/dev/null 2>/dev/null; then
     : # ok
 else
     echo 'startkde: Could not start D-Bus. Can you call qdbus?'  1>&2
@@ -412,6 +385,9 @@ xprop -root -f KDE_SESSION_VERSION 32c -set KDE_SESSION_VERSION 4
 KDE_SESSION_UID=`id -ru`
 export KDE_SESSION_UID
 
+XDG_CURRENT_DESKTOP=KDE
+export XDG_CURRENT_DESKTOP
+
 # We set LD_BIND_NOW to increase the efficiency of kdeinit.
 # kdeinit unsets this variable before loading applications.
 LD_BIND_NOW=true /usr/lib/kde4/libexec/start_kdeinit_wrapper +kcminit_startup
@@ -452,13 +428,13 @@ if test x"$wait_drkonqi"x = x"true"x ; then
     # wait for remaining drkonqi instances with timeout (in seconds)
     wait_drkonqi_timeout=`kreadconfig --file startkderc --group WaitForDrKonqi --key Timeout --default 900`
     wait_drkonqi_counter=0
-    while qdbus | grep "^[^w]*org.kde.drkonqi" > /dev/null ; do
+    while $qdbus | grep "^[^w]*org.kde.drkonqi" > /dev/null ; do
         sleep 5
         wait_drkonqi_counter=$((wait_drkonqi_counter+5))
         if test "$wait_drkonqi_counter" -ge "$wait_drkonqi_timeout" ; then
             # ask remaining drkonqis to die in a graceful way
-            qdbus | grep 'org.kde.drkonqi-' | while read address ; do
-                qdbus "$address" "/MainApplication" "quit"
+            $qdbus | grep 'org.kde.drkonqi-' | while read address ; do
+                $qdbus "$address" "/MainApplication" "quit"
             done
             break
         fi
