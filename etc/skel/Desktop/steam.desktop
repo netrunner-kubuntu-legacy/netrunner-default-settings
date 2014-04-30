@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=/usr/bin/steam %U
+Exec=/usr/games/steam %U
 Icon=/usr/share/icons/Netrunner/scalable/apps/steam.png
 Name=Steam
 NoDisplay=false
