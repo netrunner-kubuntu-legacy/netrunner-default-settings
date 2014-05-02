@@ -39,10 +39,10 @@ then
 fi
 
 # Netrunner version of startkde.
-if [ -e /usr/bin/startkde ]
-then
-  cp /usr/share/netrunner/adjustments/kde/startkde /usr/bin/startkde
-fi
+# if [ -e /usr/bin/startkde ]
+# then
+#   cp /usr/share/netrunner/adjustments/kde/startkde /usr/bin/startkde
+# fi
 
 # Add the gnome default applications list.
 mkdir -p /etc/gnome
