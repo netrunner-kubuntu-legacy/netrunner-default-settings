@@ -26,9 +26,17 @@
  </Menu>
  <Menu>
   <Name>Settingsmenu</Name>
+  <Include>
+   <Filename>jacknjoe.desktop</Filename>
+   <Filename>firefox-marketplace.desktop</Filename>
+   <Filename>runners-id.desktop</Filename>
+   <Filename>Add Network Drive.desktop</Filename>
+  </Include>
   <Layout>
    <Merge type="files"/>
-   <Filename>Add Network Drive.desktop</Filename>
+   <Filename>flash-player-properties.desktop</Filename>
+   <Filename>software-properties-gnome.desktop</Filename>
+   <Filename>software-properties-gtk.desktop</Filename>
    <Filename>kde4-kdepasswd.desktop</Filename>
    <Filename>mintdrivers.desktop</Filename>
    <Filename>itweb-settings.desktop</Filename>
@@ -48,12 +56,9 @@
    <Filename>firefox-marketplace.desktop</Filename>
    <Filename>runners-id.desktop</Filename>
   </Layout>
-  <Include>
-   <Filename>jacknjoe.desktop</Filename>
-   <Filename>firefox-marketplace.desktop</Filename>
-   <Filename>runners-id.desktop</Filename>
-   <Filename>Add Network Drive.desktop</Filename>
-  </Include>
+  <Exclude>
+   <Filename>software-properties-drivers.desktop</Filename>
+  </Exclude>
  </Menu>
  <Menu>
   <Name>Applications</Name>
@@ -423,6 +428,7 @@
    <Filename>ndisgtk-kde.desktop</Filename>
    <Filename>cuttherope.desktop</Filename>
    <Filename>mintsources.desktop</Filename>
+   <Filename>software-properties-drivers.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
