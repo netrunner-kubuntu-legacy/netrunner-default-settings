@@ -56,7 +56,7 @@ systemtray.writeConfig("ShowHardware","true");
 systemtray.writeConfig("ShowSystemServices","true");
 systemtray.writeConfig("ShowUnknown","true");
 systemtray.writeConfig("alwaysShown","Konversation,org.kde.ktp-presence");
-systemtray.writeConfig("hidden","KDE Wallet Manager,easystroke, ksystraycmd");
+systemtray.writeConfig("hidden","KDE Wallet Manager,easystroke,ksystraycmd");
 systemtray.currentConfigGroup = Array("Applets","1");
 systemtray.writeConfig("plugin","notifier");
 systemtray.currentConfigGroup = Array("Applets","2");
