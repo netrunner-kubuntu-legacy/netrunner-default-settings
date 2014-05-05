@@ -3,10 +3,12 @@
  <Menu>
   <Name>Games</Name>
   <Include>
-   <Filename>cuttherope.desktop</Filename>
    <Filename>duckhunt.desktop.desktop</Filename>
    <Filename>steam-2.desktop</Filename>
   </Include>
+  <Exclude>
+   <Filename>cuttherope.desktop</Filename>
+  </Exclude>
   <Layout>
    <Merge type="menus"/>
    <Menuname>Arcade</Menuname>
@@ -18,11 +20,9 @@
    <Menuname>Toys</Menuname>
    <Merge type="files"/>
    <Filename>steam.desktop</Filename>
-   <Filename>cuttherope.desktop</Filename>
    <Filename>steam-2.desktop</Filename>
    <Filename>duckhunt.desktop.desktop</Filename>
   </Layout>
-  <Exclude/>
  </Menu>
  <Menu>
   <Name>Settingsmenu</Name>
@@ -306,6 +306,11 @@
    <Filename>kde4-bluedevil-sendfile.desktop</Filename>
    <Filename>kde4-bluedevil-wizard.desktop</Filename>
   </Include>
+  <Exclude>
+   <Filename>ndisgtk.desktop</Filename>
+   <Filename>ndisgtk-kde.desktop</Filename>
+   <Filename>mintsources.desktop</Filename>
+  </Exclude>
   <Layout>
    <Merge type="menus"/>
    <Menuname>ScreenSavers</Menuname>
@@ -355,10 +360,6 @@
    <Filename>kde4-bluedevil-sendfile.desktop</Filename>
    <Filename>kde4-bluedevil-wizard.desktop</Filename>
   </Layout>
-  <Exclude>
-   <Filename>ndisgtk.desktop</Filename>
-   <Filename>ndisgtk-kde.desktop</Filename>
-  </Exclude>
  </Menu>
  <Menu>
   <Name>Utilities</Name>
@@ -420,6 +421,8 @@
    <Filename>kde4-sieveeditor.desktop</Filename>
    <Filename>ndisgtk.desktop</Filename>
    <Filename>ndisgtk-kde.desktop</Filename>
+   <Filename>cuttherope.desktop</Filename>
+   <Filename>mintsources.desktop</Filename>
   </Include>
  </Menu>
  <Menu>

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=firefox -no-remote -P "prism"  http://www.netrunner-os.com/readme-1312/
+Exec=firefox http://www.netrunner-os.com/readme-1406/
 Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-welcome.png
 Name=Readme
 NoDisplay=false
