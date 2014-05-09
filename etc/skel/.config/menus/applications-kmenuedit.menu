@@ -280,6 +280,7 @@
    <Merge type="menus"/>
    <Menuname>Terminal</Menuname>
    <Merge type="files"/>
+   <Filename>skype.desktop</Filename>
    <Filename>steam.desktop</Filename>
    <Filename>kde4-keditbookmarks.desktop</Filename>
    <Filename>filezilla.desktop</Filename>
@@ -298,7 +299,11 @@
    <Filename>thunderbird.desktop</Filename>
    <Separator/>
    <Menuname>More</Menuname>
+   <Filename>kde4-Kontact.desktop</Filename>
   </Layout>
+  <Include>
+   <Filename>kde4-Kontact.desktop</Filename>
+  </Include>
  </Menu>
  <Menu>
   <Name>System</Name>
@@ -315,7 +320,6 @@
    <Filename>ndisgtk.desktop</Filename>
    <Filename>ndisgtk-kde.desktop</Filename>
    <Filename>mintsources.desktop</Filename>
-   <Filename>kde4-k3b.desktop</Filename>
   </Exclude>
   <Layout>
    <Merge type="menus"/>
@@ -326,6 +330,7 @@
    <Filename>apturl.desktop</Filename>
    <Filename>kde4-dolphin.desktop</Filename>
    <Filename>kde4-colordkdeiccimporter.desktop</Filename>
+   <Filename>kde4-k3b.desktop</Filename>
    <Filename>kde4-partitionmanager.desktop</Filename>
    <Filename>kde4-kinfocenter.desktop</Filename>
    <Filename>kde4-kfmclient_war.desktop</Filename>
@@ -429,18 +434,20 @@
    <Filename>cuttherope.desktop</Filename>
    <Filename>mintsources.desktop</Filename>
    <Filename>software-properties-drivers.desktop</Filename>
-   <Filename>kde4-k3b.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
   <Name>Office</Name>
+  <Exclude>
+   <Filename>kde4-sieveeditor.desktop</Filename>
+   <Filename>kde4-Kontact.desktop</Filename>
+  </Exclude>
   <Layout>
    <Merge type="files"/>
    <Filename>kde4-calligra.desktop</Filename>
    <Filename>kde4-flow.desktop</Filename>
    <Filename>kde4-kaddressbook.desktop</Filename>
    <Filename>kde4-kontact-admin.desktop</Filename>
-   <Filename>kde4-Kontact.desktop</Filename>
    <Filename>kde4-korganizer.desktop</Filename>
    <Filename>kde4-krita_flipbook.desktop</Filename>
    <Filename>kde4-krita_raw.desktop</Filename>
@@ -469,8 +476,5 @@
    <Merge type="menus"/>
    <Menuname>More</Menuname>
   </Layout>
-  <Exclude>
-   <Filename>kde4-sieveeditor.desktop</Filename>
-  </Exclude>
  </Menu>
 </Menu>

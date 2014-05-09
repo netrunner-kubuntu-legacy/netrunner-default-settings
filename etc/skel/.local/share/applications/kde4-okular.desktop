@@ -7,7 +7,6 @@ Icon=okular
 InitialPreference=7
 MimeType=application/vnd.kde.okular-archive;
 Name=Okular
-NoDisplay=true
 Path[$e]=
 StartupNotify=true
 Terminal=0
