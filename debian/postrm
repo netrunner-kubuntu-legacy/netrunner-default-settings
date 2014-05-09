@@ -30,6 +30,10 @@ function show_deprecated {
     if [ -e /usr/share/netrunner/hidden/oxy-zion_index.theme ]; then
       dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/netrunner/hidden/oxy-zion_index.theme /usr/share/icons/oxy-zion/index.theme
     fi
+    # Show hidden pulseaudio.desktop in autostart
+    if [ -e /usr/share/netrunner/hidden/pulseaudio.desktop ]; then
+      dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/netrunner/hidden/pulseaudio.desktop /etc/xdg/autostart/pulseaudio.desktop
+    fi
 }
 
 case "$1" in
