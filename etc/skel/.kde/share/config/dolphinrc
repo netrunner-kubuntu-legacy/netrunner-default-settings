@@ -37,7 +37,7 @@ ItemHeight=131
 ItemWidth=160
 MaximumTextLines=3
 NumberOfTextlines=3
-PreviewSize=64
+PreviewSize=96
 
 [KFileDialog Settings]
 Autoplay sounds=true

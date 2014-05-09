@@ -6,3 +6,4 @@ Tileset_file=/usr/share/kde4/apps/kmahjongglib/tilesets/traditional.desktop
 [MainWindow]
 ToolBarsMovable=Disabled
 State=AAAA/wAAAAD9AAAAAAAABUAAAAKNAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+StatusBar=Disabled

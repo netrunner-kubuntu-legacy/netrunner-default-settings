@@ -315,6 +315,7 @@
    <Filename>ndisgtk.desktop</Filename>
    <Filename>ndisgtk-kde.desktop</Filename>
    <Filename>mintsources.desktop</Filename>
+   <Filename>kde4-k3b.desktop</Filename>
   </Exclude>
   <Layout>
    <Merge type="menus"/>
@@ -325,7 +326,6 @@
    <Filename>apturl.desktop</Filename>
    <Filename>kde4-dolphin.desktop</Filename>
    <Filename>kde4-colordkdeiccimporter.desktop</Filename>
-   <Filename>kde4-k3b.desktop</Filename>
    <Filename>kde4-partitionmanager.desktop</Filename>
    <Filename>kde4-kinfocenter.desktop</Filename>
    <Filename>kde4-kfmclient_war.desktop</Filename>
@@ -429,6 +429,7 @@
    <Filename>cuttherope.desktop</Filename>
    <Filename>mintsources.desktop</Filename>
    <Filename>software-properties-drivers.desktop</Filename>
+   <Filename>kde4-k3b.desktop</Filename>
   </Include>
  </Menu>
  <Menu>

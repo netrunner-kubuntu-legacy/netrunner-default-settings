@@ -105,7 +105,7 @@ Dynamic Word Wrap Indicators=1
 Folding Bar=true
 Icon Bar=false
 Line Modification=false
-Line Numbers=false
+Line Numbers=true
 Maximum Search History Size=100
 Persistent Selection=false
 Replacement Text History=
@@ -195,3 +195,6 @@ shadingEnabled=true
 showFullPathOnRoots=false
 sortRole=0
 viewShade=166,154,204
+
+[TipOfDay]
+RunOnStart=false
