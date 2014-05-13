@@ -13,7 +13,7 @@ if (bottomEdgeFree) {
     panel.location = "bottom";
 }
 
-panel.height = 38;
+panel.height = 34;
 
 launcher = panel.addWidget("org.kde.homerun-kicker");
 launcher.globalShortcut = "Alt+F1";

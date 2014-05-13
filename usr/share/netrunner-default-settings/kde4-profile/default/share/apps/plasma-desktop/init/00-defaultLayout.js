@@ -24,7 +24,7 @@ delete rightButton;
 delete actionPlugins;
 
 loadTemplate("org.kde.plasma-desktop.defaultPanel");
-loadTemplate("org.kde.plasma-desktop.sidebarPanel");
+//loadTemplate("org.kde.plasma-desktop.sidebarPanel");
 
 for (var i = 0; i < screenCount; ++i) {
     var desktop = new Activity("netrunnerdesktop");
