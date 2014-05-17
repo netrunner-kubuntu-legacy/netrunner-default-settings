@@ -6,5 +6,8 @@ wmclass=^xv .*
 wmclasscomplete=true
 wmclassmatch=3
 
+[Directories-default]
+prefixes[$d]
+
 [General]
 count=1
