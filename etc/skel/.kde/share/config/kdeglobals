@@ -137,14 +137,14 @@ ColorScheme=Oxygen Cold
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
-desktopFont=Roboto,11,-1,5,50,0,0,0,0,0
+desktopFont=Source Sans Pro,12,-1,5,50,0,0,0,0,0
 fixed=Monospace,11,-1,5,50,0,0,0,0,0
-font=Roboto,11,-1,5,50,0,0,0,0,0
-menuFont=Roboto,11,-1,5,50,0,0,0,0,0
+font=Source Sans Pro,12,-1,5,50,0,0,0,0,0
+menuFont=Source Sans Pro,12,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
-smallestReadableFont=Roboto,11,-1,5,50,0,0,0,0,0
-taskbarFont=Roboto,11,-1,5,50,0,0,0,0,0
-toolBarFont=Roboto,11,-1,5,50,0,0,0,0,0
+smallestReadableFont=Source Sans Pro,10,-1,5,50,0,0,0,0,0
+taskbarFont=Source Sans Pro,12,-1,5,50,0,0,0,0,0
+toolBarFont=Source Sans Pro,12,-1,5,50,0,0,0,0,0
 widgetStyle=oxygen
 
 [Icons]
@@ -272,7 +272,7 @@ Size=32
 [WM]
 activeBackground=76,135,201
 activeBlend=255,255,255
-activeFont=Sans Serif,10,-1,5,75,0,0,0,0,0
+activeFont=Source Sans Pro,12,-1,5,75,0,0,0,0,0
 activeForeground=255,255,255
 inactiveBackground=224,223,222
 inactiveBlend=75,71,67

@@ -129,7 +129,7 @@ BorderSize=1
 ButtonsOnLeft=M
 ButtonsOnRight=IA_X
 CustomButtonPositions=true
-PluginLib=kwin3_aurorae
+PluginLib=kwin3_qtcurve
 ShowToolTips=false
 
 [TabBox]
