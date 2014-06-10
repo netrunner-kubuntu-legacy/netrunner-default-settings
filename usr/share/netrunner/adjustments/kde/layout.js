@@ -48,6 +48,8 @@ spacer = panel.addWidget("panelspacer_internal");
 spacer.geometry = new QRectF(0, 0, 9, panel.height);
 spacer.writeConfig("FixedSize", "true");
 
+var veromix = panel.addWidget("veromix-plasmoid");
+
 var systemtray = panel.addWidget("systemtray");
 systemtray.writeConfig("DefaultAppletsAdded", "true");
 systemtray.writeConfig("ShowApplicationStatus","true");
@@ -56,7 +58,7 @@ systemtray.writeConfig("ShowHardware","true");
 systemtray.writeConfig("ShowSystemServices","true");
 systemtray.writeConfig("ShowUnknown","true");
 systemtray.writeConfig("alwaysShown","Konversation,org.kde.ktp-presence");
-systemtray.writeConfig("hidden","KDE Wallet Manager,easystroke,ksystraycmd");
+systemtray.writeConfig("hidden","KDE Wallet Manager,easystroke,ksystraycmd,KMix");
 systemtray.currentConfigGroup = Array("Applets","1");
 systemtray.writeConfig("plugin","notifier");
 systemtray.currentConfigGroup = Array("Applets","2");
