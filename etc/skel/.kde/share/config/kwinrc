@@ -7,18 +7,12 @@ CheckIsSafe=true
 DisableChecks=false
 Enabled=true
 HiddenPreviews=5
-OpenGLIsUnsafe=false
 UnredirectFullscreen=false
 XRenderSmoothScale=false
 
 [Desktops]
 Name_1=
-Name_2=
 Number=1
-
-[Effect-BoxSwitch]
-TabBox=false
-TabBoxAlternative=false
 
 [Effect-CoverSwitch]
 TabBox=true
@@ -31,12 +25,6 @@ BorderActivateSphere=9
 
 [Effect-DesktopGrid]
 BorderActivate=9
-
-[Effect-FlipSwitch]
-BorderActivate=9
-BorderActivateAll=9
-TabBox=false
-TabBoxAlternative=false
 
 [Effect-PresentWindows]
 BorderActivate=9
@@ -74,7 +62,6 @@ CommandWindow3=Activate and pass click
 CommandWindowWheel=Scroll
 
 [Plugins]
-kwin4_effect_blurEnabled=true
 kwin4_effect_boxswitchEnabled=true
 kwin4_effect_coverswitchEnabled=true
 kwin4_effect_cubeEnabled=true

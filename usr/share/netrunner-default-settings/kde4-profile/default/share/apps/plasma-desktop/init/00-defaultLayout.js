@@ -43,5 +43,5 @@ for (var i = 0; i < screenCount; ++i) {
     desktop.writeConfig("previewPlugins", "imagethumbnail,jpegthumbnail,windowsexethumbnail,kffmpegthumbnailer,windowsimagethubmnail");
     desktop.writeConfig("savedPositions", "1,4,ubiquity-kdeui.desktop,466,10,welcome.desktop,314,10,mycomputer.desktop,10,10,Network,162,10");
     desktop.writeConfig("sortDirsFirst", "false");
-
+    
 }

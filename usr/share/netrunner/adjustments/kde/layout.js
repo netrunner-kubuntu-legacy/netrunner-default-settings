@@ -82,14 +82,14 @@ clock.writeConfig("displayHolidays","false");
 clock.writeConfig("holidaysRegion","");
 clock.writeConfig("holidaysRegions","");
 clock.writeConfig("holidaysRegionsDaysOff","");
-clock.writeConfig("plainClockColor","255,255,255");
-clock.writeConfig("plainClockDrawShadow","false");
-clock.writeConfig("plainClockFont","Roboto,12,-1,5,50,0,0,0,0,0");
+// clock.writeConfig("plainClockColor","255,255,255");
+// clock.writeConfig("plainClockDrawShadow","false");
+// clock.writeConfig("plainClockFont","Roboto,12,-1,5,50,0,0,0,0,0");
 clock.writeConfig("showDay","false");
 clock.writeConfig("showSeconds","false");
 clock.writeConfig("showTimezone","false");
 clock.writeConfig("timeZones","");
-clock.writeConfig("useCustomColor","true");
+clock.writeConfig("useCustomColor","false");
 clock.writeConfig("useCustomShadowColor","false");
 
 var krunner = panel.addWidget("icon");

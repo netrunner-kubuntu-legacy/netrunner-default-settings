@@ -373,10 +373,16 @@
  </Menu>
  <Menu>
   <Name>Utilities</Name>
+  <Include>
+   <Filename>kde4-Kppp.desktop</Filename>
+   <Filename>kde4-krdc.desktop</Filename>
+  </Include>
   <Layout>
    <Merge type="menus"/>
    <Menuname>XUtilities</Menuname>
    <Merge type="files"/>
+   <Filename>yelp.desktop</Filename>
+   <Filename>kde4-k3b.desktop</Filename>
    <Filename>kde4-akonaditray.desktop</Filename>
    <Filename>kde4-ark.desktop</Filename>
    <Filename>kde4-kate.desktop</Filename>
@@ -387,25 +393,17 @@
    <Filename>kde4-kmousetool.desktop</Filename>
    <Filename>kde4-knotes.desktop</Filename>
    <Filename>kde4-ktimetracker.desktop</Filename>
-   <Filename>kde4-kvkbd.desktop</Filename>
    <Filename>kde4-kwrite.desktop</Filename>
    <Filename>kde4-nepomukbackup.desktop</Filename>
-   <Filename>gksu.desktop</Filename>
    <Filename>kde4-sambamounter.desktop</Filename>
    <Filename>sambamounter.desktop</Filename>
-   <Filename>kde4-synaptiks.desktop</Filename>
-   <Filename>mintstick.desktop</Filename>
    <Separator/>
    <Menuname>More</Menuname>
-   <Filename>kde4-akregator.desktop</Filename>
-   <Filename>kde4-Kppp.desktop</Filename>
    <Filename>kde4-krdc.desktop</Filename>
   </Layout>
-  <Include>
+  <Exclude>
    <Filename>kde4-akregator.desktop</Filename>
-   <Filename>kde4-Kppp.desktop</Filename>
-   <Filename>kde4-krdc.desktop</Filename>
-  </Include>
+  </Exclude>
  </Menu>
  <Menu>
   <Name>Education</Name>
@@ -452,6 +450,7 @@
    <Filename>kde4-okularApplication_djvu.desktop</Filename>
    <Filename>kde4-okularApplication_fb.desktop</Filename>
    <Filename>kde4-k3b.desktop</Filename>
+   <Filename>kde4-akregator.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
