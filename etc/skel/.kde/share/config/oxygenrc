@@ -2,3 +2,16 @@
 ScrollBarWidth=18
 ViewDrawFocusIndicator=false
 WindowDragEnabled=false
+
+[Windeco]
+ButtonSize=ButtonLarge
+AnimationsEnabled=false
+BlendStyle=BlendNone
+CloseWindowFromMenuButton=true
+
+[ActiveShadow]
+Enabled=false
+
+[InactiveShadow]
+ShadowSize=20
+VerticalOffset=0
