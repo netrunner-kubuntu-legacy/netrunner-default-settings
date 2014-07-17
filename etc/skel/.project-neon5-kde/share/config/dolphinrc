@@ -1,0 +1,30 @@
+[CompactMode]
+FontWeight=50
+
+[DetailsMode]
+FontWeight=50
+
+[General]
+ShowSelectionToggle=false
+Version=200
+ViewPropsTimestamp=2014,7,17,13,27,59
+
+[IconsMode]
+FontWeight=50
+
+[MainWindow]
+Height 1080=1081
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAC0AAADyPwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAQA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAA6AAADyAAAABcA////AAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAABAD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAQA////AAAGxgAAA8gAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 1920=1921
+
+[Open-with settings]
+CompletionMode=5
+History=kate
+
+[PreviewSettings]
+Plugins=directorythumbnail,imagethumbnail,jpegthumbnail
+
+[SettingsDialog]
+Height 1080=367
+Width 1920=512

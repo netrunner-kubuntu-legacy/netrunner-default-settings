@@ -1,0 +1,8 @@
+[$Version]
+update_info=yakuake.upd:2.9.9-startupnotification
+
+[Dialogs]
+FirstRun=false
+
+[Window]
+KeepOpen=false
