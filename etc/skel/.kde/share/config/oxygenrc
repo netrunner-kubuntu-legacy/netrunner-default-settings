@@ -1,3 +1,6 @@
+[$Version]
+update_info=oxygen.upd:1
+
 [Style]
 ScrollBarWidth=18
 ViewDrawFocusIndicator=false
