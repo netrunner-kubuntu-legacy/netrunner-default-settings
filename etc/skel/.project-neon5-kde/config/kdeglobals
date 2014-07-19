@@ -149,7 +149,7 @@ widgetStyle=qtcurve
 Theme=oxygen
 
 [KDE]
-ColorScheme=Breeze
+ColorScheme=Oxygen Cold
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
 contrast=4
