@@ -1,0 +1,5 @@
+[Common]
+UseBackgroundGradient=false
+
+[Style]
+ScrollBarWidth=18

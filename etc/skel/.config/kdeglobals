@@ -1,5 +1,5 @@
-[$Version]
-update_info=kded.upd:kde3.0
+[Appmenu Style]
+Style=InApplication
 
 [ColorEffects:Disabled]
 Color=56,56,56
@@ -11,7 +11,7 @@ IntensityAmount=0.1
 IntensityEffect=2
 
 [ColorEffects:Inactive]
-ChangeSelectionColor=true
+ChangeSelectionColor=false
 Color=112,111,110
 ColorAmount=0.025
 ColorEffect=2
@@ -131,44 +131,31 @@ Size=32
 
 [General]
 ColorScheme=Oxygen Cold
-Name=Oxygen Cold
+Name=Breeze
+XftAntialias=true
+XftHintStyle=hintslight
+XftSubPixel=rgb
 desktopFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
+fixed=Monospace,9,-1,5,50,0,0,0,0,0
 font=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 menuFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
 smallestReadableFont=DejaVu Sans,8,-1,5,50,0,0,0,0,0
 taskbarFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
 toolBarFont=DejaVu Sans,8,-1,5,50,0,0,0,0,0
-widgetStyle=oxygen
 
 [Icons]
 Theme=oxygen
 
 [KDE]
-ShowDeleteCommand=false
+ColorScheme=Oxygen Cold
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
-SingleClick=true
 contrast=4
+widgetStyle=oxygen
 
-[KFileDialog Settings]
-Automatically select filename extension=true
-Breadcrumb Navigation=true
-Decoration position=0
-LocationCombo Completionmode=5
-PathCombo Completionmode=5
-Previews=false
-Show Bookmarks=false
-Show Full Path=false
-Show Preview=false
-Show Speedbar=true
-Show hidden files=false
-Sort by=Name
-Sort directories first=true
-Sort reversed=false
-Speedbar Width=90
-View Style=Simple
-listViewIconSize=0
+[KDE-Global GUI Settings]
+GraphicEffectsLevel=6
 
 [MainToolbarIcons]
 ActiveColor=169,156,255
@@ -207,9 +194,6 @@ DisabledEffect=togray
 DisabledSemiTransparent=true
 DisabledValue=1
 Size=32
-
-[PreviewSettings]
-MaximumRemoteSize=0
 
 [SmallIcons]
 ActiveColor=169,156,255
@@ -256,6 +240,7 @@ Size=22
 [WM]
 activeBackground=96,148,207
 activeBlend=255,255,255
+activeFont=DejaVu Sans,9,-1,5,75,0,0,0,0,0
 activeForeground=255,255,255
 inactiveBackground=224,223,222
 inactiveBlend=75,71,67

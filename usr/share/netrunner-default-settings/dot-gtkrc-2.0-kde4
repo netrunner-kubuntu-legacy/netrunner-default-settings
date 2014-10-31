@@ -7,10 +7,10 @@ style "user-font"
 	font_name="DejaVu Sans Book"
 }
 widget_class "*" style "user-font"
-gtk-font-name="DejaVu Sans Book 10"
+gtk-font-name="DejaVu Sans Book 9"
 gtk-theme-name="oxygen-gtk"
 gtk-icon-theme-name="oxygen"
 gtk-fallback-icon-theme="gnome"
-gtk-toolbar-style=GTK_TOOLBAR_ICONS
-gtk-menu-images=1
-gtk-button-images=1
+gtk-toolbar-style=GTK_TOOLBAR_BOTH_HORIZ
+gtk-menu-images=0
+gtk-button-images=0
