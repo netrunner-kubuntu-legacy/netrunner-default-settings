@@ -1,17 +1,8 @@
-interest /usr/lib/openoffice/program
 interest /usr/share/sounds/startup.wav
 interest /usr/share/system-config-printer
-interest /usr/share/opera
-interest /etc/netrunner/adjustments
 interest /etc/firefox/profile
-interest /usr/bin/startkde
 interest /usr/share/kde4/apps/quassel/networks.ini
 interest /usr/share/kde4/apps/quassel/scripts/inxi
-interest /etc/kde4rc
-interest /usr/share/kde4/apps/plasma-desktop/updates/addShowActivitiesManagerPlasmoid.js
 interest /usr/bin/inxi
 interest /usr/share/applications/software-properties-kde.desktop
 interest /usr/share/applications/transmission-qt.desktop
-interest /usr/share/templates/Illustration.desktop
-interest /usr/share/templates/.source/Illustration.odg
-interest /usr/share/templates/.source/Presentation.odp
