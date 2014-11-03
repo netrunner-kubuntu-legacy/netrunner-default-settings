@@ -1,9 +1,0 @@
-/usr/share/netrunner/adjustments/firefox/firefox.js /etc/firefox*/pref/firefox.js
-/usr/share/netrunner/adjustments/firefox/browserconfig.properties /usr/lib/firefox*/browserconfig.properties
-/usr/share/netrunner/adjustments/firefox/distribution.ini /usr/lib/firefox*/distribution/distribution.ini
-/usr/share/netrunner/adjustments/firefox/google.xml /usr/lib/firefox-addons/searchplugins/google.xml
-/usr/share/netrunner/adjustments/firefox/google.xml /usr/lib/firefox-addons/searchplugins/*/google.xml
-/usr/share/netrunner/adjustments/firefox/mimeTypes.rdf /etc/firefox*/profile/mimeTypes.rdf
-/usr/share/netrunner/adjustments/firefox/bookmarks.html /etc/firefox*/profile/bookmarks.html
-
-

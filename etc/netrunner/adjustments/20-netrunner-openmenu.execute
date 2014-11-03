@@ -1,5 +1,0 @@
-#!/bin/bash
-if [ -e "/usr/share/templates/soffice.odg.desktop" ]; then
-    rm -rf /usr/share/templates/soffice.odg.desktop
-fi
-

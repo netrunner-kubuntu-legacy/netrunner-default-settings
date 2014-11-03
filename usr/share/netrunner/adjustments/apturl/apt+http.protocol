@@ -1,8 +1,0 @@
-[Protocol]
-exec=apturl "%u"
-protocol=apt+http
-input=none
-output=none
-helper=true
-reading=true
-writing=true
