@@ -34,6 +34,14 @@ function show_deprecated {
     if [ -e /usr/share/netrunner/hidden/pulseaudio.desktop ]; then
       dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/netrunner/hidden/pulseaudio.desktop /etc/xdg/autostart/pulseaudio.desktop
     fi
+    # Firefox (instead of old adjust.py script)
+    if [ -e /usr/lib/firefox/distribution/distribution.ini ]; then
+      dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/lib/firefox/distribution/distribution.ini.orig /usr/lib/firefox/distribution/distribution.ini
+    fi
+    # kactivitymanager_file_item_linking_plugin
+    if [ -e /usr/share/kservices5/kactivitymanagerd_fileitem_linking_plugin.desktop ]; then
+      dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/kservices5/kactivitymanagerd_fileitem_linking_plugin.desktop.orig /usr/share/kservices5/kactivitymanagerd_fileitem_linking_plugin.desktop
+    fi
 }
 
 case "$1" in
