@@ -43,17 +43,39 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][1][Applets][15][Configuration][General]
-appNameFormat=1
+customButtonImage=file:///usr/share/icons/hicolor/scalable/apps/homerun.svgz
 favoriteApps=systemsettings.desktop,kde4-dolphin.desktop
 limitDepth=true
+useCustomButtonImage=true
 
 [Containments][1][Applets][16]
 immutability=1
 plugin=org.kde.plasma.expandingiconstaskmanager
 
+[Containments][1][Applets][16][Configuration][General]
+launchers=file:///usr/share/applications/kde4/dolphin.desktop?wmClass=Dolphin,file:///usr/share/applications/firefox.desktop?wmClass=Firefox
+
+[Containments][1][Applets][20]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][1][Applets][20][Configuration][General]
+applicationName=Yakuake
+genericName=Drop-down Terminal
+iconName=yakuake
+url=/usr/share/applications/kde4/yakuake.desktop
+
+[Containments][1][Applets][21]
+immutability=1
+plugin=org.kde.plasma.notifications
+
 [Containments][1][Applets][5]
 immutability=1
 plugin=org.kde.plasma.systemtray
+
+[Containments][1][Applets][5][Configuration][ConfigDialog]
+DialogHeight=480
+DialogWidth=640
 
 [Containments][1][Applets][5][Configuration][Containments][8]
 formfactor=2
@@ -75,20 +97,27 @@ plugin=org.kde.plasma.notifications
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
+[Containments][1][Applets][5][Configuration][Containments][8][Applets][19]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
 [Containments][1][Applets][5][Configuration][Containments][8][Applets][9]
 immutability=1
 plugin=org.kde.plasma.battery
+
+[Containments][1][Applets][5][Configuration][General]
+extraItems=org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard
 
 [Containments][1][Applets][6]
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][1][ConfigDialog]
-DialogHeight=84
-DialogWidth=1920
+DialogHeight=78
+DialogWidth=1024
 
 [Containments][1][General]
-AppletOrder=15;16;5;6
+AppletOrder=15;16;20;5;6;21
 
 [Containments][18]
 activityId=49442035-8f68-4d86-94f9-17d0c6a8e2eb
@@ -106,7 +135,9 @@ DialogWidth=640
 [Containments][18][General]
 ToolBoxButtonState=topright
 ToolBoxButtonX=989
-positions=1,8,desktop:/mycomputer.desktop,0,0,desktop:/Network,0,1,desktop:/welcome.desktop,0,2,desktop:/ubiquity-kdeui.desktop,0,3
+popups=false
+positions=1,8,desktop:/Network,0,1,desktop:/mycomputer.desktop,0,0,desktop:/ubiquity-kdeui.desktop,0,3,desktop:/welcome.desktop,0,2
+selectionMarkers=false
 sortMode=-1
 
 [Containments][18][Wallpaper][org.kde.image][General]

@@ -71,7 +71,7 @@ BorderSize=1
 ButtonsOnLeft=MS
 ButtonsOnRight=HIAX
 CustomButtonPositions=false
-PluginLib=aurorae
+PluginLib=Oxygen
 ShowToolTips=true
 
 [TabBox]

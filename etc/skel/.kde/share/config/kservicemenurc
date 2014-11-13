@@ -37,6 +37,7 @@ kactivitymanagerd_fileitem_linking_plugin=false
 list=true
 openTerminalHere=false
 queueTrack=true
+runInKonsole=true
 sendFile=false
 sendto=false
 slideshow=false

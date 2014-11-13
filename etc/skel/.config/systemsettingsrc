@@ -2,6 +2,9 @@
 Height 989=252
 Width 1920=378
 
+[Main]
+ShowToolTips=false
+
 [MainWindow]
 Height 989=720
 MenuBar=Disabled
