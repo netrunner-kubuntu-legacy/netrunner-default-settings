@@ -65,6 +65,8 @@ slidingpopupsEnabled=false
 synchronizeskipswitcherEnabled=false
 videowallEnabled=false
 windowgeometryEnabled=false
+kwin4_effect_fadeEnabled=false
+kwin4_effect_maximizeEnabled=false
 
 [Style]
 BorderSize=1

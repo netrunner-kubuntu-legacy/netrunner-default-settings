@@ -152,7 +152,7 @@ ColorScheme=Oxygen Cold
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
 contrast=4
-widgetStyle=oxygen
+widgetStyle=qtcurve
 
 [KDE-Global GUI Settings]
 GraphicEffectsLevel=6
