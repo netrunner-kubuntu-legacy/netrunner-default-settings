@@ -59,6 +59,8 @@ CommandWindow3=Activate and pass click
 CommandWindowWheel=Scroll
 
 [Plugins]
+blurEnabled=true
+contrastEnabled=false
 enforcedecoEnabled=false
 screenedgeEnabled=false
 slidingpopupsEnabled=false
