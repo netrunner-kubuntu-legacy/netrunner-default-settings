@@ -5,7 +5,10 @@ FontWeight=50
 FontWeight=50
 
 [General]
+GlobalViewProps=true
+ShowFullPath=true
 ShowSelectionToggle=false
+ShowSpaceInfo=true
 Version=200
 ViewPropsTimestamp=2014,10,31,11,52,25
 

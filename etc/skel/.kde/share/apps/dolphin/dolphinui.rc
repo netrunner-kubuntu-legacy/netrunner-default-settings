@@ -306,7 +306,7 @@
   <Action priority="0" name="edit_cut"/>
   <Action priority="0" name="edit_copy"/>
   <Action priority="0" name="edit_paste"/>
-  <Action icon="eyes" name="show_hidden_files"/>
+  <Action icon="security-high" name="show_hidden_files"/>
   <Action priority="0" name="compact"/>
   <Action priority="0" name="show_in_groups"/>
   <Action priority="0" name="reload"/>
