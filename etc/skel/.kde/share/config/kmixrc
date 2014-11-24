@@ -11,14 +11,20 @@ Orientation=Horizontal
 Orientation.TrayPopup=Horizontal
 Position=0,0
 Size=570,132
-Soundmenu.Mixers=PulseAudio::Playback_Streams:3,PulseAudio::Playback_Devices:1
+Soundmenu.Mixers=PulseAudio::Playback_Streams:1,PulseAudio::Capture_Streams:1,PulseAudio::Playback_Devices:1,PulseAudio::Capture_Devices:1
 Visible=false
 startkdeRestore=false
+
+[View.PulseAudio.Capture_Devices.1.default.PulseAudio::Capture_Devices:1.alsa_input.pci-0000_00_05.0.analog-stereo]
+Split=false
 
 [View.PulseAudio.Capture_Devices.2.default.PulseAudio::Capture_Devices:2.alsa_input.pci-0000_00_05.0.analog-stereo]
 Split=false
 
 [View.PulseAudio.Playback_Devices.1.default.PulseAudio::Playback_Devices:1.alsa_output.pci-0000_00_05.0.analog-stereo]
+Split=false
+
+[View.PulseAudio.Playback_Streams.1.default.PulseAudio::Playback_Streams:1.restore:sink-input-by-media-role:event]
 Split=false
 
 [View.PulseAudio.Playback_Streams.3.default.PulseAudio::Playback_Streams:3.restore:sink-input-by-media-role:event]
