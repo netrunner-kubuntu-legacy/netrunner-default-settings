@@ -43,7 +43,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][1][Applets][15][Configuration][General]
-customButtonImage=file:///usr/share/icons/hicolor/scalable/apps/homerun.svgz
+customButtonImage=file:///usr/share/icons/hicolor/scalable/apps/homerun.svg
 favoriteApps=systemsettings.desktop,kde4-dolphin.desktop
 limitDepth=true
 useCustomButtonImage=true
