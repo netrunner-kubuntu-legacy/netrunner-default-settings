@@ -72,11 +72,11 @@ kwin4_effect_maximizeEnabled=false
 
 [Style]
 BorderSize=1
-ButtonsOnLeft=MS
-ButtonsOnRight=HIAX
-CustomButtonPositions=false
+ButtonsOnLeft=M
+ButtonsOnRight=IA_X
+CustomButtonPositions=true
 PluginLib=Oxygen
-ShowToolTips=true
+ShowToolTips=false
 
 [TabBox]
 BorderActivate=9
