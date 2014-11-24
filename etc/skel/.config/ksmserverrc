@@ -1,7 +1,7 @@
 [General]
 confirmLogout=false
 excludeApps=
-loginMode=restorePreviousLogout
+loginMode=default
 offerShutdown=true
 screenCount=1
 shutdownType=0
