@@ -46,6 +46,7 @@ DialogWidth=720
 customButtonImage=file:///usr/share/icons/hicolor/scalable/apps/homerun.svg
 favoriteApps=systemsettings.desktop,kde4-dolphin.desktop
 limitDepth=true
+recentApps=systemsettings.desktop,kdesystemsettings.desktop
 useCustomButtonImage=true
 
 [Containments][1][Applets][16]
@@ -68,6 +69,15 @@ url=/usr/share/applications/kde4/yakuake.desktop
 [Containments][1][Applets][21]
 immutability=1
 plugin=org.kde.plasma.notifications
+
+[Containments][1][Applets][22]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][1][Applets][22][Configuration][General]
+applicationName=Krunner
+iconName=applications-system
+url=/usr/share/applications/kde4/krunner.desktop
 
 [Containments][1][Applets][5]
 immutability=1
@@ -117,7 +127,7 @@ DialogHeight=78
 DialogWidth=1024
 
 [Containments][1][General]
-AppletOrder=15;16;20;5;6;21
+AppletOrder=15;16;20;5;6;21;22
 
 [Containments][18]
 activityId=49442035-8f68-4d86-94f9-17d0c6a8e2eb
@@ -136,11 +146,12 @@ DialogWidth=640
 ToolBoxButtonState=topright
 ToolBoxButtonX=989
 popups=false
-positions=1,8,desktop:/Network,0,1,desktop:/mycomputer.desktop,0,0,desktop:/ubiquity-kdeui.desktop,0,3,desktop:/welcome.desktop,0,2
+positions=1,8,desktop:/welcome.desktop,0,2,desktop:/Network,0,1,desktop:/mycomputer.desktop,0,0,desktop:/ubiquity-kdeui.desktop,0,3
 selectionMarkers=false
 sortMode=-1
 
 [Containments][18][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/wallpapers/Starman/contents/images/1920x1080.png
 SlidePaths=
 height=768
 width=1024
