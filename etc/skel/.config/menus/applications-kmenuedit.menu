@@ -14,6 +14,7 @@
    <Layout/>
    <Exclude>
     <Filename>kde4-marble_gpx.desktop</Filename>
+    <Filename>kde4-marble.desktop</Filename>
    </Exclude>
   </Menu>
   <Menu>
@@ -50,6 +51,7 @@
    <Filename>kde4-sieveeditor.desktop</Filename>
    <Filename>kde4-k3b.desktop</Filename>
    <Filename>kde4-krunner.desktop</Filename>
+   <Filename>kde4-marble.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
