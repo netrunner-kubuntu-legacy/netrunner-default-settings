@@ -49,6 +49,9 @@ limitDepth=true
 recentApps=systemsettings.desktop,kdesystemsettings.desktop
 useCustomButtonImage=true
 
+[Containments][1][Applets][15][Shortcuts]
+global=Alt+F1
+
 [Containments][1][Applets][16]
 immutability=1
 plugin=org.kde.plasma.expandingiconstaskmanager
