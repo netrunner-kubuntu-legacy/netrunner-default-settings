@@ -114,3 +114,9 @@ ShadeHoverInterval=250
 SnapOnlyWhenOverlapping=false
 TitlebarDoubleClickCommand=Maximize
 WindowSnapZone=10
+
+[org.kde.kdecoration2]
+BorderSize=Normal
+CloseOnDoubleClickOnMenu=false
+library=org.kde.kwin.aurorae
+theme=__aurorae__svg__MetroDark
