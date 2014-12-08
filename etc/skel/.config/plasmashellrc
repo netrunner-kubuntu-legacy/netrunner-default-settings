@@ -1,3 +1,7 @@
 [PlasmaViews][Panel 1][Horizontal1366]
 panelVisibility=0
-thickness=35
+thickness=34
+
+[PlasmaViews][Panel 1][Horizontal1920]
+panelVisibility=0
+thickness=34
