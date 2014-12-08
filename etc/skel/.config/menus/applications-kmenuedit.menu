@@ -15,6 +15,9 @@
     <Filename>kde4-marble_gpx.desktop</Filename>
     <Filename>kde4-marble_kml.desktop</Filename>
     <Filename>kde4-marble_osm.desktop</Filename>
+    <Filename>kde4-marble_kmz.desktop</Filename>
+    <Filename>kde4-marble.desktop</Filename>
+    <Filename>kde4-marble_shp.desktop</Filename>
    </Exclude>
    <Layout/>
   </Menu>
@@ -59,6 +62,10 @@
    <Filename>kde4-importwizard.desktop</Filename>
    <Filename>debian-uxterm.desktop</Filename>
    <Filename>debian-xterm.desktop</Filename>
+   <Filename>kde4-marble_shp.desktop</Filename>
+   <Filename>kde4-marble_osm.desktop</Filename>
+   <Filename>kde4-marble_kmz.desktop</Filename>
+   <Filename>kde4-marble.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
@@ -104,10 +111,11 @@
    <Filename>kde4-ktp-log-viewer.desktop</Filename>
    <Filename>org.kde.knetattach.desktop</Filename>
    <Filename>steam.desktop</Filename>
+   <Filename>kde4-marble_osm.desktop</Filename>
+   <Filename>kde4-marble_kmz.desktop</Filename>
   </Exclude>
   <Include>
-   <Filename>kde4-marble_kml.desktop</Filename>
-   <Filename>kde4-marble_osm.desktop</Filename>
+   <Filename>kde4-marble.desktop</Filename>
   </Include>
   <Layout>
    <Merge type="menus"/>
@@ -125,7 +133,6 @@
    <Separator/>
    <Menuname>More</Menuname>
    <Filename>kde4-marble_kml.desktop</Filename>
-   <Filename>kde4-marble_osm.desktop</Filename>
   </Layout>
  </Menu>
  <Menu>

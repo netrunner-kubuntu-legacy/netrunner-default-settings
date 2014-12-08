@@ -1,0 +1,163 @@
+{
+  "quick_start_guide_added": true, 
+  "action-layout-toolbar": [
+    "Add Books", 
+    "Edit Metadata", 
+    null, 
+    "Convert Books", 
+    "View", 
+    null, 
+    "Remove Books", 
+    "Choose Library", 
+    "Save To Disk", 
+    "Connect Share", 
+    "Tweak ePub", 
+    "Preferences"
+  ], 
+  "preferences_window_geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywABAAAAAAApAAAACgAAA9IAAAL5AAAALQAAACYAAAPOAAAC9QAAAAAAAA=="
+  }, 
+  "library_usage_stats": {
+    "/home/netrunner/Calibre Library": 1
+  }, 
+  "book_details_splitter_horizontal_state": [
+    true, 
+    200
+  ], 
+  "cover_grid_texture": null, 
+  "grid view visible": true, 
+  "cover_grid_show_title": true, 
+  "custom_colors_for_color_dialog": [
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ], 
+    [
+      255, 
+      255, 
+      255, 
+      255
+    ]
+  ], 
+  "show_splash_screen": false, 
+  "show_emblems": false, 
+  "cover_grid_color": [
+    80, 
+    80, 
+    80
+  ], 
+  "cover_browser_splitter_vertical_state": [
+    false, 
+    300
+  ], 
+  "tag_browser_splitter_horizontal_state": [
+    true, 
+    200
+  ], 
+  "action-layout-toolbar-device": [
+    "Add Books", 
+    "Edit Metadata", 
+    null, 
+    "Convert Books", 
+    "View", 
+    "Send To Device", 
+    null, 
+    null, 
+    "Location Manager", 
+    null, 
+    null, 
+    "Save To Disk", 
+    "Connect Share", 
+    null, 
+    "Remove Books", 
+    null, 
+    "Preferences"
+  ]
+}
