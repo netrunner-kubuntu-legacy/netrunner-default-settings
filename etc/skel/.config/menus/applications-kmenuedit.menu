@@ -286,4 +286,25 @@
    <Filename>kde4-krunner.desktop</Filename>
   </Exclude>
  </Menu>
+ <Menu>
+    <Name>wine-wine</Name>
+    <Directory>wine-wine.directory</Directory>
+    <Include>
+      <Category>Wine</Category>
+    </Include>
+  <Menu>
+    <Name>wine-Programs</Name>
+    <Directory>wine-Programs.directory</Directory>
+    <Include>
+        <Category>Wine-Programs</Category>
+    </Include>
+  <Menu>
+    <Name>wine-Programs-Accessories</Name>
+    <Directory>wine-Programs-Accessories.directory</Directory>
+    <Include>
+        <Category>Wine-Programs-Accessories</Category>
+    </Include>
+  </Menu>
+  </Menu>
+  </Menu>
 </Menu>
