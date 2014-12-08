@@ -14,6 +14,7 @@
    <Exclude>
     <Filename>kde4-marble_gpx.desktop</Filename>
     <Filename>kde4-marble_kml.desktop</Filename>
+    <Filename>kde4-marble_osm.desktop</Filename>
    </Exclude>
    <Layout/>
   </Menu>
@@ -104,6 +105,10 @@
    <Filename>org.kde.knetattach.desktop</Filename>
    <Filename>steam.desktop</Filename>
   </Exclude>
+  <Include>
+   <Filename>kde4-marble_kml.desktop</Filename>
+   <Filename>kde4-marble_osm.desktop</Filename>
+  </Include>
   <Layout>
    <Merge type="menus"/>
    <Menuname>Terminal</Menuname>
@@ -116,15 +121,12 @@
    <Filename>kde5-nm-connection-editor.desktop</Filename>
    <Filename>kde4-ktp-contactlist.desktop</Filename>
    <Filename>transmission-qt.desktop</Filename>
-   <Filename>kde4-quassel.desktop</Filename>
    <Filename>thunderbird.desktop</Filename>
    <Separator/>
    <Menuname>More</Menuname>
    <Filename>kde4-marble_kml.desktop</Filename>
+   <Filename>kde4-marble_osm.desktop</Filename>
   </Layout>
-  <Include>
-   <Filename>kde4-marble_kml.desktop</Filename>
-  </Include>
  </Menu>
  <Menu>
   <Name>Multimedia</Name>
