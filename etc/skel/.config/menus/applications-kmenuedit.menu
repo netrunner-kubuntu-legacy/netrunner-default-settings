@@ -27,14 +27,16 @@
  <Menu>
   <Name>Settingsmenu</Name>
   <Include>
-   <Filename>jacknjoe.desktop</Filename>
    <Filename>firefox-marketplace.desktop</Filename>
    <Filename>runners-id.desktop</Filename>
    <Filename>Add Network Drive.desktop</Filename>
   </Include>
+  <Exclude>
+   <Filename>software-properties-drivers.desktop</Filename>
+   <Filename>jacknjoe.desktop</Filename>
+  </Exclude>
   <Layout>
    <Merge type="files"/>
-   <Filename>flash-player-properties.desktop</Filename>
    <Filename>software-properties-gnome.desktop</Filename>
    <Filename>software-properties-gtk.desktop</Filename>
    <Filename>kde4-kdepasswd.desktop</Filename>
@@ -52,13 +54,9 @@
    <Filename>kde4-systemsettings.desktop</Filename>
    <Filename>ndisgtk-kde.desktop</Filename>
    <Filename>ndisgtk.desktop</Filename>
-   <Filename>jacknjoe.desktop</Filename>
    <Filename>firefox-marketplace.desktop</Filename>
    <Filename>runners-id.desktop</Filename>
   </Layout>
-  <Exclude>
-   <Filename>software-properties-drivers.desktop</Filename>
-  </Exclude>
  </Menu>
  <Menu>
   <Name>Applications</Name>
@@ -275,7 +273,11 @@
    <Filename>kde4-Kppp.desktop</Filename>
    <Filename>kde4-krdc.desktop</Filename>
    <Filename>kde4-sieveeditor.desktop</Filename>
+   <Filename>kde4-pimsettingexporter.desktop</Filename>
   </Exclude>
+  <Include>
+   <Filename>kde4-Kontact.desktop</Filename>
+  </Include>
   <Layout>
    <Merge type="menus"/>
    <Menuname>Terminal</Menuname>
@@ -283,7 +285,6 @@
    <Filename>skype.desktop</Filename>
    <Filename>steam.desktop</Filename>
    <Filename>kde4-keditbookmarks.desktop</Filename>
-   <Filename>filezilla.desktop</Filename>
    <Filename>firefox-tab.desktop</Filename>
    <Filename>firefox.desktop</Filename>
    <Filename>icedtea-netx-javaws.desktop</Filename>
@@ -291,7 +292,6 @@
    <Filename>kde4-KMail2.desktop</Filename>
    <Filename>kde4-knetattach.desktop</Filename>
    <Filename>kde4-konqbrowser.desktop</Filename>
-   <Filename>kde4-konversation.desktop</Filename>
    <Filename>pidgin.desktop</Filename>
    <Filename>transmission-qt.desktop</Filename>
    <Filename>kde4-ktp-contactlist.desktop</Filename>
@@ -301,9 +301,6 @@
    <Menuname>More</Menuname>
    <Filename>kde4-Kontact.desktop</Filename>
   </Layout>
-  <Include>
-   <Filename>kde4-Kontact.desktop</Filename>
-  </Include>
  </Menu>
  <Menu>
   <Name>System</Name>
@@ -451,6 +448,8 @@
    <Filename>kde4-okularApplication_fb.desktop</Filename>
    <Filename>kde4-k3b.desktop</Filename>
    <Filename>kde4-akregator.desktop</Filename>
+   <Filename>kde4-pimsettingexporter.desktop</Filename>
+   <Filename>jacknjoe.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
@@ -458,11 +457,11 @@
   <Exclude>
    <Filename>kde4-sieveeditor.desktop</Filename>
    <Filename>kde4-Kontact.desktop</Filename>
+   <Filename>kde4-pimsettingexporter.desktop</Filename>
   </Exclude>
   <Layout>
    <Merge type="files"/>
    <Filename>kde4-calligra.desktop</Filename>
-   <Filename>kde4-flow.desktop</Filename>
    <Filename>kde4-kaddressbook.desktop</Filename>
    <Filename>kde4-kontact-admin.desktop</Filename>
    <Filename>kde4-korganizer.desktop</Filename>
