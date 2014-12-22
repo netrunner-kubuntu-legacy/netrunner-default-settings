@@ -277,6 +277,7 @@
   </Exclude>
   <Include>
    <Filename>kde4-Kontact.desktop</Filename>
+   <Filename>kde4-marble.desktop</Filename>
   </Include>
   <Layout>
    <Merge type="menus"/>
@@ -300,6 +301,7 @@
    <Separator/>
    <Menuname>More</Menuname>
    <Filename>kde4-Kontact.desktop</Filename>
+   <Filename>kde4-marble_kml.desktop</Filename>
   </Layout>
  </Menu>
  <Menu>
@@ -418,6 +420,19 @@
     <Filename>libreoffice-math.desktop</Filename>
    </Exclude>
   </Menu>
+  <Menu>
+   <Name>Miscellaneous</Name>
+   <Exclude>
+    <Filename>kde4-marble_kml.desktop</Filename>
+    <Filename>kde4-marble_shp.desktop</Filename>
+    <Filename>kde4-marble_gpx.desktop</Filename>
+    <Filename>kde4-marble_osm.desktop</Filename>
+    <Filename>kde4-marble_kmz.desktop</Filename>
+    <Filename>kde4-blinken.desktop</Filename>
+    <Filename>kde4-marble.desktop</Filename>
+   </Exclude>
+   <Layout/>
+  </Menu>
  </Menu>
  <Menu>
   <Name>.hidden</Name>
@@ -450,6 +465,12 @@
    <Filename>kde4-akregator.desktop</Filename>
    <Filename>kde4-pimsettingexporter.desktop</Filename>
    <Filename>jacknjoe.desktop</Filename>
+   <Filename>kde4-marble_shp.desktop</Filename>
+   <Filename>kde4-marble_gpx.desktop</Filename>
+   <Filename>kde4-marble_osm.desktop</Filename>
+   <Filename>kde4-marble_kmz.desktop</Filename>
+   <Filename>kde4-blinken.desktop</Filename>
+   <Filename>kde4-marble.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
