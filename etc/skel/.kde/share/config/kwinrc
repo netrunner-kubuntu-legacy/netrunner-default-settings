@@ -114,9 +114,9 @@ kwin4_effect_zoomEnabled=true
 [Style]
 BorderSize=1
 ButtonsOnLeft=M
-ButtonsOnRight=IA_X
+ButtonsOnRight=IAX
 CustomButtonPositions=true
-PluginLib=kwin3_oxygen
+PluginLib=kwin3_aurorae
 ShowToolTips=false
 
 [TabBox]

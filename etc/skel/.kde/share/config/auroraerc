@@ -1,5 +1,5 @@
 [Engine]
-ThemeName=Gnome3
+ThemeName=simplicityblu
 
 [FormaN]
 BorderSize=1
@@ -8,3 +8,18 @@ ButtonSize=2
 [Gnome3]
 BorderSize=1
 ButtonSize=0
+
+[kwin4_decoration_qml_plastik]
+CloseOnDoubleClickMenuButton=true
+
+[kwin4_decoration_qml_plastik][General]
+animateButtons=true
+coloredBorder=true
+titleAlignCenter=false
+titleAlignLeft=true
+titleAlignRight=false
+titleShadow=true
+
+[simplicityblu]
+BorderSize=1
+ButtonSize=2
