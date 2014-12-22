@@ -16,6 +16,7 @@ exclude_filters=*.cue
 use_default_pl=false
 default_pl_name=Playlist
 last_dir=/home
+locale=auto
 
 [Visualization]
 peaks_falloff=3
@@ -52,6 +53,7 @@ load_metadata=true
 visible=true
 size=@Size(275 116)
 shaded=false
+autosave=true
 
 [MainWindow]
 opacity=0.92
@@ -159,9 +161,9 @@ left=80
 right=80
 
 [Skinned]
-skin_path=/usr/share/qmmp/skins/Refugee
-vis_peaks_falloff=3
-vis_analyzer_falloff=3
+skin_path=/usr/share/qmmp/skins/Winamp
+vis_peaks_falloff=0.2
+vis_analyzer_falloff=2.2
 vis_show_peaks=true
 vis_analyzer_mode=0
 vis_analyzer_type=1
@@ -174,29 +176,29 @@ pl_show_plalists=false
 pl_show_popup=false
 pl_separator=|
 pl_show_create_button=false
-mw_opacity=0.92
-eq_opacity=0.92
-pl_opacity=0.92
+mw_opacity=0.93
+eq_opacity=0.93
+pl_opacity=0.93
 bitmap_font=true
 skin_cursors=false
-skin_name=Refugee
+skin_name=Winamp
 start_hidden=false
 hide_on_close=false
-mw_pos=@Point(100 100)
-double_size=false
+mw_pos=@Point(98 139)
+double_size=true
 always_on_top=false
 show_on_all_desktops=false
-pl_pos=@Point(100 332)
-eq_pos=@Point(100 216)
+pl_pos=@Point(98 371)
+eq_pos=@Point(108 282)
 pl_visible=true
-eq_visible=true
+eq_visible=false
 disp_shaded=false
 vis_type=Analyzer
 vis_rate=25
 autoscroll=true
 scroller_transparency=true
 disp_elapsed=true
-pl_size=@Size(275 116)
+pl_size=@Size(550 232)
 pl_shaded=false
 eq_shaded=false
 mw_font="Roboto,7,-1,5,50,0,0,0,0,0"
@@ -223,7 +225,7 @@ enabled=false
 determine_file_by_content=false
 
 [ConfigDialog]
-splitter_sizes=176, 509
+splitter_sizes=175, 507
 window_size=@Size(700 499)
 
 [URLDialog]
@@ -272,3 +274,4 @@ show_settings=Ctrl+P
 about=
 about_qt=
 exit=Ctrl+Q
+sticky=
