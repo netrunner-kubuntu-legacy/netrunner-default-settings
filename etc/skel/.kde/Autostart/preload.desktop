@@ -10,4 +10,4 @@ Categories=
 GenericName=
 X-GNOME-Autostart-Phase=Initialization
 X-KDE-StartupNotify=false
-Hidden=true
+Hidden=false
