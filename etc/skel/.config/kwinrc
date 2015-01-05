@@ -1,6 +1,7 @@
 [Compositing]
 AnimationSpeed=2
-Enabled=true
+Backend=XRender
+Enabled=false
 GLColorCorrection=false
 GLCore=false
 GLPlatformInterface=glx

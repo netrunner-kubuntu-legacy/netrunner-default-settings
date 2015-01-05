@@ -29,4 +29,5 @@ video/x-theora+ogg=vlc.desktop;ghb.desktop;
 x-content/video-dvd=vlc.desktop;ghb.desktop;
 x-content/video-vcd=vlc.desktop;ghb.desktop;
 x-content/video-svcd=vlc.desktop;ghb.desktop;
-
+application/x-bzip-compressed-tar=ark.desktop;
+application/x-compressed-tar=ark.desktop;
