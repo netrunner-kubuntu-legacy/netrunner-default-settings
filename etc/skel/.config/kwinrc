@@ -119,4 +119,4 @@ WindowSnapZone=10
 BorderSize=Normal
 CloseOnDoubleClickOnMenu=false
 library=org.kde.kwin.aurorae
-theme=__aurorae__svg__MetroDark
+theme=__aurorae__svg__Gnome3
