@@ -14,6 +14,7 @@ mapTheme=earth/openstreetmap/openstreetmap.dgml
 quitLatitude=0.66650928314084
 quitLongitude=-0.473104682860671
 quitRange=13956011.4959423
+projection=2
 
 [Routing Profiles]
 Num=4
