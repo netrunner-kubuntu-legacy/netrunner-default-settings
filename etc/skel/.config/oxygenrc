@@ -5,6 +5,7 @@ Enabled=false
 UseBackgroundGradient=false
 
 [Style]
+AnimationsEnabled=false
 ScrollBarWidth=18
 
 [Windeco]

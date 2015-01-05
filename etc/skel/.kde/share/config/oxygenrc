@@ -2,6 +2,7 @@
 ScrollBarWidth=18
 ViewDrawFocusIndicator=false
 WindowDragEnabled=false
+AnimationsEnabled=false
 
 [Windeco]
 ButtonSize=ButtonLarge

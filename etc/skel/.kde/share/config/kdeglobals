@@ -139,7 +139,7 @@ shadeSortColumn=true
 smallestReadableFont=DejaVu Sans,8,-1,5,50,0,0,0,0,0
 taskbarFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
 toolBarFont=DejaVu Sans,8,-1,5,50,0,0,0,0,0
-widgetStyle=qtcurve
+widgetStyle=oxygen
 
 [Icons]
 Theme=oxygen
