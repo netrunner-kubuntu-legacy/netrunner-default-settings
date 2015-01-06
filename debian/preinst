@@ -40,6 +40,13 @@ function hide_deprecated {
     if [ -e /usr/share/kservices5/kactivitymanagerd_fileitem_linking_plugin.desktop ]; then
       dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/kservices5/kactivitymanagerd_fileitem_linking_plugin.desktop.orig /usr/share/kservices5/kactivitymanagerd_fileitem_linking_plugin.desktop
     fi
+    # gmusicbrowser layout
+    if [ -e /usr/share/gmusicbrowser/layouts/main.layout ]; then
+      dpkg-diver --package netrunner-default-settings --add --rename --divert /usr/share/gmusicbrowser/layouts/main.layout.orig /usr/share/gmusicbrowser/layouts/main.layout
+    fi
+    if [ -e /usr/share/gmusicbrowser/layouts/filterfun.layout ]; then
+      dpkg-diver --package netrunner-default-settings --add --rename --divert /usr/share/gmusicbrowser/layouts/filterfun.layout.orig /usr/share/gmusicbrowser/layouts/filterfun.layout
+    fi
     
 }
 

@@ -1,0 +1,62 @@
+[Filters & Fun]
+Type=G+
+#Default		= Window(size=1120x820) VPRight(size=200-550) HPmain(size=400)
+Default		= Window(size=1120x820) VPRight() HPmain(size=400)
+VolumeScroll	= VBplayer
+DefaultFocus	= Play
+Name		= _"Filters & Fun"
+
+VBmain		= HBmenu _HPmain Progress
+ HBmenu		= _MBmenu
+#  MBmenu	= MainMenuItem LayoutItem PSortItem PFilterItem QueueItem
+  MBmenu	= MainMenuItem LayoutItem PSortItem
+# HPmain		= VBLeft _TBRight
+ HPmain		= VBLeft _VPRight
+#  VBLeft	= 5VBplayer _TabbedLists(group=1,pages="+PlayList +QueueList +@song_info +PictureBrowser")
+  VBLeft	= 5VBplayer _TabbedLists(group=1,pages="+PlayList")
+   VBplayer	= HBButtons3 HBText_Cover
+#    HBButtons3	= 5Sort 5Filter 5Queue 5Pos -Stars
+    HBButtons3	= 
+    HBText_Cover= _VBText 5-Cover
+     VBText	= HBButtons1 2HBTitle 2HBArtist 2HBAlbum HBTime
+#      HBButtons1= Prev Stop Play Next ExtraButtons 5-VolumeIcon -Pref -OpenBrowser(toggle)
+      HBButtons1= Prev Stop Play Next ExtraButtons -Time
+      HBTitle	= LockSong _Title LabelsIcons
+      HBArtist	= LockArtist _Artist
+#      HBAlbum	= LockAlbum _Album -Year
+#      HBAlbum	= 
+      HBTime	= _TimeBar
+#  TBRight	= _"Library" VPRight _"Context" Context
+#  TBRight	= _"Library" VPRight
+#   VPRight	= _HPfp0 _VBSongList
+#   VPRight	= HBSongList(maxheight=50) _VBSongList
+   VPRight	= HBSongList(maxheight=50) _VPRight2
+   VPRight2	= _HPfp0 _VBSongList
+#    HPfp0	= FilterPane0(nb=1,hidebb=1,page=genre) HPfp1
+    HPfp0	= HPfp1
+     HPfp1	= FilterPane1(nb=2,hidebb=1,hscrollbar=0,pages=artist,page=artist) \
+#		  FilterPane2(nb=3,hidebb=1,hscrollbar=0,hidetabs=1,page=album,page_album/lpicsize=32,page_album/lmarkup=1)
+      _FilterPane2(nb=3,\
+						hidebb= 1,\
+						hidetabs= 0,\
+						hscrollbar= 0,\
+						min= 1,\
+                                                page= album,\
+						page_album/lmarkup= 1,\
+						page_album/lpicsize= 64,\
+						page_album/mmarkup= below,\
+						page_album/mode=mosaic,\
+						page_album/sort= year,\
+						pages=album)
+#    VBSongList	= HBSongList _SongTree
+#    VBSongList	= _HPfp0 _SongTree
+    VBSongList	= HBSongList2 _SongTree
+#     HBSongList	= SimpleSearch(maxwidth=250) -FilterLock -PlayFilter -Refresh -ResetFilter -MBlist
+     HBSongList	= SimpleSearch(maxwidth=500) PlayFilter
+     HBSongList2	= -MBlist2
+#      MBlist 	= HistItem LSortItem PlayItem
+      MBlist 	= LSortItem PlayItem
+      MBlist2 	= LSortItem PlayItem
+
+
+      

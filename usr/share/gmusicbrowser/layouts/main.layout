@@ -1,0 +1,44 @@
+# layouts used internally
+[Volume]
+VSize= 100 VolumeSlider
+VBox = Volume(xalign=.5) _VolumeSlider(vertical=1)
+
+[Equalizer]
+Window		= size=300x160,uniqueid=Equalizer,ifexist=replace
+VBmain		= _Equalizer
+Title		= _"Equalizer"
+
+[Progress]
+VBmain		= _VProgress(lastclose=1)
+Title		= _"Progress"
+
+[Karaoke]
+Type= K
+VBmain= PluginKaraoke
+Window= pos=50%x100%,size=80%x1,insensitive=1,nodecoration=1,ontop=1
+
+[Context]
+Type=C
+Title=		_"Context"
+Default		= Window(size=500x300)
+VBmain		= _Context
+
+[Queue]
+Type=Q
+Title=_"Queue Edit"
+Window		= size=500x300,uniqueid=Equalizer,ifexist=replace
+VBmain		= 3_QueueList(activate=play) HBButtons
+HBButtons	= EditListButtons 4QueueActions
+
+[EditList]
+Title=List Edit
+Default		= Window(size=500x300)
+VBmain		= 3_SongList(mode=editlist,activate=playlist) EditListButtons
+
+#used by the "view in new window" of the PictureBrowser
+[PictureBrowser]
+Title=_"Picture Browser"
+Default		= Window(size=600x400)
+VBmain		= _PictureBrowser
+KeyBindings     = q CloseWindow
+
