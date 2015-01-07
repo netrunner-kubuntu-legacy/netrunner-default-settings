@@ -44,10 +44,10 @@ function show_deprecated {
     fi
     # gmusicbrowser layout
     if [ -e /usr/share/gmusicbrowser/layouts/main.layout ]; then
-      dpkg-diver --package netrunner-default-settings --remove --rename --divert /usr/share/gmusicbrowser/layouts/main.layout.orig /usr/share/gmusicbrowser/layouts/main.layout
+      dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/gmusicbrowser/layouts/main.layout.orig /usr/share/gmusicbrowser/layouts/main.layout
     fi
     if [ -e /usr/share/gmusicbrowser/layouts/filterfun.layout ]; then
-      dpkg-diver --package netrunner-default-settings --remove --rename --divert /usr/share/gmusicbrowser/layouts/filterfun.layout.orig /usr/share/gmusicbrowser/layouts/filterfun.layout
+      dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/gmusicbrowser/layouts/filterfun.layout.orig /usr/share/gmusicbrowser/layouts/filterfun.layout
     fi
 }
 
