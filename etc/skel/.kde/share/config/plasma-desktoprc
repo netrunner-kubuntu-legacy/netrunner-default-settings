@@ -6,7 +6,6 @@ CurrentPalette=Forty Colors
 
 [KFileDialog Settings]
 Height 600=450
-Recent Files[$e]=Blacklight.jpg,/usr/share/netrunner/netrunner-kmenu.png,/usr/share/netrunner/launcher.png,/usr/share/backgrounds/Blacklight.jpg
 Width 800=720
 
 [KPropertiesDialog]
@@ -20,8 +19,3 @@ panelVisibility=0
 [PlasmaViews][2]
 Offset=0
 panelVisibility=0
-
-[Updates]
-performed=/usr/share/kubuntu-default-settings/kde4-profile/default/share/apps/plasma-desktop/updates/01-kubuntu-10.04.js,/usr/share/kubuntu-default-settings/kde4-profile/default/share/apps/plasma-desktop/updates/02-kubuntu-menu-icon.js
-
-
