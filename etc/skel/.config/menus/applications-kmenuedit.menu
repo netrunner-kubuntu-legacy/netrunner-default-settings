@@ -3,11 +3,11 @@
  <Menu>
   <Name>Games</Name>
   <Include>
-   <Filename>duckhunt.desktop.desktop</Filename>
    <Filename>steam-2.desktop</Filename>
   </Include>
   <Exclude>
    <Filename>cuttherope.desktop</Filename>
+   <Filename>duckhunt.desktop.desktop</Filename>
   </Exclude>
   <Layout>
    <Merge type="menus"/>
@@ -21,7 +21,6 @@
    <Merge type="files"/>
    <Filename>steam.desktop</Filename>
    <Filename>steam-2.desktop</Filename>
-   <Filename>duckhunt.desktop.desktop</Filename>
   </Layout>
  </Menu>
  <Menu>
