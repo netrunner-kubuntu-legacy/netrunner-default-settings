@@ -51,3 +51,6 @@ InfoOutput=4
 
 [systemsettings]
 InfoOutput=4
+
+[ksystraycmd]
+InfoOutput=4
