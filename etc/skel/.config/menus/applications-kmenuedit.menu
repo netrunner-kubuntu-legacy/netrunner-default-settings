@@ -319,6 +319,7 @@
    <Filename>ndisgtk-kde.desktop</Filename>
    <Filename>mintsources.desktop</Filename>
    <Filename>kde4-k3b.desktop</Filename>
+   <Filename>grub-customizer.desktop</Filename>
   </Exclude>
   <Layout>
    <Merge type="menus"/>
@@ -470,6 +471,7 @@
    <Filename>kde4-marble_kmz.desktop</Filename>
    <Filename>kde4-blinken.desktop</Filename>
    <Filename>kde4-marble.desktop</Filename>
+   <Filename>grub-customizer.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
