@@ -66,6 +66,8 @@
    <Filename>kde4-marble_osm.desktop</Filename>
    <Filename>kde4-marble_kmz.desktop</Filename>
    <Filename>kde4-marble.desktop</Filename>
+   <Filename>kde4-kmix.desktop</Filename>
+   <Filename>kde4-akregator.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
@@ -137,20 +139,25 @@
  </Menu>
  <Menu>
   <Name>Multimedia</Name>
+  <Exclude>
+   <Filename>kde4-k3b.desktop</Filename>
+   <Filename>kde4-kmix.desktop</Filename>
+  </Exclude>
   <Layout>
    <Merge type="files"/>
+   <Filename>atraci.desktop</Filename>
+   <Filename>kde4-cantata.desktop</Filename>
+   <Filename>cheese.desktop</Filename>
+   <Filename>gmusicbrowser.desktop</Filename>
+   <Filename>ghb.desktop</Filename>
    <Filename>kde4-bluedevil-audio.desktop</Filename>
    <Filename>kde4-kdenlive.desktop</Filename>
-   <Filename>kde4-kmix.desktop</Filename>
    <Filename>vlc.desktop</Filename>
    <Filename>vokoscreen.desktop</Filename>
    <Separator/>
    <Merge type="menus"/>
    <Menuname>More</Menuname>
   </Layout>
-  <Exclude>
-   <Filename>kde4-k3b.desktop</Filename>
-  </Exclude>
  </Menu>
  <Menu>
   <Name>Office</Name>
@@ -189,14 +196,21 @@
   <Name>Utilities</Name>
   <Include>
    <Filename>kde4-k3b.desktop</Filename>
-   <Filename>kde4-akregator.desktop</Filename>
    <Filename>calibre-gui.desktop</Filename>
    <Filename>kde4-yakuake.desktop</Filename>
   </Include>
+  <Exclude>
+   <Filename>virtualbox.desktop</Filename>
+   <Filename>kde4-importwizard.desktop</Filename>
+   <Filename>debian-uxterm.desktop</Filename>
+   <Filename>debian-xterm.desktop</Filename>
+   <Filename>kde4-akregator.desktop</Filename>
+  </Exclude>
   <Layout>
    <Merge type="menus"/>
    <Menuname>XUtilities</Menuname>
    <Merge type="files"/>
+   <Filename>nautilus-folder-handler.desktop</Filename>
    <Filename>org.kde.AddPrinter.desktop</Filename>
    <Filename>org.kde.ConfigurePrinter.desktop</Filename>
    <Filename>nautilus.desktop</Filename>
@@ -212,16 +226,8 @@
    <Separator/>
    <Menuname>More</Menuname>
    <Filename>kde4-k3b.desktop</Filename>
-   <Filename>kde4-akregator.desktop</Filename>
-   <Filename>calibre-gui.desktop</Filename>
    <Filename>kde4-yakuake.desktop</Filename>
   </Layout>
-  <Exclude>
-   <Filename>virtualbox.desktop</Filename>
-   <Filename>kde4-importwizard.desktop</Filename>
-   <Filename>debian-uxterm.desktop</Filename>
-   <Filename>debian-xterm.desktop</Filename>
-  </Exclude>
  </Menu>
  <Menu>
   <Name>System</Name>
@@ -287,24 +293,24 @@
   </Exclude>
  </Menu>
  <Menu>
-    <Name>wine-wine</Name>
-    <Directory>wine-wine.directory</Directory>
-    <Include>
-      <Category>Wine</Category>
-    </Include>
+  <Name>wine-wine</Name>
+  <Directory>wine-wine.directory</Directory>
+  <Include>
+   <Category>Wine</Category>
+  </Include>
   <Menu>
-    <Name>wine-Programs</Name>
-    <Directory>wine-Programs.directory</Directory>
-    <Include>
-        <Category>Wine-Programs</Category>
-    </Include>
-  <Menu>
+   <Name>wine-Programs</Name>
+   <Directory>wine-Programs.directory</Directory>
+   <Include>
+    <Category>Wine-Programs</Category>
+   </Include>
+   <Menu>
     <Name>wine-Programs-Accessories</Name>
     <Directory>wine-Programs-Accessories.directory</Directory>
     <Include>
-        <Category>Wine-Programs-Accessories</Category>
+     <Category>Wine-Programs-Accessories</Category>
     </Include>
+   </Menu>
   </Menu>
-  </Menu>
-  </Menu>
+ </Menu>
 </Menu>

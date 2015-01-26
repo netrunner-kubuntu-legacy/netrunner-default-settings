@@ -26,6 +26,7 @@ video/x-matroska=vlc.desktop;ghb.desktop;
 video/x-mpeg=vlc.desktop;ghb.desktop;
 video/x-ogm+ogg=vlc.desktop;ghb.desktop;
 video/x-theora+ogg=vlc.desktop;ghb.desktop;
+video/webm=vlc.desktop;firefox.desktop;ghb.desktop;
 x-content/video-dvd=vlc.desktop;ghb.desktop;
 x-content/video-vcd=vlc.desktop;ghb.desktop;
 x-content/video-svcd=vlc.desktop;ghb.desktop;
