@@ -130,16 +130,21 @@ DisabledValue=1
 Size=32
 
 [General]
-ColorScheme=Oxygen Cold
-Name=Oxygen Cold
+BrowserApplication[$e]=firefox.desktop
+ColorScheme=Netrunner15
+Name=Breeze
+XftAntialias=true
+XftHintStyle=hintslight
+XftSubPixel=rgb
 desktopFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
+fixed=Monospace,9,-1,5,50,0,0,0,0,0
 font=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 menuFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
 smallestReadableFont=DejaVu Sans,8,-1,5,50,0,0,0,0,0
 taskbarFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
 toolBarFont=DejaVu Sans,8,-1,5,50,0,0,0,0,0
-widgetStyle=oxygen
+widgetStyle=qtcurve
 
 [Icons]
 Theme=oxygen
@@ -254,9 +259,9 @@ DisabledValue=1
 Size=22
 
 [WM]
-activeBackground=96,148,207
-activeBlend=255,255,255
-activeForeground=255,255,255
+activeBackground=224,223,222
+activeBlend=75,71,67
+activeForeground=75,71,67
 inactiveBackground=224,223,222
 inactiveBlend=75,71,67
 inactiveForeground=20,19,18

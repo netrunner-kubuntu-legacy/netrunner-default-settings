@@ -11,7 +11,6 @@ IntensityAmount=0.1
 IntensityEffect=2
 
 [ColorEffects:Inactive]
-ChangeSelectionColor=false
 Color=112,111,110
 ColorAmount=0.025
 ColorEffect=2
@@ -130,7 +129,8 @@ DisabledValue=1
 Size=32
 
 [General]
-ColorScheme=Oxygen Cold
+BrowserApplication[$e]=firefox.desktop
+ColorScheme=Netrunner15
 Name=Breeze
 XftAntialias=true
 XftHintStyle=hintslight
@@ -152,7 +152,7 @@ ColorScheme=Oxygen Cold
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
 contrast=4
-widgetStyle=oxygen
+widgetStyle=qtcurve
 
 [KDE-Global GUI Settings]
 GraphicEffectsLevel=6
@@ -238,10 +238,10 @@ DisabledValue=1
 Size=22
 
 [WM]
-activeBackground=96,148,207
-activeBlend=255,255,255
+activeBackground=224,223,222                                                
+activeBlend=75,71,67 
 activeFont=DejaVu Sans,9,-1,5,75,0,0,0,0,0
-activeForeground=255,255,255
+activeForeground=75,71,67
 inactiveBackground=224,223,222
 inactiveBlend=75,71,67
 inactiveForeground=20,19,18
