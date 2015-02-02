@@ -33,20 +33,21 @@ VBmain		= HBmenu _HPmain Progress
    VPRight	= HBSongList(maxheight=50) _VPRight2
    VPRight2	= _HPfp0 _VBSongList
 #    HPfp0	= FilterPane0(nb=1,hidebb=1,page=genre) HPfp1
-    HPfp0	= HPfp1
-     HPfp1	= FilterPane1(nb=2,hidebb=1,hscrollbar=0,pages=artist,page=artist) \
+#    HPfp0	= HPfp1
+     HPfp0	= _FilterPane1(nb=2,hidebb=1,hidetabs=1,pages=artist,page=artist/lpicsize=16) \
 #		  FilterPane2(nb=3,hidebb=1,hscrollbar=0,hidetabs=1,page=album,page_album/lpicsize=32,page_album/lmarkup=1)
       _FilterPane2(nb=3,\
 						hidebb= 1,\
-						hidetabs= 0,\
+						hidetabs= 1,\
 						hscrollbar= 0,\
 						min= 1,\
                                                 page= album,\
-						page_album/lmarkup= 1,\
-						page_album/lpicsize= 64,\
-						page_album/mmarkup= below,\
+						page_album/lmarkup=1,\
+						page_album/lpicsize=96,\
+						page_album/mpicsize=96,\
+						page_album/mmarkup=below,\
 						page_album/mode=mosaic,\
-						page_album/sort= year,\
+						page_album/sort=year,\
 						pages=album)
 #    VBSongList	= HBSongList _SongTree
 #    VBSongList	= _HPfp0 _SongTree
@@ -55,7 +56,7 @@ VBmain		= HBmenu _HPmain Progress
      HBSongList	= SimpleSearch(maxwidth=500) PlayFilter
      HBSongList2	= -MBlist2
 #      MBlist 	= HistItem LSortItem PlayItem
-      MBlist 	= LSortItem PlayItem
+#      MBlist 	= LSortItem PlayItem
       MBlist2 	= LSortItem PlayItem
 
 

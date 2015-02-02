@@ -34,20 +34,37 @@ function show_deprecated {
     if [ -e /usr/share/netrunner/hidden/pulseaudio.desktop ]; then
       dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/netrunner/hidden/pulseaudio.desktop /etc/xdg/autostart/pulseaudio.desktop
     fi
+}
+
+# Undo Diversions
+function undo_diversions {
     # Firefox (instead of old adjust.py script)
-    if [ -e /usr/lib/firefox/distribution/distribution.ini ]; then
+    if [ -e /usr/lib/firefox/distribution/distribution.ini.orig ]; then
       dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/lib/firefox/distribution/distribution.ini.orig /usr/lib/firefox/distribution/distribution.ini
     fi
     # kactivitymanager_file_item_linking_plugin
-    if [ -e /usr/share/kservices5/kactivitymanagerd_fileitem_linking_plugin.desktop ]; then
+    if [ -e /usr/share/kservices5/kactivitymanagerd_fileitem_linking_plugin.desktop.orig ]; then
       dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/kservices5/kactivitymanagerd_fileitem_linking_plugin.desktop.orig /usr/share/kservices5/kactivitymanagerd_fileitem_linking_plugin.desktop
     fi
     # gmusicbrowser layout
-    if [ -e /usr/share/gmusicbrowser/layouts/main.layout ]; then
+    if [ -e /usr/share/gmusicbrowser/layouts/main.layout.orig ]; then
       dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/gmusicbrowser/layouts/main.layout.orig /usr/share/gmusicbrowser/layouts/main.layout
     fi
-    if [ -e /usr/share/gmusicbrowser/layouts/filterfun.layout ]; then
+    if [ -e /usr/share/gmusicbrowser/layouts/filterfun.layout.orig ]; then
       dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/gmusicbrowser/layouts/filterfun.layout.orig /usr/share/gmusicbrowser/layouts/filterfun.layout
+    fi
+    if [ -e /usr/share/gmusicbrowser/layouts/contrib.layout.orig ]; then
+      dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/gmusicbrowser/layouts/contrib.layout.orig /usr/share/gmusicbrowser/layouts/contrib.layout
+    fi
+    if [ -e /usr/share/gmusicbrowser/layouts/makeitlooklike.layout.orig ]; then
+      dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/gmusicbrowser/layouts/makeitlooklike.layout.orig /usr/share/gmusicbrowser/layouts/makeitlooklike.layout
+    fi
+    if [ -e /usr/share/gmusicbrowser/layouts/shimmer.layout.orig ]; then
+      dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/gmusicbrowser/layouts/shimmer.layout.orig /usr/share/gmusicbrowser/layouts/shimmer.layout
+    fi
+    # gmusicbrowser main config file
+    if [ -e /usr/share/gmusicbrowser/gmbrc.default.orig ]; then
+      dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/gmusicbrowser/gmbrc.default.orig /usr/share/gmusicbrowser/gmbrc.default
     fi
 }
 
@@ -61,6 +78,7 @@ case "$1" in
         rm -f /etc/skel/.gtkrc-2.0-kde4
         rm -f /etc/skel/.config/gtk-3.0/settings.ini
         show_deprecated
+        undo_diversions
     ;;
 
     upgrade|abort-upgrade|abort-remove|abort-deconfigure)
