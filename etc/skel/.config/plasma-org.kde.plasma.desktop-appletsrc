@@ -58,6 +58,7 @@ plugin=org.kde.plasma.expandingiconstaskmanager
 
 [Containments][1][Applets][16][Configuration][General]
 launchers=file:///usr/share/applications/kde4/dolphin.desktop?wmClass=Dolphin,file:///usr/share/applications/firefox.desktop?wmClass=Firefox
+showOnlyCurrentDesktop=true
 
 [Containments][1][Applets][20]
 immutability=1
