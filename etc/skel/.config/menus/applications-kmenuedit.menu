@@ -68,6 +68,8 @@
    <Filename>kde4-marble.desktop</Filename>
    <Filename>kde4-kmix.desktop</Filename>
    <Filename>kde4-akregator.desktop</Filename>
+   <Filename>org.kde.ksshaskpass.desktop</Filename>
+   <Filename>gnome-disks.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
@@ -115,6 +117,7 @@
    <Filename>steam.desktop</Filename>
    <Filename>kde4-marble_osm.desktop</Filename>
    <Filename>kde4-marble_kmz.desktop</Filename>
+   <Filename>org.kde.ksshaskpass.desktop</Filename>
   </Exclude>
   <Include>
    <Filename>kde4-marble.desktop</Filename>
@@ -123,7 +126,10 @@
    <Merge type="menus"/>
    <Menuname>Terminal</Menuname>
    <Merge type="files"/>
-   <Filename>kde4-bluedevil-network-panu.desktop</Filename>
+   <Filename>bluedevil-monolithic.desktop</Filename>
+   <Filename>bluedevil-sendfile.desktop</Filename>
+   <Filename>bluedevil-wizard.desktop</Filename>
+   <Filename>kde4-marble.desktop</Filename>
    <Filename>pidgin.desktop</Filename>
    <Filename>skype.desktop</Filename>
    <Filename>kde4-keditbookmarks.desktop</Filename>
@@ -134,7 +140,6 @@
    <Filename>thunderbird.desktop</Filename>
    <Separator/>
    <Menuname>More</Menuname>
-   <Filename>kde4-marble_kml.desktop</Filename>
   </Layout>
  </Menu>
  <Menu>
@@ -312,5 +317,22 @@
     </Include>
    </Menu>
   </Menu>
+ </Menu>
+ <Menu>
+  <Name>Settingsmenu</Name>
+  <Layout>
+   <Merge type="files"/>
+   <Filename>grub-customizer.desktop</Filename>
+   <Filename>im-config.desktop</Filename>
+   <Filename>kdesystemsettings.desktop</Filename>
+   <Filename>org.kde.kmenuedit.desktop</Filename>
+   <Filename>openjdk-7-policytool.desktop</Filename>
+   <Filename>software-properties-kde.desktop</Filename>
+   <Filename>synaptic.desktop</Filename>
+   <Filename>systemsettings.desktop</Filename>
+  </Layout>
+  <Exclude>
+   <Filename>gnome-disks.desktop</Filename>
+  </Exclude>
  </Menu>
 </Menu>
