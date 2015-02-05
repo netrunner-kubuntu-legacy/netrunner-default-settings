@@ -11,11 +11,19 @@ PLUGIN_LYRICS: 1
 PLUGIN_FETCHCOVER: 1
 PLUGIN_FETCHCOVER_PictureSite_album: lastfm
 PLUGIN_FETCHCOVER_PictureSite_artist: lastfm
+PLUGIN_FETCHCOVER_USEFILE: 1
 PLUGIN_AUTOSAVE: 1
 PLUGIN_ARTISTINFO: 1
 PLUGIN_MPRIS2: 1
 PLUGIN_AppIndicator: 1
 PLUGIN_AppIndicator_MiddleClick: playpause
+PLUGIN_NOTIFY: 1
+PLUGIN_NOTIFY_picsize: 50
+PLUGIN_NOTIFY_text: '<i>by</i> %a\n<i>from</i> %l'
+PLUGIN_NOTIFY_timeout: 5
+PLUGIN_NOTIFY_title: '%S'
+
+
 
 
 Layout: Filters & Fun
@@ -29,7 +37,7 @@ LengthCheckMode: current
 TrayTipDelay: 0
 TrayTipTimeLength: 3000
 UseTray: 1
-ShowTipOnSongChange: 1
+ShowTipOnSongChange: 0
 Sort: path album disc track file
 gst_use_replaygain: 0
 
@@ -40,6 +48,11 @@ gst_use_replaygain: 0
 #LayoutB: Browser with SongTree
 
 # for more possible values, look at the [Options] section of ~/.gmusicbrowser/gmbrc
+SavedSorts:
+  Path,Album,Disc,Track,File: path album disc track file
+
+
+
 
 
 DefaultOptions_songtree_SongTree:

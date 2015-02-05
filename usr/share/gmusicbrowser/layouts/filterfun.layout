@@ -34,7 +34,7 @@ VBmain		= HBmenu _HPmain Progress
    VPRight2	= _HPfp0 _VBSongList
 #    HPfp0	= FilterPane0(nb=1,hidebb=1,page=genre) HPfp1
 #    HPfp0	= HPfp1
-     HPfp0	= _FilterPane1(nb=2,hidebb=1,hidetabs=1,pages=artist,page=artist/lpicsize=16) \
+     HPfp0	= _FilterPane1(nb=2,hidebb=1,hidetabs=1,hscrollbar=0,page=artist,page_artist/lpicsize=16,pages=artist) \
 #		  FilterPane2(nb=3,hidebb=1,hscrollbar=0,hidetabs=1,page=album,page_album/lpicsize=32,page_album/lmarkup=1)
       _FilterPane2(nb=3,\
 						hidebb= 1,\
