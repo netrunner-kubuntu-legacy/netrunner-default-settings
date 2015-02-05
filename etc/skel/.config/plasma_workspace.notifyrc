@@ -3,4 +3,4 @@ Action=Sound
 Execute=
 KTTS=
 Logfile=
-Sound=/usr/share/sounds/netrunner-logout.wav 
+Sound=/usr/share/sounds/desktop-login.ogg
