@@ -144,7 +144,7 @@ shadeSortColumn=true
 smallestReadableFont=Roboto,10,-1,5,50,0,0,0,0,0
 taskbarFont=Roboto,10,-1,5,50,0,0,0,0,0
 toolBarFont=Roboto,10,-1,5,50,0,0,0,0,0
-widgetStyle=qtcurve
+widgetStyle=oxygen
 
 [Icons]
 Theme=oxygen
