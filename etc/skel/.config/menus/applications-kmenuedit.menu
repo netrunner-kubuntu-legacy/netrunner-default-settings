@@ -50,7 +50,6 @@
    <Filename>kde4-KMail2.desktop</Filename>
    <Filename>kde4-korganizer.desktop</Filename>
    <Filename>kde4-karbon.desktop</Filename>
-   <Filename>kde4-okular.desktop</Filename>
    <Filename>kde4-pimsettingexporter.desktop</Filename>
    <Filename>kde4-sieveeditor.desktop</Filename>
    <Filename>kde4-k3b.desktop</Filename>
@@ -73,6 +72,9 @@
    <Filename>bluedevil-monolithic.desktop</Filename>
    <Filename>bluedevil-sendfile.desktop</Filename>
    <Filename>bluedevil-wizard.desktop</Filename>
+   <Filename>kde4-okularApplication_xps.desktop</Filename>
+   <Filename>kde4-okularApplication_pdf.desktop</Filename>
+   <Filename>kde4-okular.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
@@ -83,12 +85,16 @@
    <Filename>libreoffice-draw.desktop</Filename>
    <Filename>lrfviewer.desktop</Filename>
    <Filename>kde4-okularApplication_txt.desktop</Filename>
+   <Filename>kde4-okularApplication_xps.desktop</Filename>
+   <Filename>kde4-okularApplication_pdf.desktop</Filename>
+   <Filename>kde4-okular.desktop</Filename>
   </Exclude>
   <Layout>
    <Merge type="files"/>
+   <Filename>kde4-krita_odg.desktop</Filename>
+   <Filename>kde4-krita_tiff.desktop</Filename>
    <Filename>kde4-krita_xcf.desktop</Filename>
    <Filename>kde4-krita_exr.desktop</Filename>
-   <Filename>kde4-okularApplication_pdf.desktop</Filename>
    <Filename>gimp.desktop</Filename>
    <Filename>org.kde.gwenview.desktop</Filename>
    <Filename>kde4-karbon.desktop</Filename>
@@ -184,7 +190,11 @@
    <Filename>kde4-sieveeditor.desktop</Filename>
    <Filename>calibre-gui.desktop</Filename>
    <Filename>kde4-Kontact.desktop</Filename>
+   <Filename>kde4-okularApplication_xps.desktop</Filename>
   </Exclude>
+  <Include>
+   <Filename>kde4-okularApplication_txt.desktop</Filename>
+  </Include>
   <Layout>
    <Merge type="files"/>
    <Filename>kde4-krita_xcf.desktop</Filename>
@@ -206,9 +216,6 @@
    <Menuname>More</Menuname>
    <Filename>kde4-okularApplication_txt.desktop</Filename>
   </Layout>
-  <Include>
-   <Filename>kde4-okularApplication_txt.desktop</Filename>
-  </Include>
  </Menu>
  <Menu>
   <Name>Utilities</Name>
