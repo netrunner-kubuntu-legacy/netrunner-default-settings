@@ -1,6 +1,9 @@
 [Engine]
 ThemeName=Gnome3
 
+[FormaN]
+ButtonSize=3
+
 [Gnome3]
 BorderSize=1
 ButtonSize=0
