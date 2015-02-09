@@ -34,6 +34,10 @@ function show_deprecated {
     if [ -e /usr/share/netrunner/hidden/pulseaudio.desktop ]; then
       dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/netrunner/hidden/pulseaudio.desktop /etc/xdg/autostart/pulseaudio.desktop
     fi
+    # Show cashew/hamburger
+    if [ -e /usr/share/plasma/packages/org.kde.desktoptoolbox/metadata.desktop ]; then 
+      dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/netrunner/hidden/desktoptoolbox_metadata.desktop /usr/share/plasma/packages/org.kde.desktoptoolbox/metadata.desktop
+    fi
 }
 
 # Undo Diversions

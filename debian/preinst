@@ -32,6 +32,10 @@ function hide_deprecated {
     if [ -e /etc/xdg/autostart/pulseaudio.desktop ]; then
       dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/pulseaudio.desktop /etc/xdg/autostart/pulseaudio.desktop
     fi
+    # Hide cashew/hamburger
+    if [ -e /usr/share/plasma/packages/org.kde.desktoptoolbox/metadata.desktop ]; then 
+      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/desktoptoolbox_metadata.desktop /usr/share/plasma/packages/org.kde.desktoptoolbox/metadata.desktop
+    fi
 }
 
 # Other dpkg diversions
