@@ -74,6 +74,17 @@
    <Filename>bluedevil-wizard.desktop</Filename>
    <Filename>kde4-okularApplication_xps.desktop</Filename>
    <Filename>kde4-okularApplication_pdf.desktop</Filename>
+   <Filename>kde4-okular.desktop</Filename>
+   <Filename>kde4-okularApplication_fb.desktop</Filename>
+   <Filename>kde4-okularApplication_ooo.desktop</Filename>
+   <Filename>kde4-okularApplication_ghostview.desktop</Filename>
+   <Filename>kde4-okularApplication_dvi.desktop</Filename>
+   <Filename>kde4-okularApplication_mobi.desktop</Filename>
+   <Filename>kde4-okularApplication_txt.desktop</Filename>
+   <Filename>kde4-okularApplication_kimgio.desktop</Filename>
+   <Filename>kde4-okularApplication_fax.desktop</Filename>
+   <Filename>kde4-okularApplication_comicbook.desktop</Filename>
+   <Filename>kde4-okularApplication_plucker.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
@@ -83,9 +94,26 @@
    <Filename>display.im6.desktop</Filename>
    <Filename>libreoffice-draw.desktop</Filename>
    <Filename>lrfviewer.desktop</Filename>
+   <Filename>kde4-okularApplication_xps.desktop</Filename>
+   <Filename>kde4-okularApplication_pdf.desktop</Filename>
+   <Filename>kde4-okular.desktop</Filename>
+   <Filename>kde4-okularApplication_fb.desktop</Filename>
+   <Filename>kde4-okularApplication_ooo.desktop</Filename>
+   <Filename>kde4-okularApplication_ghostview.desktop</Filename>
+   <Filename>kde4-okularApplication_dvi.desktop</Filename>
+   <Filename>kde4-okularApplication_mobi.desktop</Filename>
+   <Filename>kde4-okularApplication_txt.desktop</Filename>
+   <Filename>kde4-okularApplication_kimgio.desktop</Filename>
+   <Filename>kde4-okularApplication_fax.desktop</Filename>
+   <Filename>kde4-okularApplication_comicbook.desktop</Filename>
+   <Filename>kde4-okularApplication_plucker.desktop</Filename>
   </Exclude>
   <Layout>
    <Merge type="files"/>
+   <Filename>kde4-krita_flipbook.desktop</Filename>
+   <Filename>kde4-krita_png.desktop</Filename>
+   <Filename>kde4-krita_jpeg.desktop</Filename>
+   <Filename>kde4-krita_ppm.desktop</Filename>
    <Filename>kde4-krita_odg.desktop</Filename>
    <Filename>kde4-krita_tiff.desktop</Filename>
    <Filename>kde4-krita_xcf.desktop</Filename>
@@ -180,15 +208,13 @@
    <Filename>kde4-KMail2.desktop</Filename>
    <Filename>kde4-korganizer.desktop</Filename>
    <Filename>kde4-karbon.desktop</Filename>
-   <Filename>kde4-okular.desktop</Filename>
    <Filename>kde4-pimsettingexporter.desktop</Filename>
    <Filename>kde4-sieveeditor.desktop</Filename>
    <Filename>calibre-gui.desktop</Filename>
    <Filename>kde4-Kontact.desktop</Filename>
-   <Filename>kde4-okular.desktop</Filename>
   </Exclude>
   <Include>
-   <Filename>kde4-okularApplication_txt.desktop</Filename>
+   <Filename>kde4-okular.desktop</Filename>
   </Include>
   <Layout>
    <Merge type="files"/>
@@ -209,7 +235,6 @@
    <Separator/>
    <Merge type="menus"/>
    <Menuname>More</Menuname>
-   <Filename>kde4-okularApplication_txt.desktop</Filename>
   </Layout>
  </Menu>
  <Menu>
