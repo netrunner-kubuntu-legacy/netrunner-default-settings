@@ -74,7 +74,6 @@
    <Filename>bluedevil-wizard.desktop</Filename>
    <Filename>kde4-okularApplication_xps.desktop</Filename>
    <Filename>kde4-okularApplication_pdf.desktop</Filename>
-   <Filename>kde4-okular.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
@@ -84,10 +83,6 @@
    <Filename>display.im6.desktop</Filename>
    <Filename>libreoffice-draw.desktop</Filename>
    <Filename>lrfviewer.desktop</Filename>
-   <Filename>kde4-okularApplication_txt.desktop</Filename>
-   <Filename>kde4-okularApplication_xps.desktop</Filename>
-   <Filename>kde4-okularApplication_pdf.desktop</Filename>
-   <Filename>kde4-okular.desktop</Filename>
   </Exclude>
   <Layout>
    <Merge type="files"/>
@@ -190,7 +185,7 @@
    <Filename>kde4-sieveeditor.desktop</Filename>
    <Filename>calibre-gui.desktop</Filename>
    <Filename>kde4-Kontact.desktop</Filename>
-   <Filename>kde4-okularApplication_xps.desktop</Filename>
+   <Filename>kde4-okular.desktop</Filename>
   </Exclude>
   <Include>
    <Filename>kde4-okularApplication_txt.desktop</Filename>
