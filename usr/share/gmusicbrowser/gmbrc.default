@@ -24,13 +24,6 @@ PLUGIN_NOTIFY_timeout: 5
 PLUGIN_NOTIFY_title: '%S'
 
 
-
-
-Layout: Filters & Fun
-IconTheme: elementary
-LayoutT: Shimmer Traytip
-LayoutF: Shimmer Party
-
 # customize netrunner:
 CloseToTray: 1
 LengthCheckMode: current
@@ -40,12 +33,26 @@ UseTray: 1
 ShowTipOnSongChange: 0
 Sort: path album disc track file
 gst_use_replaygain: 0
+RememberPlayFilter: 1
+RememberPlaySong: 1
+
+
+
+Layout: Filters & Fun
+LayoutB: Browser
+LayoutF: Filters & Fun
+LayoutS: Filters & Fun
+LayoutT: Filters & Fun
+IconTheme: elementary
 
 
 # default player layout
 #Layout: Small player
 # default browser layout
 #LayoutB: Browser with SongTree
+#LayoutT: Shimmer Traytip
+#LayoutF: Filters & Fun
+
 
 # for more possible values, look at the [Options] section of ~/.gmusicbrowser/gmbrc
 SavedSorts:
