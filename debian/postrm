@@ -38,6 +38,10 @@ function show_deprecated {
     if [ -e /usr/share/plasma/packages/org.kde.desktoptoolbox/metadata.desktop ]; then 
       dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/netrunner/hidden/desktoptoolbox_metadata.desktop /usr/share/plasma/packages/org.kde.desktoptoolbox/metadata.desktop
     fi
+    # Hide cashew/hamburger QML UI
+    if [ -e /usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxRoot.qml ]; then
+      dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/netrunner/hidden/desktoptoolbox_ToolBoxRoot.qml /usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxRoot.qml
+    fi
     # Show pulseaudio kcm (non working currently)
     if  [ -e /usr/share/kservices5/kcm_pulseaudio.desktop ]; then
       dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/netrunner/hidden/kcm_pulseaudio.desktop /usr/share/kservices5/kcm_pulseaudio.desktop
