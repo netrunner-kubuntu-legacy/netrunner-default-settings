@@ -53,15 +53,11 @@ for (var i = 0; i < screenCount; ++i) {
         desktopsArray[j].wallpaperPlugin = 'org.kde.image'
         desktopsArray[j].wallpaperMode = 'SingleImage'
 
-        desktopsArray[j].writeConfig("alignToGrid", "true");
-        desktopsArray[j].writeConfig("blankLabel", "false");
-        desktopsArray[j].writeConfig("clickForFolderPreviews", "false");
-        desktopsArray[j].writeConfig("customIconSize", "64");
-        desktopsArray[j].writeConfig("numTextLines", "2");
-        desktopsArray[j].writeConfig("sortColumn", "-1");
-        desktopsArray[j].writeConfig("previewPlugins", "imagethumbnail,jpegthumbnail,windowsexethumbnail,kffmpegthumbnailer,windowsimagethubmnail");
-        desktopsArray[j].writeConfig("savedPositions", "1,4,ubiquity-kdeui.desktop,466,10,welcome.desktop,314,10,mycomputer.desktop,10,10,Network,162,10");
-        desktopsArray[j].writeConfig("sortDirsFirst", "false");
+        desktopsArray[j].currentConfigGroup = new Array("General");
+        desktopsArray[j].writeConfig("positions","1,8,desktop:/welcome.desktop,0,2,desktop:/Network,0,1,desktop:/mycomputer.desktop,0,0,desktop:/ubiquity-kdeui.desktop,0,3")
+        desktopsArray[j].writeConfig("popups",false);
+        desktopsArray[j].writeConfig("selectionMarkers",false);
+        desktopsArray[j].writeConfig("sortMode","-1");
 //         [Containments][18][Wallpaper][org.kde.image][General]
         desktopsArray[j].currentConfigGroup = new Array("Wallpaper", "org.kde.image", "General");
         desktopsArray[j].writeConfig("Image", "file:///usr/share/wallpapers/Prometheus/contents/images/1920x1080.png");
