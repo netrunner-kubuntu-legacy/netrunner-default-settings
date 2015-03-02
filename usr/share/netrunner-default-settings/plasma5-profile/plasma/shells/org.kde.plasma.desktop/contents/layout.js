@@ -14,14 +14,12 @@ loadTemplate("org.kde.plasma.desktop.defaultPanel")
 var actionPlugins = ConfigFile("plasma-org.kde.plasma.desktop-appletsrc");
 actionPlugins.group = "ActionPlugins";
 
-var actionPluginsCurrent = ConfigFile(actionPlugins);
-actionPluginsCurrent.group = "0";
+var actionPluginsCurrent = ConfigFile(actionPlugins,"0");
 actionPluginsCurrent.writeEntry("MidButton;NoModifier", "org.kde.paste");
 actionPluginsCurrent.writeEntry("RightButton;NoModifier", "org.kde.contextmenu");
 actionPluginsCurrent.writeEntry("wheel:Vertical;NoModifier", "org.kde.switchdesktop");
 
-var rightButton = ConfigFile(actionPluginsCurrent);
-rightButton.group = "RightButton;NoModifier";
+var rightButton = ConfigFile(actionPluginsCurrent,"RightButton;NoModifier");
 rightButton.writeEntry("_add panel", "true");
 rightButton.writeEntry("_context", "true");
 rightButton.writeEntry("_lock_screen", "false");
