@@ -1,6 +1,0 @@
-<apps version="1">
-    <app serviceId="vokoscreen.desktop"/>
-    <app serviceId="kde4-systemsettings.desktop"/>
-    <app serviceId="kde4-ksysguard.desktop"/>
-    <app serviceId="synaptic-kde.desktop"/>
-</apps>

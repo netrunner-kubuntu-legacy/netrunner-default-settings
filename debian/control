@@ -1,13 +1,14 @@
 Source: netrunner-default-settings
 Section: admin
 Priority: optional
-Maintainer: Clement Lefebvre <root@linuxmint.com>
+Maintainer: Leszek Lesner <leszek@zevenos.com>
 Build-Depends: debhelper (>= 5)
 Standards-Version: 3.7.2
 
 Package: netrunner-default-settings
 Architecture: all
 Provides: netrunner-default-settings
+Conflicts: kubuntu-settings-desktop
 Replace: netrunner-artwork (<< 1.0.84), plasma-desktopthemes-artwork
 Breaks: netrunner-artwork (<< 1.0.84), plasma-desktopthemes-artwork
 Depends: 
