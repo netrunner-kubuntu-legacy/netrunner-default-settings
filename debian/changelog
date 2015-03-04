@@ -1,3 +1,801 @@
+netrunner-default-settings (1.3.1) utopic; urgency=low
+
+  * Enable plasma volume, hide kmix
+  * Revert to DejaVu fonts
+  * language.desktop only in menu not systemsettings
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sun, 15 Feb 2015 11:21:12 +0100
+
+netrunner-default-settings (1.3.0) utopic; urgency=low
+
+  * Added language setting link
+  * Set 100 to knotifyrc sound (KDE SC 4)
+  * Enable line numbers show in kate
+  * New link for welcome.desktop
+  * Set Enlightenment as default plasma theme
+  * Hide kcm_pulseaudio.desktop
+  * Set tearing prevention to auto in kwinrc
+
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 14 Feb 2015 17:31:09 +0100
+
+netrunner-default-settings (1.2.9) utopic; urgency=low
+
+  * Renewed gmbrc.default
+  * Ship default empty passworded kwallet5 wallets
+
+ -- Leszek Lesner <leszek@zevenos.com>  Thu, 12 Feb 2015 17:45:02 +0100
+
+netrunner-default-settings (1.2.8) utopic; urgency=low
+
+  * Enable clipboard but hide in tray
+
+ -- Leszek Lesner <leszek@zevenos.com>  Thu, 12 Feb 2015 11:24:43 +0100
+
+netrunner-default-settings (1.2.7) utopic; urgency=low
+
+  * Use default login wallpaper for maui sddm theme
+  * Hide okular from graphics menu
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 10 Feb 2015 18:15:42 +0100
+
+netrunner-default-settings (1.2.6) utopic; urgency=low
+
+  * Use maui as sddm theme
+  * Hide cashew/hamburger item with dpkg-divert
+  * Added link to .local/share/kfileplaces/bookmarks.xml
+  * Use oxygen-gtk for gtk2 and 3 and enable menu images
+  * Use oxygen as default widget style
+  * Use roboto 10 everywhere possible
+  * Make Chromeo default plasma theme
+  * Press on power button should shutdown
+  * Move okular to office menu
+  * Don't load clipboard in panel tray
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 09 Feb 2015 14:48:57 +0100
+
+netrunner-default-settings (1.2.5) utopic; urgency=low
+
+  * Fix gtk2 theme to use QtCurve instead of Oxygen
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 07 Feb 2015 12:05:21 +0100
+
+netrunner-default-settings (1.2.4) utopic; urgency=low
+
+  * Remove uneccessary templates
+  * Enforce gtk windows to have window decoration
+  * Use kde colors on non kde applications
+  * Updated gmusicbrowser layout and default config
+  * Graphics: move Okular-> Office
+  * Office: move Kontact-> Internet
+  * Internet: remove bluetooth
+  * Utilities: move Disk-> System
+  * User netrunner-login as startup sound
+  * Use QtCurve as gtk2 theme
+
+ -- Leszek Lesner <leszek@zevenos.com>  Thu, 05 Feb 2015 16:10:44 +0100
+
+netrunner-default-settings (1.2.3) utopic; urgency=low
+
+  * Hide ssh askpass from menu
+  * Hide Gnome Disks from Settings
+  * Add SimpleScreenRecorder to favorites in menu
+  * Use LibreOffice dialogs in LO4
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 03 Feb 2015 18:56:51 +0100
+
+netrunner-default-settings (1.2.2) utopic; urgency=low
+
+  * Set Netrunner15 as default color scheme
+  * Set Breeze as default window decoration
+  * Set netrunner as default qtcurve style
+  * Set firefox as default browser
+  * Added new config file for gmusicbrowser
+  * Added new layouts for gmusicbrowser
+  * Cleaned up dpkg-divert
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 02 Feb 2015 18:24:38 +0100
+
+netrunner-default-settings (1.2.1) utopic; urgency=low
+
+  * Set Central Station as background for screen locker
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 27 Jan 2015 11:33:08 +0100
+
+netrunner-default-settings (1.2.0) utopic; urgency=low
+
+  * Use doubleclick to close window
+  * Hide kmix from multimedia & akregator from utilities
+  * Set vlc as default player for webm
+  * Kwin autodetect graphics capabilities
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 26 Jan 2015 17:55:36 +0100
+
+netrunner-default-settings (1.1.9) utopic; urgency=low
+
+  * Fix wallpaper not correctly set to Prometheus
+  * Use filters & fun as default gmusicbrowser layout
+
+ -- Leszek Lesner <leszek@zevenos.com>  Thu, 08 Jan 2015 12:50:27 +0100
+
+netrunner-default-settings (1.1.8) utopic; urgency=low
+
+  * Fixed typo in prerm & preinst
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 07 Jan 2015 12:58:21 +0100
+
+netrunner-default-settings (1.1.7) utopic; urgency=low
+
+  * Added default config for gmusicbrowser
+  * Added removal of diversion for gmusicbrowser layout
+  * Add gmusicbrowser layout files
+  * Updated cantata config file
+  * Added anonymous.katesession with filetree plugin configured
+  * Added pidgin config with enabled ubuntu indicator plugin
+  * Marble switch to Marcator view
+  * Configured dolphin detailed list view & compact list view + thumbnailers
+  * Use default login sound netrunner-logout.wav
+  * Disable kwin effects by default
+  * Added ark mimetype config for compressed tars
+  * Use gnome3 as default window decoration
+  * Use oxygen as widget style
+  * Deactivate Animations for oxygen widget style
+  * Use white-classicia++ as default mouse cursor theme
+  * Use breeze as default sddm login manager theme
+  * Set login.png as default background for breeze theme
+  * Set new default favorites in kicker
+  * Set mimetypes so that handbrake can't hijack them from vlc
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 06 Jan 2015 13:35:26 +0100
+
+netrunner-default-settings (1.1.6) utopic; urgency=low
+
+  * Manually add wine to menu
+  * Don't start cantata hidden in the tray
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 08 Dec 2014 17:57:08 +0100
+
+netrunner-default-settings (1.1.5) utopic; urgency=low
+
+  * Add Atraci config
+  * Add calibre config
+  * Add cantata config
+  * Add marble config
+  * Updated menu to hide marble from education
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 08 Dec 2014 14:42:21 +0100
+
+netrunner-default-settings (1.1.4) utopic; urgency=low
+
+  * Move stuff around in the menu
+  * Use metro kwin decoration
+  * Remove mediaplayer widget from tray
+  * Set panel size to 34
+  * Removed leftover project-neon5-kde directory
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 08 Dec 2014 12:06:52 +0100
+
+netrunner-default-settings (1.1.3) utopic; urgency=low
+
+  * Really use Alt+F1 for kicker
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 05 Dec 2014 16:16:05 +0100
+
+netrunner-default-settings (1.1.2) utopic; urgency=low
+
+  * Added manual menu config
+  * Use Alt+F1 shortcut for Kicker
+  * Added kate config (for newer kate kf5 builds)
+  * Don't lock the screen
+  * Set default powermanagement configuration
+  * Use libx264 and mkv again in vokoscreen
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 02 Dec 2014 12:23:43 +0100
+
+netrunner-default-settings (1.1.1) utopic; urgency=low
+
+  * Updated panel configuration and added krunner again
+
+ -- Leszek Lesner <leszek@zevenos.com>  Thu, 27 Nov 2014 12:14:55 +0100
+
+netrunner-default-settings (1.1.0) utopic; urgency=low
+
+  * Use the new homerun.svg as kicker icon
+  * Use kcmshell5 for sambamounter desktop file
+  * Updated mimeapps.list to use dolphin as default filemanager
+  * Updated welcome.desktop link
+  * Don't save session on logout
+  * Show all playback & capture devices & streams in kmix
+  * Custom button positions for kwinrc
+  * Updated dolphin configs
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 25 Nov 2014 12:53:59 +0100
+
+netrunner-default-settings (1.0.99) utopic; urgency=low
+
+  * Enabled blur effect
+  * Disable background contrast effect
+  * Set panel height to 35 by default
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 17 Nov 2014 12:49:43 +0100
+
+netrunner-default-settings (1.0.98) utopic; urgency=low
+
+  * Disable fade effect
+  * Disable maximize effect
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 14 Nov 2014 11:28:45 +0100
+
+netrunner-default-settings (1.0.97) utopic; urgency=low
+
+  * Disabled icons effects
+  * Disabled systemsettings tooltips
+  * Switched to oxygen window decoration with large buttons
+  * Disabled oxygen window glowing
+  * Disabled ksplash
+  * Set sddm theme to maui (ship /etc/sddm.conf)
+  * Set dolphin toolbar and sidebar icon size
+  * Set folderview settings to not use selection markers and show folder
+    contents
+  * Set kicker custom image and name only entries
+  * Added dolphin and firefox as eitm quicklaunchers
+  * Added yakuake quicklaunch item in panel
+  * Disabled notifications in systray
+  * Added notifications in panel
+  * Added default qtcurve style
+
+ -- Leszek Lesner <leszek@zevenos.com>  Thu, 13 Nov 2014 18:19:28 +0100
+
+netrunner-default-settings (1.0.96) utopic; urgency=low
+
+  * Added missing kactivitymanagerdrc
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 10 Nov 2014 13:11:19 +0100
+
+netrunner-default-settings (1.0.95) utopic; urgency=low
+
+  * Removed old menu configs
+  * Renewed plasma config for showing desktop
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 10 Nov 2014 10:50:36 +0100
+
+netrunner-default-settings (1.0.94) utopic; urgency=low
+
+  * Added diversion of kactivitymanagerd_fileitem_linking_plugin.desktop
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 07 Nov 2014 09:33:41 +0100
+
+netrunner-default-settings (1.0.92) utopic; urgency=low
+
+  * Added plasma5 config
+  * Cleanup of old adjustment files
+  * Removed some old configs
+  * Prepare for Netrunner 15 build 1
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 03 Nov 2014 09:55:14 +0100
+
+netrunner-default-settings (1.0.91) trusty; urgency=low
+
+  * Use dejaVuSans 10 as default gtk font
+  * Disabled custom font in systray
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 21 Jun 2014 16:15:03 +0200
+
+netrunner-default-settings (1.0.90) trusty; urgency=low
+
+  * Add final5 qtcurve theme
+  * Set final5 qtcurve theme as default
+  * changed plasma theme to enlightenment
+  * set window decoration to oxygen
+  * tweaked oxygen
+  * use dejavusans 10 as default font
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 20 Jun 2014 20:32:53 +0200
+
+netrunner-default-settings (1.0.89) trusty; urgency=low
+
+  * Fixed readme desktop link
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 13 Jun 2014 16:55:48 +0200
+
+netrunner-default-settings (1.0.88) trusty; urgency=low
+
+  * Set new default window decoration
+  * Set new default font
+  * Changed readme desktop link
+  * Changed plasma theme to eclipse
+  * Added veromix-plasmoid to default panel and hide kmix
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 10 Jun 2014 12:13:48 +0200
+
+netrunner-default-settings (1.0.87) trusty; urgency=low
+
+  * Added default kwallet
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 17 May 2014 10:57:29 +0200
+
+netrunner-default-settings (1.0.86) trusty; urgency=low
+
+  * Removed k3b from system in menu
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 13 May 2014 19:25:54 +0200
+
+netrunner-default-settings (1.0.85) trusty; urgency=low
+
+  * Removed simplescreenrecorder and replaced with vokoscreen in favorites
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 13 May 2014 15:13:42 +0200
+
+netrunner-default-settings (1.0.84) trusty; urgency=low
+
+  * Removed okular from graphics in menu
+  * Don't create sidePanel by default
+  * Change panel height to 34px
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 13 May 2014 10:30:04 +0200
+
+netrunner-default-settings (1.0.83) trusty; urgency=low
+
+  * Make Enlightenment new default plasma theme
+  * Disabled baloo by default
+  * Changed default x-cursor-theme
+  * Unhide okular in office and move kontact to internet
+  * Fixed steam link in menu
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 09 May 2014 14:31:49 +0200
+
+netrunner-default-settings (1.0.82) trusty; urgency=low
+
+  * Hide pulseaudio.desktop from autostart
+  * Removed K3b from System
+  * Kmix show Playback Streams 3
+  * Desktop effects disable maximize, highlight window, translucency
+  * Dolphin Icons mode preview size 96px
+  * Enabled root action open with ...
+  * Kate don't show tip of the day
+  * Kate show line numbers
+  * KMahjongg don't show statusbar
+  * Back to expanding icons taskmanager as default
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 09 May 2014 11:50:46 +0200
+
+netrunner-default-settings (1.0.81) trusty; urgency=low
+
+  * Adjusted icons in default-layout script
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 06 May 2014 17:03:41 +0200
+
+netrunner-default-settings (1.0.80) trusty; urgency=low
+
+  * Use smooth-tasks by default now
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 06 May 2014 13:37:15 +0200
+
+netrunner-default-settings (1.0.79) trusty; urgency=low
+
+  * Hide software-properties-drivers
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 05 May 2014 17:42:53 +0200
+
+netrunner-default-settings (1.0.78) trusty; urgency=low
+
+  * Fixed ksystraycmd leading space
+  * Disabled ksplash
+  * Removed cut the ropes from menu
+  * Only show software sources in settings menu
+  * removed .dmrc causing 48hours of pain
+  * removed steam and webaccounts from desktop
+  * adapted welcome.desktop readme link to frontier
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 05 May 2014 13:39:44 +0200
+
+netrunner-default-settings (1.0.77) trusty; urgency=low
+
+  * Get rid of /etc/skel/.dmrc causing me headaches for 48 hours
+  * hide ksystraycmd from tray
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 03 May 2014 00:27:32 +0200
+
+netrunner-default-settings (1.0.76) trusty; urgency=low
+
+  * Added correct autostart entry for preloading
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 02 May 2014 14:11:37 +0200
+
+netrunner-default-settings (1.0.75) trusty; urgency=low
+
+  * Added preloading script
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 02 May 2014 11:47:24 +0200
+
+netrunner-default-settings (1.0.74) trusty; urgency=low
+
+  * Updated postinst script to recognize removed startkde script
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 30 Apr 2014 19:35:12 +0200
+
+netrunner-default-settings (1.0.73) trusty; urgency=low
+
+  * Removed old startkde script from adjustments
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 30 Apr 2014 17:33:47 +0200
+
+netrunner-default-settings (1.0.72) trusty; urgency=low
+
+  * Removed sieve from menu
+  * Only one entry of ndiswrapper in settings
+  * Use simplescreenrecorder in favorites of homerun kicker instead of vokoscreen
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 30 Apr 2014 14:06:49 +0200
+
+netrunner-default-settings (1.0.71) trusty; urgency=low
+
+  * Rebuild for trusty
+
+ -- Leszek Lesner <leszek@zevenos.com>  Thu, 24 Apr 2014 12:52:04 +0200
+
+netrunner-default-settings (1.0.70) saucy; urgency=low
+
+  * Updated startkde script to 4.11.2 version
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 19 Feb 2014 19:17:22 +0100
+
+netrunner-default-settings (1.0.69) saucy; urgency=low
+
+  * Added if statements to check preinst and postrm before diverting
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 20 Jan 2014 13:49:05 +0100
+
+netrunner-default-settings (1.0.68) saucy; urgency=low
+
+  * Added clementine for startupnotification true
+
+ -- Leszek Lesner <leszek@zevenos.com>  Thu, 16 Jan 2014 14:07:35 +0100
+
+netrunner-default-settings (1.0.67) saucy; urgency=low
+
+  * Make k3b visible
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 11 Jan 2014 19:57:45 +0100
+
+netrunner-default-settings (1.0.66) saucy; urgency=low
+
+  * Moved k3b to Uility really
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 11 Jan 2014 19:07:03 +0100
+
+netrunner-default-settings (1.0.65) saucy; urgency=low
+
+  * Moved k3b to utility
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 11 Jan 2014 16:03:32 +0100
+
+netrunner-default-settings (1.0.64) saucy; urgency=low
+
+  * Change to aurorae gnome3 theme again
+  * Fixed string of sidebarPanel
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 11 Jan 2014 12:47:10 +0100
+
+netrunner-default-settings (1.0.63) saucy; urgency=low
+
+  * Disable Fade effect
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 27 Dec 2013 00:49:54 +0100
+
+netrunner-default-settings (1.0.62) saucy; urgency=low
+
+  * Disabled kwinrc effects backend (let it autodetect correct settings)
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 21 Dec 2013 16:13:37 +0100
+
+netrunner-default-settings (1.0.61) saucy; urgency=low
+
+  * Updated panel layout.js to always create panel at bottom if free.
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 20 Dec 2013 11:20:41 +0100
+
+netrunner-default-settings (1.0.60) saucy; urgency=low
+
+  * Changed default desktop effects to fast and enabled translucency and fade effect
+  * Changed default aurorae theme to FormaN
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 16 Dec 2013 12:14:24 +0100
+
+netrunner-default-settings (1.0.59) saucy; urgency=low
+
+  * Reenabled maximize and minimize effects
+  * Changed anomation speed of desktop effects back to instant
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 14 Dec 2013 12:47:39 +0100
+
+netrunner-default-settings (1.0.58) saucy; urgency=low
+
+  * Repositioning dolphin toolbar items
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 14 Dec 2013 11:50:19 +0100
+
+netrunner-default-settings (1.0.57) saucy; urgency=low
+
+  * Disabled maximize and minimize effects
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 14 Dec 2013 11:36:46 +0100
+
+netrunner-default-settings (1.0.56) saucy; urgency=low
+
+  * Changed animation speed of desktop effects to veryfast
+
+ -- Leszek Lesner <leszek@zevenos.com>  Thu, 12 Dec 2013 14:47:02 +0100
+
+netrunner-default-settings (1.0.55) saucy; urgency=low
+
+  * Fixed icon positions in 00-defaultLayout.js
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 11 Dec 2013 12:35:35 +0100
+
+netrunner-default-settings (1.0.54) saucy; urgency=low
+
+  * Don't use firefox prism profile to start webapps as it isn't there anymore
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 10 Dec 2013 14:14:08 +0100
+
+netrunner-default-settings (1.0.53) saucy; urgency=low
+
+  * Updated panel layout.js
+  * Removed unused configs (Openffice.org, synapse, webapps, winff)
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 09 Dec 2013 14:32:19 +0100
+
+netrunner-default-settings (1.0.52) saucy; urgency=low
+
+  * Updated homerun-kickers favoriteapps.xml for vokoscreen
+  * Removed unused emerald directory
+  * Removed unused synapse hotkey directory
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 09 Dec 2013 10:45:12 +0100
+
+netrunner-default-settings (1.0.51) saucy; urgency=low
+
+  * Updated 00-defaultLayout.js for new default sorting mechanism on the desktop
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 06 Dec 2013 18:24:42 +0100
+
+netrunner-default-settings (1.0.50) saucy; urgency=low
+
+  * Hide main.qml from plastik decoration also to avoid ghost in systemsettings
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 06 Dec 2013 13:17:25 +0100
+
+netrunner-default-settings (1.0.49) saucy; urgency=low
+
+  * Don't set wallpaper in 00-defaultLayout.js
+  * Don't set homerun-kicker custom icon in layout.js
+  * Use native desktop notification for clementine
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 04 Dec 2013 16:42:27 +0100
+
+netrunner-default-settings (1.0.48) saucy; urgency=low
+
+  * Removed hotkey for homerun-kicker from kglobalshortcuts as it is done in scripting now
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 04 Dec 2013 12:51:54 +0100
+
+netrunner-default-settings (1.0.47) saucy; urgency=low
+
+  * Hide Steam from internet kmenu
+  * Show Steam in game kmenu
+  * Add kazam to favorites in homerun-kicker
+  * Added easystroke config
+  * Changed Krunner shortcut back to Alt+F2
+  * Changed Homerun-Kicker shortcut back to Alt+F1
+  * Added krunner icon in panel
+  * Added new plasma panel layout (sidebarPanel)
+  * Set Gnome3 as new default aurorae theme
+  * Set airblue as new default cursor theme
+  * Set oxygen-cold as new default color-scheme
+  * Set kwin effects to instant
+  * Set Eclipse as new default plasma theme
+  * Updated sidebarPanel
+  * Hide easystroke tray icon
+  * Change volume of knotify to 100
+  * Removed window positioning information from config files
+  * Change order of krunner button in panel
+  * Readded networkmanagement plugin to panel
+  * Use javascript now instead of config to create desktop and panel on initial setup
+  * Use desktop-login.ogg as startup sound for KDE
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 29 Nov 2013 12:43:22 +0100
+
+netrunner-default-settings (1.0.46) saucy; urgency=low
+
+  * Hidden directory missed in last build
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 20 Nov 2013 11:11:46 +0100
+
+netrunner-default-settings (1.0.45) saucy; urgency=low
+
+  * Fix dpkg-divert ordering
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 20 Nov 2013 10:32:21 +0100
+
+netrunner-default-settings (1.0.44) saucy; urgency=low
+
+  * Remove karbon from office submenu in kmenu
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 18 Nov 2013 14:37:13 +0100
+
+netrunner-default-settings (1.0.43) saucy; urgency=low
+
+  * Moved aurorae themes to artwork package
+  * Hide software & updates entries from kmenu
+  * Unhide karbon link in kmenu
+  * Make Krunner open up on ALT+F1
+  * Show PulseAudio Playback_Streams in kmix
+  * Allow more instances of VLC when started from filemanager
+  * Disable screensaver
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 18 Nov 2013 13:22:35 +0100
+
+netrunner-default-settings (1.0.42) saucy; urgency=low
+
+  * Set new WelcomeSplash theme for ksplash
+  * Set new Enigma II wallpaper as default background
+  * Disabled confirmLogout
+  * Disabled Nepomuk
+  * Use Roboto Condensed as default clock font
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 11 Nov 2013 13:10:30 +0100
+
+netrunner-default-settings (1.0.41) saucy; urgency=low
+
+  * Changed synapse hotkey to Alt+1 to avoid conflict with homerun-kicker
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 09 Nov 2013 17:42:42 +0100
+
+netrunner-default-settings (1.0.40) saucy; urgency=low
+
+  * Hide Marketplace and Runnersid from kmenu
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 09 Nov 2013 17:34:29 +0100
+
+netrunner-default-settings (1.0.39) saucy; urgency=low
+
+  * Updated vlcrc to only allow one instance and do not resize window to video size
+  * Added new default clementine config
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 09 Nov 2013 12:50:12 +0100
+
+netrunner-default-settings (1.0.38) saucy; urgency=low
+
+  * Next attempt to disable Alt+F1 shortcut for homerun-kicker
+
+ -- Leszek Lesner <leszek@zevenos.com>  Thu, 07 Nov 2013 12:40:10 +0100
+
+netrunner-default-settings (1.0.37) saucy; urgency=low
+
+  * Forget new kmixrc to really make kmix orientation horizontal in last build
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 06 Nov 2013 12:48:33 +0100
+
+netrunner-default-settings (1.0.36) saucy; urgency=low
+
+  * Make kmix orientation horizontal
+  * Added synapse autostart + config
+  * Disabled Alt+F1 hotkey for homerun-kicker
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 05 Nov 2013 17:55:51 +0100
+
+netrunner-default-settings (1.0.35) saucy; urgency=low
+
+  * Moved colorscheme and ksplash to netrunner-artwork
+  * Removed Androbit desktoptheme
+  * New default panel layout.js
+  * Initial version of netrunner default-layout.js
+  * Hide copy to and move to contextmenu entries in dolphin
+  * Kate set katefiletreeplugin-Visible to true
+
+ -- Leszek Lesner <leszek@zevenos.com>  Thu, 31 Oct 2013 18:54:34 +0100
+
+netrunner-default-settings (1.0.34) saucy; urgency=low
+
+  * Changed effects speed to 2 (fast)
+  * Disabled some other kservices for dolphin
+  * Changed default colorscheme to Karbon
+  * Changed default plasma theme to Elly
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 30 Oct 2013 19:47:25 +0100
+
+netrunner-default-settings (1.0.33) saucy; urgency=low
+
+  * Hide karbon icon from kmenu -> office
+
+ -- Leszek Lesner <leszek@zevenos.com>  Tue, 29 Oct 2013 11:35:47 +0100
+
+netrunner-default-settings (1.0.32) saucy; urgency=low
+
+  * Fixed postinst and postrm to use /bin/bash as shell
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 28 Oct 2013 14:35:12 +0100
+
+netrunner-default-settings (1.0.31) saucy; urgency=low
+
+  * Removed unused icons
+  * Hide deprecated window decorations and cursor themes
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 28 Oct 2013 12:54:39 +0100
+
+netrunner-default-settings (1.0.30) saucy; urgency=low
+
+  * Rearragned desktop icons
+  * Disabled some kservices for dolphin
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sat, 26 Oct 2013 14:35:43 +0200
+
+netrunner-default-settings (1.0.29) saucy; urgency=low
+
+  * Add new Karbon and Karbonate color schemes
+  * Added Karbonate Konsole colorscheme
+  * Use new default wallpaper Horizon
+  * Replaced default Ksplash TheLight with EnigmaHorizon
+  * Removed runners-id desktop icon
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 25 Oct 2013 21:35:30 +0200
+
+netrunner-default-settings (1.0.28) saucy; urgency=low
+
+  * Fix show networkmanager applet (really called org.kde.plasma-nm) in systray
+
+ -- Leszek Lesner <leszek@zevenos.com>  Thu, 24 Oct 2013 14:19:23 +0200
+
+netrunner-default-settings (1.0.27) saucy; urgency=low
+
+  * Changed desktop icon "Steam" to launch steam
+  * Don't reverse launchers in expanding-icon-taskmanager
+
+ -- Leszek Lesner <leszek@zevenos.com>  Thu, 24 Oct 2013 13:24:28 +0200
+
+netrunner-default-settings (1.0.26) saucy; urgency=low
+
+  * Changed desktop link name "Install Steam" to "Steam"
+  * set new default icon size 16x16 for compact view in dolphin
+  * disabled some services for dolphin right click menu
+  * disabled jpeg rotate for previews in dolphin
+  * set new 1000 MB limit for remote previews
+  * hide bluedevil and k3b from kmenu system submenu
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 23 Oct 2013 23:40:10 +0200
+
+netrunner-default-settings (1.0.25) saucy; urgency=low
+
+  * Fix show networkmanager applet (now called org.kde.nm) in systray
+  * Use GLLegacy by default for opensource drivers and older cards 
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 21 Oct 2013 14:44:37 +0200
+
+netrunner-default-settings (1.0.24) saucy; urgency=low
+
+  * Changed aurorae theme to use large buttons icons instead of very large ones
+
+ -- Leszek Lesner <leszek@zevenos.com>  Mon, 21 Oct 2013 12:49:31 +0200
+
+netrunner-default-settings (1.0.23) saucy; urgency=low
+
+  * Moved desktopthemes to artwork package (deleted here)
+  * Set new default desktoptheme for plasma 
+  * Set new default fonts in kde & gtk
+  * Set new default ksplash
+  * Set new default desktop effects
+  * Set new default menu layout
+  * Set new default panel layout with homerun-kicker and expanding-icon-taskmanager
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 18 Oct 2013 17:18:02 +0200
+
+netrunner-default-settings (1.0.22) saucy; urgency=low
+
+  * Network icon was missing on the desktop readded it
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 16 Oct 2013 10:42:14 +0200
+
 netrunner-default-settings (1.0.21) saucy; urgency=low
 
   * bump version for new Netrunner release
