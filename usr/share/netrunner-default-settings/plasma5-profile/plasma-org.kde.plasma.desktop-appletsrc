@@ -46,7 +46,6 @@ DialogWidth=720
 customButtonImage=file:///usr/share/icons/hicolor/scalable/apps/homerun.svg
 favoriteApps=systemsettings.desktop,synaptic-kde.desktop,org.kde.ksysguard.desktop,simplescreenrecorder.desktop
 limitDepth=true
-recentApps=systemsettings.desktop,kdesystemsettings.desktop
 useCustomButtonImage=true
 
 [Containments][1][Applets][15][Shortcuts]
