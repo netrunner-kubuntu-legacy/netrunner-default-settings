@@ -9,7 +9,7 @@ Package: netrunner-default-settings
 Architecture: all
 Provides: netrunner-default-settings
 Conflicts: kubuntu-settings-desktop
-Replace: netrunner-artwork (<< 1.0.84), plasma-desktopthemes-artwork
+Replaces: netrunner-artwork (<< 1.0.84), plasma-desktopthemes-artwork
 Breaks: netrunner-artwork (<< 1.0.84), plasma-desktopthemes-artwork
 Depends: 
 Description: Configuration of the Netrunner release.
