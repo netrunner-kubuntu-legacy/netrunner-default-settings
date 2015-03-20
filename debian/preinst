@@ -4,78 +4,29 @@
 function hide_deprecated {
     mkdir -p /usr/share/netrunner/hidden
 
-    if [ -e /usr/lib/kde4/kwin_b2_config.so ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/kwin_b2_config.so /usr/lib/kde4/kwin_b2_config.so 
-    fi
-    if [ -e /usr/lib/kde4/kwin3_b2.so ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/kwin3_b2.so /usr/lib/kde4/kwin3_b2.so 
-    fi
-    if [ -e /usr/lib/kde4/kwin3_laptop.so ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/kwin3_laptop.so /usr/lib/kde4/kwin3_laptop.so 
-    fi
-    if [ -e /usr/share/kde4/apps/kwin/decorations/kwin4_decoration_qml_plastik/metadata.desktop ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/plastik_metadata.desktop /usr/share/kde4/apps/kwin/decorations/kwin4_decoration_qml_plastik/metadata.desktop
-    fi
-    if [ -e /usr/share/kde4/apps/kwin/decorations/kwin4_decoration_qml_plastik/contents/ui/main.qml ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/plastik_main.qml /usr/share/kde4/apps/kwin/decorations/kwin4_decoration_qml_plastik/contents/ui/main.qml
-    fi
-    if [ -e /usr/lib/kde4/imports/org/kde/kwin/decorations/plastik/libplastikplugin.so ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/libplastikplugin.so /usr/lib/kde4/imports/org/kde/kwin/decorations/plastik/libplastikplugin.so 
-    fi
-    if [ -e /usr/share/icons/oxy-yellow/index.theme  ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/oxy-yellow_index.theme /usr/share/icons/oxy-yellow/index.theme 
-    fi
-    if [ -e /usr/share/icons/oxy-zion/index.theme ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/oxy-zion_index.theme /usr/share/icons/oxy-zion/index.theme
-    fi
-    # Also hide pulseaudio.desktop here in autostart for fixing delayed startup. This should be removed with newer upstream versions
-    if [ -e /etc/xdg/autostart/pulseaudio.desktop ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/pulseaudio.desktop /etc/xdg/autostart/pulseaudio.desktop
-    fi
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/oxy-yellow_index.theme /usr/share/icons/oxy-yellow/index.theme 
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/oxy-zion_index.theme /usr/share/icons/oxy-zion/index.theme
     # Hide cashew/hamburger
-    if [ -e /usr/share/plasma/packages/org.kde.desktoptoolbox/metadata.desktop ]; then 
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/desktoptoolbox_metadata.desktop /usr/share/plasma/packages/org.kde.desktoptoolbox/metadata.desktop
-    fi
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/desktoptoolbox_metadata.desktop /usr/share/plasma/packages/org.kde.desktoptoolbox/metadata.desktop
     # Hide cashew/hamburger QML UI
-    if [ -e /usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxRoot.qml ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/desktoptoolbox_ToolBoxRoot.qml /usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxRoot.qml
-    fi
-    # Hide pulseaudio kcm (non working currently)
-    if  [ -e /usr/share/kservices5/kcm_pulseaudio.desktop ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/kcm_pulseaudio.desktop /usr/share/kservices5/kcm_pulseaudio.desktop
-    fi
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/desktoptoolbox_ToolBoxRoot.qml /usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxRoot.qml
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/kcm_pulseaudio.desktop /usr/share/kservices5/kcm_pulseaudio.desktop
 }
 
 # Other dpkg diversions
 function do_diversion {
     # Firefox (instead of old adjust.py script)
-    if [ -e /usr/lib/firefox/distribution/distribution.ini ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/lib/firefox/distribution/distribution.ini.orig /usr/lib/firefox/distribution/distribution.ini
-    fi
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/lib/firefox/distribution/distribution.ini.orig /usr/lib/firefox/distribution/distribution.ini
     # kactivitymanager_file_item_linking_plugin
-    if [ -e /usr/share/kservices5/kactivitymanagerd_fileitem_linking_plugin.desktop ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/kservices5/kactivitymanagerd_fileitem_linking_plugin.desktop.orig /usr/share/kservices5/kactivitymanagerd_fileitem_linking_plugin.desktop
-    fi
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/kservices5/kactivitymanagerd_fileitem_linking_plugin.desktop.orig /usr/share/kservices5/kactivitymanagerd_fileitem_linking_plugin.desktop
     # gmusicbrowser layout
-    if [ -e /usr/share/gmusicbrowser/layouts/main.layout ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/gmusicbrowser/layouts/main.layout.orig /usr/share/gmusicbrowser/layouts/main.layout
-    fi
-    if [ -e /usr/share/gmusicbrowser/layouts/filterfun.layout ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/gmusicbrowser/layouts/filterfun.layout.orig /usr/share/gmusicbrowser/layouts/filterfun.layout
-    fi
-    if [ -e /usr/share/gmusicbrowser/layouts/contrib.layout ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/gmusicbrowser/layouts/contrib.layout.orig /usr/share/gmusicbrowser/layouts/contrib.layout
-    fi
-    if [ -e /usr/share/gmusicbrowser/layouts/makeitlooklike.layout ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/gmusicbrowser/layouts/makeitlooklike.layout.orig /usr/share/gmusicbrowser/layouts/makeitlooklike.layout
-    fi
-    if [ -e /usr/share/gmusicbrowser/layouts/shimmer.layout ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/gmusicbrowser/layouts/shimmer.layout.orig /usr/share/gmusicbrowser/layouts/shimmer.layout
-    fi
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/gmusicbrowser/layouts/main.layout.orig /usr/share/gmusicbrowser/layouts/main.layout
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/gmusicbrowser/layouts/filterfun.layout.orig /usr/share/gmusicbrowser/layouts/filterfun.layout
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/gmusicbrowser/layouts/contrib.layout.orig /usr/share/gmusicbrowser/layouts/contrib.layout
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/gmusicbrowser/layouts/makeitlooklike.layout.orig /usr/share/gmusicbrowser/layouts/makeitlooklike.layout
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/gmusicbrowser/layouts/shimmer.layout.orig /usr/share/gmusicbrowser/layouts/shimmer.layout
     # gmusicbrowser main config file
-    if [ -e /usr/share/gmusicbrowser/gmbrc.default ]; then
-      dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/gmusicbrowser/gmbrc.default.orig /usr/share/gmusicbrowser/gmbrc.default
-    fi
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/gmusicbrowser/gmbrc.default.orig /usr/share/gmusicbrowser/gmbrc.default
 }
 
 if [ install = "$1" -o upgrade = "$1" ]; then
