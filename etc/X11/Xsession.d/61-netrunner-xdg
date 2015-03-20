@@ -1,2 +1,9 @@
-export XDG_CONFIG_DIRS=/usr/share/netrunner-default-settings/plasma5-profile/:/etc/xdg
-export XDG_DATA_DIRS=/usr/share/netrunner-default-settings/plasma5-profile:/usr/share:/usr/share/plasma:/usr/local/share 
+if [ -z "$XDG_CONFIG_DIRS" ]; then
+  XDG_CONFIG_DIRS=/etc/xdg
+fi  
+export XDG_CONFIG_DIRS=/usr/share/netrunner-default-settings/plasma5-profile/:$XDG_CONFIG_DIRS
+
+if [ -z "$XDG_DATA_DIRS" ]; then
+  XDG_DATA_DIRS=/usr/share:/usr/share/plasma:/usr/local/share
+fi
+export XDG_DATA_DIRS=/usr/share/netrunner-default-settings/plasma5-profile:$XDG_DATA_DIRS 
