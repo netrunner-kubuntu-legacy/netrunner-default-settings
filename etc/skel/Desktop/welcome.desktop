@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=firefox http://www.netrunner.com/readme-15/
+Exec=firefox http://www.netrunner.com/readme-debian-edition/
 Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-welcome.png
 Name=Readme
 NoDisplay=false
