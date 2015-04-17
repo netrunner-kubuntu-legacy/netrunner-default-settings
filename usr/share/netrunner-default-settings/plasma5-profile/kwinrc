@@ -60,7 +60,7 @@ CommandWindowWheel=Scroll
 [Plugins]
 blurEnabled=true
 contrastEnabled=false
-enforcedecoEnabled=true
+enforcedecoEnabled=false
 screenedgeEnabled=false
 slidingpopupsEnabled=false
 synchronizeskipswitcherEnabled=false

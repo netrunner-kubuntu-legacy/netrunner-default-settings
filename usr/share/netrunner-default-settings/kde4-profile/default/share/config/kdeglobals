@@ -136,12 +136,10 @@ Name=Breeze
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
-desktopFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
 font=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 menuFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
 smallestReadableFont=DejaVu Sans,8,-1,5,50,0,0,0,0,0
-taskbarFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
 toolBarFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 widgetStyle=oxygen
 
