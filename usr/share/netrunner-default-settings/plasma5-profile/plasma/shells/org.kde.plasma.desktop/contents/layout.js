@@ -53,6 +53,7 @@ for (var i = 0; i < screenCount; ++i) {
 
         desktopsArray[j].currentConfigGroup = new Array("General");
         desktopsArray[j].writeConfig("positions","1,8,desktop:/welcome.desktop,0,2,desktop:/Network,0,1,desktop:/mycomputer.desktop,0,0,desktop:/ubiquity-kdeui.desktop,0,3")
+        desktopsArray[j].writeConfig("pressToMove",true);
         desktopsArray[j].writeConfig("popups",false);
         desktopsArray[j].writeConfig("selectionMarkers",false);
         desktopsArray[j].writeConfig("sortMode","-1");
