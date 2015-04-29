@@ -85,6 +85,9 @@
    <Filename>kde4-okularApplication_fax.desktop</Filename>
    <Filename>kde4-okularApplication_comicbook.desktop</Filename>
    <Filename>kde4-okularApplication_plucker.desktop</Filename>
+   <Filename>display-im6.q16.desktop</Filename>
+   <Filename>ktp-log-viewer.desktop</Filename>
+   <Filename>display-im6.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
@@ -107,26 +110,17 @@
    <Filename>kde4-okularApplication_fax.desktop</Filename>
    <Filename>kde4-okularApplication_comicbook.desktop</Filename>
    <Filename>kde4-okularApplication_plucker.desktop</Filename>
+   <Filename>display-im6.q16.desktop</Filename>
+   <Filename>display-im6.desktop</Filename>
   </Exclude>
   <Layout>
    <Merge type="files"/>
-   <Filename>kde4-krita_flipbook.desktop</Filename>
-   <Filename>kde4-krita_png.desktop</Filename>
-   <Filename>kde4-krita_jpeg.desktop</Filename>
-   <Filename>kde4-krita_ppm.desktop</Filename>
-   <Filename>kde4-krita_odg.desktop</Filename>
-   <Filename>kde4-krita_tiff.desktop</Filename>
-   <Filename>kde4-krita_xcf.desktop</Filename>
-   <Filename>kde4-krita_exr.desktop</Filename>
    <Filename>gimp.desktop</Filename>
    <Filename>org.kde.gwenview.desktop</Filename>
    <Filename>kde4-karbon.desktop</Filename>
-   <Filename>kde4-krita_ora.desktop</Filename>
-   <Filename>kde4-krita_jp2.desktop</Filename>
    <Filename>kde4-krita.desktop</Filename>
    <Filename>kde4-ksnapshot.desktop</Filename>
    <Filename>kde4-skanlite.desktop</Filename>
-   <Separator/>
    <Merge type="menus"/>
    <Menuname>More</Menuname>
   </Layout>
@@ -155,6 +149,7 @@
    <Filename>bluedevil-monolithic.desktop</Filename>
    <Filename>bluedevil-sendfile.desktop</Filename>
    <Filename>bluedevil-wizard.desktop</Filename>
+   <Filename>ktp-log-viewer.desktop</Filename>
   </Exclude>
   <Include>
    <Filename>kde4-marble.desktop</Filename>
@@ -164,16 +159,16 @@
    <Merge type="menus"/>
    <Menuname>Terminal</Menuname>
    <Merge type="files"/>
+   <Filename>filezilla.desktop</Filename>
+   <Filename>org.kde.ktpcontactlist.desktop</Filename>
+   <Filename>org.kde.konversation.desktop</Filename>
+   <Filename>kde4-krdc.desktop</Filename>
    <Filename>kde4-marble.desktop</Filename>
    <Filename>pidgin.desktop</Filename>
    <Filename>skype.desktop</Filename>
-   <Filename>kde4-keditbookmarks.desktop</Filename>
    <Filename>firefox.desktop</Filename>
-   <Filename>kde5-nm-connection-editor.desktop</Filename>
-   <Filename>kde4-ktp-contactlist.desktop</Filename>
    <Filename>transmission-qt.desktop</Filename>
    <Filename>thunderbird.desktop</Filename>
-   <Separator/>
    <Menuname>More</Menuname>
    <Filename>kde4-Kontact.desktop</Filename>
   </Layout>
@@ -381,4 +376,4 @@
    <Filename>gnome-disks.desktop</Filename>
   </Exclude>
  </Menu>
-</Menu>
+</Menu> 
