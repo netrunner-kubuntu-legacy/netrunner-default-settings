@@ -136,14 +136,11 @@ Name=Breeze
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
-desktopFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
-fixed=Monospace,9,-1,5,50,0,0,0,0,0
 font=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 menuFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
 smallestReadableFont=DejaVu Sans,8,-1,5,50,0,0,0,0,0
-taskbarFont=Oxygen-Sans,10,-1,5,50,0,0,0,0,0
-toolBarFont=DejaVu Sans,8,-1,5,50,0,0,0,0,0
+toolBarFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 widgetStyle=oxygen
 
 [Icons]
@@ -214,7 +211,7 @@ DisabledValue=1
 Size=32
 
 [PreviewSettings]
-MaximumRemoteSize=0
+MaximumRemoteSize=1048576000
 
 [SmallIcons]
 ActiveColor=169,156,255
