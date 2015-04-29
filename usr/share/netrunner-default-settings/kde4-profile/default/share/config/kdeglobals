@@ -211,7 +211,7 @@ DisabledValue=1
 Size=32
 
 [PreviewSettings]
-MaximumRemoteSize=0
+MaximumRemoteSize=1048576000
 
 [SmallIcons]
 ActiveColor=169,156,255
