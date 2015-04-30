@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=
-Exec=firefox http://www.netrunner.com/readme-15/
+Exec=firefox http://www.netrunner.com/readme-16/
 Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-welcome.png
 Name=Readme
 NoDisplay=false
