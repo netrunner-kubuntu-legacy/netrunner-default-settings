@@ -1,5 +1,6 @@
 [Desktop Entry]
 Exec=kcmshell4 language
+Type=Application
 Icon=preferences-desktop-locale
 
 Name=Country/Region & Language
