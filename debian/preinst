@@ -11,6 +11,7 @@ function hide_deprecated {
     # Hide cashew/hamburger QML UI
     dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/desktoptoolbox_ToolBoxRoot.qml /usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxRoot.qml
     dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/kcm_pulseaudio.desktop /usr/share/kservices5/kcm_pulseaudio.desktop
+    dpkg-divert --package netrunner-default-settings --add --rename --divert /usr/share/netrunner/hidden/gtkbreeze.upd /usr/share/kconf_update/gtkbreeze.upd 
 }
 
 # Other dpkg diversions
