@@ -4,10 +4,10 @@
 include "/usr/share/themes/oxygen-gtk/gtk-2.0/gtkrc"
 style "user-font" 
 {
-	font_name="Roboto Regular"
+	font_name="DejaVu Sans Book"
 }
 widget_class "*" style "user-font"
-gtk-font-name="Roboto Regular 10"
+gtk-font-name="DejaVu Sans Book 9"
 gtk-theme-name="oxygen-gtk"
 gtk-icon-theme-name="oxygen"
 gtk-fallback-icon-theme="gnome"
