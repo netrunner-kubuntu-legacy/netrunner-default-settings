@@ -11,8 +11,7 @@ function show_deprecated {
     dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/netrunner/hidden/desktoptoolbox_metadata.desktop /usr/share/plasma/packages/org.kde.desktoptoolbox/metadata.desktop
     # Hide cashew/hamburger QML UI
     dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/netrunner/hidden/desktoptoolbox_ToolBoxRoot.qml /usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxRoot.qml
-    # Show pulseaudio kcm (non working currently)
-    dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/netrunner/hidden/kcm_pulseaudio.desktop /usr/share/kservices5/kcm_pulseaudio.desktop
+    # Show gtkbreeze
     dpkg-divert --package netrunner-default-settings --remove --rename --divert /usr/share/netrunner/hidden/gtkbreeze.upd /usr/share/kconf_update/gtkbreeze.upd 
 }
 
