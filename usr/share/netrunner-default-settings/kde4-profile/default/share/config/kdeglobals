@@ -139,7 +139,7 @@ XftSubPixel=rgb
 font=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 menuFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
-smallestReadableFont=DejaVu Sans,8,-1,5,50,0,0,0,0,0
+smallestReadableFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 toolBarFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 widgetStyle=oxygen
 
