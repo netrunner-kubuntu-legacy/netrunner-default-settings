@@ -238,7 +238,7 @@ Size=22
 [WM]
 activeBackground=224,223,222                                                
 activeBlend=75,71,67 
-activeFont=DejaVu Sans,9,-1,5,75,0,0,0,0,0
+activeFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 activeForeground=75,71,67
 inactiveBackground=224,223,222
 inactiveBlend=75,71,67
