@@ -1,0 +1,21 @@
+
+[gtkui]
+column_expand=1,1,1,0,0
+column_widths=-1,-1,-1,-1,-1
+player_x=573
+player_y=225
+
+[gtkui-layout]
+item_count=0
+
+[skins]
+equalizer_x=37
+equalizer_y=443
+mainwin_font=Droid Sans Fallback 9
+player_x=37
+player_y=327
+playlist_font=Oxygen-Sans 9
+playlist_x=312
+playlist_y=327
+skin=/usr/share/audacious/Skins/Winamp
+twoway_scroll=TRUE
