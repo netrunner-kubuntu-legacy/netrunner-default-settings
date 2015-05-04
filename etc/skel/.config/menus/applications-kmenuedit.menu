@@ -88,6 +88,7 @@
    <Filename>display-im6.q16.desktop</Filename>
    <Filename>ktp-log-viewer.desktop</Filename>
    <Filename>display-im6.desktop</Filename>
+   <Filename>kde4-calligraactive.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
@@ -207,19 +208,15 @@
    <Filename>kde4-sieveeditor.desktop</Filename>
    <Filename>calibre-gui.desktop</Filename>
    <Filename>kde4-Kontact.desktop</Filename>
+   <Filename>kde4-calligraactive.desktop</Filename>
   </Exclude>
   <Include>
    <Filename>kde4-okular.desktop</Filename>
   </Include>
   <Layout>
    <Merge type="files"/>
-   <Filename>kde4-krita_xcf.desktop</Filename>
-   <Filename>kde4-krita_exr.desktop</Filename>
-   <Filename>kde4-krita_tiff.desktop</Filename>
-   <Filename>kde4-calligra.desktop</Filename>
-   <Filename>kde4-kontact-admin.desktop</Filename>
-   <Filename>kde4-krita_ora.desktop</Filename>
-   <Filename>kde4-krita_jp2.desktop</Filename>
+   <Filename>kde4-flow.desktop</Filename>
+   <Filename>kde4-okular.desktop</Filename>
    <Filename>libreoffice-base.desktop</Filename>
    <Filename>libreoffice-calc.desktop</Filename>
    <Filename>libreoffice-draw.desktop</Filename>
@@ -227,7 +224,6 @@
    <Filename>libreoffice-math.desktop</Filename>
    <Filename>libreoffice-startcenter.desktop</Filename>
    <Filename>libreoffice-writer.desktop</Filename>
-   <Separator/>
    <Merge type="menus"/>
    <Menuname>More</Menuname>
   </Layout>
@@ -376,4 +372,4 @@
    <Filename>gnome-disks.desktop</Filename>
   </Exclude>
  </Menu>
-</Menu> 
+</Menu>
