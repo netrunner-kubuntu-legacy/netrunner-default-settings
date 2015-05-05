@@ -11,15 +11,14 @@ loadTemplate("org.kde.plasma.desktop.defaultPanel")
 //     }
 // }
 
-var actionPlugins = ConfigFile("plasma-org.kde.plasma.desktop-appletsrc");
-actionPlugins.group = "ActionPlugins";
+var actionPlugins = ConfigFile("plasma-org.kde.plasma.desktop-appletsrc", "ActionPlugins");
 
-var actionPluginsCurrent = ConfigFile(actionPlugins,"0");
-actionPluginsCurrent.writeEntry("MidButton;NoModifier", "org.kde.paste");
-actionPluginsCurrent.writeEntry("RightButton;NoModifier", "org.kde.contextmenu");
-actionPluginsCurrent.writeEntry("wheel:Vertical;NoModifier", "org.kde.switchdesktop");
+var actionPluginsDesktop = ConfigFile(actionPlugins,"0");
+actionPluginsDesktop.writeEntry("MidButton;NoModifier", "org.kde.paste");
+actionPluginsDesktop.writeEntry("RightButton;NoModifier", "org.kde.contextmenu");
+actionPluginsDesktop.writeEntry("wheel:Vertical;NoModifier", "org.kde.switchdesktop");
 
-var rightButton = ConfigFile(actionPluginsCurrent,"RightButton;NoModifier");
+var rightButton = ConfigFile(actionPluginsDesktop,"RightButton;NoModifier");
 rightButton.writeEntry("_add panel", "true");
 rightButton.writeEntry("_context", "true");
 rightButton.writeEntry("_lock_screen", "false");
@@ -38,7 +37,9 @@ rightButton.writeEntry("manage activities", "false");
 rightButton.writeEntry("remove", "true");
 
 delete rightButton;
+delete actionPluginsDesktop;
 delete actionPlugins;
+gc(); 
 
 //loadTemplate("org.kde.plasma-desktop.defaultPanel");
 //loadTemplate("org.kde.plasma-desktop.sidebarPanel");
