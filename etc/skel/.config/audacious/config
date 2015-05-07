@@ -1,4 +1,9 @@
 
+[audacious]
+clear_playlist=FALSE
+show_filepopup_for_tuple=FALSE
+show_numbers_in_pl=TRUE
+
 [gtkui]
 column_expand=1,1,1,0,0
 column_widths=-1,-1,-1,-1,-1
