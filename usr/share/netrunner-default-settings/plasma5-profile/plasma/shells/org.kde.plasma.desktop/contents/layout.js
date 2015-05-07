@@ -61,7 +61,7 @@ for (var i = 0; i < screenCount; ++i) {
         desktopsArray[j].writeConfig("sortMode","-1");
 //         [Containments][18][Wallpaper][org.kde.image][General]
         desktopsArray[j].currentConfigGroup = new Array("Wallpaper", "org.kde.image", "General");
-        desktopsArray[j].writeConfig("Image", "file:///usr/share/wallpapers/Prometheus/contents/images/1920x1080.png");
+        desktopsArray[j].writeConfig("Image", "file:///usr/share/wallpapers/2. Who said -Two vast and trunkless legs of stone.png");
         desktopsArray[j].writeConfig("FillMode","2");
     }
 }
