@@ -151,6 +151,7 @@ ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
 contrast=4
 widgetStyle=oxygen
+SingleClick=false
 
 [KDE-Global GUI Settings]
 GraphicEffectsLevel=6

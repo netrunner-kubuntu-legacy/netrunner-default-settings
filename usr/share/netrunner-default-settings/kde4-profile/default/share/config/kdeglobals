@@ -150,7 +150,7 @@ Theme=oxygen
 ShowDeleteCommand=false
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
-SingleClick=true
+SingleClick=false
 contrast=4
 
 [KFileDialog Settings]
