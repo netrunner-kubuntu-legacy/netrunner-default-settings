@@ -150,7 +150,7 @@ ColorScheme=Oxygen Cold
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
 contrast=4
-widgetStyle=oxygen
+widgetStyle=carbon
 SingleClick=false
 
 [KDE-Global GUI Settings]
