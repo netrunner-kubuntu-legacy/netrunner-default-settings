@@ -49,9 +49,11 @@ yakuakeIcon.writeConfig("genericName", "Drop-down Terminal")
 yakuakeIcon.writeConfig("iconName", "yakuake")
 yakuakeIcon.writeConfig("url", "/usr/share/applications/kde4/yakuake.desktop")
 
+var pvolumemixer = panel.addWidget("org.kde.plasma.volume")
+
 var systray = panel.addWidget("org.kde.plasma.systemtray")
 systray.currentConfigGroup = ["General"]
-systray.writeConfig("extraItems","org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.volume")
+systray.writeConfig("extraItems","org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.ktp-contactlist")
 systray.writeConfig("hiddenItems","org.kde.plasma.clipboard,KMix")
 
 panel.addWidget("org.kde.plasma.digitalclock")
