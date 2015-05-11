@@ -157,15 +157,6 @@ position=-1,10
 theme=0
 visible=false
 
-[plugin_coordinate-grid]
-enabled=true
-equatorColor=#ffff00
-gridColor=#ffffff
-primarylabels=true
-secondaryLabels=true
-tropicsColor=#ffff00
-visible=true
-
 [plugin_crosshairs]
 enabled=true
 theme=0
@@ -208,12 +199,6 @@ showBearingLabel=true
 showDistanceLabel=true
 visible=true
 
-[plugin_navigation]
-enabled=true
-position=-10,-30
-showHomeButton=true
-visible=true
-
 [plugin_opencaching.com]
 enabled=true
 visible=false
@@ -222,26 +207,6 @@ visible=false
 enabled=true
 itemsOnScreen=15
 visible=false
-
-[plugin_overviewmap]
-enabled=true
-height=95
-path_earth=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
-path_jupiter=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
-path_mars=/usr/share/kde4/apps/marble/data/svg/marsmap.svg
-path_mercury=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
-path_moon=/usr/share/kde4/apps/marble/data/svg/lunarmap.svg
-path_neptune=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
-path_pluto=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
-path_saturn=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
-path_sky=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
-path_sun=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
-path_uranus=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
-path_venus=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
-posColor=#ffffff
-position=10.5,10.5
-visible=false
-width=175
 
 [plugin_photo]
 checkState=1,2,3,4,5,6,7
@@ -281,11 +246,6 @@ dataSources=http://www.celestrak.com/NORAD/elements/visual.txt
 enabled=true
 idList=http://www.celestrak.com/NORAD/elements/visual.txt
 userDataSources=http://files.kde.org/marble/satellites/PlanetarySatellites.msc
-visible=false
-
-[plugin_scalebar]
-enabled=true
-position=10.5,-10.5
 visible=false
 
 [plugin_speedometer]
@@ -338,3 +298,17 @@ enabled=true
 numberOfItems=15
 showThumbnails=true
 visible=false
+
+[plugin_coordinate-grid]
+enabled=false
+
+[plugin_navigation]
+enabled=false
+
+[plugin_overviewmap]
+enabled=false
+visible=true
+
+[plugin_scalebar]
+enabled=false
+visible=true
