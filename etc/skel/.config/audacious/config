@@ -1,6 +1,7 @@
 
 [audacious]
 clear_playlist=FALSE
+open_to_temporary=FALSE
 show_filepopup_for_tuple=FALSE
 show_numbers_in_pl=TRUE
 
