@@ -1,26 +1,10 @@
-[CloudSync]
-accessKWallet=false
-
 [MainWindow]
-Height 989=617
-State=AAAA/wAAAAD9AAAAAgAAAAAAAADQAAACU/wCAAAAA/wAAAAWAAACUwAAAQQA////+gAAAAECAAAAA/sAAAAUAHMAZQBhAHIAYwBoAEQAbwBjAGsAAAAAAP////8AAACHAP////sAAAAWAHIAbwB1AHQAaQBuAGcARABvAGMAawEAAAAA/////wAAAQQA////+wAAABgAbABvAGMAYQB0AGkAbwBuAEQAbwBjAGsAAAAAAP////8AAADFAP////sAAAAYAGYAaQBsAGUAVgBpAGUAdwBEAG8AYwBrAAAAAAD/////AAAAiQD////7AAAAEAB0AG8AdQByAEQAbwBjAGsAAAAAAP////8AAAC4AP///wAAAAEAAADNAAACU/wCAAAAAfwAAAAWAAACUwAAAUYBAAAX+gAAAAABAAAAAvsAAAAWAG0AYQBwAFYAaQBlAHcARABvAGMAawEAAAAA/////wAAAKQA////+wAAABQAbABlAGcAZQBuAGQARABvAGMAawEAAAGkAAAAzQAAAFEA////AAACGgAAAlMAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAA=
-StatusBar=Disabled
-ToolBarsMovable=Disabled
-Width 1920=963
+State=AAAA/wAAAAD9AAAAAgAAAAAAAADQAAACTvwCAAAABPwAAAAbAAACTgAAASkA////+gAAAAECAAAAA/sAAAAUAHMAZQBhAHIAYwBoAEQAbwBjAGsAAAAAAP////8AAACSAQAABfsAAAAWAHIAbwB1AHQAaQBuAGcARABvAGMAawEAAAAA/////wAAASkBAAAF+wAAABgAbABvAGMAYQB0AGkAbwBuAEQAbwBjAGsAAAAAAP////8AAADqAQAABfsAAAAYAGYAaQBsAGUAVgBpAGUAdwBEAG8AYwBrAAAAAAD/////AAAAlAEAAAX7AAAAEAB0AG8AdQByAEQAbwBjAGsAAAAAAP////8AAADLAQAABfsAAAAYAGEAbgBuAG8AdABhAHQAZQBEAG8AYwBrAAAAAAD/////AAAAUgEAAAUAAAABAAAAzQAAAk78AgAAAAH8AAAAGwAAAk4AAAEBAQAAIvoAAAAAAQAAAAL7AAAAFgBtAGEAcABWAGkAZQB3AEQAbwBjAGsBAAAAAP////8AAACqAQAABfsAAAAUAGwAZQBnAGUAbgBkAEQAbwBjAGsBAAABpAAAAM0AAABiAQAABQAAAiAAAAJOAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 
 [MarbleWidget]
-homeLatitude=54.8
-mapTheme=earth/openstreetmap/openstreetmap.dgml
-quitLatitude=0.66650928314084
-quitLongitude=-0.473104682860671
-quitRange=13956011.4959423
-projection=2
-
-[Routing Profiles]
-Num=4
-
-[Routing Profiles][Profile 0]
-Name=Car (fastest)
+quitLatitude=0.956440430092893
+quitLongitude=0.164060949687467
+quitRange=9352719.74597179
 
 [Routing Profiles][Profile 0][gosmore-routing]
 Enabled=true
@@ -48,9 +32,6 @@ transport=motorcar
 [Routing Profiles][Profile 0][yours]
 Enabled=true
 
-[Routing Profiles][Profile 1]
-Name=Car (shortest)
-
 [Routing Profiles][Profile 1][mapquest]
 Enabled=true
 preference=shortest
@@ -67,9 +48,6 @@ preference=Shortest
 Enabled=true
 method=shortest
 transport=motorcar
-
-[Routing Profiles][Profile 2]
-Name=Bicycle
 
 [Routing Profiles][Profile 2][cyclestreets]
 Enabled=true
@@ -91,9 +69,6 @@ Enabled=true
 method=shortest
 transport=bicycle
 
-[Routing Profiles][Profile 3]
-Name=Pedestrian
-
 [Routing Profiles][Profile 3][mapquest]
 Enabled=true
 preference=pedestrian
@@ -112,203 +87,51 @@ method=shortest
 transport=foot
 
 [Time]
-dateTime=2014,12,8,13,31,0
-
-[Tracking]
-lastTrackOpenPath=
-lastTrackSavePath=
-
-[View]
-animationQuality=MapQuality::HighQuality
-mapFont=Sans Serif,12,-1,5,50,0,0,0,0,0
-
-[plugin_GpsInfo]
-enabled=true
-position=10.5,110
-visible=false
-
-[plugin_annotation]
-enabled=true
-visible=false
-
-[plugin_aprs-plugin]
-APRSHost=rotate.aprs.net
-APRSPort=10253
-FileDump=false
-FileName=
-TCPIPDump=false
-TNCTTY=/dev/ttyUSB0
-TTYDump=false
-enabled=true
-fadeTime=10
-hideTime=45
-useFile=false
-useInternet=true
-useTTY=false
-visible=false
-
-[plugin_atmosphere]
-enabled=true
-visible=true
+dateTime=2015,5,13,9,36,0
 
 [plugin_compass]
-enabled=true
-position=-1,10
-theme=0
-visible=false
+enabled=false
 
-[plugin_crosshairs]
-enabled=true
-theme=0
-visible=false
-
-[plugin_earthquake]
-enabled=true
-endDate=-4713,1,1,0,0,0
-maximumNumberOfItems=100
-minMagnitude=0
-numResults=20
-startDate=-4713,1,1,0,0,0
-visible=false
-
-[plugin_eclipses]
-enabled=true
-visible=true
-
-[plugin_elevationprofile]
-enabled=true
-position=220,10.5
-visible=false
-
-[plugin_elevationprofilemarker]
-enabled=true
-visible=false
-
-[plugin_foursquare]
-enabled=true
-visible=false
-
-[plugin_license]
-enabled=true
-position=-10,-5
+[plugin_coordinate-grid]
+equatorColor=#ffff00
+gridColor=#ffffff
+primarylabels=true
+secondaryLabels=true
+tropicsColor=#ffff00
 visible=true
 
 [plugin_measure-tool]
-enabled=true
-showBearingLabel=true
-showDistanceLabel=true
-visible=true
-
-[plugin_opencaching.com]
-enabled=true
-visible=false
-
-[plugin_opendesktop]
-enabled=true
-itemsOnScreen=15
-visible=false
-
-[plugin_photo]
-checkState=1,2,3,4,5,6,7
-enabled=true
-numberOfItems=15
-visible=false
-
-[plugin_positionMarker]
-acColor=invalid
-cursorPath=/usr/share/kde4/apps/marble/data/svg/track_turtle.svg
-cursorSize=1
-enabled=true
-showTrail=false
-trailColor=invalid
-useCustomCursor=false
-visible=true
-
-[plugin_postalCode]
-enabled=true
-visible=false
-
-[plugin_progress]
-enabled=true
-position=-10.5,-150.5
-visible=false
-
-[plugin_routing]
-enabled=true
-muted=false
-position=-10,-10
-sound=true
-speaker=
-visible=false
-
-[plugin_satellites]
-dataSources=http://www.celestrak.com/NORAD/elements/visual.txt
-enabled=true
-idList=http://www.celestrak.com/NORAD/elements/visual.txt
-userDataSources=http://files.kde.org/marble/satellites/PlanetarySatellites.msc
-visible=false
-
-[plugin_speedometer]
-enabled=true
-position=10.5,110
-visible=false
-
-[plugin_stars]
-celestialEaquatorBrush=4283782995
-celestialPoleBrush=4283782995
-constellationBrush=4283782995
-constellationLabelBrush=4283782995
-dsoLabelBrush=4283782995
-eclipticBrush=4283782995
-enabled=true
-magnitudeLimit=100
-nameIndex=0
-renderCelestialEquator=true
-renderCelestialPole=true
-renderConstellationLabels=false
-renderConstellationLines=false
-renderDsoLabels=false
-renderDsos=false
-renderEcliptic=true
-renderMoon=true
-renderPlanet=jupiter:0|mars:0|mercury:0|neptune:0|saturn:0|uranus:0|venus:0
-renderStars=true
-renderSun=true
-viewSolarSystemLabel=true
-visible=true
-zoomSunMoon=true
-
-[plugin_sun]
-enabled=true
-visible=false
-
-[plugin_weather]
-enabled=true
-pressureUnit=0
-showCondition=true
-showTemperature=true
-showWindDirection=false
-showWindSpeed=false
-temperatureUnit=0
-visible=false
-windSpeedUnit=0
-
-[plugin_wikipedia]
-enabled=true
-numberOfItems=15
-showThumbnails=true
-visible=false
-
-[plugin_coordinate-grid]
-enabled=false
+paintMode=0
+showBearingChangeLabel=true
+showCircularArea=true
+showCircumference=true
+showPerimeter=true
+showPolygonArea=false
+showRadius=true
 
 [plugin_navigation]
-enabled=false
+enabled=true
+position=-10,-30
+showHomeButton=true
+visible=true
 
 [plugin_overviewmap]
-enabled=false
-visible=true
+height=95
+path_earth=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
+path_jupiter=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
+path_mars=/usr/share/kde4/apps/marble/data/svg/marsmap.svg
+path_mercury=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
+path_moon=/usr/share/kde4/apps/marble/data/svg/lunarmap.svg
+path_neptune=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
+path_pluto=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
+path_saturn=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
+path_sky=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
+path_sun=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
+path_uranus=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
+path_venus=/usr/share/kde4/apps/marble/data/svg/worldmap.svg
+posColor=#ffffff
+position=10.5,10.5
+width=175
 
 [plugin_scalebar]
-enabled=false
-visible=true
+position=10.5,-10.5
