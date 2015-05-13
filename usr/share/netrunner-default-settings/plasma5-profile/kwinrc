@@ -116,9 +116,5 @@ TitlebarDoubleClickCommand=Maximize
 WindowSnapZone=10
 
 [org.kde.kdecoration2]
-BorderSize=Normal
-ButtonsOnLeft=M
-ButtonsOnRight=IAX
-CloseOnDoubleClickOnMenu=true
-library=org.kde.kwin.aurorae
-theme=__aurorae__svg__FormaN
+library=org.kde.oxygen
+theme[$d]

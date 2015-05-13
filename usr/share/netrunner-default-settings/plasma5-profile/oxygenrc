@@ -10,5 +10,5 @@ ScrollBarWidth=18
 
 [Windeco]
 AnimationsEnabled=false
-ButtonSize=ButtonLarge
+ButtonSize=ButtonDefault
 CloseWindowFromMenuButton=true
