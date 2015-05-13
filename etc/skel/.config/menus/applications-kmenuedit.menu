@@ -89,6 +89,7 @@
    <Filename>ktp-log-viewer.desktop</Filename>
    <Filename>display-im6.desktop</Filename>
    <Filename>kde4-calligraactive.desktop</Filename>
+   <Filename>wordview.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
@@ -209,15 +210,14 @@
    <Filename>calibre-gui.desktop</Filename>
    <Filename>kde4-Kontact.desktop</Filename>
    <Filename>kde4-calligraactive.desktop</Filename>
+   <Filename>wordview.desktop</Filename>
   </Exclude>
   <Include>
    <Filename>kde4-okular.desktop</Filename>
   </Include>
   <Layout>
    <Merge type="files"/>
-   <Filename>kde4-flow.desktop</Filename>
    <Filename>kde4-okular.desktop</Filename>
-   <Filename>libreoffice-base.desktop</Filename>
    <Filename>libreoffice-calc.desktop</Filename>
    <Filename>libreoffice-draw.desktop</Filename>
    <Filename>libreoffice-impress.desktop</Filename>
