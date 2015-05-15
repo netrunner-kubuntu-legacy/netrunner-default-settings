@@ -9,6 +9,7 @@ idleTime=7200000
 
 [AC][HandleButtonEvents]
 lidAction=1
+powerButtonAction=8
 triggerLidActionWhenExternalMonitorPresent=false
 
 [Battery]
