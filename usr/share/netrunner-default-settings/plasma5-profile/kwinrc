@@ -118,3 +118,8 @@ WindowSnapZone=10
 [org.kde.kdecoration2]
 library=org.kde.oxygen
 theme[$d]
+BorderSize=Normal
+ButtonsOnLeft=M
+ButtonsOnRight=IAX
+CloseOnDoubleClickOnMenu=true
+
