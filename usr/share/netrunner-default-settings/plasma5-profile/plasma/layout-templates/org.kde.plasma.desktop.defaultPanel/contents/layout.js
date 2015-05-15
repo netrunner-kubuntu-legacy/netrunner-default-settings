@@ -55,6 +55,7 @@ var systray = panel.addWidget("org.kde.plasma.systemtray")
 systray.currentConfigGroup = ["General"]
 systray.writeConfig("extraItems","org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.ktp-contactlist,org.kde.plasma.ktplegacypresenceapplet")
 systray.writeConfig("hiddenItems","org.kde.plasma.clipboard,KMix,org.kde.ktp-contactlist,org.kde.plasma.ktplegacypresenceapplet")
+systray.writeConfig("shownItems", "transmission")
 
 panel.addWidget("org.kde.plasma.digitalclock")
 panel.addWidget("org.kde.plasma.notifications")
