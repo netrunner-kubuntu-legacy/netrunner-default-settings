@@ -152,6 +152,7 @@
    <Filename>bluedevil-sendfile.desktop</Filename>
    <Filename>bluedevil-wizard.desktop</Filename>
    <Filename>ktp-log-viewer.desktop</Filename>
+   <Filename>kde4-krdc.desktop</Filename>
   </Exclude>
   <Include>
    <Filename>kde4-marble.desktop</Filename>
@@ -161,10 +162,8 @@
    <Merge type="menus"/>
    <Menuname>Terminal</Menuname>
    <Merge type="files"/>
-   <Filename>filezilla.desktop</Filename>
    <Filename>org.kde.ktpcontactlist.desktop</Filename>
    <Filename>org.kde.konversation.desktop</Filename>
-   <Filename>kde4-krdc.desktop</Filename>
    <Filename>kde4-marble.desktop</Filename>
    <Filename>pidgin.desktop</Filename>
    <Filename>skype.desktop</Filename>
@@ -234,6 +233,7 @@
    <Filename>kde4-k3b.desktop</Filename>
    <Filename>calibre-gui.desktop</Filename>
    <Filename>kde4-yakuake.desktop</Filename>
+   <Filename>kde4-krdc.desktop</Filename>
   </Include>
   <Exclude>
    <Filename>virtualbox.desktop</Filename>
@@ -247,23 +247,15 @@
    <Merge type="menus"/>
    <Menuname>XUtilities</Menuname>
    <Merge type="files"/>
-   <Filename>nautilus-folder-handler.desktop</Filename>
-   <Filename>org.kde.AddPrinter.desktop</Filename>
-   <Filename>org.kde.ConfigurePrinter.desktop</Filename>
-   <Filename>nautilus.desktop</Filename>
-   <Filename>org.kde.PrintQueue.desktop</Filename>
-   <Filename>kde4-akonaditray.desktop</Filename>
+   <Filename>org.kde.kcalc.desktop</Filename>
    <Filename>kde4-ark.desktop</Filename>
-   <Filename>yelp.desktop</Filename>
    <Filename>org.kde.kate.desktop</Filename>
-   <Filename>kfontview.desktop</Filename>
    <Filename>org.kde.klipper.desktop</Filename>
    <Filename>kde4-knotes.desktop</Filename>
-   <Filename>sambamounter.desktop</Filename>
-   <Separator/>
    <Menuname>More</Menuname>
    <Filename>kde4-k3b.desktop</Filename>
    <Filename>kde4-yakuake.desktop</Filename>
+   <Filename>kde4-krdc.desktop</Filename>
   </Layout>
  </Menu>
  <Menu>
