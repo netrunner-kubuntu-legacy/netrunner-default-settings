@@ -152,7 +152,7 @@ enabled=true
 visible=true
 
 [plugin_compass]
-enabled=true
+enabled=false
 position=-1,10
 theme=0
 visible=false
