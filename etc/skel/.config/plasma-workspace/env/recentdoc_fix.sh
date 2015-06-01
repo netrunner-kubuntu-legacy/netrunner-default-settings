@@ -2,6 +2,9 @@
 # 
 # Put into ~/.config/plasma-workspace/env
 
-mkdir -p ~/.local/share/RecentDocuments
+if [ ! -L ~/.kde/share/apps/RecentDocuments ] && [ -d ~/.kde/share/apps/RecentDocuments ]
+then
+	rm -r ~/.kde/share/apps/RecentDocuments
+fi
 
-ln -sf ~/.kde/share/apps/RecentDocuments ~/.local/share/RecentDocuments
+ln -sf ~/.local/share/RecentDocuments ~/.kde/share/apps/RecentDocuments
