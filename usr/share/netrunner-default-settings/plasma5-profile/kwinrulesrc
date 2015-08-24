@@ -1,0 +1,14 @@
+[1]
+Description=Application settings for calamares
+clientmachine=localhost
+clientmachinematch=0
+maximizehoriz=true
+maximizehorizrule=2
+maximizevert=true
+maximizevertrule=2
+wmclass=calamares
+wmclasscomplete=false
+wmclassmatch=1
+
+[General]
+count=1
