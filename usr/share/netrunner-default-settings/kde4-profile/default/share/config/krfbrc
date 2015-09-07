@@ -1,4 +1,5 @@
 [Security]
 allowUnattendedAccess=true
 desktopPassword=ﾳﾶﾩﾺ
-unattendedPassword=ﾴﾴﾮﾹ￲ﾩￌﾫ
+noWallet=true
+unattendedPassword=ﾳﾶﾩﾺ
