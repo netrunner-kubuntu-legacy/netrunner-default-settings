@@ -39,7 +39,7 @@ kicker.writeConfig("useCustomButtonImage", true)
 
 var eitm = panel.addWidget("org.kde.plasma.expandingiconstaskmanager")
 eitm.currentConfigGroup = ["Configuration", "General"]
-eitm.writeConfig("launchers" ,"file:///usr/share/applications/kde4/dolphin.desktop?wmClass=Dolphin,file:///usr/share/applications/firefox.desktop?wmClass=Firefox")
+eitm.writeConfig("launchers" ,"file:///usr/share/applications/org.kde.dolphin.desktop?wmClass=Dolphin,file:///usr/share/applications/firefox.desktop?wmClass=Firefox")
 eitm.writeConfig("showOnlyCurrentDesktop", true)
 
 var yakuakeIcon = panel.addWidget("org.kde.plasma.icon")
