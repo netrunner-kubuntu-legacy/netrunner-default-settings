@@ -6,17 +6,11 @@ GLPlatformInterface=glx
 GLPreferBufferSwap=a
 GLTextureFilter=2
 HiddenPreviews=5
-OpenGLIsUnsafe=false
 UnredirectFullscreen=false
 XRenderSmoothScale=false
 
 [Desktops]
 Number=1
-
-[Effect-Cube]
-BorderActivate=9
-BorderActivateCylinder=9
-BorderActivateSphere=9
 
 [Effect-DesktopGrid]
 BorderActivate=9
@@ -69,14 +63,6 @@ windowgeometryEnabled=false
 kwin4_effect_fadeEnabled=true
 kwin4_effect_maximizeEnabled=false
 kwin4_effect_translucencyEnabled=false
-
-[Style]
-BorderSize=1
-ButtonsOnLeft=M
-ButtonsOnRight=IA_X
-CustomButtonPositions=true
-PluginLib=Oxygen
-ShowToolTips=false
 
 [TabBox]
 BorderActivate=9
