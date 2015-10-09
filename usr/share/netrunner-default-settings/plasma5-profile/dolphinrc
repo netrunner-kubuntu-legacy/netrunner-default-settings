@@ -22,11 +22,11 @@ PreviewSize=96
 [MainWindow]
 ToolBarsMovable=Disabled
 
-[MainWindow][Toolbar mainToolBar]
+[Toolbar mainToolBar]
 IconSize=32
 
 [PlacesPanel]
 IconSize=22
 
 [PreviewSettings]
-Plugins=imagethumbnail,jpegthumbnail,kffmpegthumbnailer
+Plugins=imagethumbnail,jpegthumbnail,svgthumbnail,kffmpegthumbnailer
