@@ -4,5 +4,5 @@
 
 if [[ $PATH != *"sbin"* ]]
 then
-    export PATH=$PATH:/usr/local/sbin:/sbin
+    export PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin
 fi
