@@ -25,7 +25,8 @@ if (freeEdges["bottom"] == true) {
     panel.location = "top";
 }
 
-panel.height = screenGeometry(panel.screen).height > 1024 ? 35 : 27
+//panel.height = screenGeometry(panel.screen).height > 1024 ? 35 : 27
+panel.formfactor = 2
 
 var kicker = panel.addWidget("org.kde.plasma.kicker")
 kicker.currentConfigGroup = ["Shortcuts"]
@@ -33,13 +34,13 @@ kicker.writeConfig("global", "Alt+F1")
 
 kicker.currentConfigGroup = ["General"]
 kicker.writeConfig("customButtonImage", "file:///usr/share/icons/hicolor/scalable/apps/homerun.svg")
-kicker.writeConfig("favoriteApps", "systemsettings.desktop,synaptic.desktop,org.kde.ksysguard.desktop,vokoscreen.desktop")
+kicker.writeConfig("favoriteApps", ["systemsettings.desktop","synaptic.desktop","org.kde.ksysguard.desktop","vokoscreen.desktop"])
 kicker.writeConfig("limitDepth", true)
 kicker.writeConfig("useCustomButtonImage", true)
 
 var eitm = panel.addWidget("org.kde.plasma.expandingiconstaskmanager")
 eitm.currentConfigGroup = ["Configuration", "General"]
-eitm.writeConfig("launchers" ,"file:///usr/share/applications/kde4/dolphin.desktop?wmClass=Dolphin,file:///usr/share/applications/firefox.desktop?wmClass=Firefox")
+eitm.writeConfig("launchers" ,"file:///usr/share/applications/org.kde.dolphin.desktop?wmClass=dolphin,file:///usr/share/applications/firefox.desktop?wmClass=Firefox")
 eitm.writeConfig("showOnlyCurrentDesktop", true)
 
 var yakuakeIcon = panel.addWidget("org.kde.plasma.icon")
