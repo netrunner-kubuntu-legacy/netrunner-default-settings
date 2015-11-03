@@ -23,10 +23,11 @@
   </Menu>
   <Menu>
    <Name>Science</Name>
-   <Layout/>
    <Exclude>
     <Filename>libreoffice-math.desktop</Filename>
+    <Filename>marble.desktop</Filename>
    </Exclude>
+   <Layout/>
   </Menu>
  </Menu>
  <Menu>
@@ -67,7 +68,6 @@
    <Filename>kde4-marble.desktop</Filename>
    <Filename>kde4-kmix.desktop</Filename>
    <Filename>kde4-akregator.desktop</Filename>
-   <Filename>org.kde.ksshaskpass.desktop</Filename>
    <Filename>gnome-disks.desktop</Filename>
    <Filename>bluedevil-monolithic.desktop</Filename>
    <Filename>bluedevil-sendfile.desktop</Filename>
@@ -90,6 +90,14 @@
    <Filename>display-im6.desktop</Filename>
    <Filename>kde4-calligraactive.desktop</Filename>
    <Filename>wordview.desktop</Filename>
+   <Filename>org.kde.ktplogviewer.desktop</Filename>
+   <Filename>org.kde.kmail.desktop</Filename>
+   <Filename>org.kde.kontact.desktop</Filename>
+   <Filename>org.kde.korganizer.desktop</Filename>
+   <Filename>org.kde.pimsettingexporter.desktop</Filename>
+   <Filename>org.kde.sieveeditor.desktop</Filename>
+   <Filename>org.kde.ksshaskpass.desktop</Filename>
+   <Filename>org.kde.importwizard.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
@@ -153,25 +161,30 @@
    <Filename>bluedevil-wizard.desktop</Filename>
    <Filename>ktp-log-viewer.desktop</Filename>
    <Filename>kde4-krdc.desktop</Filename>
+   <Filename>org.kde.ktplogviewer.desktop</Filename>
+   <Filename>org.kde.pimsettingexporter.desktop</Filename>
+   <Filename>org.kde.sieveeditor.desktop</Filename>
   </Exclude>
   <Include>
    <Filename>kde4-marble.desktop</Filename>
    <Filename>kde4-Kontact.desktop</Filename>
+   <Filename>marble.desktop</Filename>
   </Include>
   <Layout>
    <Merge type="menus"/>
    <Menuname>Terminal</Menuname>
    <Merge type="files"/>
+   <Filename>org.kde.akregator.desktop</Filename>
+   <Filename>org.kde.kmail.desktop</Filename>
    <Filename>org.kde.ktpcontactlist.desktop</Filename>
    <Filename>org.kde.konversation.desktop</Filename>
-   <Filename>kde4-marble.desktop</Filename>
    <Filename>pidgin.desktop</Filename>
    <Filename>skype.desktop</Filename>
    <Filename>firefox.desktop</Filename>
    <Filename>transmission-qt.desktop</Filename>
    <Filename>thunderbird.desktop</Filename>
    <Menuname>More</Menuname>
-   <Filename>kde4-Kontact.desktop</Filename>
+   <Filename>marble.desktop</Filename>
   </Layout>
  </Menu>
  <Menu>
@@ -210,12 +223,18 @@
    <Filename>kde4-Kontact.desktop</Filename>
    <Filename>kde4-calligraactive.desktop</Filename>
    <Filename>wordview.desktop</Filename>
+   <Filename>org.kde.kmail.desktop</Filename>
+   <Filename>org.kde.kontact.desktop</Filename>
+   <Filename>org.kde.korganizer.desktop</Filename>
+   <Filename>org.kde.pimsettingexporter.desktop</Filename>
+   <Filename>org.kde.sieveeditor.desktop</Filename>
   </Exclude>
   <Include>
    <Filename>kde4-okular.desktop</Filename>
   </Include>
   <Layout>
    <Merge type="files"/>
+   <Filename>org.kde.kaddressbook.desktop</Filename>
    <Filename>kde4-okular.desktop</Filename>
    <Filename>libreoffice-calc.desktop</Filename>
    <Filename>libreoffice-draw.desktop</Filename>
@@ -242,16 +261,18 @@
    <Filename>debian-xterm.desktop</Filename>
    <Filename>kde4-akregator.desktop</Filename>
    <Filename>gnome-disks.desktop</Filename>
+   <Filename>org.kde.importwizard.desktop</Filename>
   </Exclude>
   <Layout>
    <Merge type="menus"/>
    <Menuname>XUtilities</Menuname>
    <Merge type="files"/>
+   <Filename>org.kde.ark.desktop</Filename>
+   <Filename>fcitx.desktop</Filename>
+   <Filename>org.kde.knotes.desktop</Filename>
    <Filename>org.kde.kcalc.desktop</Filename>
-   <Filename>kde4-ark.desktop</Filename>
    <Filename>org.kde.kate.desktop</Filename>
    <Filename>org.kde.klipper.desktop</Filename>
-   <Filename>kde4-knotes.desktop</Filename>
    <Menuname>More</Menuname>
    <Filename>kde4-k3b.desktop</Filename>
    <Filename>kde4-yakuake.desktop</Filename>
@@ -266,6 +287,7 @@
    <Filename>grub-customizer.desktop</Filename>
    <Filename>debian-uxterm.desktop</Filename>
    <Filename>debian-xterm.desktop</Filename>
+   <Filename>org.kde.ksshaskpass.desktop</Filename>
   </Exclude>
   <Include>
    <Filename>virtualbox.desktop</Filename>
@@ -276,32 +298,24 @@
    <Menuname>ScreenSavers</Menuname>
    <Menuname>Terminal</Menuname>
    <Merge type="files"/>
-   <Filename>baobab.desktop</Filename>
-   <Filename>kde4-kfmclient.desktop</Filename>
-   <Filename>kde4-kwalletmanager.desktop</Filename>
+   <Filename>org.kde.dolphin.desktop</Filename>
+   <Filename>fcitx.desktop</Filename>
+   <Filename>org.kde.PartitionManager.desktop</Filename>
+   <Filename>org.kde.konsole.desktop</Filename>
+   <Filename>org.kde.kwalletmanager5.desktop</Filename>
+   <Filename>org.kde.discover.desktop</Filename>
+   <Filename>muon-updater.desktop</Filename>
+   <Filename>ndisgtk-kde.desktop</Filename>
    <Filename>synaptic.desktop</Filename>
-   <Filename>kde4-kfmclient_dir.desktop</Filename>
-   <Filename>apturl.desktop</Filename>
-   <Filename>kde4-dolphin.desktop</Filename>
    <Filename>kde4-ubiquity-kdeui.desktop</Filename>
-   <Filename>kde4-partitionmanager.desktop</Filename>
    <Filename>org.kde.kinfocenter.desktop</Filename>
-   <Filename>kde4-kfmclient_html.desktop</Filename>
-   <Filename>kde4-konsole.desktop</Filename>
    <Filename>org.kde.ksysguard.desktop</Filename>
    <Filename>kde4-ksystemlog.desktop</Filename>
-   <Filename>kde4-muon-discover.desktop</Filename>
-   <Filename>kde4-muon-updater.desktop</Filename>
    <Filename>sambamounterapp.desktop</Filename>
-   <Filename>qapt-deb-installer.desktop</Filename>
-   <Filename>hplj1020.desktop</Filename>
-   <Filename>software-properties-kde.desktop</Filename>
-   <Filename>synaptic-kde.desktop</Filename>
-   <Filename>kde4-kfmclient_sysinfo.desktop</Filename>
-   <Separator/>
-   <Menuname>More</Menuname>
    <Filename>virtualbox.desktop</Filename>
    <Filename>gnome-disks.desktop</Filename>
+   <Separator/>
+   <Menuname>More</Menuname>
   </Layout>
  </Menu>
  <Menu>
