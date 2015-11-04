@@ -29,6 +29,14 @@
    </Exclude>
    <Layout/>
   </Menu>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>Languages</Menuname>
+   <Menuname>Mathematics</Menuname>
+   <Menuname>Miscellaneous</Menuname>
+   <Menuname>Science</Menuname>
+   <Menuname>Tools</Menuname>
+  </Layout>
  </Menu>
  <Menu>
   <Name>.hidden</Name>
@@ -130,9 +138,9 @@
    <Filename>kde4-karbon.desktop</Filename>
    <Filename>kde4-krita.desktop</Filename>
    <Filename>kde4-ksnapshot.desktop</Filename>
-   <Filename>kde4-skanlite.desktop</Filename>
    <Merge type="menus"/>
    <Menuname>More</Menuname>
+   <Filename>kde4-skanlite.desktop</Filename>
   </Layout>
  </Menu>
  <Menu>
@@ -171,20 +179,20 @@
    <Filename>marble.desktop</Filename>
   </Include>
   <Layout>
-   <Merge type="menus"/>
-   <Menuname>Terminal</Menuname>
    <Merge type="files"/>
    <Filename>org.kde.akregator.desktop</Filename>
-   <Filename>org.kde.kmail.desktop</Filename>
-   <Filename>org.kde.ktpcontactlist.desktop</Filename>
-   <Filename>org.kde.konversation.desktop</Filename>
-   <Filename>pidgin.desktop</Filename>
-   <Filename>skype.desktop</Filename>
    <Filename>firefox.desktop</Filename>
-   <Filename>transmission-qt.desktop</Filename>
-   <Filename>thunderbird.desktop</Filename>
-   <Menuname>More</Menuname>
+   <Filename>org.kde.kmail.desktop</Filename>
+   <Filename>org.kde.konversation.desktop</Filename>
    <Filename>marble.desktop</Filename>
+   <Merge type="menus"/>
+   <Menuname>More</Menuname>
+   <Filename>pidgin.desktop</Filename>
+   <Filename>transmission-qt.desktop</Filename>
+   <Filename>skype.desktop</Filename>
+   <Filename>org.kde.ktpcontactlist.desktop</Filename>
+   <Menuname>Terminal</Menuname>
+   <Filename>thunderbird.desktop</Filename>
   </Layout>
  </Menu>
  <Menu>
@@ -195,13 +203,13 @@
   </Exclude>
   <Layout>
    <Merge type="files"/>
-   <Filename>atraci.desktop</Filename>
-   <Filename>kde4-cantata.desktop</Filename>
+   <Filename>audacious.desktop</Filename>
    <Filename>cheese.desktop</Filename>
    <Filename>gmusicbrowser.desktop</Filename>
    <Filename>ghb.desktop</Filename>
-   <Filename>kde4-bluedevil-audio.desktop</Filename>
-   <Filename>kde4-kdenlive.desktop</Filename>
+   <Filename>org.kde.kdenlive.desktop</Filename>
+   <Filename>pavucontrol.desktop</Filename>
+   <Filename>radiotray.desktop</Filename>
    <Filename>vlc.desktop</Filename>
    <Filename>vokoscreen.desktop</Filename>
    <Separator/>
@@ -235,15 +243,15 @@
   <Layout>
    <Merge type="files"/>
    <Filename>org.kde.kaddressbook.desktop</Filename>
-   <Filename>kde4-okular.desktop</Filename>
+   <Filename>libreoffice-startcenter.desktop</Filename>
    <Filename>libreoffice-calc.desktop</Filename>
    <Filename>libreoffice-draw.desktop</Filename>
    <Filename>libreoffice-impress.desktop</Filename>
    <Filename>libreoffice-math.desktop</Filename>
-   <Filename>libreoffice-startcenter.desktop</Filename>
    <Filename>libreoffice-writer.desktop</Filename>
    <Merge type="menus"/>
    <Menuname>More</Menuname>
+   <Filename>kde4-okular.desktop</Filename>
   </Layout>
  </Menu>
  <Menu>
@@ -264,19 +272,19 @@
    <Filename>org.kde.importwizard.desktop</Filename>
   </Exclude>
   <Layout>
-   <Merge type="menus"/>
-   <Menuname>XUtilities</Menuname>
    <Merge type="files"/>
    <Filename>org.kde.ark.desktop</Filename>
    <Filename>fcitx.desktop</Filename>
-   <Filename>org.kde.knotes.desktop</Filename>
-   <Filename>org.kde.kcalc.desktop</Filename>
-   <Filename>org.kde.kate.desktop</Filename>
-   <Filename>org.kde.klipper.desktop</Filename>
-   <Menuname>More</Menuname>
    <Filename>kde4-k3b.desktop</Filename>
-   <Filename>kde4-yakuake.desktop</Filename>
+   <Filename>org.kde.kate.desktop</Filename>
+   <Filename>org.kde.kcalc.desktop</Filename>
+   <Filename>org.kde.klipper.desktop</Filename>
+   <Filename>org.kde.knotes.desktop</Filename>
    <Filename>kde4-krdc.desktop</Filename>
+   <Merge type="menus"/>
+   <Menuname>More</Menuname>
+   <Menuname>XUtilities</Menuname>
+   <Filename>kde4-yakuake.desktop</Filename>
   </Layout>
  </Menu>
  <Menu>
@@ -294,26 +302,26 @@
    <Filename>gnome-disks.desktop</Filename>
   </Include>
   <Layout>
-   <Merge type="menus"/>
-   <Menuname>ScreenSavers</Menuname>
-   <Menuname>Terminal</Menuname>
    <Merge type="files"/>
+   <Filename>gnome-disks.desktop</Filename>
    <Filename>org.kde.dolphin.desktop</Filename>
    <Filename>fcitx.desktop</Filename>
+   <Filename>kde4-ubiquity-kdeui.desktop</Filename>
    <Filename>org.kde.PartitionManager.desktop</Filename>
+   <Filename>org.kde.kinfocenter.desktop</Filename>
    <Filename>org.kde.konsole.desktop</Filename>
+   <Filename>org.kde.ksysguard.desktop</Filename>
+   <Filename>kde4-ksystemlog.desktop</Filename>
    <Filename>org.kde.kwalletmanager5.desktop</Filename>
    <Filename>org.kde.discover.desktop</Filename>
    <Filename>muon-updater.desktop</Filename>
-   <Filename>ndisgtk-kde.desktop</Filename>
-   <Filename>synaptic.desktop</Filename>
-   <Filename>kde4-ubiquity-kdeui.desktop</Filename>
-   <Filename>org.kde.kinfocenter.desktop</Filename>
-   <Filename>org.kde.ksysguard.desktop</Filename>
-   <Filename>kde4-ksystemlog.desktop</Filename>
    <Filename>sambamounterapp.desktop</Filename>
+   <Merge type="menus"/>
+   <Menuname>ScreenSavers</Menuname>
+   <Filename>synaptic.desktop</Filename>
+   <Menuname>Terminal</Menuname>
    <Filename>virtualbox.desktop</Filename>
-   <Filename>gnome-disks.desktop</Filename>
+   <Filename>ndisgtk-kde.desktop</Filename>
    <Separator/>
    <Menuname>More</Menuname>
   </Layout>
@@ -358,24 +366,123 @@
     <Include>
      <Category>Wine-Programs-Accessories</Category>
     </Include>
+    <Layout>
+     <Merge type="files"/>
+     <Filename>wine-notepad.desktop</Filename>
+    </Layout>
    </Menu>
+   <Layout>
+    <Merge type="menus"/>
+    <Menuname>wine-Programs-Accessories</Menuname>
+   </Layout>
   </Menu>
+  <Layout>
+   <Merge type="files"/>
+   <Filename>wine-browsedrive.desktop</Filename>
+   <Filename>wine-winecfg.desktop</Filename>
+   <Merge type="menus"/>
+   <Menuname>wine-Programs</Menuname>
+   <Filename>wine-uninstaller.desktop</Filename>
+   <Filename>winetricks.desktop</Filename>
+  </Layout>
  </Menu>
  <Menu>
   <Name>Settingsmenu</Name>
-  <Layout>
-   <Merge type="files"/>
-   <Filename>grub-customizer.desktop</Filename>
-   <Filename>im-config.desktop</Filename>
-   <Filename>kdesystemsettings.desktop</Filename>
-   <Filename>org.kde.kmenuedit.desktop</Filename>
-   <Filename>openjdk-7-policytool.desktop</Filename>
-   <Filename>software-properties-kde.desktop</Filename>
-   <Filename>synaptic.desktop</Filename>
-   <Filename>systemsettings.desktop</Filename>
-  </Layout>
   <Exclude>
    <Filename>gnome-disks.desktop</Filename>
   </Exclude>
+  <Layout>
+   <Merge type="files"/>
+   <Filename>software-properties-drivers.desktop</Filename>
+   <Filename>language-kcm.desktop</Filename>
+   <Filename>fcitx-configtool.desktop</Filename>
+   <Filename>itweb-settings.desktop</Filename>
+   <Filename>im-config.desktop</Filename>
+   <Filename>openjdk-7-policytool.desktop</Filename>
+   <Filename>software-properties-gtk.desktop</Filename>
+   <Filename>synaptic.desktop</Filename>
+   <Filename>systemsettings.desktop</Filename>
+   <Filename>ndisgtk-kde.desktop</Filename>
+  </Layout>
+ </Menu>
+ <Layout>
+  <Merge type="menus"/>
+  <Menuname>Development</Menuname>
+  <Menuname>Education</Menuname>
+  <Merge type="files"/>
+  <Filename>kde4-kfind.desktop</Filename>
+  <Menuname>Games</Menuname>
+  <Menuname>Graphics</Menuname>
+  <Filename>org.kde.Help.desktop</Filename>
+  <Menuname>Internet</Menuname>
+  <Menuname>Applications</Menuname>
+  <Menuname>Multimedia</Menuname>
+  <Menuname>Office</Menuname>
+  <Menuname>Science</Menuname>
+  <Menuname>Settingsmenu</Menuname>
+  <Menuname>System</Menuname>
+  <Menuname>Utilities</Menuname>
+  <Menuname>wine-wine</Menuname>
+ </Layout>
+ <Menu>
+  <Name>Development</Name>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>Translation</Menuname>
+   <Menuname>Web Development</Menuname>
+   <Menuname>X-KDE-KDevelopIDE</Menuname>
+  </Layout>
+ </Menu>
+ <Menu>
+  <Name>Games</Name>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>Arcade</Menuname>
+   <Menuname>Board</Menuname>
+   <Menuname>Card</Menuname>
+   <Menuname>Kidsgames</Menuname>
+   <Merge type="files"/>
+   <Filename>gltron.desktop</Filename>
+   <Menuname>Logic</Menuname>
+   <Filename>PlayOnLinux.desktop</Filename>
+   <Filename>steam.desktop</Filename>
+   <Menuname>TacticStrategy</Menuname>
+   <Menuname>Toys</Menuname>
+   <Filename>wordwarvi.desktop</Filename>
+  </Layout>
+  <Menu>
+   <Name>Arcade</Name>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>burgerspace.desktop</Filename>
+    <Filename>frozen-bubble.desktop</Filename>
+    <Filename>org.kde.kbreakout.desktop</Filename>
+    <Filename>kde4-ksnakeduel.desktop</Filename>
+   </Layout>
+  </Menu>
+  <Menu>
+   <Name>Board</Name>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>gnome-chess.desktop</Filename>
+    <Filename>gnudoq.desktop</Filename>
+    <Filename>kde4-kmahjongg.desktop</Filename>
+    <Filename>xboard.desktop</Filename>
+   </Layout>
+  </Menu>
+  <Menu>
+   <Name>Logic</Name>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>org.kde.kdiamond.desktop</Filename>
+   </Layout>
+  </Menu>
+  <Menu>
+   <Name>TacticStrategy</Name>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>org.kde.kmines.desktop</Filename>
+   </Layout>
+  </Menu>
  </Menu>
 </Menu>
