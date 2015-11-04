@@ -139,7 +139,7 @@ formfactor=0
 immutability=1
 lastScreen=0
 location=0
-plugin=org.kde.plasma.folder
+plugin=org.kde.netrunnerdesktop
 wallpaperplugin=org.kde.image
 
 [Containments][18][ConfigDialog]

@@ -46,7 +46,7 @@ gc();
 //loadTemplate("org.kde.plasma-desktop.sidebarPanel");
 
 for (var i = 0; i < screenCount; ++i) {
-    var id = createActivity("Netrunner Desktop", "org.kde.plasma.folder")
+    var id = createActivity("Netrunner Desktop", "org.kde.netrunnerdesktop")
     var desktopsArray = desktopsForActivity(id);
     
     for (var j = 0; j < desktopsArray.length; j++) {
