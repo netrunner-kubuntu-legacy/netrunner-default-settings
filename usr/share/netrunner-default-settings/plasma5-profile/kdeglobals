@@ -130,8 +130,8 @@ Size=32
 
 [General]
 BrowserApplication[$e]=firefox.desktop
-ColorScheme=Netrunner15
-Name=Breeze
+ColorScheme=Carbon
+Name=Netrunner15
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
@@ -146,11 +146,11 @@ toolBarFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 Theme=oxygen
 
 [KDE]
-ColorScheme=Oxygen Cold
+LookAndFeelPackage=org.kde.netrunner-blue-x.desktop
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=true
 contrast=4
-widgetStyle=carbon
+widgetStyle=breeze
 SingleClick=false
 
 [KDE-Global GUI Settings]
@@ -235,6 +235,9 @@ DisabledEffect=togray
 DisabledSemiTransparent=true
 DisabledValue=1
 Size=22
+
+[Main]
+ShowToolTips=false
 
 [WM]
 activeBackground=224,223,222                                                

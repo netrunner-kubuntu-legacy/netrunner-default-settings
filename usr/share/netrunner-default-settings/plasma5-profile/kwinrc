@@ -108,3 +108,7 @@ ButtonsOnLeft=M
 ButtonsOnRight=IAX
 CloseOnDoubleClickOnMenu=true
 
+[TabBox]
+DesktopLayout=org.kde.netrunner-blue-x.desktop
+DesktopListLayout=org.kde.netrunner-blue-x.desktop
+LayoutName=org.kde.netrunner-blue-x.desktop
