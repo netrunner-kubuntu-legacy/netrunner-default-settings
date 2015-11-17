@@ -106,6 +106,8 @@
    <Filename>org.kde.sieveeditor.desktop</Filename>
    <Filename>org.kde.ksshaskpass.desktop</Filename>
    <Filename>org.kde.importwizard.desktop</Filename>
+   <Filename>synaptic.desktop</Filename>
+   <Filename>ndisgtk-kde.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
@@ -390,6 +392,8 @@
   <Name>Settingsmenu</Name>
   <Exclude>
    <Filename>gnome-disks.desktop</Filename>
+   <Filename>synaptic.desktop</Filename>
+   <Filename>ndisgtk-kde.desktop</Filename>
   </Exclude>
   <Layout>
    <Merge type="files"/>
@@ -400,9 +404,7 @@
    <Filename>im-config.desktop</Filename>
    <Filename>openjdk-7-policytool.desktop</Filename>
    <Filename>software-properties-gtk.desktop</Filename>
-   <Filename>synaptic.desktop</Filename>
    <Filename>systemsettings.desktop</Filename>
-   <Filename>ndisgtk-kde.desktop</Filename>
   </Layout>
  </Menu>
  <Layout>
