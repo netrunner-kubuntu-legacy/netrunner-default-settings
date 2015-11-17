@@ -1,7 +1,7 @@
 [Desktop Entry]
 Comment=
 Exec=firefox http://www.netrunner.com/readme-17/
-Icon=/usr/share/icons/Netrunner/scalable/apps/Icon-welcome.png
+Icon=help-about
 Name=Readme
 NoDisplay=false
 StartupNotify=true

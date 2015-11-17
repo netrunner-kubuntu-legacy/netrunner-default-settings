@@ -143,7 +143,7 @@ smallestReadableFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 toolBarFont=DejaVu Sans,9,-1,5,50,0,0,0,0,0
 
 [Icons]
-Theme=oxygen
+Theme=netrunner-breeze
 
 [KDE]
 LookAndFeelPackage=org.kde.netrunner-blue-x.desktop
