@@ -66,6 +66,9 @@ kwin4_effect_translucencyEnabled=false
 [TabBox]
 BorderActivate=9
 BorderAlternativeActivate=9
+DesktopLayout=org.kde.netrunner-blue-x.desktop
+DesktopListLayout=org.kde.netrunner-blue-x.desktop
+LayoutName=org.kde.netrunner-blue-x.desktop
 
 [Windows]
 ActiveMouseScreen=false
@@ -107,8 +110,3 @@ BorderSize=Normal
 ButtonsOnLeft=M
 ButtonsOnRight=IAX
 CloseOnDoubleClickOnMenu=true
-
-[TabBox]
-DesktopLayout=org.kde.netrunner-blue-x.desktop
-DesktopListLayout=org.kde.netrunner-blue-x.desktop
-LayoutName=org.kde.netrunner-blue-x.desktop
