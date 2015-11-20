@@ -6,13 +6,40 @@ VolumeScroll	= VBplayer
 DefaultFocus	= Play
 Name		= _"Filters & Fun"
 
-VBmain		= HBmenu _HPmain Progress
- HBmenu		= _MBmenu
-#  MBmenu	= MainMenuItem LayoutItem PSortItem PFilterItem QueueItem
-  MBmenu	= MainMenuItem LayoutItem PSortItem
-# HPmain		= VBLeft _TBRight
+VBmain		= HBMenubar _HPmain Progress
+
+    HBMenubar = _MBMenubar
+            MBMenubar = SMMenu1 SMMenu2 SMMenu3 SMMenu5 SMMenu6 SMMenu7
+                SMMenu1 = (label=_"File") \
+#                    MenuItem11(command=,label=_"Open files") \
+                     MenuItem13(command="RunPerlCode(::ChooseAddPath(1,1))",label=_"Add Files ...") \
+#                    SeparatorMenuItem11 \
+                    MenuItem15(command=OpenPref,label=_"Preferences",icon="gtk-preferences") \
+                    MenuItem16(command=Quit,label=_"Quit",icon="gtk-quit")
+                    
+                SMMenu2 = (label=_"Playback") \
+                    SeparatorMenuItem21 \
+                    MenuItem26(command=PlayPause,label=_"Play",icon="gtk-media-play") \
+                    MenuItem27(command=Stop,label=_"Stop",icon="gtk-media-stop") \
+                    MenuItem28(command=PrevSong,label=_"Previous",icon="gtk-media-previous") \
+                    MenuItem29(command=NextSong,label=_"Next",icon="gtk-media-next") \
+                    SeparatorMenuItem215 \
+                    MenuItem215(command="OpenSongProp",label=_"Show song details",icon="gtk-properties")
+
+                SMMenu3 = (label=_"Playlist") \
+#                    LSortItem \
+                    MenuItem32(command=ToggleRandom,label=_"Random Playback",icon="gmb-random") \
+                    SeparatorMenuItem31 \
+                    MenuItem33(command="RunPerlCode(::IdleCheck)",label=_"Refresh",icon="gtk-refresh") \
+                    MenuItem34(command="RunPerlCode(::IdleScan)",label=_"Rescan",icon="gtk-refresh") \
+                    SeparatorMenuItem32 \
+                    MenuItem39(command="OpenCustom(Audacious_PLM)",label=_"Playlists",icon="gmb-playlist")
+
+                SMMenu7 = (label=_"Help") \
+                    MenuItem71(command="RunPerlCode(::AboutDialog)",label=_"About",icon="gtk-about")
+
  HPmain		= VBLeft _VPRight
-#  VBLeft	= 5VBplayer _TabbedLists(group=1,pages="+PlayList +QueueList +@song_info +PictureBrowser")
+#  Left side that shows playlist
   VBLeft	= 5VBplayer _TabbedLists(group=1,pages="+PlayList")
    VBplayer	= HBButtons3 HBText_Cover
 #    HBButtons3	= 5Sort 5Filter 5Queue 5Pos -Stars
@@ -26,14 +53,14 @@ VBmain		= HBmenu _HPmain Progress
 #      HBAlbum	= LockAlbum _Album -Year
 #      HBAlbum	= 
       HBTime	= _TimeBar
-#  TBRight	= _"Library" VPRight _"Context" Context
-#  TBRight	= _"Library" VPRight
 #   VPRight	= _HPfp0 _VBSongList
-#   VPRight	= HBSongList(maxheight=50) _VBSongList
+
+
+#   VPRight = Vertical Split Pane on Right side, HBSongList = SearchField + Playbutton Filter
    VPRight	= HBSongList(maxheight=50) _VPRight2
+
+#   VPRight2 = Vertical Split Pane with HPfp0 = Filterboxes and VbSongList = BIG Songtree
    VPRight2	= _HPfp0 _VBSongList
-#    HPfp0	= FilterPane0(nb=1,hidebb=1,page=genre) HPfp1
-#    HPfp0	= HPfp1
      HPfp0	= _FilterPane1(nb=2,hidebb=1,hidetabs=1,hscrollbar=0,page=artist,page_artist/lpicsize=16,pages=artist) \
 #		  FilterPane2(nb=3,hidebb=1,hscrollbar=0,hidetabs=1,page=album,page_album/lpicsize=32,page_album/lmarkup=1)
       _FilterPane2(nb=3,\
@@ -49,11 +76,12 @@ VBmain		= HBmenu _HPmain Progress
 						page_album/mode=mosaic,\
 						page_album/sort=artist,\
 						pages=album)
-#    VBSongList	= HBSongList _SongTree
-#    VBSongList	= _HPfp0 _SongTree
+
     VBSongList	= HBSongList2 _SongTree
 #     HBSongList	= SimpleSearch(maxwidth=250) -FilterLock -PlayFilter -Refresh -ResetFilter -MBlist
-     HBSongList	= SimpleSearch(maxwidth=500) PlayFilter
+     HBSongList	= SimpleSearch(maxwidth=500) PlayFilter -HBVolume
+        HBVolume = VolumeBar Volume Fullscreen
+
      HBSongList2	= -MBlist2
 #      MBlist 	= HistItem LSortItem PlayItem
 #      MBlist 	= LSortItem PlayItem
