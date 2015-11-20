@@ -131,8 +131,7 @@ Size=32
 
 [General]
 BrowserApplication[$e]=firefox.desktop
-ColorScheme=Netrunner15
-Name=breeze
+ColorScheme=Carbon
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
