@@ -16,8 +16,8 @@ ViewPropsTimestamp=2014,10,31,11,52,25
 
 [IconsMode]
 FontWeight=50
-IconSize=96
-PreviewSize=96
+IconSize=80
+PreviewSize=80
 
 [MainWindow]
 ToolBarsMovable=Disabled
