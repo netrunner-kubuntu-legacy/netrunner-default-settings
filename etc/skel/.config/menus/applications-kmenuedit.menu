@@ -99,7 +99,6 @@
    <Filename>kde4-calligraactive.desktop</Filename>
    <Filename>wordview.desktop</Filename>
    <Filename>org.kde.ktplogviewer.desktop</Filename>
-   <Filename>org.kde.kmail.desktop</Filename>
    <Filename>org.kde.kontact.desktop</Filename>
    <Filename>org.kde.korganizer.desktop</Filename>
    <Filename>org.kde.pimsettingexporter.desktop</Filename>
@@ -108,6 +107,10 @@
    <Filename>org.kde.importwizard.desktop</Filename>
    <Filename>synaptic.desktop</Filename>
    <Filename>ndisgtk-kde.desktop</Filename>
+   <Filename>org.kde.akregator.desktop</Filename>
+   <Filename>org.kde.kmail.desktop</Filename>
+   <Filename>org.kde.kaddressbook.desktop</Filename>
+   <Filename>xboard.desktop</Filename>
   </Include>
  </Menu>
  <Menu>
@@ -174,6 +177,8 @@
    <Filename>org.kde.ktplogviewer.desktop</Filename>
    <Filename>org.kde.pimsettingexporter.desktop</Filename>
    <Filename>org.kde.sieveeditor.desktop</Filename>
+   <Filename>org.kde.akregator.desktop</Filename>
+   <Filename>org.kde.kmail.desktop</Filename>
   </Exclude>
   <Include>
    <Filename>kde4-marble.desktop</Filename>
@@ -182,9 +187,7 @@
   </Include>
   <Layout>
    <Merge type="files"/>
-   <Filename>org.kde.akregator.desktop</Filename>
    <Filename>firefox.desktop</Filename>
-   <Filename>org.kde.kmail.desktop</Filename>
    <Filename>org.kde.konversation.desktop</Filename>
    <Filename>marble.desktop</Filename>
    <Merge type="menus"/>
@@ -238,13 +241,13 @@
    <Filename>org.kde.korganizer.desktop</Filename>
    <Filename>org.kde.pimsettingexporter.desktop</Filename>
    <Filename>org.kde.sieveeditor.desktop</Filename>
+   <Filename>org.kde.kaddressbook.desktop</Filename>
   </Exclude>
   <Include>
    <Filename>kde4-okular.desktop</Filename>
   </Include>
   <Layout>
    <Merge type="files"/>
-   <Filename>org.kde.kaddressbook.desktop</Filename>
    <Filename>libreoffice-startcenter.desktop</Filename>
    <Filename>libreoffice-calc.desktop</Filename>
    <Filename>libreoffice-draw.desktop</Filename>
@@ -469,8 +472,10 @@
     <Filename>gnome-chess.desktop</Filename>
     <Filename>gnudoq.desktop</Filename>
     <Filename>kde4-kmahjongg.desktop</Filename>
-    <Filename>xboard.desktop</Filename>
    </Layout>
+   <Exclude>
+    <Filename>xboard.desktop</Filename>
+   </Exclude>
   </Menu>
   <Menu>
    <Name>Logic</Name>
