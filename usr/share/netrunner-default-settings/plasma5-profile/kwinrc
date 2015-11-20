@@ -104,7 +104,7 @@ TitlebarDoubleClickCommand=Maximize
 WindowSnapZone=10
 
 [org.kde.kdecoration2]
-library=org.kde.oxygen
+library=org.kde.breeze
 theme[$d]
 BorderSize=Normal
 ButtonsOnLeft=M
