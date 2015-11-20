@@ -245,3 +245,6 @@ activeForeground=75,71,67
 inactiveBackground=224,223,222
 inactiveBlend=75,71,67
 inactiveForeground=20,19,18
+
+[PreviewSettings]
+MaximumRemoteSize=2621440000
