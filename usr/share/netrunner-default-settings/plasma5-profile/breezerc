@@ -4,3 +4,6 @@ ShadowStrength=89
 
 [Windeco]
 AnimationsEnabled=false 
+
+[Style]
+AnimationsEnabled=false
