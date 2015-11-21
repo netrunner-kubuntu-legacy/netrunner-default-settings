@@ -30,4 +30,4 @@ IconSize=32
 IconSize=22
 
 [PreviewSettings]
-Plugins=imagethumbnail,jpegthumbnail,svgthumbnail,kffmpegthumbnailer
+Plugins=imagethumbnail,jpegthumbnail,svgthumbnail,ffmpegthumbs
