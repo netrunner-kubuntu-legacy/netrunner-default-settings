@@ -31,6 +31,9 @@ ColumnLayout {
 
 //BEGIN functions
     function saveConfig() {
+        if (main.currentItem.saveConfig) {
+            main.currentItem.saveConfig()
+        }
         for (var key in configDialog.wallpaperConfiguration) {
             if (main.currentItem["cfg_"+key] !== undefined) {
                 configDialog.wallpaperConfiguration[key] = main.currentItem["cfg_"+key]
@@ -57,7 +60,6 @@ ColumnLayout {
     Component.onCompleted: {
         for (var i = 0; i < configDialog.containmentPluginsConfigModel.count; ++i) {
             var data = configDialog.containmentPluginsConfigModel.get(i);
-            for(var j in data) print(j)
             if (configDialog.containmentPlugin == data.pluginName) {
                 pluginComboBox.currentIndex = i
                 break;
@@ -66,7 +68,6 @@ ColumnLayout {
 
         for (var i = 0; i < configDialog.wallpaperConfigModel.count; ++i) {
             var data = configDialog.wallpaperConfigModel.get(i);
-            for(var j in data) print(j)
             if (configDialog.currentWallpaper == data.pluginName) {
                 wallpaperComboBox.currentIndex = i
                 break;

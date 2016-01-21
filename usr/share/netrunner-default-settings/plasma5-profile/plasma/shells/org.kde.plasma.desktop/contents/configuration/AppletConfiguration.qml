@@ -20,7 +20,9 @@ import QtQuick 2.0
 import QtQuick.Dialogs 1.1
 import QtQuick.Controls 1.0 as QtControls
 import QtQuick.Layouts 1.0
+import org.kde.plasma.core 2.1 as PlasmaCore
 import org.kde.plasma.configuration 2.0
+import org.kde.kquickcontrolsaddons 2.0
 
 
 //TODO: all of this will be done with desktop components
@@ -48,17 +50,23 @@ Rectangle {
             source: "ConfigurationShortcuts.qml"
         }
     }
+
+    PlasmaCore.SortFilterModel {
+        id: configDialogFilterModel
+        sourceModel: configDialog.configModel
+        filterRole: "visible"
+        filterCallback: function(source_row, value) { return value; }
+    }
 //END model
 
 //BEGIN functions
     function saveConfig() {
         if (main.currentItem.saveConfig) {
             main.currentItem.saveConfig()
-        } else {
-            for (var key in plasmoid.configuration) {
-                if (main.currentItem["cfg_"+key] !== undefined) {
-                    plasmoid.configuration[key] = main.currentItem["cfg_"+key]
-                }
+        }
+        for (var key in plasmoid.configuration) {
+            if (main.currentItem["cfg_"+key] !== undefined) {
+                plasmoid.configuration[key] = main.currentItem["cfg_"+key]
             }
         }
     }
@@ -71,25 +79,6 @@ Rectangle {
         }
     }
 
-    function configurationHasChanged() {
-        for (var key in plasmoid.configuration) {
-            if (main.currentItem["cfg_"+key] !== undefined) {
-                //for objects == doesn't work
-                if (typeof plasmoid.configuration[key] == 'object') {
-                    for (var i in plasmoid.configuration[key]) {
-                        if (plasmoid.configuration[key][i] != main.currentItem["cfg_"+key][i]) {
-                            return true;
-                        }
-                    }
-                    return false;
-                } else if (main.currentItem["cfg_"+key] != plasmoid.configuration[key]) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
     function settingValueChanged() {
         applyButton.enabled = true;
     }
@@ -99,7 +88,14 @@ Rectangle {
 //BEGIN connections
     Component.onCompleted: {
         if (!isContainment && configDialog.configModel && configDialog.configModel.count > 0) {
-            main.sourceFile = configDialog.configModel.get(0).source
+            if (configDialog.configModel.get(0).source) {
+                main.sourceFile = configDialog.configModel.get(0).source
+            } else if (configDialog.configModel.get(0).kcm) {
+                main.sourceFile = Qt.resolvedUrl("ConfigurationKcmPage.qml");
+                main.currentItem.kcm = configDialog.configModel.get(0).kcm;
+            } else {
+                main.sourceFile = "";
+            }
             main.title = configDialog.configModel.get(0).name
         } else {
             main.sourceFile = globalConfigModel.get(0).source
@@ -112,6 +108,22 @@ Rectangle {
 
 //BEGIN UI components
     SystemPalette {id: syspal}
+
+    MouseEventListener {
+        anchors.fill: parent
+        property int oldX
+        property int oldY
+        onPressed: {
+            oldX = mouse.screenX
+            oldY = mouse.screenY
+        }
+        onPositionChanged: {
+            configDialog.y += mouse.screenY - oldY
+            configDialog.x += mouse.screenX - oldX
+            oldX = mouse.screenX
+            oldY = mouse.screenY
+        }
+    }
 
     MessageDialog {
         id: messageDialog
@@ -174,7 +186,7 @@ Rectangle {
                             delegate: ConfigCategoryDelegate {}
                         }
                         Repeater {
-                            model: configDialog.configModel
+                            model: configDialogFilterModel
                             delegate: ConfigCategoryDelegate {}
                         }
                         Repeater {
@@ -210,6 +222,9 @@ Rectangle {
                         property string sourceFile
 
                         onSourceFileChanged: {
+                            if (!sourceFile) {
+                                return;
+                            }
 //                             print("Source file changed in flickable" + sourceFile);
                             replace(Qt.resolvedUrl(sourceFile));
                             root.restoreConfig()
@@ -222,6 +237,7 @@ Rectangle {
                                 currentItem["configurationChanged"].connect(root.settingValueChanged)
                             }
                             applyButton.enabled = false;
+                            scroll.flickableItem.contentY = 0
                             /*
                                 * This is not needed on a desktop shell that has ok/apply/cancel buttons, i'll leave it here only for future reference until we have a prototype for the active shell.
                                 * root.pageChanged will start a timer, that in turn will call saveConfig() when triggered
@@ -296,6 +312,8 @@ Rectangle {
                 } else {
                     root.saveConfig();
                 }
+
+                applyButton.enabled = false;
             }
         }
 

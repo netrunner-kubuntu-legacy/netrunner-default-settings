@@ -21,6 +21,8 @@ import QtQuick 2.0
 
 import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.components 2.0 as PlasmaComponents
+import org.kde.kwindowsystem 1.0
+import org.kde.plasma.activityswitcher 1.0 as ActivitySwitcher
 import org.kde.plasma.shell 2.0 as Shell
 import "../activitymanager"
 import "../explorer"
@@ -32,47 +34,90 @@ Item {
     property Item containment
     property Item wallpaper
 
+    property QtObject widgetExplorer
+
+    Connections {
+        target: ActivitySwitcher.Backend
+        onShouldShowSwitcherChanged: {
+            if (ActivitySwitcher.Backend.shouldShowSwitcher) {
+                if (sidePanelStack.state != "activityManager") {
+                    root.toggleActivityManager();
+                }
+
+            } else {
+                if (sidePanelStack.state == "activityManager") {
+                    root.toggleActivityManager();
+                }
+
+            }
+        }
+    }
+
     function toggleWidgetExplorer(containment) {
 //         console.log("Widget Explorer toggled");
 
         if (sidePanelStack.state == "widgetExplorer") {
             sidePanelStack.state = "closed";
         } else {
-            sidePanelStack.setSource(Qt.resolvedUrl("../explorer/WidgetExplorer.qml"), {"containment": containment})
             sidePanelStack.state = "widgetExplorer";
+            sidePanelStack.setSource(Qt.resolvedUrl("../explorer/WidgetExplorer.qml"), {"containment": containment})
         }
     }
 
     function toggleActivityManager() {
-//         console.log("Activity manger toggled");
+        console.log("Activity manager toggled");
         if (sidePanelStack.state == "activityManager") {
             sidePanelStack.state = "closed";
         } else {
-            sidePanelStack.setSource(Qt.resolvedUrl("../activitymanager/ActivityManager.qml"))
             sidePanelStack.state = "activityManager";
+            sidePanelStack.setSource(Qt.resolvedUrl("../activitymanager/ActivityManager.qml"))
         }
     }
 
-    Rectangle {
-        anchors.fill: parent
-        visible: desktop.dashboardShown
-        opacity: 0.2
-        color: "black"
+    KWindowSystem {
+        id: kwindowsystem
+    }
+
+    Timer {
+        id: pendingUninstallTimer
+        // keeps track of the applets the user wants to uninstall
+        property var applets: []
+
+        interval: 60000 // one minute
+        onTriggered: {
+            for (var i = 0, length = applets.length; i < length; ++i) {
+                widgetExplorer.uninstall(applets[i])
+            }
+            applets = []
+
+            if (sidePanelStack.state !== "widgetExplorer" && widgetExplorer) {
+                widgetExplorer.destroy()
+                widgetExplorer = null
+            }
+        }
     }
 
     PlasmaCore.Dialog {
         id: sidePanel
         location: PlasmaCore.Types.LeftEdge
         type: PlasmaCore.Dialog.Dock
+        flags: Qt.WindowStaysOnTopHint
 
         hideOnWindowDeactivate: true
+
+        /*
+        If there is no setGeometry call on QWindow the XCB backend will not pass our requested position to kwin
+        as our window position tends to be 0, setX,setY no-ops and means we never set a position as far as QWindow is concerned
+        by setting it to something silly and setting it back before we show the window we avoid that bug.
+        */
+        x: -10
 
         onVisibleChanged: {
             if (!visible) {
                 sidePanelStack.state = "closed";
+                ActivitySwitcher.Backend.shouldShowSwitcher = false;
             } else {
                 var rect = containment.availableScreenRect;
-                sidePanel.requestActivate();
                 // get the current available screen geometry and subtract the dialog's frame margins
                 sidePanelStack.height = containment ? rect.height - sidePanel.margins.top - sidePanel.margins.bottom : 1000;
                 sidePanel.x = desktop.x + rect.x;
@@ -85,12 +130,19 @@ Item {
             asynchronous: true
             height: 1000 //start with some arbitrary height, will be changed from onVisibleChanged
             width: item ? item.width: 0
+            state: "closed"
+
             onLoaded: {
                 if (sidePanelStack.item) {
                     item.closed.connect(function(){sidePanelStack.state = "closed";});
 
                     if (sidePanelStack.state == "activityManager") {
-                        sidePanel.hideOnWindowDeactivate = Qt.binding(function() { return sidePanelStack.item && !sidePanelStack.item.showingDialog; })
+                        sidePanelStack.item.showSwitcherOnly =
+                            ActivitySwitcher.Backend.shouldShowSwitcher
+                        sidePanel.hideOnWindowDeactivate = Qt.binding(function() {
+                            return !ActivitySwitcher.Backend.shouldShowSwitcher
+                                && !sidePanelStack.item.showingDialog;
+                        })
                         sidePanelStack.item.forceActiveFocus();
                     } else if (sidePanelStack.state == "widgetExplorer"){
                         sidePanel.hideOnWindowDeactivate = Qt.binding(function() { return sidePanelStack.item && !sidePanelStack.item.preventWindowHide; })
@@ -99,6 +151,7 @@ Item {
                     }
                 }
                 sidePanel.visible = true;
+                kwindowsystem.forceActivateWindow(sidePanel)
             }
             onStateChanged: {
                 if (sidePanelStack.state == "closed") {
@@ -148,12 +201,6 @@ Item {
         if (!internal.oldWallpaper) {
             internal.oldWallpaper = wallpaper;
         }
-    }
-
-    Binding {
-        target: wallpaper
-        property: "opacity"
-        value: desktop.dashboardShown ? 0.3 : 1
     }
 
     //some properties that shouldn't be accessible from elsewhere

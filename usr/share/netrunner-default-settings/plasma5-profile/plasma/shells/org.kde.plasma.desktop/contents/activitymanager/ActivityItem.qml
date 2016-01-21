@@ -1,7 +1,17 @@
 import QtQuick 2.0
+
 import org.kde.plasma.components 2.0 as PlasmaComponents
 import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.extras 2.0 as PlasmaExtras
+
+import org.kde.kquickcontrolsaddons 2.0 as KQuickControlsAddonsComponents
+
+import org.kde.plasma.activityswitcher 1.0 as ActivitySwitcher
+
+import org.kde.activities 0.1 as Activities
+import org.kde.activities.settings 0.1
+
+import "static.js" as S
 
 Item {
     id: root
@@ -15,14 +25,49 @@ Item {
     property alias title       : title.text
     property alias icon        : icon.source
 
+    z : current  ? 10 :
+        selected ?  5 : 0
+
     property string activityId : ""
 
     property string background : ""
 
+    function updateBackgroundRetry(valid) {
+        // TODO: (comment by David)
+        //
+        // Registering a a QQuickImageProvider with
+        // ForceAsynchronousImageLoading (so you can just exec() in the main
+        // method without blocking) will probably be both simpler code
+        // and more robust.
+
+        if (valid) {
+            // Try to get the pixmap, if it is not available, this function
+            // will be called again when the thumbnailer finishes its job
+            // console.log("Loading background for " + root.title);
+            backgroundWallpaper.pixmap = ActivitySwitcher.Backend.wallpaperThumbnail(
+                background,
+                backgroundWallpaper.width,
+                backgroundWallpaper.height,
+                updateBackgroundRetry
+                );
+
+            backgroundColor.visible = false;
+
+        } else {
+            backgroundColor.color = "#000000";
+            backgroundColor.visible = true;
+        }
+    }
+
+    function updateBackground() {
+        if (background == "") return;
+
+        updateBackgroundRetry(true);
+    }
+
     onBackgroundChanged: if (background[0] != '#') {
         // We have a proper wallpaper, hurroo!
-        backgroundWallpaper.source = background
-        backgroundColor.visible = false
+        updateBackground();
 
     } else {
         // We have only a color
@@ -31,165 +76,294 @@ Item {
     }
 
     signal clicked
-    signal configureClicked
-    signal stopClicked
 
     width  : 200
     // height : width * 1 / units.displayAspectRatio
     // Marco removed displayAspectRatio
     height : width * 9.0 / 16.0
 
-    // Background until we get something real
-    PlasmaCore.FrameSvgItem {
-        id: highlight
-        imagePath: "widgets/viewitem"
-        visible: root.current || root.selected
+    onWidthChanged  : updateBackground()
+    onHeightChanged : updateBackground()
 
-        anchors {
-            fill: parent
-            leftMargin: -highlight.margins.left
-            bottomMargin: -highlight.margins.bottom
-        }
-
-        prefix:
-            root.current  ? "selected" :
-            root.selected ? "hover" :
-                            "normal"
-
-    }
 
     Item {
         anchors {
             fill: parent
-
-            leftMargin: highlight.margins.left
-            rightMargin: highlight.margins.right
-            topMargin: highlight.margins.top
         }
 
         // Background until we get something real
         Rectangle {
             id: backgroundColor
+
             anchors.fill: parent
+            // This is intentional - while waiting for the wallpaper,
+            // we are showing a semi-transparent black background
             color: "black"
 
             opacity: root.selected ? .8 : .5
         }
 
-        Image {
+        KQuickControlsAddonsComponents.QPixmapItem {
             id: backgroundWallpaper
+
             anchors.fill: parent
 
             visible: !backgroundColor.visible
         }
+
 
         // Title and the icon
 
         Rectangle {
             id: shade
 
-            color   : "black"
-            opacity: root.selected ? .8 : .5
+            width: parent.height
+            height: parent.width
 
-            height  : title.height + 2 * title.anchors.margins
-            width   : parent.width
+            anchors.centerIn: parent
+            rotation: 90
+
+            gradient: Gradient {
+                GradientStop { position: 1.0; color: "black" }
+                GradientStop { position: 0.0; color: "transparent" }
+            }
+
+            opacity : root.selected ? 0.5 : 1.0
+        }
+
+        Rectangle {
+            id: highlight
+
+            visible:  root.current
+
+            border.width: root.current ? units.smallSpacing : 0
+            border.color: theme.highlightColor
+
+            anchors {
+                fill: parent
+                // Hide the rounding error on the bottom of the rectangle
+                bottomMargin: -1
+            }
+
+            color: "transparent"
+
+            // z: 1
+        }
+
+        Item {
+            id: titleBar
+
+            anchors {
+                top   : parent.top
+                left  : parent.left
+                right : parent.right
+
+                leftMargin : 2 * units.smallSpacing + 2
+                topMargin  : 2 * units.smallSpacing
+            }
+
+            Text {
+                id: title
+
+                color   : "white"
+                elide   : Text.ElideRight
+                visible : shade.visible
+
+                font.bold : true
+
+                anchors {
+                    top   : parent.top
+                    left  : parent.left
+                    right : icon.left
+                }
+            }
+
+            Text {
+                id: description
+
+                color   : "white"
+                elide   : Text.ElideRight
+                text    : model.description
+                opacity : .6
+
+                anchors {
+                    top   : title.bottom
+                    left  : parent.left
+                    right : icon.left
+                }
+            }
+
+            PlasmaCore.IconItem {
+                id: icon
+
+                width   : units.iconSizes.medium
+                height  : width
+
+                anchors {
+                    right       : parent.right
+                    rightMargin : 2 * units.smallSpacing
+                }
+            }
+        }
+
+        Item {
+            id: statsBar
+
+            height: lastUsedDate.height +
+                 //     stats.height +
+                        units.smallSpacing
+
+            anchors {
+                bottom : controlBar.top
+                left   : parent.left
+                right  : parent.right
+
+                leftMargin   : 2 * units.smallSpacing + 2
+                rightMargin  : 2 * units.smallSpacing
+                bottomMargin : units.smallSpacing
+            }
+
+            Text {
+                id: lastUsedDate
+
+                color   : "white"
+                elide   : Text.ElideRight
+                opacity : .6
+
+                text: root.current ?
+                        i18nd("plasma_shell_org.kde.plasma.desktop", "Currently being used") :
+                        ActivitySwitcher.Backend.lastTimeUsedString(root.activityId)
+
+                anchors {
+                    top   : parent.top
+                    left  : parent.left
+                    right : parent.right
+                }
+            }
+
+            // Text {
+            //     id: stats
+            //
+            //     color   : "white"
+            //     elide   : Text.ElideRight
+            //     opacity : .6
+            //
+            //     text: "6 documents, 2 applications"
+            //     visible: false
+            //
+            //     anchors {
+            //         top   : lastUsedDate.bottom
+            //         left  : parent.left
+            //         right : parent.right
+            //     }
+            // }
+        }
+
+        MouseArea {
+            id: hoverArea
+
+            anchors.fill : parent
+            onClicked    : root.clicked()
+            hoverEnabled : true
+            onEntered    : S.showActivityItemActionsBar(root)
+
+            Accessible.name          : root.title
+            Accessible.role          : Accessible.Button
+            Accessible.selected      : root.selected
+            Accessible.onPressAction : root.clicked()
+        }
+
+        // Controls
+        Item {
+            id: controlBar
+
+            height: root.state == "showingControls" ?
+                        (configButton.height + 4 * units.smallSpacing) :
+                        0
+
+            Behavior on height {
+                NumberAnimation {
+                    duration: units.longDuration
+                }
+            }
+
+            Behavior on opacity {
+                NumberAnimation {
+                    duration: units.shortDuration
+                }
+            }
+
+            clip: true
 
             anchors {
                 bottom : parent.bottom
                 left   : parent.left
                 right  : parent.right
             }
-        }
 
-        PlasmaCore.IconItem {
-            id: icon
+            Rectangle {
+                anchors {
+                    fill: parent
+                    margins: - 2 * units.smallSpacing
+                }
 
-            width  : units.iconSizes.medium
-            height : width
-
-            anchors {
-                bottom  : parent.bottom
-                left    : parent.left
-                margins : root.innerPadding
+                opacity: .75
+                color: theme.backgroundColor
             }
-        }
 
-        PlasmaComponents.Label {
-            id: title
+            PlasmaComponents.Button {
+                id: configButton
 
-            color : "white"
-            elide : Text.ElideRight
+                iconSource: "configure"
+                tooltip: i18nd("plasma_shell_org.kde.plasma.desktop", "Configure")
 
-            anchors {
-                bottom  : parent.bottom
-                left    : icon.right
-                right   : parent.right
-                margins : root.innerPadding * 2
-            }
-        }
+                onClicked: ActivitySettings.configureActivity(root.activityId);
 
-        // Controls
-
-        MouseArea {
-            id: rootArea
-
-            anchors.fill : parent
-            hoverEnabled : true
-
-            onClicked    : root.clicked()
-        }
-
-        ControlButton {
-            id: stopButton
-
-            onClicked: root.stopClicked()
-
-            icon: "close"
-            visible: root.stoppable
-
-            anchors {
-                right   : parent.right
-                top     : parent.top
-                margins : root.innerPadding
-            }
-        }
-
-        ControlButton {
-            id: configButton
-
-            onClicked: root.configureClicked()
-
-            icon: "configure"
-
-            anchors {
-                left    : parent.left
-                top     : parent.top
-                margins : root.innerPadding
-            }
-        }
-
-        states: [
-            State {
-                name: "plain"
-                PropertyChanges { target: stopButton; opacity: 0 }
-                PropertyChanges { target: configButton; opacity: 0 }
-            },
-            State {
-                name: "showControls"
-                PropertyChanges { target: stopButton; opacity: 1 }
-                PropertyChanges { target: configButton; opacity: 1 }
-            }
-        ]
-
-        transitions: [
-            Transition {
-                NumberAnimation {
-                    properties : "opacity"
-                    duration   : units.shortDuration
+                anchors {
+                    left       : parent.left
+                    top        : parent.top
+                    leftMargin : 2 * units.smallSpacing + 2
+                    topMargin  : 2 * units.smallSpacing
                 }
             }
-        ]
 
-        state: rootArea.containsMouse ? "showControls" : "plain"
+            PlasmaComponents.Button {
+                id: stopButton
+
+                iconSource: "process-stop"
+                tooltip: i18nd("plasma_shell_org.kde.plasma.desktop", "Stop")
+
+                onClicked: activitiesModel.stopActivity(activityId, function () {});
+
+                anchors {
+                    right       : parent.right
+                    top         : parent.top
+                    rightMargin : 2 * units.smallSpacing + 2
+                    topMargin   : 2 * units.smallSpacing
+                }
+            }
+        }
     }
+
+    states: [
+        State {
+            name: "plain"
+            PropertyChanges { target: shade; visible: true }
+            PropertyChanges { target: controlBar; opacity: 0 }
+        },
+        State {
+            name: "showingControls"
+            PropertyChanges { target: shade; visible: true }
+            PropertyChanges { target: controlBar; opacity: 1 }
+        }
+    ]
+
+    transitions: [
+        Transition {
+            NumberAnimation {
+                properties : "opacity"
+                duration   : units.shortDuration
+            }
+        }
+    ]
 }

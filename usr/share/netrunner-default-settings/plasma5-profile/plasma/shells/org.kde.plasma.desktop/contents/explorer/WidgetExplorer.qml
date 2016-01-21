@@ -17,7 +17,9 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-import QtQuick 2.0
+import QtQuick 2.2
+import QtQuick.Controls 1.1
+
 import org.kde.plasma.components 2.0 as PlasmaComponents
 import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.extras 2.0 as PlasmaExtras
@@ -31,14 +33,10 @@ import org.kde.plasma.private.shell 2.0
 Item {
     id: main
 
-    width: minimumWidth
+    width: Math.max(heading.paintedWidth, units.iconSizes.enormous * 2 + units.smallSpacing * 4 + 20)
     height: 800//Screen.height
 
-    // The +4 is for the gap and cross button
-    property int minimumWidth: theme.mSize(heading.font).width * (heading.text.length + 6)
-    property int minimumHeight: 800//width will be set by the dialog anyway
-
-    property alias containment: widgetExplorer.containment
+    property QtObject containment
 
     //external drop events can cause a raise event causing us to lose focus and
     //therefore get deleted whilst we are still in a drag exec()
@@ -46,26 +44,84 @@ Item {
     //See https://bugs.kde.org/show_bug.cgi?id=332733
     property bool preventWindowHide: false
 
-    property Item getWidgetsButton
     property Item categoryButton
 
     signal closed()
 
-    WidgetExplorer {
-        id: widgetExplorer
-        //view: desktop
-        onShouldClose: main.closed();
+    Component.onCompleted: {
+        if (!root.widgetExplorer) {
+            root.widgetExplorer = widgetExplorerComponent.createObject(root)
+        }
+        root.widgetExplorer.containment = main.containment
+    }
+
+    Component.onDestruction: {
+        if (pendingUninstallTimer.running) {
+            // we're not being destroyed so at least reset the filters
+            widgetExplorer.widgetsModel.filterQuery = ""
+            widgetExplorer.widgetsModel.filterType = ""
+            widgetExplorer.widgetsModel.searchTerm = ""
+        } else {
+            root.widgetExplorer.destroy()
+            root.widgetExplorer = null
+        }
+    }
+
+    function addCurrentApplet() {
+        var pluginName = list.currentItem ? list.currentItem.pluginName : ""
+        if (pluginName) {
+            widgetExplorer.addApplet(pluginName)
+        }
+    }
+
+    Action {
+        shortcut: "Escape"
+        onTriggered: {
+            if (searchInput.length > 0) {
+                searchInput.text = ""
+            } else {
+                main.closed()
+            }
+        }
+    }
+
+    Action {
+        shortcut: "Up"
+        onTriggered: list.decrementCurrentIndex()
+    }
+
+    Action {
+        shortcut: "Down"
+        onTriggered: list.incrementCurrentIndex()
+    }
+
+    Action {
+        shortcut: "Enter"
+        onTriggered: addCurrentApplet()
+    }
+    Action {
+        shortcut: "Return"
+        onTriggered: addCurrentApplet()
+    }
+
+    Component {
+        id: widgetExplorerComponent
+
+        WidgetExplorer {
+            //view: desktop
+            onShouldClose: main.closed();
+        }
     }
 
     PlasmaComponents.ModelContextMenu {
         id: categoriesDialog
-        visualParent: main.categoryButton
-        model: widgetExplorer.filterModel
+        visualParent: categoryButton
+        // model set on first invocation
 
         onClicked: {
             list.contentX = 0
             list.contentY = 0
-            main.categoryButton.text = model.display
+            categoryButton.text = model.display
             widgetExplorer.widgetsModel.filterQuery = model.filterData
             widgetExplorer.widgetsModel.filterType = model.filterType
         }
@@ -80,8 +136,8 @@ Item {
 
     PlasmaComponents.ModelContextMenu {
         id: getWidgetsDialog
-        visualParent: main.getWidgetsButton
-        model: widgetExplorer.widgetsMenuActions
+        visualParent: getWidgetsButton
+        // model set on first invocation
         onClicked: model.trigger()
         onStatusChanged: {
             if (status == PlasmaComponents.DialogStatus.Opening) {
@@ -150,7 +206,6 @@ Item {
         PlasmaExtras.Title {
             id: heading
             text: i18nd("plasma_shell_org.kde.plasma.desktop", "Widgets")
-            elide: Text.ElideRight
             Layout.fillWidth: true
         }
 
@@ -165,22 +220,13 @@ Item {
         }
 
         PlasmaComponents.TextField {
+            id: searchInput
             clearButtonShown: true
             placeholderText: i18nd("plasma_shell_org.kde.plasma.desktop", "Search...")
             onTextChanged: {
-                list.contentX = 0
-                list.contentY = 0
+                list.positionViewAtBeginning()
+                list.currentIndex = -1
                 widgetExplorer.widgetsModel.searchTerm = text
-            }
-            Keys.onPressed: {
-                if (event.key === Qt.Key_Escape) {
-                    if (text.length > 0) {
-                        text = ""
-                    } else {
-                        main.closed()
-                    }
-                    event.accepted = true
-                }
             }
 
             Component.onCompleted: forceActiveFocus()
@@ -192,6 +238,7 @@ Item {
             text: i18nd("plasma_shell_org.kde.plasma.desktop", "Categories")
             onClicked: {
                 main.preventWindowHide = true;
+                categoriesDialog.model = widgetExplorer.filterModel
                 categoriesDialog.open(0, categoryButton.height)
             }
             Layout.columnSpan: 2
@@ -199,12 +246,13 @@ Item {
         }
     }
 
-    PlasmaCore.FrameSvgItem {
-        id: backgroundHint
-        imagePath: "widgets/viewitem"
-        prefix: "normal"
-        visible: false
+    Timer {
+        id: setModelTimer
+        interval: 20
+        running: true
+        onTriggered: list.model = widgetExplorer.widgetsModel
     }
+
     PlasmaExtras.ScrollArea {
         anchors {
             top: topBar.bottom
@@ -215,19 +263,30 @@ Item {
             leftMargin: units.smallSpacing
             bottomMargin: units.smallSpacing
         }
-        ListView {
+
+        // hide the flickering by fading in nicely
+        opacity: setModelTimer.running ? 0 : 1
+        Behavior on opacity {
+            OpacityAnimator {
+                duration: units.longDuration
+                easing.type: Easing.InOutQuad
+            }
+        }
+
+        GridView {
             id: list
 
-            property int delegateWidth: list.width
-            property int delegateHeight: units.iconSizes.huge + backgroundHint.margins.top + backgroundHint.margins.bottom
+            // model set delayed by Timer above
 
-            snapMode: ListView.SnapToItem
-            model: widgetExplorer.widgetsModel
-
-            clip: true //TODO work out why this is this needed
-            cacheBuffer: delegateHeight * 5 // keep 5 delegates either side
+            activeFocusOnTab: true
+            keyNavigationWraps: true
+            cellWidth: width / 2
+            cellHeight: cellWidth + units.gridUnit * 4 + units.smallSpacing * 2
 
             delegate: AppletDelegate {}
+            highlight: PlasmaComponents.Highlight {}
+            highlightMoveDuration: 0
+            //highlightResizeDuration: 0
 
             //slide in to view from the left
             add: Transition {
@@ -278,21 +337,23 @@ Item {
         spacing: units.smallSpacing
 
         PlasmaComponents.Button {
+            id: getWidgetsButton
             anchors {
                 left: parent.left
                 right: parent.right
             }
-            id: getWidgetsButton
             iconSource: "get-hot-new-stuff"
             text: i18nd("plasma_shell_org.kde.plasma.desktop", "Get new widgets")
             onClicked: {
                 main.preventWindowHide = true;
+                getWidgetsDialog.model = widgetExplorer.widgetsMenuActions
                 getWidgetsDialog.open()
             }
         }
 
         Repeater {
             model: widgetExplorer.extraActions.length
+
             PlasmaComponents.Button {
                 anchors {
                     left: parent.left
@@ -300,16 +361,9 @@ Item {
                 }
                 iconSource: widgetExplorer.extraActions[modelData].icon
                 text: widgetExplorer.extraActions[modelData].text
-                onClicked: {
-                    widgetExplorer.extraActions[modelData].trigger()
-                }
+                onClicked: widgetExplorer.extraActions[modelData].trigger()
             }
         }
-    }
-
-    Component.onCompleted: {
-        main.getWidgetsButton = getWidgetsButton
-        main.categoryButton = categoryButton
     }
 }
 

@@ -26,7 +26,16 @@ PlasmaCore.FrameSvgItem {
     id: root
 
     imagePath: "widgets/panel-background"
-    prefix: {
+    onPrefixChanged: adjustBorders();
+    onRepaintNeeded: adjustPrefix();
+
+    visible: false //adjust borders is run during setup. We want to avoid painting till completed
+
+    property Item containment
+
+    property bool veticalPanel: containment && containment.formFactor === PlasmaCore.Types.Vertical
+
+    function adjustPrefix() {
         if (!containment) {
             return "";
         }
@@ -45,21 +54,14 @@ PlasmaCore.FrameSvgItem {
             pre = "south";
             break;
         default:
-            return "";
+            prefix = "";
         }
         if (hasElementPrefix(pre)) {
-            return pre;
+            prefix = pre;
         } else {
-            return "";
+            prefix = "";
         }
-
     }
-
-    onPrefixChanged: adjustBorders();
-
-    visible: false //adjust borders is run during setup. We want to avoid painting till completed
-
-    property Item containment
 
     function adjustBorders() {
         var borders = PlasmaCore.FrameSvg.AllBorders;
@@ -100,6 +102,9 @@ PlasmaCore.FrameSvgItem {
     }
 
     onContainmentChanged: {
+        if (!containment) {
+            return;
+        }
         containment.parent = containmentParent;
         containment.visible = true;
         containment.anchors.fill = containmentParent;
@@ -140,12 +145,12 @@ PlasmaCore.FrameSvgItem {
         id: containmentParent
         anchors {
             fill: parent
-            topMargin: Math.min(root.fixedMargins.top, Math.max(1, root.height - units.iconSizes.smallMedium));
-            bottomMargin: Math.min(root.fixedMargins.bottom, Math.max(1, root.height - units.iconSizes.smallMedium));
+            topMargin: Math.min(root.fixedMargins.top, Math.max(1, (veticalPanel ? root.width : root.height) - units.iconSizes.smallMedium));
+            bottomMargin: Math.min(root.fixedMargins.bottom, Math.max(1, (veticalPanel ? root.width : root.height) - units.iconSizes.smallMedium));
 
             //Base the left/right fixedMargins on height as well, to have a good radial symmetry
-            leftMargin: Math.min(root.fixedMargins.left, Math.max(1, root.height - units.iconSizes.smallMedium));
-            rightMargin: Math.min(root.fixedMargins.right, Math.max(1, root.height - units.iconSizes.smallMedium));
+            leftMargin: Math.min(root.fixedMargins.left, Math.max(1, (veticalPanel ? root.width : root.height) - units.iconSizes.smallMedium));
+            rightMargin: Math.min(root.fixedMargins.right, Math.max(1, (veticalPanel ? root.width : root.height) - units.iconSizes.smallMedium));
         }
     }
 

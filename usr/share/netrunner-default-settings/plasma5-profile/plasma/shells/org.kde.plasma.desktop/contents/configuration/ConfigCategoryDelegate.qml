@@ -28,26 +28,37 @@ MouseArea {
     width: parent.width
     height: delegateContents.height + units.smallSpacing * 4
     hoverEnabled: true
-    property bool current: model.source == main.sourceFile
+    property bool current: (model.kcm && main.currentItem.kcm && model.kcm == main.currentItem.kcm) || (model.source == main.sourceFile)
     property string name: model.name
 //END properties
 
 //BEGIN functions
     function openCategory() {
+        if (current) {
+            return;
+        }
         if (typeof(categories.currentItem) !== "undefined") {
             main.invertAnimations = (categories.currentItem.y > delegate.y);
             categories.currentItem = delegate;
         }
-        main.sourceFile = model.source
+        if (model.source) {
+            main.sourceFile = model.source;
+        } else if (model.kcm) {
+            main.sourceFile = "";
+            main.sourceFile = Qt.resolvedUrl("ConfigurationKcmPage.qml");
+            main.currentItem.kcm = model.kcm;
+        } else {
+            main.sourceFile = "";
+        }
         main.title = model.name
     }
 //END functions
 
 //BEGIN connections
     onClicked: {
-        print("model source: " + model.source + " " + main.sourceFile);
-        if (root.configurationHasChanged()) {
-            messageDialog.delegate = delegate
+        //print("model source: " + model.source + " " + main.sourceFile);
+        if (applyButton.enabled) {
+            messageDialog.delegate = delegate;
             messageDialog.open();
             return;
         }

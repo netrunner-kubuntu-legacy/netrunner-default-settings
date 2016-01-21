@@ -26,22 +26,35 @@ import org.kde.kquickcontrolsaddons 2.0 as KQuickControlsAddons
 
 PlasmaCore.SvgItem {
     id: root
+
+    //Those properties get updated by PanelConfiguration.qml whenever a value changes
     svg: containmentControlsSvg
     state: parent.state
     width: naturalSize.width
     height: naturalSize.height
 
-    //value expressed by this slider
+    //value expressed by this slider, this is the distance to offset
     property int value
+
     //name of the graphics to load
     property string graphicElementName
+
     //where the point "0" is
     property int offset: 0
-    //handle type: behave in different ways based on the alignment
+
+    /*handle type: behave in different ways based on the alignment:
+     * alignment == Qt.AlignRight: Panel aligned to right and handle value relative to the right
+     * alignment == Qt.AlignLeft: Panel aligned to left and handle relative to the left
+     * (alignment != Qt.AlignRight) && (alignment & Qt.AlignRight): Panel aligned to the center and handle right of offset and value doubled
+     * (alignment != Qt.AlignLeft) && (alignment & Qt.AlignLeft): Panel aligned to the center and handle left of offset and value doubled
+     * else: Panel aligned to center and handle relative to the center
+     * Note that right/left and top/bottom are interchangeable
+     */
     property int alignment: panel.alignment
 
-    property int minimumValue: (dialogRoot.vertical) ? -root.height/2 : -root.width/2
-    property int maximumValue: (dialogRoot.vertical) ? root.parent.height - root.height/2+1 : root.parent.width - root.width/2+1
+    //The maximum/minimum Position (X/Y) the silder can be moved to
+    property int minimumPosition
+    property int maximumPosition
 
     function syncPos() {
         if (dialogRoot.vertical) {
@@ -51,7 +64,7 @@ PlasmaCore.SvgItem {
                 y = value + offset - root.height/2
             } else {
                 if (root.alignment & Qt.AlignRight) {
-                    y = root.parent.height/2 - value/2 - offset + root.height/2
+                    y = root.parent.height/2 - value/2 + offset - root.height/2
                 } else if (root.alignment & Qt.AlignLeft) {
                     y = root.parent.height/2 + value/2 + offset - root.height/2
                 } else {
@@ -87,10 +100,10 @@ PlasmaCore.SvgItem {
         drag {
             target: parent
             axis: (dialogRoot.vertical) ? Drag.YAxis : Drag.XAxis
-            minimumX: root.minimumValue
-            minimumY: root.minimumValue
-            maximumX: root.maximumValue
-            maximumY: root.maximumValue
+            minimumX: root.minimumPosition
+            minimumY: root.minimumPosition
+            maximumX: root.maximumPosition
+            maximumY: root.maximumPosition
         }
         anchors {
             fill: parent
@@ -109,9 +122,9 @@ PlasmaCore.SvgItem {
                 //Center
                 } else {
                     if (root.alignment & Qt.AlignRight) {
-                        root.value = (root.parent.height/2 - parent.y + offset)*2  + root.height/2
+                        root.value = (root.parent.height/2 - parent.y + offset)*2  - root.height
                     } else if (root.alignment & Qt.AlignLeft) {
-                        root.value = (parent.y - offset - root.parent.height/2)*2  + root.height/2
+                        root.value = (parent.y - offset - root.parent.height/2)*2  + root.height
                     } else {
                         var value = parent.y - root.parent.height/2 - offset + root.height/2
                         //Snap
@@ -130,9 +143,9 @@ PlasmaCore.SvgItem {
                 //Center
                 } else {
                     if (root.alignment & Qt.AlignRight) {
-                        root.value = (root.parent.width/2 - parent.x + offset)*2  + root.width/2
+                        root.value = (root.parent.width/2 - parent.x + offset)*2 - root.width
                     } else if (root.alignment & Qt.AlignLeft) {
-                        root.value = (parent.x - offset - root.parent.width/2)*2  + root.width/2
+                        root.value = (parent.x - offset - root.parent.width/2)*2  + root.width
                     } else {
                         var value = parent.x - root.parent.width/2 - offset + root.width/2
                         //Snap
